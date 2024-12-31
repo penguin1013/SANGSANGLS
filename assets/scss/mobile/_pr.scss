@@ -478,4 +478,149 @@
 			}
 		}
 	}
+
+
+	/* 241231 PR 전체수정 */
+	.section-pr-profile{
+		@include vw(padding-top,60px);
+		@include vw(padding-bottom, 80px);
+		border-bottom:1px solid #ddd;
+		.profile-title{@include vw(margin-bottom, 40px);}
+		.profile-text{@include vw(margin-top, 40px);}
+		.profile-menu-box{
+			@include vw(margin-top,40px);
+			display:flex;
+			justify-content: space-between;
+			.menu-title{
+				font-weight:600;
+				@include vw(line-height,27.26px);
+				@include vw(font-size,16px);
+			}
+			.menu-list{
+				@include vw(width,164px);
+				border-top:1px solid $color-light-brown;
+				li{
+					border-bottom:1px solid $color-light-brown;
+					@include vw(font-size,14px);
+					@include vw(line-height,23.8px);
+					color:$color-black;
+					font-weight:400;
+					@include vw(padding,10px 0);
+				}
+			}
+		}
+	}
+
+	.section-pr-content{
+		.curriculum-img{
+			@include vw(margin-top, 140px);
+			img{width:100%;}
+		}
+	}
+
+	.section-pr-curriculum{
+		@include vw(margin-top, 140px);
+		.curriculum-list{
+			.curriculum-title{
+				color:$color-black;
+				@include vw(font-size,20px);
+				font-weight:600;
+				@include vw(line-height,34px);
+				@include vw(margin-bottom,16px);
+				span {
+					display: block;
+					@include vw(font-size, 11px);
+					color: #000;
+					@include vw(margin-top, 10px);
+				}
+
+				strong{
+					color:#0084FF;
+				}
+			}
+
+			.curriculum-content{
+				p{
+					color:$color-black;
+					@include vw(font-size,20px);
+					font-weight:400;
+					@include vw(line-height,34px);
+					@include vw(margin-bottom,24px);
+					
+					strong{
+						font-weight:600;
+					}
+					.underline{
+						//border-bottom:2px solid $color-black;
+						font-weight:600;
+						text-underline-offset: 3px;
+						text-decoration: underline solid 1px;
+					}
+				}
+
+				.video-box{
+					position:relative;
+					width:100%;
+					//@include vw(height,212px);
+					padding-bottom: 56.25%; 
+					height: 0;
+					overflow:hidden;
+					a{
+						display:block;
+						position: absolute;
+						top: 0;
+						left: 0;
+						width: 100%;
+						height: 100%;
+						object-fit: inherit;
+
+						img{width:100%;}
+						&:after{
+							content:'';
+							position:absolute;left:0;right:0;top:0;bottom:0;width:100%;height:100%;z-index:1;
+							background:rgba(0,0,0,0.4) url(../images/pr/btn_play.svg) no-repeat 50% 50%;
+							@include vw(background-size,48px 48px);
+						}
+					}
+					
+				}
+
+				.notice {
+					@include vw(font-size, 14px);
+					line-height: 1.5;
+					color: $color-light-gray;
+					@include vw(margin-top, -32px);
+					margin-bottom: 0;
+				}
+			}
+		}
+		
+	}
+
+	.section-pr-schedule {
+		@include vw(margin-top, 24px);
+		.wrap {
+			overflow: auto;
+			img {
+				max-width:none;
+				@include vw(width, 891px);
+			}
+		}
+	}
+
+	.section-pr-lecture{
+		@include vw(margin-top, 140px);
+
+		.action{
+			@include vw(margin-top,20px);
+			.btn{
+				width:50%;
+				@include vw(margin-left,8px);
+				&:first-child{margin-left:0;}
+			}
+		}
+	}
+
+
+
 }
