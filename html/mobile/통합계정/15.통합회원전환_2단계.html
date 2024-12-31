@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8" />
+		<title>상상로스쿨</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta property="og:title" content="상상로스쿨" />
+		<meta property="og:image" content="../../../assets/images/og.png" />
+		<meta property="og:description" content="LEET에 대한 가장 앞선 생각, 상상로스쿨에서 시작합니다." />
+		<meta name="google-site-verification" content="" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, height=device-height, maximum-scale=1.0" />
+		<link rel="shortcut icon" href="../../../assets/images/favicon.ico" />
+		<meta name="keyword" content="상상로스쿨" />
+		<meta name="title" content="상상로스쿨" />
+		<meta name="description" content="LEET에 대한 가장 앞선 생각, 상상로스쿨에서 시작합니다." />
+		<meta property="WT.ti" content="" />
+		<meta name="DCS.dcsuri" content="" />
+		<meta name="robots" content="index, follow" />
+
+		<link rel="stylesheet" href="../../../assets/libs/slick/slick.css" />
+		<link rel="stylesheet" href="../../../assets/css/mobile.css" />
+
+		<script src="../../../assets/libs/jquery/jquery-3.7.1.min.js"></script>
+		<script src="../../../assets/libs/slick/slick-1.6.0.min.js"></script>
+		<script src="../../../assets/libs/masonry/masonry.pkgd.min.js"></script>
+	</head>
+	<body>
+		<div id="wrap">
+			<div id="container">
+				<header id="header">
+					<div class="header-main">
+						<div class="wrap">
+							<h1 class="header-logo">
+								<a href="javascript:;"><img src="../../../assets/images/mobile/logo.svg" alt="logo" /></a>
+							</h1>
+							<div class="header-util">
+								<a href="javascript:mypageLayerOpen();" class="header-mypage-icon"><img src="../../../assets/images/mobile/btn_mypage.svg" alt="마이페이지" /></a>
+								<a href="javascript:menuLayerOpen();" class="header-menu-icon">
+									<img src="../../../assets/images/mobile/btn_menu.svg" alt="" />
+								</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="header-layer-gnb">
+						<a href="javascript:menuLayerClose();" class="btn-layer-close"><img src="../../../assets/images/mobile/btn_layer_close.svg" alt="gnb" /></a>
+						<div class="header-login">
+							<div class="logout">
+								<a href="javascript:;"><strong>통합로그인</strong></a>
+								<a href="javascript:;"><span>통합회원 가입</span></a>
+							</div>
+
+							<div class="login">
+								<a href="javascript:;"><strong>홍길동 님</strong></a>
+								<a href="javascript:;"><span>로그아웃</span></a>
+							</div>
+						</div>
+
+						<div class="header-myInfo">
+							<dl>
+								<dt>
+									<img src="../../../assets/images/mobile/icon_class.svg" alt="" />
+									<span>수강중인 강좌</span>
+								</dt>
+								<dd>
+									<strong>999</strong>
+								</dd>
+							</dl>
+							<dl>
+								<dt>
+									<img src="../../../assets/images/mobile/icon_cart.svg" alt="" />
+									<span>장바구니</span>
+								</dt>
+								<dd>
+									<strong>999</strong>
+								</dd>
+							</dl>
+						</div>
+						<ul class="gnb-list">
+							<li>
+								<a href="javascript:;"> LEET PASS </a>
+							</li>
+							<li>
+								<a href="javascript:;"> 교수소개 </a>
+							</li>
+							<li class="active">
+								<a href="javascript:;"> 전체강좌 </a>
+							</li>
+							<li>
+								<a href="javascript:;"> 전국모의고사 </a>
+							</li>
+							<li>
+								<a href="javascript:;"> 강남캠퍼스 </a>
+							</li>
+						</ul>
+						<ul class="util-list">
+							<li>
+								<a href="javascript:;"> 마이페이지 </a>
+							</li>
+							<li>
+								<a href="javascript:;"> 고객센터 </a>
+							</li>
+						</ul>
+					</div>
+
+					<div class="header-layer-mypage">
+						<a href="javascript:mypageLayerClose();" class="btn-layer-close"><img src="../../../assets/images/mobile/btn_layer_close.svg" alt="gnb" /></a>
+
+						<div class="header-mypage-title">마이페이지</div>
+						<div class="header-mypage-gnb">
+							<div class="header-mypage-menu">
+								<p class="mypage-main-menu">내강의실</p>
+								<ul class="mypage-sub-menu">
+									<li>
+										<a href="javascript:;"> 수강중인 강좌 </a>
+									</li>
+									<li>
+										<a href="javascript:;"> 학원 강좌 </a>
+									</li>
+								</ul>
+							</div>
+							<div class="header-mypage-menu">
+								<p class="mypage-main-menu">결제정보</p>
+								<ul class="mypage-sub-menu">
+									<li>
+										<a href="javascript:;"> 장바구니 </a>
+									</li>
+									<li>
+										<a href="javascript:;"> 주문/배송 조회 </a>
+									</li>
+								</ul>
+							</div>
+
+							<div class="header-mypage-menu">
+								<ul class="mypage-sub-menu">
+									<li>
+										<a href="javascript:;"> 나의문의 </a>
+									</li>
+								</ul>
+							</div>
+
+							<div class="header-mypage-menu">
+								<p class="mypage-main-menu">개인정보</p>
+								<ul class="mypage-sub-menu">
+									<li>
+										<a href="javascript:;"> 개인정보 수정 </a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</header>
+
+				<div id="contents" class="member">
+					<div class="section-join-title">
+						<div class="wrap">
+							<div class="join-title">통합회원 전환</div>
+							<div class="join-step-list">
+								<ul>
+									<li>
+										<span class="num">1</span>
+										<p>약관 동의</p>
+									</li>
+									<li class="active">
+										<span class="num">2</span>
+										<p>대상 확인</p>
+									</li>
+									<li>
+										<span class="num">3</span>
+										<p>정보 입력</p>
+									</li>
+									<li>
+										<span class="num">4</span>
+										<p>가입 완료</p>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="hr"></div>
+
+					<div class="section-join-content">
+						<div class="wrap">
+							<div class="radio-box">
+								<p class="section-join-content__title">이용자 정보 확인</p>
+							</div>
+							<div class="agree-box type-list">
+								<dl>
+									<dt>· 아이디</dt>
+									<dd>sangsang</dd>
+								</dl>
+								<dl>
+									<dt>· 이름</dt>
+									<dd>홍길동</dd>
+								</dl>
+								<dl>
+									<dt>· 생년월일</dt>
+									<dd>YYYYMMDD</dd>
+								</dl>
+								<dl>
+									<dt>· 등록이메일</dt>
+									<dd>sangsang@gmail.com</dd>
+								</dl>
+								<dl>
+									<dt>· 휴대폰번호</dt>
+									<dd>01012345678</dd>
+								</dl>
+							</div>
+						</div>
+					</div>
+					<div class="hr"></div>
+
+					<div class="section-join-content">
+						<div class="wrap">
+							<div class="radio-box">
+								<p class="section-join-content__title">가입된 계정정보 목록</p>
+								<p class="section-join-content__desc">아래 계정은 현재 가입 되어 있는 회원님의 계정 정보입니다. 통합 진행 시 사용하실 계정을 선택해주시기 바랍니다. 선택하신 계정 정보로 통합 절차가 진행되며, 완료 시 (주)이매진피앤엠의 모든사이트를 이용하실 수 있습니다. 만약 본인이 가입하지 않은 정보가 포함되어 있거나, 가입한 정보가 보이지 않는 경우 고객센터 (02-582-3359)로 연락 부탁드립니다.</p>
+							</div>
+							<div class="agree-box-wrap">
+								<div class="form-control border-bottom-line">
+									<span class="fake-checkbox">
+										<input type="checkbox" id="terms1" class="checkbox" />
+										<label for="terms1">상상모의고사</label>
+									</span>
+								</div>
+								<div class="agree-box type-list">
+									<dl>
+										<dt>· 아이디</dt>
+										<dd>sangsang</dd>
+									</dl>
+									<dl>
+										<dt>· 이름</dt>
+										<dd>홍길동</dd>
+									</dl>
+									<dl>
+										<dt>· 생년월일</dt>
+										<dd>YYYYMMDD</dd>
+									</dl>
+									<dl>
+										<dt>· 등록이메일</dt>
+										<dd>sangsang@gmail.com</dd>
+									</dl>
+									<dl>
+										<dt>· 휴대폰번호</dt>
+										<dd>01012345678</dd>
+									</dl>
+								</div>
+							</div>
+
+							<div class="action flex flex-between">
+								<a href="javascript:;" class="btn large full">이전</a>
+								<a href="javascript:;" class="btn large btn-brown full">다음</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- 팝업 -->
+		</div>
+
+		<script src="../../../assets/js/m.script.js"></script>
+		<script></script>
+	</body>
+</html>
