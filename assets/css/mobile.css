@@ -579,18 +579,21 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 #wrap .popup-page .popup-title dl {
   display: flex;
 }
-#wrap .popup-page .popup-title dl dt, #wrap .popup-page .popup-title dl dd {
+#wrap .popup-page .popup-title dl dt,
+#wrap .popup-page .popup-title dl dd {
   font-size: 3.7333333333vw;
   line-height: 6.3466666667vw;
   font-weight: 400;
 }
 @media screen and (min-width: 375px) {
-  #wrap .popup-page .popup-title dl dt, #wrap .popup-page .popup-title dl dd {
+  #wrap .popup-page .popup-title dl dt,
+  #wrap .popup-page .popup-title dl dd {
     font-size: 14px;
   }
 }
 @media screen and (min-width: 375px) {
-  #wrap .popup-page .popup-title dl dt, #wrap .popup-page .popup-title dl dd {
+  #wrap .popup-page .popup-title dl dt,
+  #wrap .popup-page .popup-title dl dd {
     line-height: 23.8px;
   }
 }
@@ -659,23 +662,27 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
     margin-top: 20px;
   }
 }
-#wrap .popup-page .popup-cont .box .table-row th, #wrap .popup-page .popup-cont .box .table-row td {
+#wrap .popup-page .popup-cont .box .table-row th,
+#wrap .popup-page .popup-cont .box .table-row td {
   padding: 2.1333333333vw 3.2vw;
   font-size: 3.4666666667vw;
   line-height: 5.8933333333vw;
 }
 @media screen and (min-width: 375px) {
-  #wrap .popup-page .popup-cont .box .table-row th, #wrap .popup-page .popup-cont .box .table-row td {
+  #wrap .popup-page .popup-cont .box .table-row th,
+  #wrap .popup-page .popup-cont .box .table-row td {
     padding: 8px 12px;
   }
 }
 @media screen and (min-width: 375px) {
-  #wrap .popup-page .popup-cont .box .table-row th, #wrap .popup-page .popup-cont .box .table-row td {
+  #wrap .popup-page .popup-cont .box .table-row th,
+  #wrap .popup-page .popup-cont .box .table-row td {
     font-size: 13px;
   }
 }
 @media screen and (min-width: 375px) {
-  #wrap .popup-page .popup-cont .box .table-row th, #wrap .popup-page .popup-cont .box .table-row td {
+  #wrap .popup-page .popup-cont .box .table-row th,
+  #wrap .popup-page .popup-cont .box .table-row td {
     line-height: 22.1px;
   }
 }
@@ -1007,7 +1014,8 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 #wrap .popup-page .line-box dl + dl {
   margin-top: 20px;
 }
-#wrap .popup-page .line-box dl dt, #wrap .popup-page .line-box dl dd {
+#wrap .popup-page .line-box dl dt,
+#wrap .popup-page .line-box dl dd {
   color: #2C2923;
   font-size: 3.7333333333vw;
   line-height: 6.3466666667vw;
@@ -1018,12 +1026,14 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   box-sizing: border-box;
 }
 @media screen and (min-width: 375px) {
-  #wrap .popup-page .line-box dl dt, #wrap .popup-page .line-box dl dd {
+  #wrap .popup-page .line-box dl dt,
+  #wrap .popup-page .line-box dl dd {
     font-size: 14px;
   }
 }
 @media screen and (min-width: 375px) {
-  #wrap .popup-page .line-box dl dt, #wrap .popup-page .line-box dl dd {
+  #wrap .popup-page .line-box dl dt,
+  #wrap .popup-page .line-box dl dd {
     line-height: 23.8px;
   }
 }
@@ -1149,7 +1159,8 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   width: 100%;
   min-height: auto;
 }
-#wrap #popupLayerVideo .popup-content iframe, #wrap #popupLayerVideo .popup-content video {
+#wrap #popupLayerVideo .popup-content iframe,
+#wrap #popupLayerVideo .popup-content video {
   position: absolute;
   top: 0;
   left: 0;
@@ -1241,98 +1252,126 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
     min-height: 152px;
   }
 }
-#wrap #popupMypageReviewUpdate .form-control .textarea, #wrap #popupMypageReviewWrite .form-control .textarea {
+#wrap #popupMypageReviewUpdate .form-control .textarea,
+#wrap #popupMypageReviewWrite .form-control .textarea {
   height: 115.4666666667vw;
 }
 @media screen and (min-width: 375px) {
-  #wrap #popupMypageReviewUpdate .form-control .textarea, #wrap #popupMypageReviewWrite .form-control .textarea {
+  #wrap #popupMypageReviewUpdate .form-control .textarea,
+  #wrap #popupMypageReviewWrite .form-control .textarea {
     height: 433px;
   }
 }
-#wrap .popup-coursePeriod .form-control .fake-checkbox label, #wrap .popup-coursePause .form-control .fake-checkbox label {
+#wrap .popup-coursePeriod .form-control .fake-checkbox label,
+#wrap .popup-coursePause .form-control .fake-checkbox label {
   align-items: center;
   padding-top: 0;
 }
-#wrap .popup-coursePeriod .lecture-box, #wrap .popup-coursePause .lecture-box {
+#wrap .popup-coursePeriod .lecture-box,
+#wrap .popup-coursePause .lecture-box {
   padding-bottom: 8.5333333333vw;
 }
 @media screen and (min-width: 375px) {
-  #wrap .popup-coursePeriod .lecture-box, #wrap .popup-coursePause .lecture-box {
+  #wrap .popup-coursePeriod .lecture-box,
+  #wrap .popup-coursePause .lecture-box {
     padding-bottom: 32px;
   }
 }
-#wrap .popup-coursePeriod .lecture-box dl, #wrap .popup-coursePause .lecture-box dl {
+#wrap .popup-coursePeriod .lecture-box dl,
+#wrap .popup-coursePause .lecture-box dl {
   margin-top: 8.5333333333vw;
 }
 @media screen and (min-width: 375px) {
-  #wrap .popup-coursePeriod .lecture-box dl, #wrap .popup-coursePause .lecture-box dl {
+  #wrap .popup-coursePeriod .lecture-box dl,
+  #wrap .popup-coursePause .lecture-box dl {
     margin-top: 32px;
   }
 }
-#wrap .popup-coursePeriod .lecture-box dl:first-child, #wrap .popup-coursePause .lecture-box dl:first-child {
+#wrap .popup-coursePeriod .lecture-box dl:first-child,
+#wrap .popup-coursePause .lecture-box dl:first-child {
   margin-top: 0;
 }
-#wrap .popup-coursePeriod .lecture-box dl dt, #wrap .popup-coursePeriod .lecture-box dl dd, #wrap .popup-coursePause .lecture-box dl dt, #wrap .popup-coursePause .lecture-box dl dd {
+#wrap .popup-coursePeriod .lecture-box dl dt,
+#wrap .popup-coursePeriod .lecture-box dl dd,
+#wrap .popup-coursePause .lecture-box dl dt,
+#wrap .popup-coursePause .lecture-box dl dd {
   font-weight: 400;
   font-size: 3.7333333333vw;
   color: #2C2923;
   line-height: 6.3466666667vw;
 }
 @media screen and (min-width: 375px) {
-  #wrap .popup-coursePeriod .lecture-box dl dt, #wrap .popup-coursePeriod .lecture-box dl dd, #wrap .popup-coursePause .lecture-box dl dt, #wrap .popup-coursePause .lecture-box dl dd {
+  #wrap .popup-coursePeriod .lecture-box dl dt,
+  #wrap .popup-coursePeriod .lecture-box dl dd,
+  #wrap .popup-coursePause .lecture-box dl dt,
+  #wrap .popup-coursePause .lecture-box dl dd {
     font-size: 14px;
   }
 }
 @media screen and (min-width: 375px) {
-  #wrap .popup-coursePeriod .lecture-box dl dt, #wrap .popup-coursePeriod .lecture-box dl dd, #wrap .popup-coursePause .lecture-box dl dt, #wrap .popup-coursePause .lecture-box dl dd {
+  #wrap .popup-coursePeriod .lecture-box dl dt,
+  #wrap .popup-coursePeriod .lecture-box dl dd,
+  #wrap .popup-coursePause .lecture-box dl dt,
+  #wrap .popup-coursePause .lecture-box dl dd {
     line-height: 23.8px;
   }
 }
-#wrap .popup-coursePeriod .lecture-box dl dt, #wrap .popup-coursePause .lecture-box dl dt {
+#wrap .popup-coursePeriod .lecture-box dl dt,
+#wrap .popup-coursePause .lecture-box dl dt {
   font-weight: 600;
   font-size: 3.4666666667vw;
   margin-bottom: 2.1333333333vw;
 }
 @media screen and (min-width: 375px) {
-  #wrap .popup-coursePeriod .lecture-box dl dt, #wrap .popup-coursePause .lecture-box dl dt {
+  #wrap .popup-coursePeriod .lecture-box dl dt,
+  #wrap .popup-coursePause .lecture-box dl dt {
     font-size: 13px;
   }
 }
 @media screen and (min-width: 375px) {
-  #wrap .popup-coursePeriod .lecture-box dl dt, #wrap .popup-coursePause .lecture-box dl dt {
+  #wrap .popup-coursePeriod .lecture-box dl dt,
+  #wrap .popup-coursePause .lecture-box dl dt {
     margin-bottom: 8px;
   }
 }
-#wrap .popup-coursePeriod .lecture-box dl dd, #wrap .popup-coursePause .lecture-box dl dd {
+#wrap .popup-coursePeriod .lecture-box dl dd,
+#wrap .popup-coursePause .lecture-box dl dd {
   position: relative;
 }
-#wrap .popup-coursePeriod .lecture-box dl dd strong, #wrap .popup-coursePause .lecture-box dl dd strong {
+#wrap .popup-coursePeriod .lecture-box dl dd strong,
+#wrap .popup-coursePause .lecture-box dl dd strong {
   font-weight: 600;
 }
-#wrap .popup-coursePeriod .lecture-box dl dd .custom-select, #wrap .popup-coursePause .lecture-box dl dd .custom-select {
+#wrap .popup-coursePeriod .lecture-box dl dd .custom-select,
+#wrap .popup-coursePause .lecture-box dl dd .custom-select {
   width: 43.4666666667vw;
   background-color: #FFFFFC;
 }
 @media screen and (min-width: 375px) {
-  #wrap .popup-coursePeriod .lecture-box dl dd .custom-select, #wrap .popup-coursePause .lecture-box dl dd .custom-select {
+  #wrap .popup-coursePeriod .lecture-box dl dd .custom-select,
+  #wrap .popup-coursePause .lecture-box dl dd .custom-select {
     width: 163px;
   }
 }
-#wrap .popup-coursePeriod .lecture-box dl dd .form-control .select, #wrap .popup-coursePause .lecture-box dl dd .form-control .select {
+#wrap .popup-coursePeriod .lecture-box dl dd .form-control .select,
+#wrap .popup-coursePause .lecture-box dl dd .form-control .select {
   width: 43.4666666667vw;
   background-color: #FFFFFC;
 }
 @media screen and (min-width: 375px) {
-  #wrap .popup-coursePeriod .lecture-box dl dd .form-control .select, #wrap .popup-coursePause .lecture-box dl dd .form-control .select {
+  #wrap .popup-coursePeriod .lecture-box dl dd .form-control .select,
+  #wrap .popup-coursePause .lecture-box dl dd .form-control .select {
     width: 163px;
   }
 }
-#wrap .popup-coursePeriod .lecture-box dl dd .form-control .text, #wrap .popup-coursePause .lecture-box dl dd .form-control .text {
+#wrap .popup-coursePeriod .lecture-box dl dd .form-control .text,
+#wrap .popup-coursePause .lecture-box dl dd .form-control .text {
   width: 43.4666666667vw;
   background-color: #FFFFFC;
 }
 @media screen and (min-width: 375px) {
-  #wrap .popup-coursePeriod .lecture-box dl dd .form-control .text, #wrap .popup-coursePause .lecture-box dl dd .form-control .text {
+  #wrap .popup-coursePeriod .lecture-box dl dd .form-control .text,
+  #wrap .popup-coursePause .lecture-box dl dd .form-control .text {
     width: 163px;
   }
 }
@@ -1746,7 +1785,8 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 #wrap #popupCalendar .calender-box .calender-table .table-row tr {
   border-bottom: none;
 }
-#wrap #popupCalendar .calender-box .calender-table .table-row tr th, #wrap #popupCalendar .calender-box .calender-table .table-row tr td {
+#wrap #popupCalendar .calender-box .calender-table .table-row tr th,
+#wrap #popupCalendar .calender-box .calender-table .table-row tr td {
   padding: 0;
   line-height: 1;
   -webkit-box-sizing: border-box;
@@ -2325,18 +2365,21 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 #wrap .popup .popup-title dl {
   display: flex;
 }
-#wrap .popup .popup-title dl dt, #wrap .popup .popup-title dl dd {
+#wrap .popup .popup-title dl dt,
+#wrap .popup .popup-title dl dd {
   font-size: 3.7333333333vw;
   line-height: 6.3466666667vw;
   font-weight: 400;
 }
 @media screen and (min-width: 375px) {
-  #wrap .popup .popup-title dl dt, #wrap .popup .popup-title dl dd {
+  #wrap .popup .popup-title dl dt,
+  #wrap .popup .popup-title dl dd {
     font-size: 14px;
   }
 }
 @media screen and (min-width: 375px) {
-  #wrap .popup .popup-title dl dt, #wrap .popup .popup-title dl dd {
+  #wrap .popup .popup-title dl dt,
+  #wrap .popup .popup-title dl dd {
     line-height: 23.8px;
   }
 }
@@ -2390,18 +2433,21 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 #wrap .popup .popup-cont .box .table-row {
   margin-top: 20px;
 }
-#wrap .popup .popup-cont .box .table-row th, #wrap .popup .popup-cont .box .table-row td {
+#wrap .popup .popup-cont .box .table-row th,
+#wrap .popup .popup-cont .box .table-row td {
   padding: 8px 12px;
   font-size: 3.4666666667vw;
   line-height: 5.8933333333vw;
 }
 @media screen and (min-width: 375px) {
-  #wrap .popup .popup-cont .box .table-row th, #wrap .popup .popup-cont .box .table-row td {
+  #wrap .popup .popup-cont .box .table-row th,
+  #wrap .popup .popup-cont .box .table-row td {
     font-size: 13px;
   }
 }
 @media screen and (min-width: 375px) {
-  #wrap .popup .popup-cont .box .table-row th, #wrap .popup .popup-cont .box .table-row td {
+  #wrap .popup .popup-cont .box .table-row th,
+  #wrap .popup .popup-cont .box .table-row td {
     line-height: 22.1px;
   }
 }
@@ -2567,7 +2613,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 #wrap #popupReport .popup-wrap .popup-cont .report-box .report-title {
   font-size: 3.4666666667vw;
   font-weight: 600;
-  color: #2C2923;
+  color: #2c2923;
   line-height: 5.8933333333vw;
   margin-bottom: 2.1333333333vw;
 }
@@ -2594,7 +2640,8 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
     margin-top: 8px;
   }
 }
-#wrap #popupReport .popup-wrap .popup-cont .report-box .report-table .table-row tr th, #wrap #popupReport .popup-wrap .popup-cont .report-box .report-table .table-row tr td {
+#wrap #popupReport .popup-wrap .popup-cont .report-box .report-table .table-row tr th,
+#wrap #popupReport .popup-wrap .popup-cont .report-box .report-table .table-row tr td {
   font-weight: 400;
   font-size: 3.4666666667vw;
   padding: 2.1333333333vw 3.7333333333vw;
@@ -2602,23 +2649,27 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   text-align: left;
 }
 @media screen and (min-width: 375px) {
-  #wrap #popupReport .popup-wrap .popup-cont .report-box .report-table .table-row tr th, #wrap #popupReport .popup-wrap .popup-cont .report-box .report-table .table-row tr td {
+  #wrap #popupReport .popup-wrap .popup-cont .report-box .report-table .table-row tr th,
+  #wrap #popupReport .popup-wrap .popup-cont .report-box .report-table .table-row tr td {
     font-size: 13px;
   }
 }
 @media screen and (min-width: 375px) {
-  #wrap #popupReport .popup-wrap .popup-cont .report-box .report-table .table-row tr th, #wrap #popupReport .popup-wrap .popup-cont .report-box .report-table .table-row tr td {
+  #wrap #popupReport .popup-wrap .popup-cont .report-box .report-table .table-row tr th,
+  #wrap #popupReport .popup-wrap .popup-cont .report-box .report-table .table-row tr td {
     padding: 8px 14px;
   }
 }
-#wrap #popupReport .popup-wrap .popup-cont .report-box .report-table .table-row tr th:last-child, #wrap #popupReport .popup-wrap .popup-cont .report-box .report-table .table-row tr td:last-child {
+#wrap #popupReport .popup-wrap .popup-cont .report-box .report-table .table-row tr th:last-child,
+#wrap #popupReport .popup-wrap .popup-cont .report-box .report-table .table-row tr td:last-child {
   border-right: 0;
 }
-#wrap #popupReport .popup-wrap .popup-cont .report-box .report-table .table-row.table-center tr th, #wrap #popupReport .popup-wrap .popup-cont .report-box .report-table .table-row.table-center tr td {
+#wrap #popupReport .popup-wrap .popup-cont .report-box .report-table .table-row.table-center tr th,
+#wrap #popupReport .popup-wrap .popup-cont .report-box .report-table .table-row.table-center tr td {
   text-align: center;
 }
 #wrap #popupReport .popup-wrap .popup-cont .report-box .report-graph {
-  background-color: #D9D9D9;
+  background-color: #d9d9d9;
   height: 80vw;
 }
 @media screen and (min-width: 375px) {
@@ -2641,6 +2692,34 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 #wrap #popupAgreeCheck .popup-action a {
   width: auto;
+}
+#wrap .popup-alert .popup-wrap {
+  border-radius: 2.1333333333vw;
+  width: 89.3333333333vw;
+  padding: 9.6vw;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  max-width: calc(100vw - 40px);
+}
+@media screen and (min-width: 375px) {
+  #wrap .popup-alert .popup-wrap {
+    border-radius: 8px;
+  }
+}
+@media screen and (min-width: 375px) {
+  #wrap .popup-alert .popup-wrap {
+    width: 335px;
+  }
+}
+@media screen and (min-width: 375px) {
+  #wrap .popup-alert .popup-wrap {
+    padding: 36px;
+  }
+}
+#wrap .popup-alert .popup-text p {
+  font-size: 16px;
+  text-align: center;
+  color: #2C2923;
 }
 
 #wrap {
@@ -2671,7 +2750,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   color: #7A746A !important;
 }
 #wrap .color-point {
-  color: #E50000 !important;
+  color: #e50000 !important;
 }
 #wrap .text-left {
   text-align: left !important;
@@ -2822,7 +2901,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   display: block;
   font-weight: 400;
   font-size: 4vw;
-  color: #504B42;
+  color: #504b42;
 }
 @media screen and (min-width: 375px) {
   #wrap .tab-menu ul li a {
@@ -2836,6 +2915,12 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 #wrap .tab-menu ul li.active a {
   color: #2C2923;
   font-weight: 400;
+}
+#wrap .tab-view {
+  display: none;
+}
+#wrap .tab-view.active {
+  display: block;
 }
 #wrap .tab-small-menu ul {
   overflow: hidden;
@@ -4249,7 +4334,8 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
-#wrap .table-row tr th, #wrap .table-row tr td {
+#wrap .table-row tr th,
+#wrap .table-row tr td {
   padding: 2.1333333333vw 4.2666666667vw;
   text-align: center;
   color: #2C2923;
@@ -4261,17 +4347,20 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   word-break: break-all;
 }
 @media screen and (min-width: 375px) {
-  #wrap .table-row tr th, #wrap .table-row tr td {
+  #wrap .table-row tr th,
+  #wrap .table-row tr td {
     padding: 8px 16px;
   }
 }
 @media screen and (min-width: 375px) {
-  #wrap .table-row tr th, #wrap .table-row tr td {
+  #wrap .table-row tr th,
+  #wrap .table-row tr td {
     font-size: 14px;
   }
 }
 @media screen and (min-width: 375px) {
-  #wrap .table-row tr th, #wrap .table-row tr td {
+  #wrap .table-row tr th,
+  #wrap .table-row tr td {
     line-height: 23.8px;
   }
 }
@@ -4676,11 +4765,13 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 #wrap .toggle-box dl {
   text-align: left;
 }
-#wrap .toggle-box dl dt, #wrap .toggle-box dl dd {
+#wrap .toggle-box dl dt,
+#wrap .toggle-box dl dd {
   padding: 5.3333333333vw 0vw;
 }
 @media screen and (min-width: 375px) {
-  #wrap .toggle-box dl dt, #wrap .toggle-box dl dd {
+  #wrap .toggle-box dl dt,
+  #wrap .toggle-box dl dd {
     padding: 20px 0px;
   }
 }
@@ -12874,4 +12965,6 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   text-align: center;
   justify-content: center;
   align-items: center;
-}/*# sourceMappingURL=mobile.css.map */
+}
+
+/*# sourceMappingURL=mobile.css.map */

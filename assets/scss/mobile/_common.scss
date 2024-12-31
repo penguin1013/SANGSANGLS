@@ -1,1038 +1,1219 @@
 #wrap {
-    font-family: $font-pretendard;
-    color: $color-black;
-	font-weight:600;
-	background-color:$color-white;
+  font-family: $font-pretendard;
+  color: $color-black;
+  font-weight: 600;
+  background-color: $color-white;
 
-	img{max-width:100%;}
-	a{display:inline-block;}
-    .pt-0{padding-top:0 !important;}
-	
-	.underline{
-		text-decoration: underline;
-	}
+  img {
+    max-width: 100%;
+  }
+  a {
+    display: inline-block;
+  }
+  .pt-0 {
+    padding-top: 0 !important;
+  }
 
-	.highlight {
-        color: $color-brown !important;
+  .underline {
+    text-decoration: underline;
+  }
+
+  .highlight {
+    color: $color-brown !important;
+  }
+
+  .color-black {
+    color: $color-black !important;
+  }
+
+  .color-gray {
+    color: $color-gray !important;
+  }
+
+  .color-point {
+    color: #e50000 !important;
+  }
+
+  .text-left {
+    text-align: left !important;
+  }
+
+  .hr {
+    border-top: 1px solid $color-light-brown2;
+    background-color: $color-light-beige;
+    @include vw(height, 10px);
+  }
+
+  .border-line-box {
+    border: 1px solid $color-light-brown;
+    @include vw(padding, 16px 20px);
+  }
+
+  .border-top-line {
+    border-top: 1px solid $color-light-brown;
+    @include vw(padding-top, 20px);
+  }
+
+  .border-bottom-line {
+    border-bottom: 1px solid $color-light-brown;
+  }
+
+  .holder {
+    @include vw(padding, 24px 20px 32px);
+  }
+
+  .icon-new {
+    display: inline-block;
+    line-height: 1;
+    @include vw(margin-left, 8px);
+    background: url(../images/icon_new.svg) no-repeat center top;
+    @include vw(width, 16px);
+    @include vw(height, 16px);
+    background-size: cover;
+    font-size: 0;
+    vertical-align: middle;
+  }
+
+  .tab-menu {
+    @include vw(padding, 20px 20px 20px 20px);
+
+    @media screen and (max-width: 600px) {
+      &.three-or-more {
+        @include vw(padding, 24px 0px 24px 20px);
+
+        ul {
+          li {
+            &:last-child {
+              @include vw(margin-right, 20px);
+            }
+          }
+        }
+      }
     }
 
-    .color-black {
-        color: $color-black !important;
+    ul {
+      overflow: hidden;
+      white-space: nowrap;
+      overflow-x: auto;
+      //display: flex;
+      //align-items:center;
+      text-align: center;
+      width: 100%;
+      @include vw(height, 58px);
+      @include vw(line-height, 58px);
+      margin: 0 auto;
+      box-sizing: border-box;
+      font-size: 0;
+      &::-webkit-scrollbar {
+        display: none;
+      }
+
+      li {
+        @extend %variable;
+
+        position: relative;
+        display: inline-block;
+        @media screen and (max-width: 600px) {
+          @include vw(min-width, 96px);
+        }
+        height: 100%;
+        @include boxSizing(border-box);
+        background-color: $color-light-beige;
+        border: 1px solid $color-light-brown;
+        border-left: 0;
+        text-align: center;
+        &:first-child {
+          border-left: 1px solid $color-light-brown;
+        }
+
+        a {
+          display: block;
+          font-weight: 400;
+          @include vw(font-size, 15px);
+          color: #504b42;
+        }
+
+        &.active {
+          background-color: $color-white;
+          border-bottom: 0;
+
+          a {
+            color: $color-black;
+            font-weight: 400;
+          }
+        }
+      }
     }
+  }
 
-	.color-gray {
-        color: $color-gray !important;
+  .tab-view {
+    display: none;
+    &.active {
+      display: block;
     }
+  }
 
-	.color-point {
-        color: #E50000 !important;
-    }
+  .tab-small-menu {
+    ul {
+      overflow: hidden;
+      white-space: nowrap;
+      overflow-x: auto;
+      display: flex;
+      align-items: center;
+      @include vw(height, 46px);
+      margin: 0 auto;
+      box-sizing: border-box;
+      border-bottom: 1px solid $color-light-brown;
+      @include vw(margin-left, 20px);
+      &::-webkit-scrollbar {
+        display: none;
+      }
 
-    .text-left{text-align:left !important;}
-
-	.hr{
-		border-top:1px solid $color-light-brown2;
-		background-color:$color-light-beige;
-		@include vw(height,10px);
-	}
-
-	.border-line-box{
-		border:1px solid $color-light-brown;
-		@include vw(padding,16px 20px);
-	}
-
-	.border-top-line{
-		border-top:1px solid $color-light-brown;
-		@include vw(padding-top,20px);
-	}
-
-	.border-bottom-line{
-		border-bottom:1px solid $color-light-brown;
-	}
-
-	.holder{
-		@include vw(padding,24px 20px 32px);
-	}
-
-	.icon-new {
-		display: inline-block;
-		line-height: 1;
-		@include vw(margin-left, 8px);
-		background: url(../images/icon_new.svg) no-repeat center top;
-		@include vw(width, 16px);
-		@include vw(height, 16px);
-		background-size:cover;
-		font-size: 0;
-		vertical-align: middle;
-	}
-
-
-
-	.tab-menu{
-		@include vw(padding, 20px 20px 20px 20px);
-
-		@media screen and (max-width: 600px) {
-			&.three-or-more {
-				@include vw(padding, 24px 0px 24px 20px);
-
-				ul{
-					li{
-						&:last-child{
-							@include vw(margin-right,20px);
-						}
-					}
-				}
-			}
-		}
-
-		ul{
-			overflow: hidden;
-			white-space: nowrap;
-			overflow-x: auto;
-			//display: flex;
-			//align-items:center;
-			text-align:center;
-			width: 100%;
-			@include vw(height, 58px);
-			@include vw(line-height, 58px);
-			margin: 0 auto;
-			box-sizing: border-box;
-			font-size:0;
-			&::-webkit-scrollbar {
-				display: none;
-			}
-
-			li{
-				@extend %variable;
-
-				position:relative;
-				display:inline-block;
-				@media screen and (max-width: 600px) {
-					@include vw(min-width, 96px);
-				}
-				height:100%;
-				@include boxSizing(border-box);
-				background-color:$color-light-beige;
-				border:1px solid $color-light-brown;
-				border-left:0;
-				text-align:center;
-				&:first-child{
-					border-left:1px solid $color-light-brown;
-				}
-				
-				
-				a{
-					display:block;
-					font-weight:400;@include vw(font-size,15px);
-					color:#504B42;
-					
-					
-				}
-
-				&.active{
-					background-color:$color-white;
-					border-bottom:0;
-
-					a{
-						color:$color-black;
-						font-weight:400;
-						
-					}
-					
-				}
-			}
-		}
-	}
-
-	.tab-small-menu{
-		ul{
-			overflow: hidden;
-			white-space: nowrap;
-			overflow-x: auto;
-			display: flex;
-			align-items:center;
-			@include vw(height, 46px);
-			margin: 0 auto;
-			box-sizing: border-box;
-			border-bottom:1px solid $color-light-brown;
-			@include vw(margin-left,20px);
-			&::-webkit-scrollbar {
-				display: none;
-			}
-
-			li{
-				position:relative;
-				display: flex;
-				align-items:center;
-				height:100%;
-				@include vw(margin-right,8px);
-				
-				a{
-					display:inline-block;
-					font-weight:400;@include vw(font-size,15px);
-					@include vw(line-height,25.5px);
-					color:rgba(80, 75, 66, 1); //#504b42;
-					@include vw(padding,0 16px);
-				}
-
-				&.active{
-					&:after{
-						content:'';
-						display:block;
-						width:100%;
-						@include vw(height,2px);
-						background-color:$color-black;
-						position:absolute;left:0;bottom:0;
-					}
-
-					a{
-						color:$color-black;
-						font-weight:600;
-					}
-					
-				}
-			}
-		}
-	}
-
-	h3{
-		//font-weight:600;
-		//color:$color-brown;
-		color:$color-black;
-		font-weight:300;
-		@include vw(font-size,16px);
-		@include vw(line-height,27.2px);
-		@include vw(margin-bottom,8px);
-		strong{
-			font-weight:600;
-		}
-
-		.info-text{
-			font-weight:400;
-			@include vw(font-size,13px);
-			@include vw(line-height,22.1px);
-			color:$color-gray;
-
-		}
-	}
-
-	h4{
-		font-weight:600;
-		color:$color-black;
-		@include vw(font-size,18px);
-		@include vw(line-height,27px);
-		@include vw(margin-bottom,8px);
-
-		.action{
-			display:flex;
-			margin-left:auto;
-			align-items:center;
-			.btn{
-				@include vw(margin-left,8px);
-			}
-		}
-
-		.date{
-			font-weight:400;
-			color:$color-gray;
-			@include vw(font-size,13px);
-			@include vw(line-height,22.1px);
-		}
-	}
-
-	h5{
-		font-weight:400;
-		color:$color-black;
-		@include vw(font-size,20px);
-		@include vw(line-height,30px);
-		@include vw(margin-bottom,8px);
-	}
-
-
-
-
-	.count-box {
-		display:flex;
-		@include vw(width, 104px);
-		overflow: hidden;
-		border: 1px solid $color-light-brown;
-		background-color: $color-white;
-
-		.number {
-			@include vw(width, 40px);
-			text-align: center;
-			@include vw(line-height, 32px);
-			@include vw(font-size, 13px);
-			font-weight: 400;
-			color:$color-black;
-
-		}
-
-		button {
-			border:none;
-			@include vw(width, 32px);
-			@include vw(height, 32px);
-			background-color: $color-white;
-			background-repeat: no-repeat;
-			background-position: center center;
-			@include vw(background-size, 32px);
-			text-align:center;
-			cursor:pointer;
-			&.btn-minus {
-				background-image: url("../images/icon_minus.png");
-				border-right: 1px solid $color-light-brown;
-			}
-			&.btn-plus {
-				border-left: 1px solid $color-light-brown;
-				background-image: url("../images/icon_plus.png");
-			}
-		}
-	}
-
-
-	.price-box{
-		display:flex;
-		align-items: center;
-		.price-subject{color:$color-black;@include vw(font-size,12px);font-weight:600;}
-		.price-before{color:$color-light-gray;@include vw(font-size,12px);font-weight:400;text-decoration: line-through;@include vw(margin-right,8px);}
-		.price-after{color:$color-black;@include vw(font-size,12px);font-weight:600;}
-		.price-sale{@include vw(margin-right,8px);color:$color-brown;@include vw(font-size,12px);}
-		&.total{
-			.price-before{@include vw(font-size,14px);}
-			.price-after{@include vw(font-size,20px);}
-		}
-
-		.price-info{
-			display:flex;align-items: center;
-			.price-before{@include vw(font-size,12px);font-weight:400;color:$color-black;text-decoration:none;}
-			.price-text{
-				@include vw(font-size,12px);font-weight:400;@include vw(margin-left,12px);
-				color:$color-gray;@include vw(margin-right,4px);
-			}
-			.price-sale{@include vw(font-size,12px);font-weight:600;color:$color-brown;}
-		}
-	}
-
-	.nodata-box{
-        display:flex;
-        justify-content: center;
+      li {
+        position: relative;
+        display: flex;
         align-items: center;
-        text-align:center;
-		@include vw(min-height,184px);
-        .icon{@include vw(margin-bottom,8px);}
+        height: 100%;
+        @include vw(margin-right, 8px);
 
-		@include vw(font-size,14px);
-		font-weight:400;
-		@include vw(line-height,23.8px);
-        p{
-            color:$color-black;
-			@include vw(font-size,13px);
-            font-weight:400;
-			@include vw(line-height,22.1px);
-
-			&+p{
-				@include vw(margin-top,8px);
-			}
-        }
-    }
-
-	.notice{
-		color:$color-gray;
-		font-weight:400;
-		@include vw(font-size,12px);
-		@include vw(line-height,20.4px);
-		@include vw(margin-top,8px);
-	}
-
-	.form-text{
-		color:$color-gray;
-		font-weight:400;
-		@include vw(font-size,13px);
-		@include vw(line-height,22.1px);
-		@include vw(margin-top,8px);
-	}
-
-	.badge{
-		@include vw(margin-right,8px);
-		@include vw(font-size,11px);
-		@include vw(padding, 0 3.5px);
-		@include vw(height, 19px);
-		display:inline-block;
-		@include vw(border-width, 1px);
-        border-style: solid;
-        @include vw(border-radius, 2px);
-        background-color: $color-white;
-        @include boxSizing(border-box);
-		color:$color-black;
-		border-color:$color-light-brown;
-		@include vw(line-height,18.6px);
-		font-weight:600;
-		vertical-align:middle;
-
-		&.badge-brown{border-color:$color-brown;background-color: $color-brown;color:$color-white;}
-		&.badge-light-brown{border-color:$color-light-brown2;background-color: $color-light-brown2;}
-		&.badge-gray{border-color:$color-gray;background-color: $color-gray;color:$color-white;}
-		&.badge-black{border-color:$color-black;background-color: $color-black;color:$color-white;}
-		&.badge-light-gray{border-color:$color-light-gray;background-color: $color-light-gray;color:$color-white;}
-	}
-
-	.form-control {
-		font-size:0;
-        input::-webkit-outer-spin-button,
-        input::-webkit-inner-spin-button {
-            margin: 0;
-            -webkit-appearance: none;
-            appearance: none;
-        }
-        input[type="number"] { -moz-appearance: textfield; }
-
-		.select {
-            display: inline-block;
-            font-size: 0;
-            background: url('../images/icon_select_arrow.svg') no-repeat 99% center;
-            @include vw(background-size, 20px 20px);
-			width:100%;
-            select {
-                width: 100%;
-				@include vw(height,48px);
-                @include vw(padding, 12px 16px);
-                @include vw(font-size,14px);
-                font-weight:400;
-                border: 1px solid $color-light-brown;
-                color: $color-black; 
-                -webkit-appearance: none;
-                appearance: none;
-                font-family:$font-pretendard;
-                @include boxSizing(border-box);
-                &::-ms-expand { display: none; }
-                &::placeholder { color: $color-black; }
-               
-            }
-
-			&.noline{
-				select{
-					border:none;
-					
-				}
-			}
+        a {
+          display: inline-block;
+          font-weight: 400;
+          @include vw(font-size, 15px);
+          @include vw(line-height, 25.5px);
+          color: rgba(80, 75, 66, 1); //#504b42;
+          @include vw(padding, 0 16px);
         }
 
-		.text {
-            display:inline-block;
-			width:100%;
-            @include vw(padding, 8px 8px 8px 16px);
-            @include vw(font-size, 14px);
-            border: 1px solid $color-light-brown;
-            background: $color-white;
-            @include boxSizing(border-box);
-            color:$color-black;
-			@include vw( height,48px);
-            &::placeholder { color: $color-light-gray; @include vw(font-size, 14px);}
-            &.disabled{
-                background-color:$color-light-beige !important;
-                color:$color-gray;
-            }
-        }
-
-
-        .textarea {
+        &.active {
+          &:after {
+            content: "";
+            display: block;
             width: 100%;
-            @include vw(height, 396px);
-            @include vw(padding, 16px);
-            @include vw(font-size,14px);
-            font-weight:400;
-            @include vw(line-height,23.8px);
-            @include vw(border-width, 1px);
-            border-style: solid;
-            border-color: $color-light-brown;
-            resize: none;
-            @include boxSizing(border-box);
-            color:$color-black;
-            font-family:$font-pretendard;
-            &::placeholder { color: $color-light-gray;@include vw(font-size,14px);font-weight:400; }
-           
+            @include vw(height, 2px);
+            background-color: $color-black;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+          }
+
+          a {
+            color: $color-black;
+            font-weight: 600;
+          }
         }
+      }
+    }
+  }
 
-		.fake-file-box {
-            @extend %clearfix;
-			position:relative;
-			width:100%;
-            .fake-file-name {
-				width:100%;
-				border:1px solid $color-light-brown;
-				@include vw(padding, 9px 80px 9px 16px);
-            }
-            .fake-file {
-				position:absolute;right:16px;
-				top: 50%;
-				transform: translateY(-45%);
-                input[type="file"] { @extend .sr-only; }
-                label {
-					display:inline-block;
-                    @include vw(padding,5.5px 5px);
-                    text-align: center;
-                    @include vw(font-size,13px);
-                    color: $color-black;
-					border:1px solid $color-light-brown;
-                    cursor: pointer;
-					font-weight:400;
-					border-radius:2px;
-					line-height:1;
-                   
-                }
-            }
-        }
-
-        .fake-save-box{
-            position:relative;
-            .fake-input {
-				width:100%;
-				border:1px solid $color-light-brown;
-				@include vw(padding, 12px 54px 12px 8px);
-
-                &::placeholder{color:$color-light-gray;}
-            }
-
-            .fake-btn {
-				position:absolute;@include vw(right,12px);
-				top: 50%;
-				transform: translateY(-50%);
-                label {
-					display:flex;
-                    justify-content: center;
-                    align-items: center;
-                    @include vw(width,35px);
-                    @include vw(height,26px);
-                    text-align: center;
-                    @include vw(font-size,13px);
-                    color: $color-black;
-					border:1px solid $color-light-brown;
-                    cursor: pointer;
-					font-weight:400;
-					@include vw(border-radius,2px);
-                   
-                }
-            }
-        }
-
-		.fake-checkbox {
-			// margin-top:8px;
-			// &:first-child{margin-top:0;}
-			display:inline-block;
-            label {
-                display:flex;
-                background: url('../images/icon_checkbox_check.svg') no-repeat left top;
-                @include vw(background-size, 24px 24px);
-				@include vw(min-height, 24px);
-                //cursor: pointer;
-				font-weight:400;
-				@include vw(font-size,14px);
-				@include vw(padding-left, 30px);
-				@include vw(padding-top, 3px);
-				.badge{
-					display: inline-block;
-					@include vw(min-width,33px);
-					text-align:center;
-				}
-
-            }
-            input {
-                @extend .sr-only;
-                &:checked + label { background-image: url('../images/icon_checkbox_checked.svg'); }
-
-				 &.disabled + label{
-                    background-image: url('../images/icon_check_disable.svg'); 
-                }
-            }
-        }
-
-		.fake-radio {
-			// margin-top:8px;
-			// &:first-child{margin-top:0;}
-			display:inline-block;
-
-			&+.fake-radio{@include vw(margin-left, 20px);}
-            label {
-                display:flex;
-                background: url('../images/icon_radio_check.svg') no-repeat left top;
-                @include vw(background-size, 24px 24px);
-				@include vw(min-height, 24px);
-                //cursor: pointer;
-				font-weight:400;
-				@include vw(font-size,14px);
-				@include vw(padding-left, 30px);
-				@include vw(padding-top, 3px);
-				.badge{
-					display: inline-block;
-					@include vw(min-width,33px);
-					text-align:center;
-				}
-
-            }
-            input {
-                @extend .sr-only;
-                &:checked + label { background-image: url('../images/icon_radio_checked.svg'); }
-
-				 &.disabled + label{
-                    background-image: url('../images/icon_radio_disable.svg'); 
-                }
-            }
-        }
-		
-	}
-
-	.custom-select {
-		position:relative;
-		display: inline-block;
-		cursor: pointer;
-		@include boxSizing(border-box);
-		.selected {
-			border: 1px solid $color-light-brown;
-			display: flex;
-			justify-content: space-between;
-            align-items:center;
-			font-weight:400;
-			color: $color-black; 
-			@include vw(min-width,73px);
-			@include vw(height,36px);
-			@include vw(font-size,12px);
-			@include vw(padding,8px 40px 8px 12px);
-			font-family:$font-pretendard;
-			@include boxSizing(border-box);
-			background-color:$color-white;
-			background: url('../images/icon_select_arrow.svg') no-repeat 98% center;
-			@include vw(background-size, 20px 20px);
-
-            &.disabled{
-                background-color:$color-light-gray;
-                color:$color-gray;
-                background-image: url('../images/icon_select_arrow_gray.svg');
-            }
-		}
-
-	}
-
-	.checkbox-box{
-		display:flex;align-items:center;
-		flex-wrap:wrap;
-		.fake-checkbox{margin-top:0; @include vw(margin-right, 20px);}
-	}
-
-
-	.date-box{
-		position:relative;
-       // display:flex;
-		//align-items: center;
-		font-size:0;
-
-		display:inline-block;vertical-align:middle;
-        .date-dash{
-			@include vw(margin,0 8px);display:inline-block;vertical-align:middle;background-color:$color-gray;
-			@include vw(width,12px);@include vw(height,1px);}
-        label{
-            position:relative;
-            display:inline-block;
-			background-color:$color-white;
-            .btn-calendar{
-                display:inline-block;
-                position:absolute;@include vw(right,10px);@include vw(top,10px);z-index:1;
-
-				&.disabled{cursor:default;}
-            }
-        }
-        .date{
-			position:relative;z-index:2;
-            border:none;border:1px solid $color-light-brown;
-			background-color:transparent;
-			//background-color:$color-white;
-            display:inline-block;@include vw(height,40px);@include vw(font-size,14px);font-weight:400;
-			@include vw(padding,8px 32px 8px 12px);@include vw(width,145px);color:$color-light-gray;
-			@include boxSizing(border-box);
-            &::placeholder{
-                color:$color-black;
-                @include vw(font-size,14px);
-                font-weight:400;
-            }
-
-			&.disabled{cursor:default;}
-
-        }
-
-		.btn{
-			display:inline-block;
-			@include vw(height,40px);
-			@include vw(line-height,40px);
-			@include vw(padding,0 16px);
-			vertical-align:top;
-		}
+  h3 {
+    //font-weight:600;
+    //color:$color-brown;
+    color: $color-black;
+    font-weight: 300;
+    @include vw(font-size, 16px);
+    @include vw(line-height, 27.2px);
+    @include vw(margin-bottom, 8px);
+    strong {
+      font-weight: 600;
     }
 
-	.agree-check-box{
+    .info-text {
+      font-weight: 400;
+      @include vw(font-size, 13px);
+      @include vw(line-height, 22.1px);
+      color: $color-gray;
+    }
+  }
 
-		&+ .agree-check-box{@include vw(margin-top,32px);}
-	
-		.agree-title{
-			position:relative;
-			color:$color-black;
-			@include vw(font-size,18px);
-			font-weight:600;
-			@include vw(margin-bottom,12px);
-		}
+  h4 {
+    font-weight: 600;
+    color: $color-black;
+    @include vw(font-size, 18px);
+    @include vw(line-height, 27px);
+    @include vw(margin-bottom, 8px);
 
-		 .fake-checkbox +  .fake-checkbox{@include vw(margin-top,8px);}
-
-		 .fake-checkbox{
-			label{@include vw(line-height,23.8px);padding-top:0;}
-		 }
-
-		 .layer-box{
-			display:none;
-			background-color:$color-white;
-			@include vw(margin-top,8px);
-			@include vw(margin-bottom,8px);
-			@include vw(padding,20px);text-align:left;
-			border:1px solid $color-light-brown;
-			@include boxSizing(border-box);
-
-			.layer-list{
-				li{@include vw(font-size,13px);font-weight:400;color:$color-black;@include vw(line-height,22.1px);}
-			}
-
-
-		}
-
-		.open+.layer-box{display:block;}
-	}
-	.input-check-box{
-		display:flex;align-items:center;
-		.form-control + .form-control{@include vw(margin-left,8px);}
-
-		&+.input-check-box{@include vw(margin-top,10px);}
-	}
-	.input-box{
-		display:flex;align-items:center;
-		.form-control{
-			//@extend %variable;
-		}
-		.form-control + .form-control{@include vw(margin-left,8px);}
-		&+.input-box{@include vw(margin-top,10px);}
-		
-		.input-text-start{
-			@include vw(font-size,14px);
-			font-weight:400;
-			color:$color-black;
-			@include vw(margin-right,8px);
-            strong{font-weight:600;}
-		}
-
-		.input-text-end{
-			@include vw(font-size,14px);
-			font-weight:400;
-			color:$color-black;
-			@include vw(margin-left,10px);
-            strong{font-weight:600;}
-		}
-
-        
-	}
-
-	.search-input-box{
-		@include vw(margin-top,24px);
-        .search-text{
-            position:relative;
-            input[type=text]{
-                width:100%;
-                background: rgba(247, 246, 243, 1);
-				border:none;
-                @include vw(height,40px);@include boxSizing(border-box);
-                @include vw(padding,0 48px 0 16px);
-                color:$color-black;
-                @include vw(font-size,13px);
-                font-weight:600;
-				line-height:1;
-                &::placeholder{
-                    color:$color-light-gray;
-                    @include vw(font-size,13px);
-                    font-weight:600;
-					line-height:1;
-                }
-            }
-
-            .search-input-action{
-                position:absolute;@include vw(right,16px);top:50%;z-index:10;
-                @include vw(width,24px);@include vw(height,24px);@include vw(margin-top,-12px);
-                img{
-                    width:100%;
-                    height:100%;
-                }
-            }
-        }
-
-        .action{
-            @include vw(margin-top,16px);
-            .btn{@include vw(width, 65px);@include vw(height, 30px);@include vw(margin-left,8px);}
-        }
+    .action {
+      display: flex;
+      margin-left: auto;
+      align-items: center;
+      .btn {
+        @include vw(margin-left, 8px);
+      }
     }
 
+    .date {
+      font-weight: 400;
+      color: $color-gray;
+      @include vw(font-size, 13px);
+      @include vw(line-height, 22.1px);
+    }
+  }
 
-    .table-row{
-		width:100%;
-		border-top:1px solid $color-light-brown;
+  h5 {
+    font-weight: 400;
+    color: $color-black;
+    @include vw(font-size, 20px);
+    @include vw(line-height, 30px);
+    @include vw(margin-bottom, 8px);
+  }
+
+  .count-box {
+    display: flex;
+    @include vw(width, 104px);
+    overflow: hidden;
+    border: 1px solid $color-light-brown;
+    background-color: $color-white;
+
+    .number {
+      @include vw(width, 40px);
+      text-align: center;
+      @include vw(line-height, 32px);
+      @include vw(font-size, 13px);
+      font-weight: 400;
+      color: $color-black;
+    }
+
+    button {
+      border: none;
+      @include vw(width, 32px);
+      @include vw(height, 32px);
+      background-color: $color-white;
+      background-repeat: no-repeat;
+      background-position: center center;
+      @include vw(background-size, 32px);
+      text-align: center;
+      cursor: pointer;
+      &.btn-minus {
+        background-image: url("../images/icon_minus.png");
+        border-right: 1px solid $color-light-brown;
+      }
+      &.btn-plus {
+        border-left: 1px solid $color-light-brown;
+        background-image: url("../images/icon_plus.png");
+      }
+    }
+  }
+
+  .price-box {
+    display: flex;
+    align-items: center;
+    .price-subject {
+      color: $color-black;
+      @include vw(font-size, 12px);
+      font-weight: 600;
+    }
+    .price-before {
+      color: $color-light-gray;
+      @include vw(font-size, 12px);
+      font-weight: 400;
+      text-decoration: line-through;
+      @include vw(margin-right, 8px);
+    }
+    .price-after {
+      color: $color-black;
+      @include vw(font-size, 12px);
+      font-weight: 600;
+    }
+    .price-sale {
+      @include vw(margin-right, 8px);
+      color: $color-brown;
+      @include vw(font-size, 12px);
+    }
+    &.total {
+      .price-before {
+        @include vw(font-size, 14px);
+      }
+      .price-after {
+        @include vw(font-size, 20px);
+      }
+    }
+
+    .price-info {
+      display: flex;
+      align-items: center;
+      .price-before {
+        @include vw(font-size, 12px);
+        font-weight: 400;
+        color: $color-black;
+        text-decoration: none;
+      }
+      .price-text {
+        @include vw(font-size, 12px);
+        font-weight: 400;
+        @include vw(margin-left, 12px);
+        color: $color-gray;
+        @include vw(margin-right, 4px);
+      }
+      .price-sale {
+        @include vw(font-size, 12px);
+        font-weight: 600;
+        color: $color-brown;
+      }
+    }
+  }
+
+  .nodata-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    @include vw(min-height, 184px);
+    .icon {
+      @include vw(margin-bottom, 8px);
+    }
+
+    @include vw(font-size, 14px);
+    font-weight: 400;
+    @include vw(line-height, 23.8px);
+    p {
+      color: $color-black;
+      @include vw(font-size, 13px);
+      font-weight: 400;
+      @include vw(line-height, 22.1px);
+
+      & + p {
+        @include vw(margin-top, 8px);
+      }
+    }
+  }
+
+  .notice {
+    color: $color-gray;
+    font-weight: 400;
+    @include vw(font-size, 12px);
+    @include vw(line-height, 20.4px);
+    @include vw(margin-top, 8px);
+  }
+
+  .form-text {
+    color: $color-gray;
+    font-weight: 400;
+    @include vw(font-size, 13px);
+    @include vw(line-height, 22.1px);
+    @include vw(margin-top, 8px);
+  }
+
+  .badge {
+    @include vw(margin-right, 8px);
+    @include vw(font-size, 11px);
+    @include vw(padding, 0 3.5px);
+    @include vw(height, 19px);
+    display: inline-block;
+    @include vw(border-width, 1px);
+    border-style: solid;
+    @include vw(border-radius, 2px);
+    background-color: $color-white;
+    @include boxSizing(border-box);
+    color: $color-black;
+    border-color: $color-light-brown;
+    @include vw(line-height, 18.6px);
+    font-weight: 600;
+    vertical-align: middle;
+
+    &.badge-brown {
+      border-color: $color-brown;
+      background-color: $color-brown;
+      color: $color-white;
+    }
+    &.badge-light-brown {
+      border-color: $color-light-brown2;
+      background-color: $color-light-brown2;
+    }
+    &.badge-gray {
+      border-color: $color-gray;
+      background-color: $color-gray;
+      color: $color-white;
+    }
+    &.badge-black {
+      border-color: $color-black;
+      background-color: $color-black;
+      color: $color-white;
+    }
+    &.badge-light-gray {
+      border-color: $color-light-gray;
+      background-color: $color-light-gray;
+      color: $color-white;
+    }
+  }
+
+  .form-control {
+    font-size: 0;
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+      margin: 0;
+      -webkit-appearance: none;
+      appearance: none;
+    }
+    input[type="number"] {
+      -moz-appearance: textfield;
+    }
+
+    .select {
+      display: inline-block;
+      font-size: 0;
+      background: url("../images/icon_select_arrow.svg") no-repeat 99% center;
+      @include vw(background-size, 20px 20px);
+      width: 100%;
+      select {
+        width: 100%;
+        @include vw(height, 48px);
+        @include vw(padding, 12px 16px);
+        @include vw(font-size, 14px);
+        font-weight: 400;
+        border: 1px solid $color-light-brown;
+        color: $color-black;
+        -webkit-appearance: none;
+        appearance: none;
+        font-family: $font-pretendard;
         @include boxSizing(border-box);
-		tr{
-			border-bottom:1px solid $color-light-brown;
-            @include boxSizing(border-box);
-			th,td{
-				@include vw(padding,8px 16px);
-				text-align:center;
-				color:$color-black;
-				@include vw(font-size,14px);
-				@include vw(line-height,23.8px);
-				font-weight:400;
-                @include boxSizing(border-box);
-                word-break: break-all;
-			}
-
-			th{background-color:$color-light-brown2;font-weight:600;}
-			
-		}
-
-	}
-
-    .btn{
-        display:flex;
-        justify-content: center;
-        align-items:center;
-        @include vw(height, 38px);
-        @include vw(padding,0 16px);
-        font-weight:400;
-        @include vw(font-size,13px);
-        color:$color-black;
-		@include boxSizing(border-box);
-        border:1px solid $color-light-brown;
-        background-color:$color-white;
-        @include vw(border-radius,2px);
-        strong{
-            font-weight:600;
+        &::-ms-expand {
+          display: none;
         }
-
-        &.btn-brown{
-            background-color:$color-brown;
-            color:$color-white;
-            border-color:$color-brown;
+        &::placeholder {
+          color: $color-black;
         }
+      }
 
-		
-        &.btn-line-brown{
-            color:$color-brown;
-            border-color:$color-brown;
+      &.noline {
+        select {
+          border: none;
         }
-
-        &.btn-light-brown{
-            background-color:$color-light-brown;
-        }
-
-		&.btn-light-gray{
-            background-color:$color-light-gray;
-			color:$color-white;
-            border-color:$color-light-gray;
-        }
-
-        &.full{
-            width:100%;
-        }
-
-		&.large{
-			@include vw(height, 56px);
-			@include vw(font-size,14px);
-		}
-
-		&.small{
-			@include vw(height, 30px);
-			@include vw(font-size,13px);
-			@include vw(padding,0 8px);
-		}
-
-		&.x-small{
-			@include vw(height, 26px);
-			@include vw(font-size,13px);
-			@include vw(padding,0 6px);
-		}
-
-		&.btn-video{
-			display:block;
-			background: $color-white url('../images/mobile/icon_play_arrow.svg') no-repeat 8px center;
-			@include boxSizing(border-box);
-			@include vw(min-width, 89px);
-			@include vw(height, 38px); 
-			@include vw(line-height, 38px); 
-			@include vw(padding-left,32px);
-		}
-
-        &.btn-download{
-			display:block;
-			background: $color-white url('../images/mobile/icon_down_brown.svg') no-repeat 8px center;
-			@include boxSizing(border-box);
-			@include vw(min-width, 89px);
-			@include vw(height, 38px); 
-			@include vw(line-height, 38px); 
-			@include vw(padding-left,32px);
-		}
-
-		&.btn-file{
-            position:relative;
-			display:inline-block;
-			background: $color-light-beige;
-			@include boxSizing(border-box);
-			width:100%;@include vw(height, 48px); 
-			@include vw(line-height, 48px); 
-            @include vw(padding,0 30px 0 12px);
-            margin-left:0;
-			@include vw(margin-right, 8px);
-            @include vw(margin-top, 8px);
-			&:first-child{margin-top:0;}
-            max-width:100%;
-            overflow:hidden;
-            @extend %textEllipsis;
-            .icon-down{
-                display:inline-block;
-                position:absolute;top:50%;@include vw(right,9px);
-				transform:translateY(-50%);
-                @include vw(margin-left,4px);
-				line-height:1;
-            }
-		}
+      }
     }
 
-	.action-list{
-		display:flex;
-		@include vw(margin-top,20px);
-		.btn{
-			@extend %variable;
-			border-left:0;
-			padding:0;
-			&:first-child{
-				border-left:1px solid $color-light-brown;
-			}
-		}
-	}
+    .text {
+      display: inline-block;
+      width: 100%;
+      @include vw(padding, 8px 8px 8px 16px);
+      @include vw(font-size, 14px);
+      border: 1px solid $color-light-brown;
+      background: $color-white;
+      @include boxSizing(border-box);
+      color: $color-black;
+      @include vw(height, 48px);
+      &::placeholder {
+        color: $color-light-gray;
+        @include vw(font-size, 14px);
+      }
+      &.disabled {
+        background-color: $color-light-beige !important;
+        color: $color-gray;
+      }
+    }
 
-	.notice-list{
-        li{
-            @include vw(font-size,14px);font-weight:400;color:$color-gray;@include vw(line-height,23.8px);
+    .textarea {
+      width: 100%;
+      @include vw(height, 396px);
+      @include vw(padding, 16px);
+      @include vw(font-size, 14px);
+      font-weight: 400;
+      @include vw(line-height, 23.8px);
+      @include vw(border-width, 1px);
+      border-style: solid;
+      border-color: $color-light-brown;
+      resize: none;
+      @include boxSizing(border-box);
+      color: $color-black;
+      font-family: $font-pretendard;
+      &::placeholder {
+        color: $color-light-gray;
+        @include vw(font-size, 14px);
+        font-weight: 400;
+      }
+    }
+
+    .fake-file-box {
+      @extend %clearfix;
+      position: relative;
+      width: 100%;
+      .fake-file-name {
+        width: 100%;
+        border: 1px solid $color-light-brown;
+        @include vw(padding, 9px 80px 9px 16px);
+      }
+      .fake-file {
+        position: absolute;
+        right: 16px;
+        top: 50%;
+        transform: translateY(-45%);
+        input[type="file"] {
+          @extend .sr-only;
         }
+        label {
+          display: inline-block;
+          @include vw(padding, 5.5px 5px);
+          text-align: center;
+          @include vw(font-size, 13px);
+          color: $color-black;
+          border: 1px solid $color-light-brown;
+          cursor: pointer;
+          font-weight: 400;
+          border-radius: 2px;
+          line-height: 1;
+        }
+      }
     }
 
-	.category-list{
-		display:flex;
+    .fake-save-box {
+      position: relative;
+      .fake-input {
+        width: 100%;
+        border: 1px solid $color-light-brown;
+        @include vw(padding, 12px 54px 12px 8px);
 
-		.btn{
-			@extend %variable;
-			padding:0;
-			@include vw(margin-left,8px);
-			&:first-child{
-				margin-left:0;
-			}
-			&.active{
-				background-color:$color-brown;
-				color:$color-white;
-				border-color:$color-brown;
-			}
-		}
-	}
+        &::placeholder {
+          color: $color-light-gray;
+        }
+      }
 
-    .action{
-		display:flex;
-		justify-content:  flex-end;
-		align-items: center;
-
-		&.flex-start{justify-content: flex-start;}
-		&.flex-center{justify-content: center;}
-		&.flex-end{justify-content: flex-end;}
-        &.flex-between{justify-content: space-between;}
-
-
-
+      .fake-btn {
+        position: absolute;
+        @include vw(right, 12px);
+        top: 50%;
+        transform: translateY(-50%);
+        label {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          @include vw(width, 35px);
+          @include vw(height, 26px);
+          text-align: center;
+          @include vw(font-size, 13px);
+          color: $color-black;
+          border: 1px solid $color-light-brown;
+          cursor: pointer;
+          font-weight: 400;
+          @include vw(border-radius, 2px);
+        }
+      }
     }
 
-	.flex{
-		display:flex;
-		justify-content: flex-start;
-		align-items: center;
-		&.flex-start{justify-content: flex-start;}
-		&.flex-center{justify-content: center;}
-		&.flex-end{justify-content: flex-end;}
-        &.flex-between{justify-content: space-between;}
-	}
+    .fake-checkbox {
+      // margin-top:8px;
+      // &:first-child{margin-top:0;}
+      display: inline-block;
+      label {
+        display: flex;
+        background: url("../images/icon_checkbox_check.svg") no-repeat left top;
+        @include vw(background-size, 24px 24px);
+        @include vw(min-height, 24px);
+        //cursor: pointer;
+        font-weight: 400;
+        @include vw(font-size, 14px);
+        @include vw(padding-left, 30px);
+        @include vw(padding-top, 3px);
+        .badge {
+          display: inline-block;
+          @include vw(min-width, 33px);
+          text-align: center;
+        }
+      }
+      input {
+        @extend .sr-only;
+        &:checked + label {
+          background-image: url("../images/icon_checkbox_checked.svg");
+        }
 
-	.section-action{
-		@include vw(padding, 20px 20px);
-		display:flex;justify-content: center;
-		a{
-			&:only-child,
-			&:nth-child(1):nth-last-child(1) { width: 100%; }
-		
-			&:nth-child(1):nth-last-child(2),
-			&:nth-child(2):nth-last-child(1) { 
-				width:50%;
-				@include vw(margin-left, 8px);
-				&:first-child{
-					margin-left:0;
-				}
-			}
-		}
-	}
+        &.disabled + label {
+          background-image: url("../images/icon_check_disable.svg");
+        }
+      }
+    }
 
-	.text-box{
-		p{
-			@include vw(font-size,14px);
-			@include vw(line-height,23.8px);
-			color:$color-gray;
-			font-weight:400;
-			strong{
-				display:block;
-				@include vw(margin-bottom,4px);
-				color:$color-black;
-				font-weight:600;
-				@include vw(font-size,16px);
-				@include vw(line-height,27.2px);
+    .fake-radio {
+      // margin-top:8px;
+      // &:first-child{margin-top:0;}
+      display: inline-block;
 
-			}
-		}
-	}
+      & + .fake-radio {
+        @include vw(margin-left, 20px);
+      }
+      label {
+        display: flex;
+        background: url("../images/icon_radio_check.svg") no-repeat left top;
+        @include vw(background-size, 24px 24px);
+        @include vw(min-height, 24px);
+        //cursor: pointer;
+        font-weight: 400;
+        @include vw(font-size, 14px);
+        @include vw(padding-left, 30px);
+        @include vw(padding-top, 3px);
+        .badge {
+          display: inline-block;
+          @include vw(min-width, 33px);
+          text-align: center;
+        }
+      }
+      input {
+        @extend .sr-only;
+        &:checked + label {
+          background-image: url("../images/icon_radio_checked.svg");
+        }
 
-	.toggle-box{
-		@include vw(margin-top,20px);
-        border-top:1px solid $color-light-brown;
-		dl{
-			text-align:left;
-            dt,dd{@include vw(padding,20px 0px);}
-			dt{
-                cursor:pointer;position:relative;z-index:2;border-bottom:1px solid $color-light-brown;
-                p{
-					width:90%;
-                    color:$color-black;font-weight:600;@include vw(font-size,14px);@include vw(line-height,23.8px);
-                    .subject{display:block;@include vw(margin-bottom,4px);font-weight:400;@include vw(font-size,13px);color:$color-gray;}
-                }
+        &.disabled + label {
+          background-image: url("../images/icon_radio_disable.svg");
+        }
+      }
+    }
+  }
 
-                .icon-arrow{position:absolute;@include vw(right,0px);top:50%;@include vw(margin-top,-12px);}
-            }
+  .custom-select {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    @include boxSizing(border-box);
+    .selected {
+      border: 1px solid $color-light-brown;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-weight: 400;
+      color: $color-black;
+      @include vw(min-width, 73px);
+      @include vw(height, 36px);
+      @include vw(font-size, 12px);
+      @include vw(padding, 8px 40px 8px 12px);
+      font-family: $font-pretendard;
+      @include boxSizing(border-box);
+      background-color: $color-white;
+      background: url("../images/icon_select_arrow.svg") no-repeat 98% center;
+      @include vw(background-size, 20px 20px);
 
-			dd{
-                display:none;
-                background-color:$color-light-brown2;
-                @include vw(padding,20px);
-				@include vw(font-size,14px);@include vw(line-height,23.8px);
-                font-weight:400;
-                color:$color-black;
+      &.disabled {
+        background-color: $color-light-gray;
+        color: $color-gray;
+        background-image: url("../images/icon_select_arrow_gray.svg");
+      }
+    }
+  }
 
-            }
-			&.unfold{
-				dt{
-                    .icon-arrow{transform:rotateZ(180deg);}
-                }
-				dd{display:block;}
-			}
-		}
-	}
+  .checkbox-box {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    .fake-checkbox {
+      margin-top: 0;
+      @include vw(margin-right, 20px);
+    }
+  }
+
+  .date-box {
+    position: relative;
+    // display:flex;
+    //align-items: center;
+    font-size: 0;
+
+    display: inline-block;
+    vertical-align: middle;
+    .date-dash {
+      @include vw(margin, 0 8px);
+      display: inline-block;
+      vertical-align: middle;
+      background-color: $color-gray;
+      @include vw(width, 12px);
+      @include vw(height, 1px);
+    }
+    label {
+      position: relative;
+      display: inline-block;
+      background-color: $color-white;
+      .btn-calendar {
+        display: inline-block;
+        position: absolute;
+        @include vw(right, 10px);
+        @include vw(top, 10px);
+        z-index: 1;
+
+        &.disabled {
+          cursor: default;
+        }
+      }
+    }
+    .date {
+      position: relative;
+      z-index: 2;
+      border: none;
+      border: 1px solid $color-light-brown;
+      background-color: transparent;
+      //background-color:$color-white;
+      display: inline-block;
+      @include vw(height, 40px);
+      @include vw(font-size, 14px);
+      font-weight: 400;
+      @include vw(padding, 8px 32px 8px 12px);
+      @include vw(width, 145px);
+      color: $color-light-gray;
+      @include boxSizing(border-box);
+      &::placeholder {
+        color: $color-black;
+        @include vw(font-size, 14px);
+        font-weight: 400;
+      }
+
+      &.disabled {
+        cursor: default;
+      }
+    }
+
+    .btn {
+      display: inline-block;
+      @include vw(height, 40px);
+      @include vw(line-height, 40px);
+      @include vw(padding, 0 16px);
+      vertical-align: top;
+    }
+  }
+
+  .agree-check-box {
+    & + .agree-check-box {
+      @include vw(margin-top, 32px);
+    }
+
+    .agree-title {
+      position: relative;
+      color: $color-black;
+      @include vw(font-size, 18px);
+      font-weight: 600;
+      @include vw(margin-bottom, 12px);
+    }
+
+    .fake-checkbox + .fake-checkbox {
+      @include vw(margin-top, 8px);
+    }
+
+    .fake-checkbox {
+      label {
+        @include vw(line-height, 23.8px);
+        padding-top: 0;
+      }
+    }
+
+    .layer-box {
+      display: none;
+      background-color: $color-white;
+      @include vw(margin-top, 8px);
+      @include vw(margin-bottom, 8px);
+      @include vw(padding, 20px);
+      text-align: left;
+      border: 1px solid $color-light-brown;
+      @include boxSizing(border-box);
+
+      .layer-list {
+        li {
+          @include vw(font-size, 13px);
+          font-weight: 400;
+          color: $color-black;
+          @include vw(line-height, 22.1px);
+        }
+      }
+    }
+
+    .open + .layer-box {
+      display: block;
+    }
+  }
+  .input-check-box {
+    display: flex;
+    align-items: center;
+    .form-control + .form-control {
+      @include vw(margin-left, 8px);
+    }
+
+    & + .input-check-box {
+      @include vw(margin-top, 10px);
+    }
+  }
+  .input-box {
+    display: flex;
+    align-items: center;
+    .form-control {
+      //@extend %variable;
+    }
+    .form-control + .form-control {
+      @include vw(margin-left, 8px);
+    }
+    & + .input-box {
+      @include vw(margin-top, 10px);
+    }
+
+    .input-text-start {
+      @include vw(font-size, 14px);
+      font-weight: 400;
+      color: $color-black;
+      @include vw(margin-right, 8px);
+      strong {
+        font-weight: 600;
+      }
+    }
+
+    .input-text-end {
+      @include vw(font-size, 14px);
+      font-weight: 400;
+      color: $color-black;
+      @include vw(margin-left, 10px);
+      strong {
+        font-weight: 600;
+      }
+    }
+  }
+
+  .search-input-box {
+    @include vw(margin-top, 24px);
+    .search-text {
+      position: relative;
+      input[type="text"] {
+        width: 100%;
+        background: rgba(247, 246, 243, 1);
+        border: none;
+        @include vw(height, 40px);
+        @include boxSizing(border-box);
+        @include vw(padding, 0 48px 0 16px);
+        color: $color-black;
+        @include vw(font-size, 13px);
+        font-weight: 600;
+        line-height: 1;
+        &::placeholder {
+          color: $color-light-gray;
+          @include vw(font-size, 13px);
+          font-weight: 600;
+          line-height: 1;
+        }
+      }
+
+      .search-input-action {
+        position: absolute;
+        @include vw(right, 16px);
+        top: 50%;
+        z-index: 10;
+        @include vw(width, 24px);
+        @include vw(height, 24px);
+        @include vw(margin-top, -12px);
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+
+    .action {
+      @include vw(margin-top, 16px);
+      .btn {
+        @include vw(width, 65px);
+        @include vw(height, 30px);
+        @include vw(margin-left, 8px);
+      }
+    }
+  }
+
+  .table-row {
+    width: 100%;
+    border-top: 1px solid $color-light-brown;
+    @include boxSizing(border-box);
+    tr {
+      border-bottom: 1px solid $color-light-brown;
+      @include boxSizing(border-box);
+      th,
+      td {
+        @include vw(padding, 8px 16px);
+        text-align: center;
+        color: $color-black;
+        @include vw(font-size, 14px);
+        @include vw(line-height, 23.8px);
+        font-weight: 400;
+        @include boxSizing(border-box);
+        word-break: break-all;
+      }
+
+      th {
+        background-color: $color-light-brown2;
+        font-weight: 600;
+      }
+    }
+  }
+
+  .btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include vw(height, 38px);
+    @include vw(padding, 0 16px);
+    font-weight: 400;
+    @include vw(font-size, 13px);
+    color: $color-black;
+    @include boxSizing(border-box);
+    border: 1px solid $color-light-brown;
+    background-color: $color-white;
+    @include vw(border-radius, 2px);
+    strong {
+      font-weight: 600;
+    }
+
+    &.btn-brown {
+      background-color: $color-brown;
+      color: $color-white;
+      border-color: $color-brown;
+    }
+
+    &.btn-line-brown {
+      color: $color-brown;
+      border-color: $color-brown;
+    }
+
+    &.btn-light-brown {
+      background-color: $color-light-brown;
+    }
+
+    &.btn-light-gray {
+      background-color: $color-light-gray;
+      color: $color-white;
+      border-color: $color-light-gray;
+    }
+
+    &.full {
+      width: 100%;
+    }
+
+    &.large {
+      @include vw(height, 56px);
+      @include vw(font-size, 14px);
+    }
+
+    &.small {
+      @include vw(height, 30px);
+      @include vw(font-size, 13px);
+      @include vw(padding, 0 8px);
+    }
+
+    &.x-small {
+      @include vw(height, 26px);
+      @include vw(font-size, 13px);
+      @include vw(padding, 0 6px);
+    }
+
+    &.btn-video {
+      display: block;
+      background: $color-white url("../images/mobile/icon_play_arrow.svg")
+        no-repeat 8px center;
+      @include boxSizing(border-box);
+      @include vw(min-width, 89px);
+      @include vw(height, 38px);
+      @include vw(line-height, 38px);
+      @include vw(padding-left, 32px);
+    }
+
+    &.btn-download {
+      display: block;
+      background: $color-white url("../images/mobile/icon_down_brown.svg")
+        no-repeat 8px center;
+      @include boxSizing(border-box);
+      @include vw(min-width, 89px);
+      @include vw(height, 38px);
+      @include vw(line-height, 38px);
+      @include vw(padding-left, 32px);
+    }
+
+    &.btn-file {
+      position: relative;
+      display: inline-block;
+      background: $color-light-beige;
+      @include boxSizing(border-box);
+      width: 100%;
+      @include vw(height, 48px);
+      @include vw(line-height, 48px);
+      @include vw(padding, 0 30px 0 12px);
+      margin-left: 0;
+      @include vw(margin-right, 8px);
+      @include vw(margin-top, 8px);
+      &:first-child {
+        margin-top: 0;
+      }
+      max-width: 100%;
+      overflow: hidden;
+      @extend %textEllipsis;
+      .icon-down {
+        display: inline-block;
+        position: absolute;
+        top: 50%;
+        @include vw(right, 9px);
+        transform: translateY(-50%);
+        @include vw(margin-left, 4px);
+        line-height: 1;
+      }
+    }
+  }
+
+  .action-list {
+    display: flex;
+    @include vw(margin-top, 20px);
+    .btn {
+      @extend %variable;
+      border-left: 0;
+      padding: 0;
+      &:first-child {
+        border-left: 1px solid $color-light-brown;
+      }
+    }
+  }
+
+  .notice-list {
+    li {
+      @include vw(font-size, 14px);
+      font-weight: 400;
+      color: $color-gray;
+      @include vw(line-height, 23.8px);
+    }
+  }
+
+  .category-list {
+    display: flex;
+
+    .btn {
+      @extend %variable;
+      padding: 0;
+      @include vw(margin-left, 8px);
+      &:first-child {
+        margin-left: 0;
+      }
+      &.active {
+        background-color: $color-brown;
+        color: $color-white;
+        border-color: $color-brown;
+      }
+    }
+  }
+
+  .action {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    &.flex-start {
+      justify-content: flex-start;
+    }
+    &.flex-center {
+      justify-content: center;
+    }
+    &.flex-end {
+      justify-content: flex-end;
+    }
+    &.flex-between {
+      justify-content: space-between;
+    }
+  }
+
+  .flex {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    &.flex-start {
+      justify-content: flex-start;
+    }
+    &.flex-center {
+      justify-content: center;
+    }
+    &.flex-end {
+      justify-content: flex-end;
+    }
+    &.flex-between {
+      justify-content: space-between;
+    }
+  }
+
+  .section-action {
+    @include vw(padding, 20px 20px);
+    display: flex;
+    justify-content: center;
+    a {
+      &:only-child,
+      &:nth-child(1):nth-last-child(1) {
+        width: 100%;
+      }
+
+      &:nth-child(1):nth-last-child(2),
+      &:nth-child(2):nth-last-child(1) {
+        width: 50%;
+        @include vw(margin-left, 8px);
+        &:first-child {
+          margin-left: 0;
+        }
+      }
+    }
+  }
+
+  .text-box {
+    p {
+      @include vw(font-size, 14px);
+      @include vw(line-height, 23.8px);
+      color: $color-gray;
+      font-weight: 400;
+      strong {
+        display: block;
+        @include vw(margin-bottom, 4px);
+        color: $color-black;
+        font-weight: 600;
+        @include vw(font-size, 16px);
+        @include vw(line-height, 27.2px);
+      }
+    }
+  }
+
+  .toggle-box {
+    @include vw(margin-top, 20px);
+    border-top: 1px solid $color-light-brown;
+    dl {
+      text-align: left;
+      dt,
+      dd {
+        @include vw(padding, 20px 0px);
+      }
+      dt {
+        cursor: pointer;
+        position: relative;
+        z-index: 2;
+        border-bottom: 1px solid $color-light-brown;
+        p {
+          width: 90%;
+          color: $color-black;
+          font-weight: 600;
+          @include vw(font-size, 14px);
+          @include vw(line-height, 23.8px);
+          .subject {
+            display: block;
+            @include vw(margin-bottom, 4px);
+            font-weight: 400;
+            @include vw(font-size, 13px);
+            color: $color-gray;
+          }
+        }
+
+        .icon-arrow {
+          position: absolute;
+          @include vw(right, 0px);
+          top: 50%;
+          @include vw(margin-top, -12px);
+        }
+      }
+
+      dd {
+        display: none;
+        background-color: $color-light-brown2;
+        @include vw(padding, 20px);
+        @include vw(font-size, 14px);
+        @include vw(line-height, 23.8px);
+        font-weight: 400;
+        color: $color-black;
+      }
+      &.unfold {
+        dt {
+          .icon-arrow {
+            transform: rotateZ(180deg);
+          }
+        }
+        dd {
+          display: block;
+        }
+      }
+    }
+  }
 }
