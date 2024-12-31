@@ -204,4 +204,29 @@
       @include vw(margin-top, 60px);
     }
   }
+
+
+  .section-presentation-schedule{
+	@include vw(padding-top, 80px);
+	@include vw(padding-bottom, 100px);
+	.wrap{
+		max-width:600px;
+		margin:0 auto;
+	}
+	.img-box{
+		img{
+			width:100%;
+		}
+	}
+
+	.btn-apply{
+		
+		@include vw(height,91px);
+		background-color:#0E4B9E;
+		color:#fff;
+		@include vw(font-size,16px);
+		margin-left:0;
+		@include vw(margin-bottom,120px);
+	}
+  }
 }

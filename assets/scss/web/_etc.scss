@@ -123,6 +123,8 @@
       img {
         max-width: 100%;
       }
+
+	
       /*
             background-color:#735E5A;
             text-align:center;
@@ -216,5 +218,27 @@
     img {
       width: 100%;
     }
+  }
+
+  .section-presentation-schedule{
+	.wrap{
+		width:876px;
+		margin:0 auto;
+	}
+	.img-box{
+		img{
+			width:100%;
+		}
+	}
+
+	.btn-apply{
+		width:500px;
+		height:91px;
+		background-color:#0E4B9E;
+		color:#fff;
+		font-size:16px;
+		margin-left:0;
+		margin-bottom:120px;
+	}
   }
 }

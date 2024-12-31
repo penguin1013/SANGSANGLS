@@ -12603,6 +12603,22 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 #wrap .section-benefit2-content img {
   width: 100%;
 }
+#wrap .section-presentation-schedule .wrap {
+  width: 876px;
+  margin: 0 auto;
+}
+#wrap .section-presentation-schedule .img-box img {
+  width: 100%;
+}
+#wrap .section-presentation-schedule .btn-apply {
+  width: 500px;
+  height: 91px;
+  background-color: #0E4B9E;
+  color: #fff;
+  font-size: 16px;
+  margin-left: 0;
+  margin-bottom: 120px;
+}
 
 #wrap #contents.contents-teaser {
   height: 1040px;

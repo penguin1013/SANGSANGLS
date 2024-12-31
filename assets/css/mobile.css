@@ -12715,6 +12715,50 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
     margin-top: 60px;
   }
 }
+#wrap .section-presentation-schedule {
+  padding-top: 21.3333333333vw;
+  padding-bottom: 26.6666666667vw;
+}
+@media screen and (min-width: 375px) {
+  #wrap .section-presentation-schedule {
+    padding-top: 80px;
+  }
+}
+@media screen and (min-width: 375px) {
+  #wrap .section-presentation-schedule {
+    padding-bottom: 100px;
+  }
+}
+#wrap .section-presentation-schedule .wrap {
+  max-width: 600px;
+  margin: 0 auto;
+}
+#wrap .section-presentation-schedule .img-box img {
+  width: 100%;
+}
+#wrap .section-presentation-schedule .btn-apply {
+  height: 24.2666666667vw;
+  background-color: #0E4B9E;
+  color: #fff;
+  font-size: 4.2666666667vw;
+  margin-left: 0;
+  margin-bottom: 32vw;
+}
+@media screen and (min-width: 375px) {
+  #wrap .section-presentation-schedule .btn-apply {
+    height: 91px;
+  }
+}
+@media screen and (min-width: 375px) {
+  #wrap .section-presentation-schedule .btn-apply {
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 375px) {
+  #wrap .section-presentation-schedule .btn-apply {
+    margin-bottom: 120px;
+  }
+}
 
 #wrap #contents.contents-teaser {
   padding-bottom: 0;
