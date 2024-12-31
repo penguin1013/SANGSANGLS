@@ -12720,7 +12720,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   text-align: center;
 }
 #wrap .section-presentation-title .head-copy {
-  color: #504B42;
+  color: #504b42;
   font-size: 20px;
   font-weight: 600;
   line-height: 34px;
@@ -12779,7 +12779,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 #wrap .section-presentation-content .apply-box .apply-date p {
   display: block;
-  color: #E3CDA2;
+  color: #e3cda2;
   font-size: 28px;
   line-height: 42px;
   font-weight: 600;
@@ -12837,23 +12837,23 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 #wrap .section-presentation-content .qna {
   margin-top: 10.6666666667vw;
   /*
-  background-color:#735E5A;
-  text-align:center;
-  @include vw(padding,100px 0);
-  p{
-      strong{
-         display:block;
-         @include vw(margin-bottom,16px);
-          font-weight:300;
-          @include vw(font-size,24px);
-          @include vw(line-height,36px);
-      }
-      color:$color-white;
-      @include vw(font-size,32px);
-      @include vw(line-height,48px);
-      font-weight:200;
-  }
-  */
+        background-color:#735E5A;
+        text-align:center;
+        @include vw(padding,100px 0);
+        p{
+            strong{
+               display:block;
+               @include vw(margin-bottom,16px);
+                font-weight:300;
+                @include vw(font-size,24px);
+                @include vw(line-height,36px);
+            }
+            color:$color-white;
+            @include vw(font-size,32px);
+            @include vw(line-height,48px);
+            font-weight:200;
+        }
+        */
 }
 @media screen and (min-width: 375px) {
   #wrap .section-presentation-content .qna {
@@ -12898,19 +12898,9 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 #wrap .section-introduction-visual img {
   width: 100%;
 }
-#wrap .section-introduction-title {
-  margin: 160px 0 200px;
-}
-#wrap .section-introduction-title p {
-  color: #2C2923;
-  font-size: 40px;
-  font-weight: 600;
-  line-height: 60px;
-  text-align: center;
-}
 #wrap .section-introduction-system {
-  max-width: 1680px;
-  margin: 0 auto;
+  max-width: 1500px;
+  margin: 160px auto 0;
 }
 #wrap .section-introduction-system img {
   max-width: 100%;
@@ -13363,4 +13353,6 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   font-size: 18px;
   width: 480px;
   font-weight: 600;
-}/*# sourceMappingURL=web.css.map */
+}
+
+/*# sourceMappingURL=web.css.map */

@@ -1,122 +1,128 @@
-#wrap{
-	/* 입시설명회 */
-    .section-presentation-title{
-        @include vw(padding, 60px 0);
-		text-align:center;
-		.head-copy{
-			color:#504B42;
-            font-weight:600;
-			@include vw(font-size, 16px);
-			@include vw(line-height,27.2px);
-            @include vw(margin-bottom,18px);
-		}
-		.main-copy{
-			color:$color-black;
-            font-weight:200;
-			@include vw(font-size,60px);
-			@include vw(line-height,72px);
-           
-		}
-
-        .sub-copy{
-            color:$color-black;
-            font-weight:400;
-			@include vw(font-size,16px);
-			@include vw(line-height,27.2px);
-            @include vw(margin-top,36px);
-        }
-	}
-
-    .section-presentation-visual{
-        background-size: cover;background-repeat: no-repeat;
-        background-position: 50% 0;
-        max-width:600px;
-        margin:0 auto;
-        @include vw(padding,80px 0);
-   
-        img{width:100%;}
-
-        .apply-btn{
-            @include vw(margin-top,80px);
-            display:flex;
-            justify-content: center;
-            a{
-                display:flex;
-                justify-content: center;
-                align-items:center;
-                background-color:$color-white;
-                @include vw(font-size,16px);
-                @include vw(line-height,27.2px);
-                font-weight:600;
-                //@include vw(width,335px);
-                width:100%;
-                @include vw(height,91px);
-            }
-        }
-
+#wrap {
+  /* 입시설명회 */
+  .section-presentation-title {
+    @include vw(padding, 60px 0);
+    text-align: center;
+    .head-copy {
+      color: #504b42;
+      font-weight: 600;
+      @include vw(font-size, 16px);
+      @include vw(line-height, 27.2px);
+      @include vw(margin-bottom, 18px);
     }
-	.section-presentation-content{
-        .wrap{
-            max-width:600px;
-            margin:0 auto;
-        }
+    .main-copy {
+      color: $color-black;
+      font-weight: 200;
+      @include vw(font-size, 60px);
+      @include vw(line-height, 72px);
+    }
 
-        .visual{
-            img{width:100%;}
-        }
+    .sub-copy {
+      color: $color-black;
+      font-weight: 400;
+      @include vw(font-size, 16px);
+      @include vw(line-height, 27.2px);
+      @include vw(margin-top, 36px);
+    }
+  }
 
-        .apply-box{
-            background-color:#070707;
-            text-align:center;
-            @include vw(padding,48px 0 64px);
-            .apply-date{
-                color:$color-white;
-                @include vw(font-size,16px);
-                @include vw(line-height,27.2px);
-                font-weight:500;
-                p{
-                    display:block;
-                    color:#E3CDA2;
-                    @include vw(font-size,24px);
-                    @include vw(line-height,36px);
-                    font-weight:600;
-                    @include vw(margin-bottom,16px);
-                }
-               
-            }
+  .section-presentation-visual {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    max-width: 600px;
+    margin: 0 auto;
+    @include vw(padding, 80px 0);
 
-            .apply-btn{
-                @include vw(margin-top,32px);
-                display:flex;
-                justify-content: center;
-                a{
-                    display:flex;
-                    justify-content: center;
-                    align-items:center;
-                    background-color:$color-white;
-                    @include vw(font-size,16px);
-                    @include vw(line-height,27.2px);
-                    font-weight:600;
-                    @include vw(width,261px);
-                    @include vw(height,59px);
-                }
-            }
-        }
-        .banner{
-            @include vw(margin-top,20px);
-            img{width:100%;}
-        }
-        .program{
-            @include vw(margin-top,80px);
-            h3{
-                @include vw(margin-bottom,20px);
-            }
-            img{width:100%;}
-        }
+    img {
+      width: 100%;
+    }
 
-        .qna{
-            @include vw(margin-top,20px);
-            /*
+    .apply-btn {
+      @include vw(margin-top, 80px);
+      display: flex;
+      justify-content: center;
+      a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $color-white;
+        @include vw(font-size, 16px);
+        @include vw(line-height, 27.2px);
+        font-weight: 600;
+        //@include vw(width,335px);
+        width: 100%;
+        @include vw(height, 91px);
+      }
+    }
+  }
+  .section-presentation-content {
+    .wrap {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .visual {
+      img {
+        width: 100%;
+      }
+    }
+
+    .apply-box {
+      background-color: #070707;
+      text-align: center;
+      @include vw(padding, 48px 0 64px);
+      .apply-date {
+        color: $color-white;
+        @include vw(font-size, 16px);
+        @include vw(line-height, 27.2px);
+        font-weight: 500;
+        p {
+          display: block;
+          color: #e3cda2;
+          @include vw(font-size, 24px);
+          @include vw(line-height, 36px);
+          font-weight: 600;
+          @include vw(margin-bottom, 16px);
+        }
+      }
+
+      .apply-btn {
+        @include vw(margin-top, 32px);
+        display: flex;
+        justify-content: center;
+        a {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background-color: $color-white;
+          @include vw(font-size, 16px);
+          @include vw(line-height, 27.2px);
+          font-weight: 600;
+          @include vw(width, 261px);
+          @include vw(height, 59px);
+        }
+      }
+    }
+    .banner {
+      @include vw(margin-top, 20px);
+      img {
+        width: 100%;
+      }
+    }
+    .program {
+      @include vw(margin-top, 80px);
+      h3 {
+        @include vw(margin-bottom, 20px);
+      }
+      img {
+        width: 100%;
+      }
+    }
+
+    .qna {
+      @include vw(margin-top, 20px);
+      /*
             background-color:#735E5A;
            
             text-align:center;
@@ -135,81 +141,67 @@
                 font-weight:400;
             }
             */
-        }
-
-        .info-box{
-            @include vw(margin-bottom,50px);
-            @include vw(margin-top,80px);
-            text-align:center;
-            p{
-                color:$color-black;
-                font-weight:600;
-                @include vw(font-size, 16px);
-                @include vw(line-height,27px);
-                &+p{
-                    @include vw(margin-top,8px);
-                }
-            }
-        }
     }
 
-	/* 시대인재 콘텐츠  */
-    .section-introduction {
-        &-visual {
-            .wrap {
-                padding: 0;
-                max-width:600px;
-                margin:0 auto;
-            }
+    .info-box {
+      @include vw(margin-bottom, 50px);
+      @include vw(margin-top, 80px);
+      text-align: center;
+      p {
+        color: $color-black;
+        font-weight: 600;
+        @include vw(font-size, 16px);
+        @include vw(line-height, 27px);
+        & + p {
+          @include vw(margin-top, 8px);
         }
-        &-title {
-            @include vw(padding, 64px 0);
-            .wrap{
-                max-width:600px;
-                margin:0 auto;
-            }
-            p {
-                @include vw(font-size, 24px);
-                font-weight: 600;
-                line-height: 1.7;
-            }
-        }
-        &-system {
-            .wrap {
-                padding: 0;
-                max-width:600px;
-                margin:0 auto;
-            }
-        }
-        &-content {
-            .wrap {
-                padding: 0;
-                max-width:600px;
-                margin:0 auto;
-                .holder {
-                    @include vw(margin-top, 100px);
-                    @include vw(padding-top, 140px);
-                    padding: 0;
-                }
-            }
-        }
+      }
+    }
+  }
+
+  /* 시대인재 콘텐츠  */
+  .section-introduction {
+    &-visual {
+      .wrap {
+        padding: 0;
+        max-width: 600px;
+        margin: 0 auto;
+      }
     }
 
-		/* 장학혜택  */
-    .section-benefit{
-        max-width:600px;
-        margin:0 auto;
-        &.section-benefit-visual{
-            background-size: cover;background-repeat: no-repeat;
-            background-position: 50% 0;
-            @include vw(padding,160px 0 140px);
-            @include boxSizing(border-box);
-
-
-        }
-        &.section-benefit-content{
-
-            @include vw(margin-top,60px);
-        }
+    &-system {
+      .wrap {
+        // padding: 0;
+        max-width: 600px;
+        margin: 120px auto 0;
+      }
     }
+    &-content {
+      .wrap {
+        max-width: 600px;
+        margin: 0 auto;
+        .holder {
+          @include vw(margin-top, 100px);
+          @include vw(padding-top, 140px);
+          padding: 0;
+        }
+      }
+    }
+  }
+
+  /* 장학혜택  */
+  .section-benefit {
+    max-width: 600px;
+    margin: 0 auto;
+    &.section-benefit-visual {
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: 50% 0;
+      @include vw(padding, 160px 0 140px);
+      @include boxSizing(border-box);
+    }
+    &.section-benefit-content {
+      @include vw(margin-top, 60px);
+    }
+  }
 }
