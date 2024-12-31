@@ -53,7 +53,7 @@
 				dt,dd{
 					color:$color-white;
 					font-size:17px;
-					font-weight:700;
+					font-weight:600;
 					line-height:28.9px;
 				}
 				dt{width:110px;}
@@ -186,7 +186,11 @@
 							}
 							.form-control{
 								margin-top:0;
-								.text{width:166px;}
+								.text{
+									&.small{
+										width:166px;
+									}
+								}
 							}
 						}
 					}
@@ -283,7 +287,7 @@
 				padding:40px 0;
 				font-size:22px;
 				line-height:37.4px;
-				font-weight:400;
+				font-weight:300;
 				color:$color-black;
 				&:last-child{
 					border-right:0;
