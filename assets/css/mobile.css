@@ -12557,7 +12557,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   }
 }
 #wrap .section-presentation-title .head-copy {
-  color: #504B42;
+  color: #504b42;
   font-weight: 600;
   font-size: 4.2666666667vw;
   line-height: 7.2533333333vw;
@@ -12703,7 +12703,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 #wrap .section-presentation-content .apply-box .apply-date p {
   display: block;
-  color: #E3CDA2;
+  color: #e3cda2;
   font-size: 6.4vw;
   line-height: 9.6vw;
   font-weight: 600;
@@ -12798,24 +12798,24 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 #wrap .section-presentation-content .qna {
   margin-top: 5.3333333333vw;
   /*
-  background-color:#735E5A;
+        background-color:#735E5A;
 
-  text-align:center;
-  @include vw(padding,60px 33px);
-  p{
-      strong{
-         display:block;
-         @include vw(margin-bottom,8px);
-          font-weight:600;
-          @include vw(font-size,16px);
-          @include vw(line-height,27.2px);
-      }
-      color:$color-white;
-      @include vw(font-size,18px);
-      @include vw(line-height,27.2px);
-      font-weight:400;
-  }
-  */
+        text-align:center;
+        @include vw(padding,60px 33px);
+        p{
+            strong{
+               display:block;
+               @include vw(margin-bottom,8px);
+                font-weight:600;
+                @include vw(font-size,16px);
+                @include vw(line-height,27.2px);
+            }
+            color:$color-white;
+            @include vw(font-size,18px);
+            @include vw(line-height,27.2px);
+            font-weight:400;
+        }
+        */
 }
 @media screen and (min-width: 375px) {
   #wrap .section-presentation-content .qna {
@@ -12866,35 +12866,11 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   max-width: 600px;
   margin: 0 auto;
 }
-#wrap .section-introduction-title {
-  padding: 17.0666666667vw 0;
-}
-@media screen and (min-width: 375px) {
-  #wrap .section-introduction-title {
-    padding: 64px 0;
-  }
-}
-#wrap .section-introduction-title .wrap {
-  max-width: 600px;
-  margin: 0 auto;
-}
-#wrap .section-introduction-title p {
-  font-size: 6.4vw;
-  font-weight: 600;
-  line-height: 1.7;
-}
-@media screen and (min-width: 375px) {
-  #wrap .section-introduction-title p {
-    font-size: 24px;
-  }
-}
 #wrap .section-introduction-system .wrap {
-  padding: 0;
   max-width: 600px;
-  margin: 0 auto;
+  margin: 120px auto 0;
 }
 #wrap .section-introduction-content .wrap {
-  padding: 0;
   max-width: 600px;
   margin: 0 auto;
 }
