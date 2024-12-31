@@ -1,6 +1,11 @@
 #wrap{
+	.member{
+		.tab-menu{
+			@include vw(padding-top,40px);
+		}
+	}
 	.section-login-content{
-		@include vw(margin-top,60px);
+		@include vw(margin-top,40px);
 		
 		.login-box{
 			width:100%;
@@ -112,7 +117,7 @@
 			p{
 				display:flex;align-items:center; justify-content:center;
 				@include vw(font-size,14px);@include vw(line-height,23.8px);font-weight:400;color:$color-black;
-				strong{font-weight:600;display:inline-block;}
+				strong{font-weight:600;display:inline-block;@include vw(margin-left,4px);}
 			}
 		}
 	}
