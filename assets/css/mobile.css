@@ -12231,97 +12231,94 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 #wrap .section-report-list .report-table .action {
   margin-top: 0;
 }
-#wrap [class^=section-pass] {
-  word-break: keep-all;
+#wrap #contents.pass {
+  padding-bottom: 100px;
 }
-#wrap [class^=section-pass] .wrap {
+#wrap #contents.pass [class^=section-pass] .wrap {
   max-width: 600px;
   margin: 0 auto;
 }
-#wrap [class^=section-pass] img {
+#wrap #contents.pass [class^=section-pass] img {
   max-width: 100%;
 }
-#wrap [class^=section-pass] .text-box p {
-  color: #2c2923;
-}
-#wrap .pass-title {
+#wrap #contents.pass .pass-title {
   text-align: center;
   padding: 10.1333333333vw 0;
 }
 @media screen and (min-width: 375px) {
-  #wrap .pass-title {
+  #wrap #contents.pass .pass-title {
     padding: 38px 0;
   }
 }
-#wrap .pass-title p {
+#wrap #contents.pass .pass-title p {
   font-size: 4.2666666667vw;
   font-weight: 800;
   line-height: 5.12vw;
 }
 @media screen and (min-width: 375px) {
-  #wrap .pass-title p {
+  #wrap #contents.pass .pass-title p {
     font-size: 16px;
   }
 }
 @media screen and (min-width: 375px) {
-  #wrap .pass-title p {
+  #wrap #contents.pass .pass-title p {
     line-height: 19.2px;
   }
 }
-#wrap .section-pass-home .wrap {
+#wrap #contents.pass .section-pass-home .wrap {
   padding: 0;
 }
-#wrap .section-pass-content {
+#wrap #contents.pass .section-pass-content {
   padding: 80px 0 120px;
 }
-#wrap .section-pass-schedule {
+#wrap #contents.pass .section-pass-schedule {
   padding: 80px 0;
   background-color: #f2efe7;
 }
-#wrap .section-pass-teacher {
+#wrap #contents.pass .section-pass-teacher {
   padding-top: 120px;
 }
-#wrap .section-pass-teacher .list-teacher {
+#wrap #contents.pass .section-pass-teacher .list-teacher {
   margin-top: 40px;
   border-top: 1px solid #d9d9d9;
 }
-#wrap .section-pass-teacher .list-teacher li {
+#wrap #contents.pass .section-pass-teacher .list-teacher li {
   padding: 60px 0 80px;
   border-bottom: 1px solid #d9d9d9;
 }
-#wrap .section-pass-teacher .list-teacher li .cont-area {
+#wrap #contents.pass .section-pass-teacher .list-teacher li .cont-area {
   margin-top: 40px;
 }
-#wrap .section-pass-teacher .list-teacher li .cont-area .img-link {
+#wrap #contents.pass .section-pass-teacher .list-teacher li .cont-area .img-link {
   margin-top: 60px;
   display: block;
 }
-#wrap .section-pass-teacher .list-teacher li .cont-area .img-link + .img-link {
+#wrap #contents.pass .section-pass-teacher .list-teacher li .cont-area .img-link + .img-link {
   margin-top: 20px;
 }
-#wrap .section-pass-teacher .list-teacher li .cont-area .full {
+#wrap #contents.pass .section-pass-teacher .list-teacher li .cont-area .full {
   margin-top: 40px;
 }
-#wrap .section-pass-apply {
+#wrap #contents.pass .section-pass-apply {
   padding-top: 32vw;
 }
 @media screen and (min-width: 375px) {
-  #wrap .section-pass-apply {
+  #wrap #contents.pass .section-pass-apply {
     padding-top: 120px;
   }
 }
-#wrap .section-pass-apply .list {
+#wrap #contents.pass .section-pass-apply .list {
   margin-bottom: 5.3333333333vw;
 }
 @media screen and (min-width: 375px) {
-  #wrap .section-pass-apply .list {
+  #wrap #contents.pass .section-pass-apply .list {
     margin-bottom: 20px;
   }
 }
-#wrap .section-pass-apply .action {
+#wrap #contents.pass .section-pass-apply .action {
   margin-top: 30px;
 }
-#wrap .section-pass-apply .action a {
+#wrap #contents.pass .section-pass-apply .action a {
   display: block;
   width: 100%;
   font-size: 3.7333333333vw;
@@ -12331,12 +12328,12 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   border: 1px soliD #2c2923;
 }
 @media screen and (min-width: 375px) {
-  #wrap .section-pass-apply .action a {
+  #wrap #contents.pass .section-pass-apply .action a {
     font-size: 14px;
   }
 }
 @media screen and (min-width: 375px) {
-  #wrap .section-pass-apply .action a {
+  #wrap #contents.pass .section-pass-apply .action a {
     padding: 23px 0;
   }
 }
