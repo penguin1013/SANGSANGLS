@@ -5,6 +5,11 @@
 		.login-box{
 			width:100%;
 			text-align:center;
+
+			.login-logo{
+				@include vw(margin-bottom,40px);
+			}
+
 			.form-control{
 				.text{@include vw(height,56px);}
 				&+.form-control{
@@ -45,6 +50,69 @@
 					@include vw(margin-left,12px);font-weight:600;
 					&:first-child{margin-left:0;}
 				}
+			}
+		}
+	}
+
+
+	.section-member-info{
+		@include vw(padding-bottom,24px);
+		.form-text{
+			@include vw(margin-top,4px);
+		}
+		.form-control{
+			@include vw(margin-top,12px);
+		}
+	}
+
+	.section-member-content{
+		.lecture-data-input{
+			dl {
+				@include vw(margin-top, 32px);
+				&:first-child{@include vw(margin-top, 24px);}
+			}
+
+			.input-box{
+				.input-text-start{@include vw(width, 48px);}
+				.form-control{width:100%;}
+
+			}
+
+			.average-box{
+				display:flex;
+				align-items:center;
+				.text{@include vw(width, 54px);}
+				.space{
+					display: inline-block;@include vw(padding,0 8px);
+					@include vw(font-size,14px);font-weight:400;color:$color-black;@include vw(line-height,23.8px);
+					&.first{
+						padding-right:0;
+					}
+				}
+
+				.form-text{margin-top:0;}
+			}
+		}
+
+		.search-result-box{
+			@include vw(padding, 16px);
+			@include vw(margin-top,40px);
+			background-color:$color-light-brown2;
+			dl{
+				display:flex;align-items:center; justify-content:center;
+				dt{
+					@include vw(font-size,13px);font-weight:400;color:$color-black;@include vw(line-height,22.1px);
+				}
+				dd{
+					@include vw(margin-left,16px);font-weight:600;color:$color-brown;
+					@include vw(font-size,14px);@include vw(line-height,23.8px);
+				}
+			}
+
+			p{
+				display:flex;align-items:center; justify-content:center;
+				@include vw(font-size,14px);@include vw(line-height,23.8px);font-weight:400;color:$color-black;
+				strong{font-weight:600;display:inline-block;}
 			}
 		}
 	}

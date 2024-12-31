@@ -268,7 +268,7 @@
 			//@include vw(margin-left,20px);
 			margin-left:auto;
 		}
-		.btn-address{
+		.btn-address, .btn-input{
 			position:absolute;top:50%;transform:translateY(-50%);
 			@include vw(right,12px);@include vw(height,26px);
 		}

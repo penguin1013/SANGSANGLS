@@ -432,6 +432,10 @@
                 background-color:$color-light-beige !important;
                 color:$color-gray;
             }
+
+			&.small{
+				@include vw(padding-right, 110px);
+			}
         }
 
 

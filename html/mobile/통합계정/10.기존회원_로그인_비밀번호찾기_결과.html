@@ -39,10 +39,10 @@
 			<div class="section-tab">
 				<div class="tab-menu">
 					<ul>
-						<li class="active">
+						<li>
 							<a href="javascript:;">아이디 찾기</a>
 						</li>
-						<li>
+						<li class="active">
 							<a href="javascript:;">비밀번호 찾기</a>
 						</li>
 					</ul>
@@ -74,7 +74,7 @@
 							<dt>이름</dt>
 							<dd>
 								<div class="form-control">
-									<input type="text" class="text" placeholder="이름을 입력하세요" value="" />
+									<input type="text" class="text disabled" disabled placeholder="" value="홍길동" />
 								</div>
 							</dd>
 						</dl>
@@ -86,21 +86,21 @@
 									<div class="form-control">
 										<div class="select">
 											<select name="" id="">
-												<option value="">년도</option>
+												<option value="">2002</option>
 											</select>
 										</div>
 									</div>
 									<div class="form-control">
 										<div class="select">
 											<select name="" id="">
-												<option value="">월</option>
+												<option value="">10</option>
 											</select>
 										</div>
 									</div>
 									<div class="form-control">
 										<div class="select">
 											<select name="" id="">
-												<option value="">일</option>
+												<option value="">13</option>
 											</select>
 										</div>
 									</div>
@@ -112,7 +112,7 @@
 							<dt>정보 수신 이메일</dt>
 							<dd>
 								<div class="form-control">
-									<input type="text" class="text small" placeholder="이메일을 입력하세요" value="" />
+									<input type="text" class="text small" placeholder="이메일을 입력하세요" value="12345@naver.com" />
 									<a href="javascript:;" class="btn small btn-input">인증번호 발송</a>
 								</div>
 							</dd>
@@ -122,22 +122,26 @@
 							<dt>휴대폰번호</dt>
 							<dd>
 								<div class="form-control">
-									<input type="text" class="text small" placeholder="휴대폰번호를 입력하세요" value="" />
+									<input type="text" class="text small" placeholder="" value="01012345678" />
 									<a href="javascript:;" class="btn small btn-input">인증번호 발송</a>
 								</div>
 							</dd>
 						</dl>
 
-
 						<dl>
 							<dt>인증번호</dt>
 							<dd>
 								<div class="form-control">
-									<input type="text" class="text small" placeholder="인증번호를 입력하세요" value="">
+									<input type="text" class="text small" placeholder="인증번호를 입력하세요" value="12345">
 									<a href="javascript:;" class="btn small btn-input">인증번호 확인</a>
 								</div>
 							</dd>
 						</dl>
+					</div>
+
+					<div class="search-result-box">
+						<p>임시 비밀번호를 <strong>이메일로 발송</strong>하였습니다.</p>
+						<p>임시 비밀번호를 <strong>휴대폰으로 발송</strong>하였습니다.</p>
 					</div>
 				</div>
 			</div>
