@@ -13391,7 +13391,6 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   font-size: 4.2666666667vw;
   font-weight: 600;
 }
-<<<<<<< HEAD
 @media screen and (min-width: 375px) {
   #wrap .section-zero-content .action .btn {
     height: 67px;
@@ -13402,7 +13401,3 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
     font-size: 16px;
   }
 }/*# sourceMappingURL=mobile.css.map */
-=======
-
-/*# sourceMappingURL=mobile.css.map */
->>>>>>> 7703d0c3fa39c615cd4bee4dc479c798ad4fb44b
