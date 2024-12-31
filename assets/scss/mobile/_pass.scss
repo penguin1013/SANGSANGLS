@@ -1,90 +1,90 @@
 #wrap {
-  [class^="section-pass"] {
-    word-break: keep-all;
-    .wrap {
-      max-width: 600px;
-      margin: 0 auto;
-    }
+  #contents.pass {
+    padding-bottom: 100px;
 
-    img {
-      max-width: 100%;
-    }
-    .text-box {
-      p {
-        color: #2c2923;
-      }
-    }
-  }
-  .pass-title {
-    text-align: center;
-    @include vw(padding, 38px 0);
-    p {
-      @include vw(font-size, 16px);
-      font-weight: 800;
-      @include vw(line-height, 19.2px);
-    }
-  }
-  .section-pass {
-    &-home {
+    [class^="section-pass"] {
       .wrap {
-        padding: 0;
+        max-width: 600px;
+        margin: 0 auto;
+      }
+
+      img {
+        max-width: 100%;
       }
     }
-    &-content {
-      padding: 80px 0 120px;
+
+    .pass-title {
+      text-align: center;
+      @include vw(padding, 38px 0);
+      p {
+        @include vw(font-size, 16px);
+        font-weight: 800;
+        @include vw(line-height, 19.2px);
+      }
     }
 
-    &-schedule {
-      padding: 80px 0;
-      background-color: #f2efe7;
-    }
+    .section-pass {
+      &-home {
+        .wrap {
+          padding: 0;
+        }
+      }
+      &-content {
+        padding: 80px 0 120px;
+      }
 
-    &-teacher {
-      padding-top: 120px;
-      .list-teacher {
-        margin-top: 40px;
-        border-top: 1px solid #d9d9d9;
+      &-schedule {
+        padding: 80px 0;
+        background-color: #f2efe7;
+      }
 
-        li {
-          padding: 60px 0 80px;
-          border-bottom: 1px solid #d9d9d9;
+      &-teacher {
+        padding-top: 120px;
+        .list-teacher {
+          margin-top: 40px;
+          border-top: 1px solid #d9d9d9;
 
-          .cont-area {
-            margin-top: 40px;
+          li {
+            padding: 60px 0 80px;
+            border-bottom: 1px solid #d9d9d9;
 
-            .img-link {
-              margin-top: 60px;
-              display: block;
-
-              & + .img-link {
-                margin-top: 20px;
-              }
-            }
-
-            .full {
+            .cont-area {
               margin-top: 40px;
+
+              .img-link {
+                margin-top: 60px;
+                display: block;
+
+                & + .img-link {
+                  margin-top: 20px;
+                }
+              }
+
+              .full {
+                margin-top: 40px;
+              }
             }
           }
         }
       }
-    }
 
-    &-apply {
-      @include vw(padding-top, 120px);
-      .list {
-        @include vw(margin-bottom, 20px);
-      }
+      &-apply {
+        @include vw(padding-top, 120px);
+        .list {
+          @include vw(margin-bottom, 20px);
+        }
 
-      .action {
-        margin-top: 30px;
-        a {
-          display: block;
-          width: 100%;
-          @include vw(font-size, 14px);
-          font-weight: 600;
-          text-align: center;
-          @include vw(padding, 23px 0);
-          border: 1px soliD #2c2923;
+        .action {
+          margin-top: 30px;
+          a {
+            display: block;
+            width: 100%;
+            @include vw(font-size, 14px);
+            font-weight: 600;
+            text-align: center;
+            @include vw(padding, 23px 0);
+            border: 1px soliD #2c2923;
+          }
         }
       }
     }
