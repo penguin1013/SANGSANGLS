@@ -438,4 +438,39 @@
 	.section-promotion-lecture{
 		padding-top:120px;
 	}
+
+
+	/* 241231 PR 전체수정 */
+	.section-pr-profile{
+		.img-box{
+			img{width:100%;}
+		}
+
+		.profile-box{
+			position: relative;
+			padding-top:120px;
+			.menu-box{
+				position: absolute;
+				left: 0;
+				width:162px;
+				.menu-title{
+					border-bottom:1px solid $color-light-brown;
+					font-weight:600;
+					padding-bottom:24px;
+					line-height:1.7;
+					font-size:24px;
+				}
+				.menu-list{
+					li{
+						border-bottom:1px solid $color-light-brown;
+						font-size:16px;
+						line-height:1.7;
+						color:$color-black;
+						font-weight:400;
+						padding:10px 0;
+					}
+				}
+			}
+		}
+	}
 }

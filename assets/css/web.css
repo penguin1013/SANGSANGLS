@@ -11044,6 +11044,9 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   margin-top: 40px;
 }
 
+#wrap {
+  /* 241231 PR 전체수정 */
+}
 #wrap .section-promotion-title {
   padding: 20px 0 60px;
   text-align: center;
@@ -11446,6 +11449,33 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 #wrap .section-promotion-lecture {
   padding-top: 120px;
+}
+#wrap .section-pr-profile .img-box img {
+  width: 100%;
+}
+#wrap .section-pr-profile .profile-box {
+  position: relative;
+  padding-top: 120px;
+}
+#wrap .section-pr-profile .profile-box .menu-box {
+  position: absolute;
+  left: 0;
+  width: 162px;
+}
+#wrap .section-pr-profile .profile-box .menu-box .menu-title {
+  border-bottom: 1px solid #E4DED3;
+  font-weight: 600;
+  padding-bottom: 24px;
+  line-height: 1.7;
+  font-size: 24px;
+}
+#wrap .section-pr-profile .profile-box .menu-box .menu-list li {
+  border-bottom: 1px solid #E4DED3;
+  font-size: 16px;
+  line-height: 1.7;
+  color: #2C2923;
+  font-weight: 400;
+  padding: 10px 0;
 }
 
 #wrap .section-teacher-gate .teacher-gate-title {
