@@ -1,3 +1,51 @@
 #wrap{
+	.section-login-content{
+		@include vw(margin-top,60px);
+		
+		.login-box{
+			width:100%;
+			text-align:center;
+			.form-control{
+				.text{@include vw(height,56px);}
+				&+.form-control{
+					.text{border-top:none;}
+				}
+			}
 
+			.radio-box{
+				@include vw(margin-top,16px);
+				display:flex;
+				justify-content: space-between;
+				
+			}
+
+			.btn-idpw{display:inline-block;@include vw(font-size,14px);font-weight:400;color:$color-black;}
+
+			.btn-login{@include vw(margin-top,24px);display:flex;align-items:center;justify-content: center;color:$color-white;@include vw(height,56px);background-color:$color-black;font-weight:600;@include vw(font-size,14px);}
+
+			.info-box{
+				@include vw(padding-top,24px);
+				@include vw(margin-top,60px);
+				border-top:1px solid $color-light-brown;
+				dl{
+					@include vw(margin-top,20px);text-align:left;
+					&:first-child{margin-top:0;}
+					dt,dd{
+						@include vw(font-size,14px);color:$color-black;@include vw(line-height,23.8px);}
+					dt{font-weight:600;@include vw(margin-bottom,4px);}
+					dd{font-weight:400;}
+				}
+			}
+
+			.action{
+				@include vw(margin-top,20px);
+				.btn{
+					width:50%;
+					border-color:$color-light-brown;background-color: $color-light-brown2;color:$color-black;
+					@include vw(margin-left,12px);font-weight:600;
+					&:first-child{margin-left:0;}
+				}
+			}
+		}
+	}
 }
