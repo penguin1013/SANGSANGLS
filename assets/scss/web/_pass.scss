@@ -1,456 +1,59 @@
 #wrap {
-    [class^="section-pass"] {
-        img {
-            max-width: 100%;
-        }
+  [class^="section-pass"] {
+    img {
+      max-width: 100%;
+    }
+  }
+
+  .pass-title {
+    padding: 88px 0 82px;
+    p {
+      font-family: $font-pretendard;
+      font-size: 24px;
+      line-height: 1.2;
+      font-weight: 800;
+      color: #2c2923;
+    }
+  }
+
+  .section-pass {
+    &-content {
+      padding: 120px 0 160px;
     }
 
-    .pass-title {
-        padding: 88px 0 82px;
-        p {
-            font-family: $font-pretendard;
-            font-size: 24px;
-            line-height: 1.2;
-            font-weight: 800;
-            color: #2C2923;
-        }
+    &-schedule {
+      padding: 120px 0 160px;
+      background: #f2efe7;
     }
 
-    .section-pass {
-        &-content {
-            padding-bottom: 150px;
-
-            .pass {
-                &-books {
-                    border: 1px solid #BEBEBC;
-                    @include boxSizing(border-box);
-                    .book {
-                        display: flex;
-                        padding: 120px 64px 100px 160px;
-                        border-bottom: 1px solid #BEBEBC;
-                        @include boxSizing(border-box);
-                        &:last-child {
-                            border-bottom: none;
-                        }
-                        .img-box {
-                            max-width: 258px;
-                            min-width: 258px;
-                            margin-right: 140px;
-                        }
-                        &-title {
-                            p {
-                                font-size: 42px;
-                                line-height: 1.5;
-                                font-weight: 600;
-                                letter-spacing: 0.02em;
-                                margin-bottom: 8px;
-                            }
-                            span {
-                                display: block;
-                                line-height: 1.5;
-                                font-size: 28px;
-                                font-weight: 700;
-                                color: #BEBEBC;
-                            }
-                        }
-                        &-text {
-                            font-size: 28px;
-                            font-weight: 700;
-                            line-height: 1.6;
-                            margin: 40px 0;
-                            strong {
-                                display: flex;
-                                align-items: flex-end;
-                                min-height: 135px;
-                                color: #0084FF;
-                                margin-bottom: 28px;
-                            }
-                            b {
-                                line-height: 1.5;
-                                color: #2C2923;
-                            }
-                        }
-                        &-period {
-                            font-size: 28px;
-                            p {
-                                font-weight: 600;
-                                color: #2C2923;
-                                span {
-                                    font-weight: 700;
-                                    color: #FF5E5E;
-                                    margin-left: 16px;
-                                }
-                            }
-                        }
-                    }
-                }
-                &-small {
-                    margin: 64px 0;
-                    border: 1px solid #BEBEBC;
-                    background: #F6F6F6;
-                    @include boxSizing(border-box);
-                    ul {
-                        display: flex;
-                        li {
-                            width: 100%;
-                            padding: 20px 0 28px;
-                            border-right: 1px solid #BEBEBC;
-                            &:last-child {
-                                border-right: none;
-                            }
-                            .img-box {
-                                height: 185px;
-                                text-align: center;
-                                margin: 0 auto 32px;
-                                img {
-                                    height: 100%;
-                                }
-                            }
-                            .text-box {
-                                display: flex;
-                                flex-direction: column;
-                                align-items: center;
-                                height: calc(100% - 217px);
-                                text-align: center;
-                                .small-title {
-                                    span {
-                                        font-size: 20px;
-                                        font-weight: 700;
-                                        color: #2C2923;
-                                    }
-                                    p {
-                                        font-size: 32px;
-                                        font-weight: 700;
-                                        color: #2C2923;
-                                        margin-top: 8px;
-                                    }
-                                }
-                                .small-text {
-                                    min-height: 192px;
-                                    height: 100%;
-                                    margin: 56px 0 32px;
-                                    strong {
-                                        font-size: 18px;
-                                        font-weight: 600;
-                                        line-height: 2;
-                                        color: #0084FF;
-                                    }
-                                }
-                                .small-period {
-                                    font-size: 20px;
-                                    font-weight: 600;
-                                    color: #2C2923;
-                                }
-                            }
-                        }
-                    }
-                }
-                &-exam {
-                    display: flex;
-                    padding: 120px 100px 120px 140px;
-                    background: #302F4C;
-                    .img-box {
-                        max-width: 244px;
-                        min-width: 244px;
-                        margin-right: 100px;
-                    }
-                    .text-box {
-                        p {
-                            font-size: 38px;
-                            font-weight: 700;
-                            line-height: 1.4;
-                            color: #fffffc;
-                        }
-                        strong {
-                            display: block;
-                            font-size: 34px;   
-                            font-weight: 700;
-                            color: #0084FF;
-                            margin: 42px 0;
-                        }
-                        span {
-                            display: flex;
-                            align-items: flex-end;
-                            min-height: 45px;
-                            font-size: 28px;
-                            font-weight: 600;
-                            color: #FFFFFC;
-                            em {
-                                font-weight: 700;
-                                color: #FF5E5E;
-                                margin-left: 16px;
-                            }
-                        }
-                    }
-                }
-            }
-        }
-        
-        &-schedule {
-            padding-bottom: 175px;
-            background: #F2EFE7;
-            table {
-                width: 100%;
-                border-collapse: collapse;
-                thead {
-                    th {
-                        font-size: 28px;
-                        font-weight: 700;
-                        color: #FFFFFC;
-                        text-align: left;
-                        padding: 20px 40px 38px;
-                        border: solid #2C2923;
-                        border-width: 0 1px 1px 1px;
-                        background: #2C2923;
-                    }
-                }
-                tbody {
-                    td {
-                        vertical-align: baseline;
-                        padding: 40px;
-                        height: 332px;
-                        border: solid #2C2923;
-                        border-width: 0 1px 1px 1px;
-                        @include boxSizing(border-box);
-                        ul {
-                            li {
-                                font-size: 22px;
-                                line-height: 2;
-                                font-weight: 800;
-                                color: #2C2923;
-                                &:last-child {
-                                    margin-bottom: 0;
-                                }
-                                strong {
-                                    color: #0084FF;
-                                    margin-left: 4px;
-                                }
-                            }
-                        }
-                        &.archive {
-                            height: 120px;
-                            font-size: 22px;
-                            font-weight: 800;
-                            color: #2C2923;
-                            text-align: center;
-                            background: #FBFAF6;
-                        }
-                    }
-                }
-            }
-
-            .icon-box {
-                width: 93px;
-                margin: 100px auto 90px;
-            }
-            .schedule-title {
-                padding: 20px 40px 38px;
-                background: #2C2923;
-                @include boxSizing(border-box);
-                p {
-                    font-size: 28px;
-                    color: #FFFFFC;
-                }
-            }
-            .schedule-list {
-                .list {
-                    position: relative;
-                    display: flex;
-                    margin-top: 40px;
-                    padding: 80px;
-                    padding-left: 120px;
-                    background: #fff;
-                    > .img-box {
-                        max-width: 300px;
-                        min-width: 300px;
-                        margin-right: 120px;
-                    }
-                    &-title {
-                        p {
-                            font-size: 28px;
-                            font-weight: 800;
-                            line-height: 1;
-                            margin-bottom: 16px;
-                        }
-                        span {
-                            display: block;
-                            font-size: 24px;
-                            line-height: 1;
-                            font-weight: 400;
-                        }
-                    }
-                    &-text {
-                        min-height: 190px;
-                        font-size: 24px;
-                        font-weight: 700;
-                        line-height: 1.8;
-                        margin: 84px 0 80px;
-                        strong {
-                            position: relative;
-                            display: block;
-                            font-size: 24px;
-                            font-weight: 700;
-                            color: #0084FF;
-                            margin-bottom: 16px;
-                            span {
-                                display: inline-block;
-                                vertical-align: middle;
-                                color: #BEBEBC;
-                                margin-top: 4px;
-                            }
-                        }
-                        .img-box {
-                            margin-top: 24px;
-                        }
-                    }
-                    &-curriculum {
-                        ul {
-                            li {
-                                margin-bottom: 4px;
-                                &:last-child {
-                                    margin-bottom: 0;
-                                }
-                                a {
-                                    display: flex;
-                                    .img-box {
-                                        max-width: 60px;
-                                        min-width: 60px;
-                                        margin-right: 16px;
-                                    } 
-                                    .text-box {
-                                        font-size: 24px;
-                                        line-height: 1.5;
-                                        font-weight: 600;
-                                    }
-                                    &:hover {
-                                        .text-box p {
-                                            text-decoration: underline;
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    }
-
-                    &.history {
-                        .list-text {
-                            margin-bottom: 24px;
-                        }
-                        .list-curriculum {
-                            min-height: auto;
-                        }
-                    }
-
-                    .desc {
-                        font-size: 16px;
-                        line-height: 1.5;
-                        font-weight: 400;
-                        color: #BEBEBC;
-                        margin-top: 27px;
-                    }
-                }
-            }
-        }
-
-        &-apply {
-            padding-top: 150px;
-            .list {
-                margin-bottom: 48px;
-                &:last-child {
-                    margin-bottom: 0;
-                }
-                a {
-                    position: relative;
-                    display: block;
-                    width: 100%;
-                    min-height: 260px;
-                    padding: 40px 48px;
-                    background: #566243;
-                    @include boxSizing(border-box);
-                    .apply-title {
-                        p {
-                            font-size: 36px;
-                            font-weight: 400;
-                            line-height: 1.5;
-                            color: #fff;
-                        }
-                    }
-                    .apply-benefit {
-                        margin-top: 70px;
-                        small {
-                            display: block;
-                            font-size: 16px;
-                            font-weight: 800;
-                            line-height: 1.8;
-                            color: #BEBEBC;
-                        }
-                        &-list {
-                            p {
-                                font-size: 24px;
-                                font-weight: 700;
-                                color: #fff;
-                                margin: 8px 0 16px;
-                            }
-                            span {
-                                display: block;
-                                font-size: 20px;
-                                font-weight: 400;
-                                color: #fff;
-                                line-height: 1.8;
-                            }
-                            strong {
-                                font-size: 24px;
-                                color: #F2F27B;
-                                line-height: 1.8;
-                            }
-                        }
-                        .desc {
-                            position: absolute;
-                            right: 68px;
-                            bottom: 40px;
-                            p {
-                                font-size: 20px;
-                                font-weight: 500;
-                                line-height: 1.8;
-                                color: #F2EFE7;
-                                margin: 0;
-                            }
-                        }
-                    }
-
-                    &.base {
-                        background: #9D9D9D;
-                    }
-                }
-                &.point {
-                    a {
-                        background: #4A3952;
-                        .apply-title {
-                            p {
-                                color: #E5E52F;
-                            }
-                        }
-                    }
-                }
-                &.depth {
-                    display: flex;
-                    gap: 0 40px;
-                }
-            }
-            .action {
-                text-align: right;
-                margin-top: 40px;
-                a {
-                    display: inline-block;
-                    width: 270px;
-                    font-size: 14px;
-                    font-weight: 600;
-                    text-align: center;
-                    padding: 8px 0;
-                    border: 1px solid #2C2923;
-                    @include boxSizing(border-box);
-                }
-            }
-        }
+    &-teacher {
+      padding: 120px 0 160px;
     }
+
+    &-apply {
+      .list {
+        display: flex;
+        gap: 10px;
+        &.point {
+          margin-bottom: 10px;
+        }
+      }
+
+      .action {
+        text-align: right;
+        margin-top: 30px;
+
+        a {
+          display: inline-block;
+          width: 240px;
+          font-size: 14px;
+          font-weight: 600;
+          text-align: center;
+          padding: 20px 0;
+          border: 1px solid #2c2923;
+          @include boxSizing(border-box);
+        }
+      }
+    }
+  }
 }
