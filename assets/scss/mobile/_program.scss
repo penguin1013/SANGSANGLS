@@ -1,0 +1,218 @@
+#wrap {
+  #contents.program {
+    padding-bottom: 100px;
+
+    [class^="section-program"] {
+      .wrap {
+        max-width: 600px;
+        margin: 0 auto;
+      }
+
+      img {
+        max-width: 100%;
+      }
+    }
+
+    .title-program {
+      margin: 100px 0 24px;
+      line-height: 1.7;
+      font-size: 16px;
+      font-weight: 600;
+
+      &:first-child {
+        margin-top: 0;
+      }
+    }
+
+    .title-product {
+      margin-bottom: 40px;
+      font-size: 28px;
+      font-weight: 200;
+    }
+
+    .action {
+      margin-top: 32px;
+
+      * {
+        display: block;
+        width: 100%;
+        @include vw(font-size, 16px);
+        font-weight: 400;
+        text-align: center;
+        @include vw(padding, 17px 0);
+        border: 1px soliD #2c2923;
+      }
+    }
+
+    .section-program {
+      &-visual {
+        padding: 60px 0 100px;
+
+        .title {
+          line-height: 1.5;
+          font-size: 40px;
+          font-weight: 200;
+
+          small {
+            margin-top: 20px;
+            display: block;
+            font-size: 24px;
+            color: #0e4b9e;
+          }
+        }
+      }
+
+      &-content {
+        padding-bottom: 100px;
+
+        .program-section {
+          padding-top: 100px;
+        }
+
+        .title-border {
+          padding-top: 24px;
+          border-top: 1px solid #eeeeee;
+        }
+
+        .list-images > li {
+          margin-top: 100px;
+        }
+
+        .list-teacher {
+          margin-top: 40px;
+          border-top: 1px solid #d9d9d9;
+
+          li {
+            padding: 60px 0 80px;
+            border-bottom: 1px solid #d9d9d9;
+
+            .cont-area {
+              margin-top: 40px;
+
+              .img-link {
+                margin-top: 60px;
+                display: block;
+
+                & + .img-link {
+                  margin-top: 20px;
+                }
+              }
+
+              .full {
+                margin-top: 40px;
+              }
+            }
+          }
+        }
+      }
+
+      &-apply {
+        padding: 100px 0;
+        background-color: #eeeeee;
+
+        .list-benefit {
+          line-height: 2;
+          font-size: 16px;
+          font-weight: 400;
+        }
+
+        .list-product {
+          margin-top: 80px;
+
+          li {
+            padding: 32px 24px;
+            background-color: #fff;
+
+            &:not(:first-child) {
+              margin-top: 32px;
+            }
+
+            .title-product {
+              margin-bottom: 32px;
+              padding-bottom: 32px;
+              border-bottom: 1px solid #eee;
+            }
+
+            .price-area {
+              display: flex;
+              font-weight: 400;
+              justify-content: space-between;
+              align-items: flex-end;
+
+              .benefit {
+                height: 48px;
+                padding: 0 16px;
+                display: inline-flex;
+                border: 1px solid #0e4b9e;
+                font-size: 16px;
+                color: #0e4b9e;
+                justify-content: center;
+                align-items: center;
+              }
+
+              .price {
+                line-height: 48px;
+                font-size: 24px;
+                color: #0e4b9e;
+                text-align: right;
+
+                del {
+                  font-size: 20px;
+                  font-weight: 200;
+                  color: #aaa;
+                }
+              }
+            }
+
+            .btn-area {
+              margin: 32px auto 24px;
+
+              * {
+                width: 100%;
+                height: 56px;
+                display: flex;
+                background-color: #fbfaf6;
+                border: none;
+                font-size: 16px;
+                font-weight: 400;
+                justify-content: center;
+                align-items: center;
+              }
+            }
+
+            .fake-checkbox label {
+              line-height: 1.5;
+              cursor: pointer;
+            }
+          }
+        }
+      }
+
+      &-info {
+        padding-top: 100px;
+
+        .text-area {
+          line-height: 2;
+          font-size: 20px;
+          font-weight: 400;
+
+          small {
+            font-family: $font-eskorte;
+          }
+
+          .light {
+            margin-top: 20px;
+            color: $color-777;
+          }
+        }
+
+        .img-box {
+          margin-top: 80px;
+          > * {
+            max-width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
