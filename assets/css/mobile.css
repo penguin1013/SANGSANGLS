@@ -6511,81 +6511,97 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
     font-size: 14px;
   }
 }
-#wrap .lecture-data-list .list .desc-box .t-desc .desc-price, #wrap .lecture-data-list .list .desc-box .t-desc .desc-point {
+#wrap .lecture-data-list .list .desc-box .t-desc .desc-price,
+#wrap .lecture-data-list .list .desc-box .t-desc .desc-point {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-top: 1.6vw;
 }
 @media screen and (min-width: 375px) {
-  #wrap .lecture-data-list .list .desc-box .t-desc .desc-price, #wrap .lecture-data-list .list .desc-box .t-desc .desc-point {
+  #wrap .lecture-data-list .list .desc-box .t-desc .desc-price,
+  #wrap .lecture-data-list .list .desc-box .t-desc .desc-point {
     margin-top: 6px;
   }
 }
-#wrap .lecture-data-list .list .desc-box .t-desc .desc-price .count, #wrap .lecture-data-list .list .desc-box .t-desc .desc-point .count {
+#wrap .lecture-data-list .list .desc-box .t-desc .desc-price .count,
+#wrap .lecture-data-list .list .desc-box .t-desc .desc-point .count {
   font-size: 3.2vw;
   color: #7A746A;
 }
 @media screen and (min-width: 375px) {
-  #wrap .lecture-data-list .list .desc-box .t-desc .desc-price .count, #wrap .lecture-data-list .list .desc-box .t-desc .desc-point .count {
+  #wrap .lecture-data-list .list .desc-box .t-desc .desc-price .count,
+  #wrap .lecture-data-list .list .desc-box .t-desc .desc-point .count {
     font-size: 12px;
   }
 }
-#wrap .lecture-data-list .list .desc-box .t-desc .desc-price .count strong, #wrap .lecture-data-list .list .desc-box .t-desc .desc-point .count strong {
+#wrap .lecture-data-list .list .desc-box .t-desc .desc-price .count strong,
+#wrap .lecture-data-list .list .desc-box .t-desc .desc-point .count strong {
   color: #2C2923;
   display: inline-block;
   margin-left: 1.3333333333vw;
 }
 @media screen and (min-width: 375px) {
-  #wrap .lecture-data-list .list .desc-box .t-desc .desc-price .count strong, #wrap .lecture-data-list .list .desc-box .t-desc .desc-point .count strong {
+  #wrap .lecture-data-list .list .desc-box .t-desc .desc-price .count strong,
+  #wrap .lecture-data-list .list .desc-box .t-desc .desc-point .count strong {
     margin-left: 5px;
   }
 }
-#wrap .lecture-data-list .list .desc-box .t-desc .desc-price .price, #wrap .lecture-data-list .list .desc-box .t-desc .desc-point .price {
+#wrap .lecture-data-list .list .desc-box .t-desc .desc-price .price,
+#wrap .lecture-data-list .list .desc-box .t-desc .desc-point .price {
   display: flex;
   justify-content: flex-end;
   align-items: center;
 }
-#wrap .lecture-data-list .list .desc-box .t-desc .desc-price .price > div, #wrap .lecture-data-list .list .desc-box .t-desc .desc-point .price > div {
+#wrap .lecture-data-list .list .desc-box .t-desc .desc-price .price > div,
+#wrap .lecture-data-list .list .desc-box .t-desc .desc-point .price > div {
   margin-left: 3.2vw;
 }
 @media screen and (min-width: 375px) {
-  #wrap .lecture-data-list .list .desc-box .t-desc .desc-price .price > div, #wrap .lecture-data-list .list .desc-box .t-desc .desc-point .price > div {
+  #wrap .lecture-data-list .list .desc-box .t-desc .desc-price .price > div,
+  #wrap .lecture-data-list .list .desc-box .t-desc .desc-point .price > div {
     margin-left: 12px;
   }
 }
-#wrap .lecture-data-list .list .desc-box .t-desc .desc-price .price .price-before, #wrap .lecture-data-list .list .desc-box .t-desc .desc-point .price .price-before {
+#wrap .lecture-data-list .list .desc-box .t-desc .desc-price .price .price-before,
+#wrap .lecture-data-list .list .desc-box .t-desc .desc-point .price .price-before {
   color: #E4DED3;
   font-size: 3.4666666667vw;
   font-weight: 400;
   text-decoration: line-through;
 }
 @media screen and (min-width: 375px) {
-  #wrap .lecture-data-list .list .desc-box .t-desc .desc-price .price .price-before, #wrap .lecture-data-list .list .desc-box .t-desc .desc-point .price .price-before {
+  #wrap .lecture-data-list .list .desc-box .t-desc .desc-price .price .price-before,
+  #wrap .lecture-data-list .list .desc-box .t-desc .desc-point .price .price-before {
     font-size: 13px;
   }
 }
-#wrap .lecture-data-list .list .desc-box .t-desc .desc-price .price .price-after, #wrap .lecture-data-list .list .desc-box .t-desc .desc-point .price .price-after {
+#wrap .lecture-data-list .list .desc-box .t-desc .desc-price .price .price-after,
+#wrap .lecture-data-list .list .desc-box .t-desc .desc-point .price .price-after {
   color: #A07D3B;
   font-size: 3.7333333333vw;
   font-weight: 600;
 }
 @media screen and (min-width: 375px) {
-  #wrap .lecture-data-list .list .desc-box .t-desc .desc-price .price .price-after, #wrap .lecture-data-list .list .desc-box .t-desc .desc-point .price .price-after {
+  #wrap .lecture-data-list .list .desc-box .t-desc .desc-price .price .price-after,
+  #wrap .lecture-data-list .list .desc-box .t-desc .desc-point .price .price-after {
     font-size: 14px;
   }
 }
-#wrap .lecture-data-list .list .desc-box .t-desc .desc-price .price .price-sale, #wrap .lecture-data-list .list .desc-box .t-desc .desc-point .price .price-sale {
-  color: #E50000;
+#wrap .lecture-data-list .list .desc-box .t-desc .desc-price .price .price-sale,
+#wrap .lecture-data-list .list .desc-box .t-desc .desc-point .price .price-sale {
+  color: #e50000;
   font-size: 3.7333333333vw;
   font-weight: 600;
 }
 @media screen and (min-width: 375px) {
-  #wrap .lecture-data-list .list .desc-box .t-desc .desc-price .price .price-sale, #wrap .lecture-data-list .list .desc-box .t-desc .desc-point .price .price-sale {
+  #wrap .lecture-data-list .list .desc-box .t-desc .desc-price .price .price-sale,
+  #wrap .lecture-data-list .list .desc-box .t-desc .desc-point .price .price-sale {
     font-size: 14px;
   }
 }
-#wrap .lecture-data-list .list .desc-box .t-more, #wrap .lecture-data-list .list .desc-box .desc-more {
+#wrap .lecture-data-list .list .desc-box .t-more,
+#wrap .lecture-data-list .list .desc-box .desc-more {
   position: absolute;
   right: 0;
   top: -1.6vw;
@@ -6593,11 +6609,13 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   font-size: 0;
 }
 @media screen and (min-width: 375px) {
-  #wrap .lecture-data-list .list .desc-box .t-more, #wrap .lecture-data-list .list .desc-box .desc-more {
+  #wrap .lecture-data-list .list .desc-box .t-more,
+  #wrap .lecture-data-list .list .desc-box .desc-more {
     top: -6px;
   }
 }
-#wrap .lecture-data-list .list .desc-box .t-more .btn-star, #wrap .lecture-data-list .list .desc-box .desc-more .btn-star {
+#wrap .lecture-data-list .list .desc-box .t-more .btn-star,
+#wrap .lecture-data-list .list .desc-box .desc-more .btn-star {
   background: url("../images/mobile/btn_star_off.svg") no-repeat 0 0;
   background-size: cover;
   width: 8.5333333333vw;
@@ -6605,19 +6623,23 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   display: block;
 }
 @media screen and (min-width: 375px) {
-  #wrap .lecture-data-list .list .desc-box .t-more .btn-star, #wrap .lecture-data-list .list .desc-box .desc-more .btn-star {
+  #wrap .lecture-data-list .list .desc-box .t-more .btn-star,
+  #wrap .lecture-data-list .list .desc-box .desc-more .btn-star {
     width: 32px;
   }
 }
 @media screen and (min-width: 375px) {
-  #wrap .lecture-data-list .list .desc-box .t-more .btn-star, #wrap .lecture-data-list .list .desc-box .desc-more .btn-star {
+  #wrap .lecture-data-list .list .desc-box .t-more .btn-star,
+  #wrap .lecture-data-list .list .desc-box .desc-more .btn-star {
     height: 32px;
   }
 }
-#wrap .lecture-data-list .list .desc-box .t-more .btn-star img, #wrap .lecture-data-list .list .desc-box .desc-more .btn-star img {
+#wrap .lecture-data-list .list .desc-box .t-more .btn-star img,
+#wrap .lecture-data-list .list .desc-box .desc-more .btn-star img {
   display: none;
 }
-#wrap .lecture-data-list .list .desc-box .t-more .btn-star.active img, #wrap .lecture-data-list .list .desc-box .desc-more .btn-star.active img {
+#wrap .lecture-data-list .list .desc-box .t-more .btn-star.active img,
+#wrap .lecture-data-list .list .desc-box .desc-more .btn-star.active img {
   display: block;
 }
 #wrap .lecture-data-list .list .action {
@@ -6814,7 +6836,8 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 #wrap .lecture-data-input .btn-map {
   margin-left: auto;
 }
-#wrap .lecture-data-input .btn-address, #wrap .lecture-data-input .btn-input {
+#wrap .lecture-data-input .btn-address,
+#wrap .lecture-data-input .btn-input {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -6822,12 +6845,14 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   height: 6.9333333333vw;
 }
 @media screen and (min-width: 375px) {
-  #wrap .lecture-data-input .btn-address, #wrap .lecture-data-input .btn-input {
+  #wrap .lecture-data-input .btn-address,
+  #wrap .lecture-data-input .btn-input {
     right: 12px;
   }
 }
 @media screen and (min-width: 375px) {
-  #wrap .lecture-data-input .btn-address, #wrap .lecture-data-input .btn-input {
+  #wrap .lecture-data-input .btn-address,
+  #wrap .lecture-data-input .btn-input {
     height: 26px;
   }
 }
@@ -7162,6 +7187,13 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 #wrap .section-special-lecture + .section-promotion-lecture {
   padding-top: 0;
+}
+#wrap .full-lectures .tab-menu {
+  padding: 40px 20px 32px 20px;
+}
+#wrap .full-lectures .lecture-data-list.border-none {
+  margin-top: -22px;
+  border-top: none;
 }
 
 #wrap .section-tab + .section-notice-list {
@@ -13317,4 +13349,6 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   text-align: center;
   justify-content: center;
   align-items: center;
-}/*# sourceMappingURL=mobile.css.map */
+}
+
+/*# sourceMappingURL=mobile.css.map */
