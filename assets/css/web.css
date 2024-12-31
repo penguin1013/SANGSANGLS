@@ -11450,32 +11450,311 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 #wrap .section-promotion-lecture {
   padding-top: 120px;
 }
-#wrap .section-pr-profile .img-box img {
+#wrap .section-pr-profile {
+  padding-top: 20px;
+}
+#wrap .section-pr-profile img {
   width: 100%;
 }
-#wrap .section-pr-profile .profile-box {
+#wrap .section-pr-profile .profile-title {
+  margin-top: 100px;
+}
+#wrap .section-pr-profile .profile-menu-box {
   position: relative;
   padding-top: 120px;
+  display: flex;
 }
-#wrap .section-pr-profile .profile-box .menu-box {
-  position: absolute;
-  left: 0;
+#wrap .section-pr-profile .profile-menu-box .profile-menu {
   width: 162px;
 }
-#wrap .section-pr-profile .profile-box .menu-box .menu-title {
+#wrap .section-pr-profile .profile-menu-box .profile-menu .menu-title {
   border-bottom: 1px solid #E4DED3;
   font-weight: 600;
   padding-bottom: 24px;
-  line-height: 1.7;
+  line-height: 40.8px;
   font-size: 24px;
 }
-#wrap .section-pr-profile .profile-box .menu-box .menu-list li {
+#wrap .section-pr-profile .profile-menu-box .profile-menu .menu-list li {
   border-bottom: 1px solid #E4DED3;
   font-size: 16px;
-  line-height: 1.7;
+  line-height: 27.2px;
   color: #2C2923;
   font-weight: 400;
   padding: 10px 0;
+}
+#wrap .section-pr-profile .profile-menu-box .profile-text {
+  width: 889px;
+  margin-left: 131px;
+}
+#wrap .section-pr-content .curriculum-img {
+  margin-top: 160px;
+}
+#wrap .section-pr-content .curriculum-img img {
+  width: 100%;
+}
+#wrap .section-pr-content .curriculum-list {
+  margin-top: 160px;
+  display: flex;
+  justify-content: space-between;
+}
+#wrap .section-pr-content .curriculum-list .curriculum-title {
+  width: 273px;
+  color: #2C2923;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.7;
+}
+#wrap .section-pr-content .curriculum-list .curriculum-title strong {
+  font-size: 28px;
+  font-weight: 900;
+  color: #0084FF;
+}
+#wrap .section-pr-content .curriculum-list .curriculum-title span {
+  display: block;
+  font-size: 11px;
+  margin-top: 16px;
+}
+#wrap .section-pr-content .curriculum-list .curriculum-content {
+  width: 891px;
+}
+#wrap .section-pr-content .curriculum-list .curriculum-content .schedule-box img {
+  width: 100%;
+}
+#wrap .section-pr-content .curriculum-list .curriculum-content p {
+  color: #2C2923;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 34px;
+  margin-bottom: 60px;
+}
+#wrap .section-pr-content .curriculum-list .curriculum-content p strong {
+  font-weight: 600;
+}
+#wrap .section-pr-content .curriculum-list .curriculum-content .video-box {
+  position: relative;
+  width: 100%;
+  margin-bottom: 60px;
+}
+#wrap .section-pr-content .curriculum-list .curriculum-content .video-box a {
+  display: block;
+  position: relative;
+  height: 501px;
+}
+#wrap .section-pr-content .curriculum-list .curriculum-content .video-box a img {
+  width: 100%;
+}
+#wrap .section-pr-content .curriculum-list .curriculum-content .video-box a:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background: url(../images/pr/btn_play.svg) no-repeat 50% 50%;
+  background-size: 80px 80px;
+}
+#wrap .section-pr-content .curriculum-list .curriculum-content .video-box a .video-text {
+  position: absolute;
+  left: 0;
+  bottom: 40px;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  font-size: 30px;
+  line-height: 1.7;
+  font-weight: 500;
+}
+#wrap .section-pr-content .curriculum-list .curriculum-content .table-box {
+  margin-top: 40px;
+}
+#wrap .section-pr-content .curriculum-list .curriculum-content .table-box table {
+  width: 100%;
+}
+#wrap .section-pr-content .curriculum-list .curriculum-content .table-box table thead th {
+  background-color: #E4DED3;
+  border-left: 1px solid #FBFAF6;
+  color: #2C2923;
+  font-weight: 600;
+  font-size: 14px;
+  padding: 12px 0;
+  vertical-align: center;
+}
+#wrap .section-pr-content .curriculum-list .curriculum-content .table-box table tbody th, #wrap .section-pr-content .curriculum-list .curriculum-content .table-box table tbody td {
+  text-align: center;
+  padding: 14px 0;
+  vertical-align: center;
+}
+#wrap .section-pr-content .curriculum-list .curriculum-content .table-box table tbody th {
+  border-bottom: 1px solid #E4DED3;
+  color: #2C2923;
+  font-weight: 600;
+  font-size: 14px;
+  background-color: #F2EFE7;
+}
+#wrap .section-pr-content .curriculum-list .curriculum-content .table-box table tbody td {
+  border-left: 1px solid #E4DED3;
+  border-bottom: 1px solid #E4DED3;
+  color: #2C2923;
+  font-size: 16px;
+  font-weight: 600;
+}
+#wrap .section-pr-content .curriculum-list .curriculum-content .table-box table tbody td.empty {
+  background-color: #FBFAF6;
+}
+#wrap .section-pr-content .curriculum-list .curriculum-content .history {
+  text-align: center;
+  padding: 0 48px 40px;
+}
+#wrap .section-pr-content .curriculum-list .curriculum-content .history p {
+  margin-bottom: 0;
+}
+#wrap .section-pr-content .curriculum-list .curriculum-content .history ul {
+  display: flex;
+  gap: 40px;
+}
+#wrap .section-pr-content .curriculum-list .curriculum-content .history ul li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 40px;
+}
+#wrap .section-pr-content .curriculum-list .curriculum-content .history-logo {
+  width: 80px;
+  margin-right: 20px;
+}
+#wrap .section-pr-content .curriculum-list .curriculum-content .history-logo img {
+  width: 100%;
+}
+#wrap .section-pr-content .curriculum-list .curriculum-content .history-text p {
+  font-size: 18px;
+  line-height: 1.7;
+}
+#wrap .section-pr-content .curriculum-list .curriculum-content .history-content span {
+  font-size: 16px;
+}
+#wrap .section-pr-content .curriculum-list .curriculum-content .history-content p {
+  font-family: "Noto Serif KR", "Noto Sans KR", "맑은 고딕", "Malgun Gothic", "Apple SD Gothic Neo", "Dotum", "돋움", "Gulim", "굴림", "굴림체", Sans-Serif;
+  font-size: 26px;
+  font-weight: 600;
+}
+#wrap .section-pr-content .curriculum-list .curriculum-content .history-content small {
+  font-size: 14px;
+}
+#wrap .section-pr-content .curriculum-list .curriculum-content .number-list strong {
+  font-size: 20px;
+  font-weight: 700;
+}
+#wrap .section-pr-content .curriculum-list .curriculum-content .number-list .list {
+  padding: 40px;
+  border: 1px solid #e4ded3;
+}
+#wrap .section-pr-content .curriculum-list .curriculum-content .number-list .list ul {
+  margin: 0 24px;
+  margin-top: 12px;
+}
+#wrap .section-pr-content .curriculum-list .curriculum-content .step {
+  padding: 40px 60px;
+  border: 1px solid #7A746A;
+  background: #FBFAF6;
+}
+#wrap .section-pr-content .curriculum-list .curriculum-content .step span {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.7;
+}
+#wrap .section-pr-content .curriculum-list .curriculum-content .step ul {
+  margin-top: 12px;
+  margin-bottom: 48px;
+}
+#wrap .section-pr-content .curriculum-list .curriculum-content .step ul:last-child {
+  margin-bottom: 0;
+}
+#wrap .section-pr-content .curriculum-list .curriculum-content .step ul li {
+  position: relative;
+  font-size: 16px;
+  line-height: 2;
+  font-weight: 700;
+  padding-left: 12px;
+}
+#wrap .section-pr-content .curriculum-list .curriculum-content .step ul li:before {
+  content: "·";
+  position: absolute;
+  left: 0;
+}
+#wrap .section-pr-content .curriculum-list .curriculum-content .recommend-table {
+  border-top: 1px solid #E4DED3;
+}
+#wrap .section-pr-content .curriculum-list .curriculum-content .recommend-table .list {
+  display: flex;
+  line-height: 2;
+  border-bottom: 1px solid #E4DED3;
+}
+#wrap .section-pr-content .curriculum-list .curriculum-content .recommend-table .list-title {
+  padding: 24px 0;
+}
+#wrap .section-pr-content .curriculum-list .curriculum-content .recommend-table .list-title p {
+  width: 224px;
+  font-size: 16px;
+  line-height: 2;
+  font-weight: 700;
+  margin-right: 40px;
+  margin-bottom: 0;
+}
+#wrap .section-pr-content .curriculum-list .curriculum-content .recommend-table .list-text {
+  padding: 24px 0;
+}
+#wrap .section-pr-content .curriculum-list .curriculum-content .recommend-table .list-text span {
+  font-size: 16px;
+  line-height: 2;
+}
+#wrap .section-pr-content .curriculum-list .curriculum-content .recommend-table .list-depth .list-title p {
+  width: 120px;
+  margin-right: 0;
+}
+#wrap .section-pr-content .curriculum-list .curriculum-content .recommend-table .list-depth .list-text {
+  padding: 24px 40px;
+  border-left: 1px solid #E4DED3;
+}
+#wrap .section-pr-content .curriculum-list .curriculum-content .recommend-table .list-depth .list-text ul li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 24px;
+}
+#wrap .section-pr-content .curriculum-list .curriculum-content .recommend-table .list-depth .list-text ul li:last-child {
+  margin-bottom: 0;
+}
+#wrap .section-pr-content .curriculum-list .curriculum-content .recommend-table .list-depth .list-text ul li p {
+  width: 80px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 2;
+  margin-right: 24px;
+  margin-bottom: 0;
+}
+#wrap .section-pr-content .curriculum-list .curriculum-content .recommend-table .list-depth .list-text ul li span {
+  font-size: 16px;
+  line-height: 2;
+}
+#wrap .section-pr-content .curriculum-list .curriculum-content .recommend-type {
+  margin-top: 60px;
+}
+#wrap .section-pr-content .curriculum-list .curriculum-content .recommend-type ul li {
+  position: relative;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 2;
+  padding-left: 12px;
+}
+#wrap .section-pr-content .curriculum-list .curriculum-content .recommend-type ul li:before {
+  content: "·";
+  position: absolute;
+  left: 0;
+}
+#wrap .section-pr-lecture {
+  padding-top: 160px;
 }
 
 #wrap .section-teacher-gate .teacher-gate-title {

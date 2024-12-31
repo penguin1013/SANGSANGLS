@@ -442,35 +442,330 @@
 
 	/* 241231 PR 전체수정 */
 	.section-pr-profile{
-		.img-box{
-			img{width:100%;}
-		}
-
-		.profile-box{
+		img{width:100%;}
+		padding-top:20px;
+		.profile-title{margin-top:100px;}
+		.profile-menu-box{
 			position: relative;
 			padding-top:120px;
-			.menu-box{
-				position: absolute;
-				left: 0;
+			display:flex;
+
+			.profile-menu{
 				width:162px;
 				.menu-title{
 					border-bottom:1px solid $color-light-brown;
 					font-weight:600;
 					padding-bottom:24px;
-					line-height:1.7;
+					line-height:40.8px;
 					font-size:24px;
 				}
 				.menu-list{
 					li{
 						border-bottom:1px solid $color-light-brown;
 						font-size:16px;
-						line-height:1.7;
+						line-height:27.2px;
 						color:$color-black;
 						font-weight:400;
 						padding:10px 0;
 					}
 				}
 			}
+
+			.profile-text{
+				width:889px;
+				margin-left:131px;
+			}
 		}
+	}
+
+	.section-pr-content{
+		.curriculum-img{
+			margin-top:160px;
+			img{width:100%;}
+		}
+
+		.curriculum-list{
+			margin-top:160px;
+			display:flex;
+			justify-content: space-between;
+			.curriculum-title{
+				width:273px;
+				color:$color-black;
+				font-size:20px;
+				font-weight:600;
+				line-height:1.7;
+				strong {
+					font-size: 28px;
+					font-weight: 900;
+					color: #0084FF;
+				}
+				span {
+					display: block;
+					font-size: 11px;
+					margin-top: 16px;
+				}
+			}
+
+			.curriculum-content{
+				width:891px;
+				
+
+				.schedule-box{
+					img{width:100%;}
+				}
+
+				p{
+					color:$color-black;
+					font-size: 20px;
+					font-weight: 300;
+					line-height:34px;
+					margin-bottom: 60px;
+					strong{
+						font-weight:600;
+					}
+				}
+
+				.video-box{
+					position:relative;
+					width:100%;
+					margin-bottom: 60px;
+					a{
+						display:block;
+						position:relative;
+						height:501px;
+						img{width:100%;}
+						&:after{
+							content:'';
+							position:absolute;left:0;right:0;top:0;bottom:0;width:100%;height:100%;z-index:1;
+							background: url(../images/pr/btn_play.svg) no-repeat 50% 50%;
+							background-size:80px 80px;
+						}
+
+						.video-text{
+							position:absolute;left:0;bottom:40px;
+							width:100%;
+							text-align:center;
+							color:#fff;
+							font-size:30px;
+							line-height:1.7;
+							font-weight:500;
+						}
+					}
+				}
+
+				.table-box{
+					margin-top:40px;
+					table{
+						width:100%;
+						thead{
+							th{
+								background-color:$color-light-brown;
+								border-left:1px solid $color-light-beige;
+								color:$color-black;
+								font-weight:600;
+								font-size:14px;
+								padding:12px 0;
+								vertical-align:center;
+							}
+						}
+
+						tbody{
+							th,td{text-align:center;padding:14px 0;vertical-align:center;}
+							th{
+								border-bottom:1px solid $color-light-brown;
+								color:$color-black;
+								font-weight:600;
+								font-size:14px;
+								background-color:$color-light-brown2;
+							}
+							td{
+								border-left:1px solid $color-light-brown;
+								border-bottom:1px solid $color-light-brown;
+								color:$color-black;
+								font-size:16px;
+								font-weight:600;
+								
+								&.empty{
+									background-color:$color-light-beige;
+								}
+							}
+						}
+					}
+				}
+
+				.history {
+					text-align: center;
+					padding: 0 48px 40px;
+					p {
+						margin-bottom: 0;
+					}
+					ul {
+						display: flex;
+						gap: 40px;
+						li {
+							display: flex;
+							align-items: center;
+							justify-content: center;
+							padding: 12px 40px;
+						}
+					}
+					&-logo {
+						width: 80px;
+						margin-right: 20px;
+						img {
+							width: 100%;
+						}
+					}
+					&-text {
+						p {
+							font-size: 18px;
+							line-height: 1.7;
+						}
+					}
+					&-content {
+						span {
+							font-size: 16px;
+						}
+						p {
+							font-family: $font-notoSerifKr;
+							font-size: 26px;
+							font-weight: 600;
+						}
+						small {
+							font-size: 14px;
+						}
+					}
+				}
+				
+				.number-list {
+					strong {
+						font-size: 20px;
+						font-weight: 700;
+					}
+					.list {
+						padding: 40px;
+						border: 1px solid #e4ded3;
+						ul {
+							margin: 0 24px;
+							margin-top: 12px;
+						}
+					}
+				}
+
+				.step {
+					padding: 40px 60px;
+					border: 1px solid #7A746A;
+					background: #FBFAF6;
+					span {
+						font-size: 24px;
+						font-weight: 700;
+						line-height: 1.7;
+					}
+					ul {
+						margin-top: 12px;
+						margin-bottom: 48px;
+						&:last-child {
+							margin-bottom: 0;
+						}
+						li {
+							position: relative;
+							font-size: 16px;
+							line-height: 2;
+							font-weight: 700;
+							padding-left: 12px;
+							&:before {
+								content: "·";							
+								position: absolute;
+								left: 0;
+							}
+						}
+					}
+				}
+
+				.recommend {
+					&-table {
+						border-top: 1px solid $color-light-brown;
+						.list {
+							display: flex;
+							line-height: 2;
+							border-bottom: 1px solid $color-light-brown;
+							&-title {
+								padding: 24px 0;
+								p {
+									width: 224px;
+									font-size: 16px;
+									line-height: 2;
+									font-weight: 700;
+									margin-right: 40px;
+									margin-bottom: 0;
+								}
+							} 
+							&-text {
+								padding: 24px 0;
+								span {
+									font-size: 16px;
+									line-height: 2;
+								}
+							}
+							&-depth {
+								.list-title {
+									p {
+										width: 120px;
+										margin-right: 0;
+									}
+								}
+								.list-text {
+									padding: 24px 40px;
+									border-left: 1px solid $color-light-brown;
+									ul {
+										li {
+											display: flex;
+											align-items: center;
+											margin-bottom: 24px;
+											&:last-child {
+												margin-bottom: 0;
+											}
+											p {
+												width: 80px;
+												font-size: 16px;
+												font-weight: 700;
+												line-height: 2;
+												margin-right: 24px;
+												margin-bottom: 0;
+											}
+											span {
+												font-size: 16px;
+												line-height: 2;
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+					&-type {
+						margin-top: 60px;
+						ul {
+							li {
+								position: relative;
+								font-size: 18px;
+								font-weight: 400;
+								line-height: 2;
+								padding-left: 12px;
+								&:before {
+									content: "·";
+									position: absolute;
+									left: 0;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.section-pr-lecture{
+		padding-top:160px;
 	}
 }
