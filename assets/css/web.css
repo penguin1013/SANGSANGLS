@@ -12317,12 +12317,43 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 #wrap .section-pass-teacher {
   padding: 120px 0 160px;
 }
+#wrap .section-pass-teacher .list-teacher {
+  margin-top: 40px;
+  border-top: 1px solid #d9d9d9;
+}
+#wrap .section-pass-teacher .list-teacher li {
+  padding: 100px 160px 110px;
+  display: flex;
+  border-bottom: 1px solid #d9d9d9;
+  gap: 80px 100px;
+  flex-wrap: wrap;
+}
+#wrap .section-pass-teacher .list-teacher li .left {
+  width: 227px;
+}
+#wrap .section-pass-teacher .list-teacher li .right {
+  flex: 1;
+}
+#wrap .section-pass-teacher .list-teacher li .right .img-link {
+  margin-top: 60px;
+  display: block;
+  cursor: pointer;
+}
+#wrap .section-pass-teacher .list-teacher li .right .img-link + .img-link {
+  margin-top: 20px;
+}
+#wrap .section-pass-teacher .list-teacher li .full {
+  width: 100%;
+}
 #wrap .section-pass-apply .list {
   display: flex;
   gap: 10px;
 }
 #wrap .section-pass-apply .list.point {
   margin-bottom: 10px;
+}
+#wrap .section-pass-apply .list .img-box {
+  cursor: pointer;
 }
 #wrap .section-pass-apply .action {
   text-align: right;
@@ -12336,6 +12367,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   text-align: center;
   padding: 20px 0;
   border: 1px solid #2c2923;
+  cursor: pointer;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }

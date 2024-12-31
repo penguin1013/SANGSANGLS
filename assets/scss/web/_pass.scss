@@ -28,6 +28,41 @@
 
     &-teacher {
       padding: 120px 0 160px;
+
+      .list-teacher {
+        margin-top: 40px;
+        border-top: 1px solid #d9d9d9;
+
+        li {
+          padding: 100px 160px 110px;
+          display: flex;
+          border-bottom: 1px solid #d9d9d9;
+          gap: 80px 100px;
+          flex-wrap: wrap;
+
+          .left {
+            width: 227px;
+          }
+
+          .right {
+            flex: 1;
+
+            .img-link {
+              margin-top: 60px;
+              display: block;
+              cursor: pointer;
+
+              & + .img-link {
+                margin-top: 20px;
+              }
+            }
+          }
+
+          .full {
+            width: 100%;
+          }
+        }
+      }
     }
 
     &-apply {
@@ -36,6 +71,10 @@
         gap: 10px;
         &.point {
           margin-bottom: 10px;
+        }
+
+        .img-box {
+          cursor: pointer;
         }
       }
 
@@ -51,6 +90,7 @@
           text-align: center;
           padding: 20px 0;
           border: 1px solid #2c2923;
+          cursor: pointer;
           @include boxSizing(border-box);
         }
       }
