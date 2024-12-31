@@ -35,19 +35,16 @@
 						<a href="javascript:;"><img src="../../../assets/images/mobile/logo.svg" alt="logo" /></a>
 					</h1>
 					<div class="header-util">
-						<div id="menu">
-							<a href="javascript:;" class="menu-icon">
-								<!-- <img src="../../../assets/images/mobile/btn_menu.svg" alt="gnb" /> -->
-								<span></span>
-								<span></span>
-								<span></span>
-							</a>
-						</div>
+						<a href="javascript:mypageLayerOpen();" class="header-mypage-icon"><img src="../../../assets/images/mobile/btn_mypage.svg" alt="마이페이지" /></a>
+						<a href="javascript:menuLayerOpen();" class="header-menu-icon">
+							<img src="../../../assets/images/mobile/btn_menu.svg" alt="" />
+						</a>
 					</div>
 				</div>
 			</div>
 
 			<div class="header-layer-gnb">
+				<a href="javascript:menuLayerClose();" class="btn-layer-close"><img src="../../../assets/images/mobile/btn_layer_close.svg" alt="gnb" /></a>
 				<div class="header-login">
 					<div class="logout">
 						<a href="javascript:;"><strong>통합로그인</strong></a>
@@ -58,6 +55,27 @@
 						<a href="javascript:;"><strong>홍길동 님</strong></a>
 						<a href="javascript:;"><span>로그아웃</span></a>
 					</div>
+				</div>
+
+				<div class="header-myInfo">
+					<dl>
+						<dt>
+							<img src="../../../assets/images/mobile/icon_class.svg" alt="" />
+							<span>수강중인 강좌</span>
+						</dt>
+						<dd>
+							<strong>999</strong>
+						</dd>
+					</dl>
+					<dl>
+						<dt>
+							<img src="../../../assets/images/mobile/icon_cart.svg" alt="" />
+							<span>장바구니</span>
+						</dt>
+						<dd>
+							<strong>999</strong>
+						</dd>
+					</dl>
 				</div>
 				<ul class="gnb-list">
 					<li>
@@ -100,6 +118,107 @@
 				</ul>
 			</div>
 
+			<div class="header-layer-mypage">
+				<a href="javascript:mypageLayerClose();" class="btn-layer-close"><img src="../../../assets/images/mobile/btn_layer_close.svg" alt="gnb" /></a>
+
+				<div class="header-mypage-title">
+					마이페이지
+				</div>
+				<div class="header-mypage-gnb">
+					<div class="header-mypage-menu">
+						<p class="mypage-main-menu">내강의실</p>
+						<ul class="mypage-sub-menu">
+							<li>
+								<a href="javascript:;">
+									수강중인 강좌
+								</a>
+							</li>
+							<li>
+								<a href="javascript:;">
+									학원 강좌
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="header-mypage-menu">
+						<p class="mypage-main-menu">결제정보</p>
+						<ul class="mypage-sub-menu">
+							<li>
+								<a href="javascript:;">
+									장바구니
+								</a>
+							</li>
+							<li>
+								<a href="javascript:;">
+									주문/배송 조회
+								</a>
+							</li>
+						</ul>
+					</div>
+
+					<div class="header-mypage-menu">
+						<ul class="mypage-sub-menu">
+							<li>
+								<a href="javascript:;">
+									나의문의
+								</a>
+							</li>
+						</ul>
+					</div>
+
+					<div class="header-mypage-menu">
+						<p class="mypage-main-menu">개인정보</p>
+						<ul class="mypage-sub-menu">
+							<li>
+								<a href="javascript:;">
+									개인정보 수정
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<div class="header-gnb">
+				<ul>
+					<li>
+						<a href="javascript:;">
+							교수소개
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;">
+							LEET인강
+						</a>
+					</li>
+					<li class="active">
+						<a href="javascript:;">
+							수험정보
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;">
+							온라인서점
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;">
+							모의고사
+						</a>
+					</li>
+				</ul>
+			</div>
+
+			<div class="header-nav">
+				<ul>
+					<li class="active">
+						<a href="javascript:;">전체교재</a>
+					</li>
+					<li>
+						<a href="javascript:;">공지사항</a>
+					</li>
+				</ul>
+			</div>
 		</header>
 
 		<div id="contents">
