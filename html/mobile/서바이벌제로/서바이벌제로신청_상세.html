@@ -212,244 +212,230 @@
 				</ul>
 			</div>
 
-			<div class="header-nav">
-				<ul>
-					<li class="active">
-						<a href="javascript:;">전체교재</a>
-					</li>
-					<li>
-						<a href="javascript:;">공지사항</a>
-					</li>
-				</ul>
-			</div>
+
 		</header>
 
 		<div id="contents" class="">
 			<div class="section-zero-input">
 				<div class="wrap">
-					<div class="section-zero-title">시대인재 LEET SURVIVAL ZERO 신청하기</div>
+					<div class="section-zero-title">
+						시대인재<br/>
+						LEET SURVIVAL ZERO <br/>
+						신청하기
+					</div>
 					<div class="section-zero-notice">
 						<div class="notice-text">
 							회원가입 및 배송지 (주소) 입력 후 신청 가능 합니다. <br/>
-							기존 회원이신 경우 로그인 후 신청해 주세요.
+							기존 회원 이신 경우 로그인 후 신청해 주세요. 
 						</div>
-						<a href="javascript:;" class="btn large">로그인하기</a>
+						<a href="javascript:;" class="btn large btn-login">로그인하기</a>
 					</div>
 
 					<h3>회원가입 및 배송지 입력</h3>
-					<div class="notice-input-table">
-						<table class="table-row ">
-							<colgroup>
-								<col style="width:140px" />
-								<col style="width:auto" />
-							</colgroup>
-							<tr>
-								<th>이메일 ID</th>
-								<td>
-									<div class="input-box">
-										<div class="form-control">
-											<input type="text" class="text " placeholder="이메일 ID를 입력하세요" value="sangsang@naver.com">
-										</div>
-										<a href="javascript:;" class="btn large">중복확인</a>
-									</div>
-									<p class="form-text color-point">이메일 아이디를 입력해주세요</p>
-								</td>
-							</tr>
-							<tr>
-								<th>비밀번호</th>
-								<td>
+					<div class="lecture-data-input">
+						<dl>
+							<dt>이메일 ID</dt>
+							<dd>
+								<div class="input-box">
 									<div class="form-control">
-										<input type="text" class="text full" placeholder="" />
+										<input type="text" class="text" placeholder="" value="sangsang@naver.com" />
+										
 									</div>
-									<p class="form-text color-point">비밀번호는 최소 8자리 최대 16자리, 문자/숫자/특수문자를 혼용해야 합니다.</p>
-								</td> 
-							</tr>
+									<a href="javascript:;" class="btn large">중복확인</a>
+								</div>
 
-							<tr>
-								<th>비밀번호 확인</th>
-								<td>
-									<div class="form-control">
-										<input type="text" class="text full" placeholder="" />
-									</div>
-								</td> 
-							</tr>
-							<tr>
-								<th>이름</th>
-								<td>
-									<div class="input-box">
-										<div class="form-control">
-											<input type="text" class="text " placeholder="이름을 입력하세요." value="">
-										</div>
-										<div class="form-control">
-											<span class="fake-radio">
-												<input type="radio" id="radioType1" class="radio" name="radioSelect" checked>
-												<label for="radioType1">남</label>
-											</span>
-											<span class="fake-radio">
-												<input type="radio" id="radioType2" class="radio" name="radioSelect">
-												<label for="radioType2">여</label>
-											</span>
-										</div>
-									</div>
-								</td> 
-							</tr>
+								<p class="form-text color-point">이메일 아이디를 입력해주세요</p>
+							</dd>
+						</dl>
 
-							<tr>
-								<th>휴대전화</th>
-								<td>
-									<div class="input-box">
-										<div class="form-control">
-											<input type="text" class="text " placeholder="‘-’ 없이 입력하세요" value="" />
-										</div>
-										<a href="javascript:;" class="btn large">인증번호 발송</a>
-									</div>
-								</td> 
-							</tr>
+						<dl>
+							<dt>비밀번호</dt>
+							<dd>
+								<div class="form-control">
+									<input type="text" class="text" placeholder="비밀번호를 입력하세요" value="" />
+								</div>
+								<p class="form-text color-point">비밀번호는 최소 8자리 최대 16자리, 문자/숫자/특수문자를 혼용해야 합니다.</p>
+							</dd>
 
-							<tr>
-								<th>인증번호</th>
-								<td>
-									<div class="timer-box">
-										<div class="form-control">
-											<input type="text" class="text " placeholder="인증번호를 입력하세요" value="" />
-										</div>
-										<a href="javascript:;" class="btn large">확인</a>
-									</div>
-								</td> 
-							</tr>
+						</dl>
 
-							<tr class="address">
-								<th>주소</th>
-								<td>
-									<div class="form-control flex">
-										<input type="text" class="text " placeholder="우편번호" value="" />
-										<a href="javascript:;" class="btn large">주소검색</a>
-									</div>
-									<div class="form-control">
-										<input type="text" class="text full" placeholder="" value="" />
-									</div>
-									<div class="form-control">
-										<input type="text" class="text full" placeholder="상세주소를 입력하세요" value="" />
-									</div>
-								</td> 
-							</tr>
-							<tr>
-								<th>정보 수신 이메일</th>
-								<td>
-									<div class="form-control">
-										<input type="text" class="text full" placeholder="이메일을 입력하세요" value="" />
-									</div>
-								</td> 
-							</tr>
-							<tr>
-								<th>생년월일</th>
-								<td>
-									<div class="custom-select-box">
-										<div class="custom-select">
-											<div class="selected">
-											<div class="selected-value">YYYY</div>
-											<div class="arrow"></div>
-											</div>
-											<ul>
-											<li class="option">전체1</li>
-											<li class="option">전체2</li>
-											<li class="option">전체3</li>
-											<li class="option">전체4</li>
-											</ul>
-										</div>
-										<div class="custom-select">
-											<div class="selected">
-											<div class="selected-value">MM</div>
-											<div class="arrow"></div>
-											</div>
-											<ul>
-											<li class="option">전체1</li>
-											<li class="option">전체2</li>
-											<li class="option">전체3</li>
-											<li class="option">전체4</li>
-											</ul>
-										</div>
-										<div class="custom-select">
-											<div class="selected">
-											<div class="selected-value">DD</div>
-											<div class="arrow"></div>
-											</div>
-											<ul>
-											<li class="option">전체1</li>
-											<li class="option">전체2</li>
-											<li class="option">전체3</li>
-											<li class="option">전체4</li>
-											</ul>
-										</div>
-									</div>
+						<dl>
+							<dt>비밀번호 확인</dt>
+							<dd>
+								<div class="form-control">
+									<input type="text" class="text" placeholder="비밀번호를 한 번 더 입력하세요" value="" />
+								</div>
+							</dd>
+						</dl>
+
+						<dl>
+							<dt>이름</dt>
+							<dd>
+								<div class="form-control">
+									<input type="text" class="text"  placeholder="" value="홍길동" />
+								</div>
+							</dd>
+		
+							<dd>
+								<div class="form-control">
+									<span class="fake-radio">
+										<input type="radio" id="radioType1" class="radio" name="radioSelectA" checked="">
+										<label for="radioType1">남</label>
+									</span>
+									<span class="fake-radio">
+										<input type="radio" id="radioType2" class="radio" name="radioSelectA">
+										<label for="radioType2">여</label>
+									</span>
 									
-								</td> 
-							</tr>
+								</div>
+							</dd>
+						</dl>
 
-							<tr class="university">
-								<th>학사정보</th>
-								<td>
+						<dl>
+							<dt>휴대전화</dt>
+							<dd>
+								<div class="input-box">
 									<div class="form-control">
-										<span class="fake-radio">
-											<input type="radio" id="domestic" class="radio" name="country" checked="">
-											<label for="domestic">국내</label>
-										</span>
-										<span class="fake-radio">
-											<input type="radio" id="overseas" class="radio" name="country">
-											<label for="overseas">해외</label>
-										</span>
+										<input type="text" class="text " placeholder="‘-’ 없이 입력하세요"  />
+										
+									</div>
+									<a href="javascript:;" class="btn large">인증번호 발송</a>
+								</div>
+							</dd>
+						</dl>
+
+						<dl>
+							<dt>인증번호</dt>
+							<dd>
+								<div class="input-box">
+									<div class="form-control">
+										<input type="text" class="text " placeholder="‘-’ 없이 입력하세요"  />
+										
+									</div>
+									<a href="javascript:;" class="btn large">인증하기</a>
+								</div>
+							</dd>
+						</dl>
+
+						<dl>
+							<dt>주소</dt>
+							<dd>
+								<div class="input-box">
+									<div class="form-control">
+										<input type="text" class="text " placeholder=""  />
+										
+									</div>
+									<a href="javascript:;" class="btn large">주소검색</a>
+								</div>
+							</dd>
+							<dd>
+								<div class="form-control">
+									<input type="text" class="text" placeholder="" value="" />
+								</div>
+							</dd>
+							<dd>
+								<div class="form-control">
+									<input type="text" class="text" placeholder="상세주소를 입력하세요" value="" />
+								</div>
+							</dd>
+						</dl>
+
+
+						<dl>
+							<dt>정보 수신 이메일</dt>
+							<dd>
+								<div class="form-control">
+									<input type="text" class="text" placeholder="" value="sangsang@naver.com" />
+								</div>
+							</dd>
+						</dl>
+					
+						
+						<dl>
+							<dt>생년월일</dt>
+							<dd>
+								<div class="select-box">
+									<div class="form-control">
+										<div class="select">
+											<select name="" id="">
+												<option value="">2000</option>
+											</select>
+										</div>
 									</div>
 									<div class="form-control">
-										<input type="text" class="text full" placeholder="학교명을 입력하세요." value="" />
-									</div>
-
-									<div class="input-box">
-										<div class="custom-select">
-											<div class="selected">
-											<div class="selected-value">졸업여부</div>
-											<div class="arrow"></div>
-											</div>
-											<ul>
-											<li class="option">졸업여부1</li>
-											<li class="option">졸업여부2</li>
-											<li class="option">졸업여부3</li>
-											<li class="option">졸업여부4</li>
-											</ul>
-										</div>
-										<div class="custom-select">
-											<div class="selected">
-											<div class="selected-value">졸엽년도</div>
-											<div class="arrow"></div>
-											</div>
-											<ul>
-											<li class="option">졸업년도1</li>
-											<li class="option">졸업년도2</li>
-											<li class="option">졸업년도3</li>
-											<li class="option">졸업년도4</li>
-											</ul>
-										</div>
-										<div class="custom-select">
-											<div class="selected">
-											<div class="selected-value">전공계열</div>
-											<div class="arrow"></div>
-											</div>
-											<ul>
-											<li class="option">전공계열선택1</li>
-											<li class="option">전공계열선택2</li>
-											<li class="option">전공계열선택3</li>
-											<li class="option">전공계열선택4</li>
-											</ul>
-										</div>
-
-										<div class="form-control">
-											<input type="text" class="text small" placeholder="전공명" />
+										<div class="select">
+											<select name="" id="">
+												<option value="">3</option>
+											</select>
 										</div>
 									</div>
+									<div class="form-control">
+										<div class="select">
+											<select name="" id="">
+												<option value="">1</option>
+											</select>
+										</div>
+									</div>
+								</div>
+							</dd>
+						</dl>
 
 
-								</td> 
-							</tr>
-						</table>
+						<dl>
+							<dt>학사정보</dt>
+							<dd>
+								<div class="form-control">
+									<span class="fake-radio">
+										<input type="radio" id="radioType3" class="radio" name="radioSelectB" checked="">
+										<label for="radioType3">국내</label>
+									</span>
+									<span class="fake-radio">
+										<input type="radio" id="radioType4" class="radio" name="radioSelectB">
+										<label for="radioType4">해외</label>
+									</span>
+									
+								</div>
+							</dd>
+							<dd>
+								<div class="form-control full">
+									<input type="text" class="text" placeholder="학교명을 입력하세요." value="" />
+								</div>
+							</dd>
+							<dd  class="university">
+								<div class="input-box">
+									<div class="form-control">
+										<div class="select">
+											<select name="" id="">
+												<option value="">졸업여부</option>
+											</select>
+										</div>
+									</div>
+
+									<div class="form-control">
+										<div class="select">
+											<select name="" id="">
+												<option value="">졸업년도</option>
+											</select>
+										</div>
+									</div>
+								</div>
+							</dd>
+							<dd  class="university">
+								<div class="input-box">
+									<div class="form-control">
+										<div class="select">
+											<select name="" id="">
+												<option value="">전공계열선택</option>
+											</select>
+										</div>
+									</div>
+
+									<div class="form-control">
+										<input type="text" class="text" placeholder="" value="법학과" />
+									</div>
+								</div>
+							</dd>
+						</dl>
 					</div>
 				</div>
 			</div>
@@ -466,7 +452,7 @@
 										<label for="privacyAgree1">이용 약관 동의 (필수)</label>
 									</div>
 								</div>
-								<a href="javascript:popupOpen('#popupTerms');" class="btn-agree"><span>약관보기</span></a>
+								<a href="javascript:popupPageOpen('#popupTerms');" class="btn-agree"><span>약관보기</span></a>
 							</div>
 							<div>
 								<div class="form-control">
@@ -475,7 +461,7 @@
 										<label for="privacyAgree2">개인정보 처리 및 이용안내 (필수)</label>
 									</div>
 								</div>
-								<a href="javascript:popupOpen('#popupPrivacy');"" class="btn-agree"><span>약관보기</span></a>
+								<a href="javascript:popupPageOpen('#popupPrivacy');"" class="btn-agree"><span>약관보기</span></a>
 							</div>
 							<div>
 								<div class="form-control">
@@ -484,7 +470,7 @@
 										<label for="privacyAgree3">개인정보 위탁 (선택)</label>
 									</div>
 								</div>
-								<a href="javascript:popupOpen('#popupPolicy');" class="btn-agree"><span>약관보기</span></a>
+								<a href="javascript:popupPageOpen('#popupPolicy');" class="btn-agree"><span>약관보기</span></a>
 							</div>
 						</dd>
 					</dl>
@@ -539,9 +525,35 @@
 	</div>
 
 	<!-- 팝업 -->
+
+	<div class="popup-page" id="popupPolicy">
+		<div class="popup-wrap">
+			<a href="javascript:popupPageClose('#popupPolicy');"  class="popup-close">팝업닫기</a>
+			<div class="popup-title">
+				개인정보 위탁 (선택)
+			</div>
+			<div class="popup-cont popup-scroll">
+				
+				<div class="box">
+					<p>
+						(주)이매진PNM은 원활한 서비스 이행을 위해 아래와 같이 개인정보 취급 업무를 위탁하여 운영하고 있습니다.<br/>
+						<br/>
+						- KG이니시스 : 결제 진행 (이름, 아이디, 주소, 휴대폰번호, 이메일)<br/>
+						- KICC : 결제 진행 (이름, 아이디, 주소, 휴대폰번호, 이메일)<br/>
+						- 다우기술 : 문자 전송 (이름, 아이디, 휴대폰번호)<br/>
+						- JTL : 교재 배송 (이름, 주소, 휴대폰번호)<br/>
+						- 오피스콘 : 기프티콘 발송 (이름, 아이디, 휴대폰번호)<br/>
+						- 포웨이브테크 : 교육관리시스템(LMS) 관리 및 유지보수 (아이디, 이름, 휴대전화번호, 이메일)<br/>
+						- (주)루나소프트 : 카카오톡/ 문자 메시지 전송 (이름, 아이디, 주소, 휴대폰 번호, 이메일)
+					</p>
+				</div>
+
+			</div>
+		</div>
+	</div>
 </div>
 
-<script src="../../../assets/js/script.js"></script>
+<script src="../../../assets/js/m.script.js"></script>
 <script>
 	$(function(){
 
