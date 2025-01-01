@@ -1,4 +1,345 @@
 #wrap {
+	.section-lecture {
+    @include vw(padding-bottom, 20px);
+    background: #FBFAF6;
+    .wrap {
+      padding: 0
+    }
+    .lecture {
+      &-box {
+        @include vw(padding, 24px 20px 32px);
+        background: #F2EFE7;
+        &.lecture-wide {
+          .lecture-profile {
+            .img-box {
+              width: 100%;
+            }
+          }
+          .lecture-name {
+            p {
+              position: relative;
+              display: inline-block;
+              @include vw(margin-right, 8px);
+              @include vw(padding-right, 8px);
+              &:after {
+                content: "";
+                position: absolute;
+                top: 50%;
+                right: 0;
+                width: 1px;
+                @include vw(height, 12px);
+                background: #E4DED3;
+                transform: translateY(-50%);
+              }
+              &:last-child {
+                margin-right: 0;
+                padding-right: 0;
+                &:after {
+                  display: none
+                }
+              }
+            }
+          }
+        }
+      }
+			&-profile {
+        .img-box {
+          @include vw(width, 120px);
+					margin: 0 auto;
+					@include vw(margin-bottom, 16px);
+				}
+			}
+			&-subject {
+				@include vw(font-size, 18px);
+				line-height: 1.5;
+				font-weight: 600;
+        span {
+          display: block;
+          @include vw(font-size, 14px);
+          font-weight: 400;
+          line-height: 1.7;
+          @include vw(margin-top, 8px);
+        }
+			}
+			&-name {
+				line-height: 1.5;
+				@include vw(margin-top, 8px);
+				strong {
+					@include vw(font-size, 13px);
+					font-weight: 600;
+				}
+				.icon-home {
+					display: inline-block;
+					@include vw(width, 24px);
+					@include vw(margin-left, 8px);
+				}
+			}
+			&-type {
+        @include vw(margin-top, 16px);
+				@include vw(padding-top, 24px);
+				border-top: 1px solid #E4DED3;
+				dl {
+					position: relative;
+					display: flex;
+					align-items: center;
+					line-height: 1.7;
+					@include vw(margin-bottom, 8px);
+					&:last-child {
+						margin-bottom: 0;
+					}
+					dt {
+						@include vw(max-width, 104px);
+						@include vw(min-width, 104px);
+						@include vw(font-size, 13px);
+						font-weight: 400;
+						color: #7A746A;
+						@include vw(margin-right, 16px);
+					}
+					dd {
+						@include vw(font-size, 13px);
+						font-weight: 600;
+						.layer-box {
+							z-index: 2;
+							position: absolute;
+							left: 0;
+							right: 0;
+							@include vw(top, 24px);
+							display: none;
+							@include vw(font-size, 13px);
+							@include vw(padding, 20px);
+							border: 1px solid #E4DED3;
+							background: #FFFFFC;
+							.layer-title {
+								font-weight: 600;
+								color: #A07D3B;
+								line-height: 1.7;
+								@include vw(margin-bottom, 8px);
+							}
+							.layer-list {
+								li {
+									font-weight: 400;
+									line-height: 1.5;
+								}
+							}
+						}
+						.btn-help {
+							display: inline-block;
+							vertical-align: middle;
+							&:hover + .layer-box {
+								display: block;
+							}
+						}
+
+						.btn {
+							height: auto;
+							@include vw(padding, 4px 8px);
+						}
+					}
+				}
+			}
+		}
+    .layer {
+      &-content {
+        @include vw(padding, 0 20px 32px);
+        background: #FFFFFC;
+
+        .check-list {
+          @include vw(padding, 20px 0);
+          border-bottom: 1px solid #E4DED3;
+          &:last-child {
+            border-bottom: none;
+          }
+          .form-control {
+            .fake-checkbox {
+              label {
+                overflow: hidden;
+                text-overflow: ellipsis;
+              }
+            }
+          }
+          &.end {
+            .check-control {
+              justify-content: flex-end;
+            }
+          }
+        }
+        .check-control {
+          display: flex;
+          align-items: center;
+          justify-content: flex-end;
+          @include vw(margin-top, 16px);
+        }
+        .total-box {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          @include vw(padding, 24px 0 0);
+          border-top: 1px solid #7A746A;
+        }
+      }
+      &-action {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        @include vw(padding, 0 20px 32px);
+        border-bottom: 1px solid #F2EFE7;
+        background: #FFFFFC;
+        @include boxSizing(border-box);
+        a {
+          width: 100%;
+          @include vw(margin-left, 8px);
+          &:first-child {
+            margin-left: 0;
+          }
+        }
+      }
+    }
+    &-content {
+      @include vw(padding-top, 32px);
+      .lecture-content {
+        @include vw(margin-bottom, 80px);
+        &:last-child {
+          margin-bottom: 0
+        }
+        h3 {
+          @include vw(font-size, 16px);
+          font-weight: 400;
+          line-height: 1.7;
+          @include vw(margin-bottom, 20px);
+        }
+      }
+      .lecture-intro {
+        @include vw(margin-top, 20px);
+        @include vw(padding, 20px 0);
+        border: 1px solid #E4DED3;
+        border-width: 1px 0;
+        dl {
+          @include vw(font-size, 14px);
+          line-height: 1.7;
+          @include vw(margin-top, 40px);
+          &:first-child {
+            margin-top: 0;
+          }
+          dt {
+            font-weight: 600;
+          }
+          dd {
+            font-weight: 400;
+          }
+        }
+        .img-box {
+          @include vw(margin-top, 20px);
+        }
+      }
+
+      .book-list {
+        .col {
+          width: 100%;
+          border-bottom: 1px solid #E4DED3;
+          a {
+            display: flex;
+            @include vw(padding, 20px 0);
+            .t-img {
+              @include vw(width, 100px);
+              @include vw(margin-right, 16px);
+            }
+            .t-desc {
+              .desc-title {
+                @include vw(font-size, 14px);
+                font-weight: 600;
+                line-height: 1.7;
+                @include vw(margin-bottom, 4px);
+              }
+              .desc-info {
+                p {
+                  @include vw(font-size,  12px);
+                  font-weight: 400;
+                  color: #7A746A;
+                  line-height: 1.7;
+                  span {
+                    position: relative;
+                    display: inline-block;
+                    + span {
+                      @include vw(margin-left, 8px);
+                      @include vw(padding-left, 8px);
+                      &:before {
+                        content: "";
+                        position: absolute;
+                        top: 50%;
+                        left: 0;
+                        width: 1px;
+                        @include vw(height, 12px);
+                        background: #E4DED3;
+                        transform: translateY(-50%);
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .notice-list-table {
+        border-top: 1px solid #E4DED3;
+        table {
+          width: 100%;
+          tr {
+            border-bottom: 1px solid #E4DED3;
+            td {
+              @include vw(font-size, 13px);
+              font-weight: 400;
+              line-height: 1.7;
+              color: #7A746A;
+              @include vw(padding, 16px 4px);
+              strong {
+                color: #2C2923;
+                font-weight: 600;
+              }
+            }
+          }
+        }
+      }
+
+      .lecture-review-list {
+        border-top: 1px solid #E4DED3;
+        .review-list {
+          border-bottom: 1px solid #E4DED3;
+          a {
+            display: block;
+            @include vw(font-size, 14px);
+            font-weight: 400;
+            line-height: 1.7;
+            @include vw(padding, 20px 0);
+            .review-desc {
+              display: -webkit-box;
+              text-overflow: ellipsis;
+              overflow: hidden;
+              word-break: break-word;
+              -webkit-line-clamp: 2;
+              -webkit-box-orient: vertical
+            }
+            .review-info {
+              @include vw(font-size, 13px);
+              @include vw(margin-top, 4px);
+            }
+          }
+        }
+
+        .action {
+          @include vw(margin-top, 20px);
+          a {
+            width: 100%;
+            @include vw(height, 56px);
+          }
+        }
+      }
+    }
+    
+	}
+
+
   .lecture-data-list {
     border-top: 1px solid $color-light-brown;
     .list {

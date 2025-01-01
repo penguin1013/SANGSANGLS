@@ -305,14 +305,14 @@
     }
     .price-before {
       color: $color-light-gray;
-      @include vw(font-size, 12px);
+      @include vw(font-size, 14px);
       font-weight: 400;
       text-decoration: line-through;
       @include vw(margin-right, 8px);
     }
     .price-after {
       color: $color-black;
-      @include vw(font-size, 12px);
+      @include vw(font-size, 14px);
       font-weight: 600;
     }
     .price-sale {
@@ -609,7 +609,7 @@
         @include vw(padding-top, 3px);
         .badge {
           display: inline-block;
-          @include vw(min-width, 33px);
+          @include vw(min-width, 35px);
           text-align: center;
         }
       }
