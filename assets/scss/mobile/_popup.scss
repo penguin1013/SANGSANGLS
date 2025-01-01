@@ -189,7 +189,9 @@
       @include boxSizing(border-box);
       //@include vw(max-height,600px);
       //max-height:100vh;
-      height: calc(100vh - 56px);
+      height: 100vh;
+      height: -webkit-fill-available;
+      height: fill-available;
       //height: calc(100vh - 152px); // 56+96
       overflow-y: auto;
 
