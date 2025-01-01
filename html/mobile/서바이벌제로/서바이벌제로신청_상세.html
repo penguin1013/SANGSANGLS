@@ -23,6 +23,9 @@
 	<script src="../../../assets/libs/jquery/jquery-3.7.1.min.js"></script>
 	<script src="../../../assets/libs/slick/slick-1.6.0.min.js"></script>
 	<script src="../../../assets/libs/masonry/masonry.pkgd.min.js"></script>
+
+	<script src="https://www.sdijleet.com/resources/assets/libs/jquery-ui/jquery-ui.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="https://www.sdijleet.com/resources/assets/libs/jquery-ui/jquery-ui.css">
 </head>
 <body>
 
@@ -354,29 +357,19 @@
 						<dl>
 							<dt>생년월일</dt>
 							<dd>
-								<div class="select-box">
-									<div class="form-control">
-										<div class="select">
-											<select name="" id="">
-												<option value="">2000</option>
-											</select>
-										</div>
-									</div>
-									<div class="form-control">
-										<div class="select">
-											<select name="" id="">
-												<option value="">3</option>
-											</select>
-										</div>
-									</div>
-									<div class="form-control">
-										<div class="select">
-											<select name="" id="">
-												<option value="">1</option>
-											</select>
-										</div>
-									</div>
+								<!-- 250101 수정 -->
+								<div class="form-control">
+									<input type="hidden" id="BIRTH_DAY" name="BIRTH_DAY">
+									<input type="date" class="text" name="FAKE_BIRTH_DAY" id="FAKE_BIRTH_DAY" oninput="formatInputDate(this)">
+									<script>
+										function formatInputDate(input) {
+											const selectedDate = new Date(input.value);
+											const formattedDate = selectedDate.toISOString().slice(0, 10).replace(/-/g, '');
+											$("#BIRTH_DAY").val(formattedDate);
+										}
+									</script>	
 								</div>
+								<!--// 250101 수정 -->
 							</dd>
 						</dl>
 
@@ -396,11 +389,14 @@
 									
 								</div>
 							</dd>
+							<!-- 250101 수정 -->
 							<dd>
 								<div class="form-control full">
 									<input type="text" class="text" placeholder="학교명을 입력하세요." value="" />
 								</div>
+								<div class="form-text">* 외국대학교 입력시 대학선택을 하지 않으셔도 됩니다.</div>
 							</dd>
+
 							<dd  class="university">
 								<div class="input-box">
 									<div class="form-control">
@@ -414,7 +410,7 @@
 									<div class="form-control">
 										<div class="select">
 											<select name="" id="">
-												<option value="">졸업년도</option>
+												<option value="">학년선택</option>
 											</select>
 										</div>
 									</div>
@@ -425,16 +421,26 @@
 									<div class="form-control">
 										<div class="select">
 											<select name="" id="">
-												<option value="">전공계열선택</option>
+												<option value="">2025</option>
 											</select>
 										</div>
 									</div>
 
 									<div class="form-control">
-										<input type="text" class="text" placeholder="" value="법학과" />
+										<div class="select">
+											<select name="" id="">
+												<option value="">전공계열선택</option>
+											</select>
+										</div>
 									</div>
 								</div>
 							</dd>
+							<dd>
+								<div class="form-control">
+									<input type="text" class="text" placeholder="" value="법학과" />
+								</div>
+							</dd>
+							<!--// 250101 수정 -->
 						</dl>
 					</div>
 				</div>

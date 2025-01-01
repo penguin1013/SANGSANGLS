@@ -150,6 +150,14 @@
 								&.full{width:100%;}
 							}
 
+							.select{
+								
+								width:158px;
+								select{
+									height:56px;
+								}
+							}
+
 							.fake-radio{
 								margin-right:20px;
 								&:last-child{margin-right:0;}
@@ -161,13 +169,17 @@
 							}
 
 							+ .input-box{margin-top:10px;}
-						}
 
-					
+						}
 
 						.btn.large{padding:0;width:120px;}
 
-						.form-text{margin-top:10px;}
+						.form-text{
+							margin-top:10px;
+							& + .input-box{
+								margin-top:10px;
+							}
+						}
 
 						.custom-select{
 							width:158px;
@@ -176,6 +188,26 @@
 								 height:56px;
 								line-height:1;
 							}
+						}
+
+						.form-select-box{
+							margin-top:10px;
+							display:flex;
+							.form-control{margin-top:0;margin-right:8px;}
+							.select{
+								
+								width:158px;
+								select{
+									height:56px;
+								}
+							}
+						}
+
+						.form-input-box{
+							margin-top:10px;
+							display:flex;
+							.form-control{margin-top:0;margin-right:8px;}
+							.text{width:325px;}
 						}
 
 						.input-box{
