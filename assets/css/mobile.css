@@ -3285,12 +3285,12 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 #wrap .price-box .price-subject {
   color: #2C2923;
-  font-size: 3.7333333333vw;
+  font-size: 3.2vw;
   font-weight: 600;
 }
 @media screen and (min-width: 375px) {
   #wrap .price-box .price-subject {
-    font-size: 14px;
+    font-size: 12px;
   }
 }
 #wrap .price-box .price-before {
@@ -3312,12 +3312,12 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 #wrap .price-box .price-after {
   color: #2C2923;
-  font-size: 3.2vw;
+  font-size: 3.7333333333vw;
   font-weight: 600;
 }
 @media screen and (min-width: 375px) {
   #wrap .price-box .price-after {
-    font-size: 12px;
+    font-size: 14px;
   }
 }
 #wrap .price-box .price-sale {
@@ -3985,12 +3985,12 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 #wrap .form-control .fake-checkbox label .badge {
   display: inline-block;
-  min-width: 8.8vw;
+  min-width: 9.3333333333vw;
   text-align: center;
 }
 @media screen and (min-width: 375px) {
   #wrap .form-control .fake-checkbox label .badge {
-    min-width: 33px;
+    min-width: 35px;
   }
 }
 #wrap .form-control .fake-checkbox input:checked + label {
@@ -6984,9 +6984,9 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   margin-top: 4.2666666667vw;
 }
 @media screen and (min-width: 375px) {
