@@ -149,6 +149,19 @@
           &:last-child {
             border-bottom: none;
           }
+          .form-control {
+            .fake-checkbox {
+              label {
+                overflow: hidden;
+                text-overflow: ellipsis;
+              }
+            }
+          }
+          &.end {
+            .check-control {
+              justify-content: flex-end;
+            }
+          }
         }
         .check-control {
           display: flex;
@@ -162,12 +175,6 @@
           justify-content: space-between;
           @include vw(padding, 24px 0 0);
           border-top: 1px solid #7A746A;
-        }
-
-        &.free {
-          .check-control {
-            justify-content: flex-end;
-          }
         }
       }
       &-action {
@@ -324,6 +331,7 @@
           @include vw(margin-top, 20px);
           a {
             width: 100%;
+            @include vw(height, 56px);
           }
         }
       }
