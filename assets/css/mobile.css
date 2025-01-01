@@ -14061,6 +14061,8 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   text-align: center;
   padding: 4.5333333333vw 0;
   border: 1px soliD #2c2923;
+  color: #2c2923;
+  cursor: pointer;
 }
 @media screen and (min-width: 375px) {
   #wrap #contents.program .action * {
@@ -14184,6 +14186,8 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   font-weight: 400;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
+  color: #2c2923;
 }
 #wrap #contents.program .section-program-apply .list-product li .fake-checkbox label {
   line-height: 1.5;
