@@ -1,4 +1,98 @@
 #wrap {
+	.section-lecture {
+		@include vw(padding, 24px 0 32px);
+		background: #F2EFE7;
+		.lecture {
+			&-profile {
+				@include vw(padding-bottom, 16px);
+				.img-box {
+					@include vw(width, 120px);
+					margin: 0 auto;
+					@include vw(margin-bottom, 16px);
+				}
+			}
+			&-subject {
+				@include vw(font-size, 18px);
+				line-height: 1.5;;
+				font-weight: 600
+			}
+			&-name {
+				line-height: 1.5;
+				@include vw(margin-top, 8px);
+				strong {
+					@include vw(font-size, 13px);
+					font-weight: 600;
+				}
+				.icon-home {
+					display: block;
+					@include vw(width, 24px);
+					@include vw(margin-left, 8px);
+				}
+			}
+			&-type {
+				@include vw(padding-top, 24px);
+				border-top: 1px solid #E4DED3;
+				dl {
+					position: relative;
+					display: flex;
+					align-items: center;
+					line-height: 1.7;
+					@include vw(margin-bottom, 8px);
+					&:last-child {
+						margin-bottom: 0;
+					}
+					dt {
+						@include vw(max-width, 104px);
+						@include vw(min-width, 104px);
+						@include vw(font-size, 13px);
+						font-weight: 400;
+						color: #7A746A;
+						@include vw(margin-right, 16px);
+					}
+					dd {
+						@include vw(font-size, 13px);
+						font-weight: 600;
+						.layer-box {
+							z-index: 2;
+							position: absolute;
+							left: 0;
+							right: 0;
+							@include vw(top, 24px);
+							display: none;
+							@include vw(font-size, 13px);
+							@include vw(padding, 20px);
+							border: 1px solid #E4DED3;
+							background: #FFFFFC;
+							.layer-title {
+								font-weight: 600;
+								color: #A07D3B;
+								line-height: 1.7;
+								@include vw(margin-bottom, 8px);
+							}
+							.layer-list {
+								li {
+									font-weight: 400;
+									line-height: 1.5;
+								}
+							}
+						}
+						.btn-help {
+							display: inline-block;
+							vertical-align: middle;
+							&:hover + .layer-box {
+								display: block;
+							}
+						}
+
+						.btn {
+							height: auto;
+							@include vw(padding, 4px 8px);
+						}
+					}
+				}
+			}
+		}
+	}
   .lecture-data-list {
     border-top: 1px solid $color-light-brown;
     .list {
