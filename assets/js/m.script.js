@@ -703,19 +703,19 @@ function categoryListEvent() {
 // 페이지가 로딩될 때 실행되는 함수
 window.addEventListener('DOMContentLoaded', () => {
 	// 주어진 HTML 내용을 header-title 요소에 추가합니다.
-	const sectionHeader = document.querySelector('.section-header .header-title');
-	if (sectionHeader) {
-		sectionHeader.innerHTML += `
-        <div class="header-util">
-            <a href="javascript:mypageLayerOpen();" class="header-mypage-icon">
-                <img src="../../../assets/images/mobile/btn_mypage_black.svg" alt="마이페이지" />
-            </a>
-            <a href="javascript:menuLayerOpen();" class="header-menu-icon">
-                <img src="../../../assets/images/mobile/btn_menu_black.svg" alt="" />
-            </a>
-        </div>
-    `;
-	}
+	// const sectionHeader = document.querySelector('.section-header .header-title');
+	// if (sectionHeader) {
+	// 	sectionHeader.innerHTML += `
+	//     <div class="header-util">
+	//         <a href="javascript:mypageLayerOpen();" class="header-mypage-icon">
+	//             <img src="../../../assets/images/mobile/btn_mypage_black.svg" alt="마이페이지" />
+	//         </a>
+	//         <a href="javascript:menuLayerOpen();" class="header-menu-icon">
+	//             <img src="../../../assets/images/mobile/btn_menu_black.svg" alt="" />
+	//         </a>
+	//     </div>
+	// `;
+	// }
 
 	// header-gnb 클래스의 요소를 찾습니다.
 	const headerGnb = document.querySelector('.header-gnb');
