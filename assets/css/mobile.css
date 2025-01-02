@@ -6291,7 +6291,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 
 #wrap .section-lecture {
   padding-bottom: 5.3333333333vw;
-  background: #FBFAF6;
+  background: #fbfaf6;
 }
 @media screen and (min-width: 375px) {
   #wrap .section-lecture {
@@ -6303,7 +6303,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 #wrap .section-lecture .lecture-box {
   padding: 6.4vw 5.3333333333vw 8.5333333333vw;
-  background: #F2EFE7;
+  background: #f2efe7;
 }
 @media screen and (min-width: 375px) {
   #wrap .section-lecture .lecture-box {
@@ -6336,7 +6336,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   right: 0;
   width: 1px;
   height: 3.2vw;
-  background: #E4DED3;
+  background: #e4ded3;
   transform: translateY(-50%);
 }
 @media screen and (min-width: 375px) {
@@ -6429,7 +6429,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 #wrap .section-lecture .lecture-type {
   margin-top: 4.2666666667vw;
   padding-top: 6.4vw;
-  border-top: 1px solid #E4DED3;
+  border-top: 1px solid #e4ded3;
 }
 @media screen and (min-width: 375px) {
   #wrap .section-lecture .lecture-type {
@@ -6461,7 +6461,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   min-width: 27.7333333333vw;
   font-size: 3.4666666667vw;
   font-weight: 400;
-  color: #7A746A;
+  color: #7a746a;
   margin-right: 4.2666666667vw;
 }
 @media screen and (min-width: 375px) {
@@ -6502,8 +6502,8 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   display: none;
   font-size: 3.4666666667vw;
   padding: 5.3333333333vw;
-  border: 1px solid #E4DED3;
-  background: #FFFFFC;
+  border: 1px solid #e4ded3;
+  background: #fffffc;
 }
 @media screen and (min-width: 375px) {
   #wrap .section-lecture .lecture-type dl dd .layer-box {
@@ -6522,7 +6522,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 #wrap .section-lecture .lecture-type dl dd .layer-box .layer-title {
   font-weight: 600;
-  color: #A07D3B;
+  color: #a07d3b;
   line-height: 1.7;
   margin-bottom: 2.1333333333vw;
 }
@@ -6553,7 +6553,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 #wrap .section-lecture .layer-content {
   padding: 0 5.3333333333vw 8.5333333333vw;
-  background: #FFFFFC;
+  background: #fffffc;
 }
 @media screen and (min-width: 375px) {
   #wrap .section-lecture .layer-content {
@@ -6562,7 +6562,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 #wrap .section-lecture .layer-content .check-list {
   padding: 5.3333333333vw 0;
-  border-bottom: 1px solid #E4DED3;
+  border-bottom: 1px solid #e4ded3;
 }
 @media screen and (min-width: 375px) {
   #wrap .section-lecture .layer-content .check-list {
@@ -6595,7 +6595,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   align-items: center;
   justify-content: space-between;
   padding: 6.4vw 0 0;
-  border-top: 1px solid #7A746A;
+  border-top: 1px solid #7a746a;
 }
 @media screen and (min-width: 375px) {
   #wrap .section-lecture .layer-content .total-box {
@@ -6607,8 +6607,8 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   align-items: center;
   width: 100%;
   padding: 0 5.3333333333vw 8.5333333333vw;
-  border-bottom: 1px solid #F2EFE7;
-  background: #FFFFFC;
+  border-bottom: 1px solid #f2efe7;
+  background: #fffffc;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
@@ -6667,7 +6667,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 #wrap .section-lecture-content .lecture-intro {
   margin-top: 5.3333333333vw;
   padding: 5.3333333333vw 0;
-  border: 1px solid #E4DED3;
+  border: 1px solid #e4ded3;
   border-width: 1px 0;
 }
 @media screen and (min-width: 375px) {
@@ -6714,7 +6714,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 #wrap .section-lecture-content .book-list .col {
   width: 100%;
-  border-bottom: 1px solid #E4DED3;
+  border-bottom: 1px solid #e4ded3;
 }
 #wrap .section-lecture-content .book-list .col a {
   display: flex;
@@ -6758,7 +6758,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 #wrap .section-lecture-content .book-list .col a .t-desc .desc-info p {
   font-size: 3.2vw;
   font-weight: 400;
-  color: #7A746A;
+  color: #7a746a;
   line-height: 1.7;
 }
 @media screen and (min-width: 375px) {
@@ -6791,7 +6791,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   left: 0;
   width: 1px;
   height: 3.2vw;
-  background: #E4DED3;
+  background: #e4ded3;
   transform: translateY(-50%);
 }
 @media screen and (min-width: 375px) {
@@ -6800,19 +6800,19 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   }
 }
 #wrap .section-lecture-content .notice-list-table {
-  border-top: 1px solid #E4DED3;
+  border-top: 1px solid #e4ded3;
 }
 #wrap .section-lecture-content .notice-list-table table {
   width: 100%;
 }
 #wrap .section-lecture-content .notice-list-table table tr {
-  border-bottom: 1px solid #E4DED3;
+  border-bottom: 1px solid #e4ded3;
 }
 #wrap .section-lecture-content .notice-list-table table tr td {
   font-size: 3.4666666667vw;
   font-weight: 400;
   line-height: 1.7;
-  color: #7A746A;
+  color: #7a746a;
   padding: 4.2666666667vw 1.0666666667vw;
 }
 @media screen and (min-width: 375px) {
@@ -6826,14 +6826,14 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   }
 }
 #wrap .section-lecture-content .notice-list-table table tr td strong {
-  color: #2C2923;
+  color: #2c2923;
   font-weight: 600;
 }
 #wrap .section-lecture-content .lecture-review-list {
-  border-top: 1px solid #E4DED3;
+  border-top: 1px solid #e4ded3;
 }
 #wrap .section-lecture-content .lecture-review-list .review-list {
-  border-bottom: 1px solid #E4DED3;
+  border-bottom: 1px solid #e4ded3;
 }
 #wrap .section-lecture-content .lecture-review-list .review-list a {
   display: block;
@@ -6912,6 +6912,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   min-width: 12.8vw;
   height: 12.8vw;
   overflow: hidden;
+  flex: 0 0 48px;
 }
 @media screen and (min-width: 375px) {
   #wrap .lecture-data-list .list .desc-box .t-img {
