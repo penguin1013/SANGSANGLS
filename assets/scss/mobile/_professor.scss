@@ -53,7 +53,7 @@
 						border-width: 1px 0 1px;
 						li {
 							display:flex;
-							align-items:center;
+							align-items:flex-start;
 							@include vw(margin-bottom, 8px);
 							&:last-child {
 								margin-bottom: 0;
@@ -81,6 +81,7 @@
 								@include vw(line-height, 21px);
 								font-weight: 400;
 								color:$color-777;
+								@include vw(width, 287px);
 							}
 							
 						}

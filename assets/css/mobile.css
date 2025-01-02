@@ -7924,7 +7924,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 #wrap .section-teacher-gate .teacher-gate-list .list .teacher-curriculum ul li {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   margin-bottom: 2.1333333333vw;
 }
 @media screen and (min-width: 375px) {
@@ -7981,6 +7981,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   line-height: 5.6vw;
   font-weight: 400;
   color: #777;
+  width: 76.5333333333vw;
 }
 @media screen and (min-width: 375px) {
   #wrap .section-teacher-gate .teacher-gate-list .list .teacher-curriculum ul li .t-text {
@@ -7990,6 +7991,11 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 @media screen and (min-width: 375px) {
   #wrap .section-teacher-gate .teacher-gate-list .list .teacher-curriculum ul li .t-text {
     line-height: 21px;
+  }
+}
+@media screen and (min-width: 375px) {
+  #wrap .section-teacher-gate .teacher-gate-list .list .teacher-curriculum ul li .t-text {
+    width: 287px;
   }
 }
 #wrap .section-teacher-curriculum {
