@@ -269,7 +269,8 @@
 	}
 
 	.section-content-img{
-		@include vw(margin-bottom, 100px);
+		@include vw(padding-bottom, 100px);
+		.wrap{max-width:600px;margin:0 auto;}
 		img{width:100%;}
 	}
 }

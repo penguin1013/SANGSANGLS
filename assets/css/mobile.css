@@ -8308,12 +8308,16 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   }
 }
 #wrap .section-content-img {
-  margin-bottom: 26.6666666667vw;
+  padding-bottom: 26.6666666667vw;
 }
 @media screen and (min-width: 375px) {
   #wrap .section-content-img {
-    margin-bottom: 100px;
+    padding-bottom: 100px;
   }
+}
+#wrap .section-content-img .wrap {
+  max-width: 600px;
+  margin: 0 auto;
 }
 #wrap .section-content-img img {
   width: 100%;
