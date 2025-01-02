@@ -1,9 +1,11 @@
 <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-<mask id="mask0_3722_54506" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="6" y="6" width="24" height="24">
+<mask id="mask0_4371_77439" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="6" y="6" width="24" height="24">
 <rect x="6" y="6" width="24" height="24" fill="#D9D9D9"/>
 </mask>
-<g mask="url(#mask0_3722_54506)">
-<circle cx="18" cy="14" r="4.5" stroke="#FBFAF6"/>
-<path d="M18 21C12.6947 21 9.78947 23.3333 9 24.5V27H27V24.5C26.2105 23.3333 23.3053 21 18 21Z" stroke="#FBFAF6"/>
+<g mask="url(#mask0_4371_77439)">
+<circle cx="18" cy="12.4444" r="3.94444" stroke="#FBFAF6"/>
+<path d="M9 22C9.78947 21 12.6947 19 18 19C23.3053 19 26.2105 21 27 22" stroke="#FBFAF6" stroke-linecap="round"/>
+<path d="M12 24H13.3867L15.25 28.3591H15.328L17.1913 24H18.578V30H17.4947V25.8729H17.434L15.692 29.9834H14.886L13.144 25.8564H13.092V30H12V24Z" fill="#FFFFFC"/>
+<path d="M19.306 24H20.58L22.1227 26.6519H22.1833L23.726 24H25L22.7207 27.7541V30H21.594V27.7541L19.306 24Z" fill="#FFFFFC"/>
 </g>
 </svg>
