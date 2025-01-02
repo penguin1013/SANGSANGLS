@@ -8307,6 +8307,17 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
     font-size: 12px;
   }
 }
+#wrap .section-content-img {
+  margin-bottom: 26.6666666667vw;
+}
+@media screen and (min-width: 375px) {
+  #wrap .section-content-img {
+    margin-bottom: 100px;
+  }
+}
+#wrap .section-content-img img {
+  width: 100%;
+}
 
 #wrap .section-tab-menu {
   padding-bottom: 6.4vw;
@@ -11865,6 +11876,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   font-weight: 600;
   font-size: 5.3333333333vw;
   line-height: 8vw;
+  color: #2C2923;
 }
 @media screen and (min-width: 375px) {
   #wrap .section-main-platform .platform-list .list .text-box .subject {
@@ -11881,6 +11893,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   font-weight: 500;
   font-size: 3.7333333333vw;
   line-height: 6.3466666667vw;
+  color: #2C2923;
 }
 @media screen and (min-width: 375px) {
   #wrap .section-main-platform .platform-list .list .text-box .desc {

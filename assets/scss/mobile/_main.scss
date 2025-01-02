@@ -331,8 +331,8 @@
                 .text-box{
                     @include vw(margin-top,16px);
                     color:$color-black;
-                    .subject{font-weight:600;@include vw(font-size,20px);@include vw(line-height,30px);}
-                    .desc{@include vw(margin-top,8px);font-weight:500;@include vw(font-size,14px);@include vw(line-height,23.8px);}
+                    .subject{font-weight:600;@include vw(font-size,20px);@include vw(line-height,30px);  color:$color-black;}
+                    .desc{@include vw(margin-top,8px);font-weight:500;@include vw(font-size,14px);@include vw(line-height,23.8px);  color:$color-black;}
                 }
             }
 		}

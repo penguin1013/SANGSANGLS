@@ -267,4 +267,9 @@
 			}
 		}
 	}
+
+	.section-content-img{
+		@include vw(margin-bottom, 100px);
+		img{width:100%;}
+	}
 }
