@@ -5160,6 +5160,10 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   align-items: center;
   justify-content: center;
 }
+#wrap .header-layer-gnb .header-myInfo dl dt {
+  display: flex;
+  align-items: center;
+}
 #wrap .header-layer-gnb .header-myInfo dl dt span {
   display: inline-block;
   vertical-align: middle;
@@ -5176,11 +5180,21 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
     font-size: 14px;
   }
 }
+#wrap .header-layer-gnb .header-myInfo dl dt img {
+  margin-right: 2.1333333333vw;
+}
+@media screen and (min-width: 375px) {
+  #wrap .header-layer-gnb .header-myInfo dl dt img {
+    margin-right: 8px;
+  }
+}
 #wrap .header-layer-gnb .header-myInfo dl dd {
   font-size: 3.7333333333vw;
   color: #A07D3B;
   font-weight: 600;
   margin-left: 1.8666666667vw;
+  display: flex;
+  align-items: center;
 }
 @media screen and (min-width: 375px) {
   #wrap .header-layer-gnb .header-myInfo dl dd {
