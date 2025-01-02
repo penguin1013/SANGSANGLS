@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8" />
+		<title>상상로스쿨</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta property="og:title" content="상상로스쿨" />
+		<meta property="og:image" content="../../../assets/images/og.png" />
+		<meta property="og:description" content="LEET에 대한 가장 앞선 생각, 상상로스쿨에서 시작합니다." />
+		<meta name="google-site-verification" content="" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, height=device-height, maximum-scale=1.0" />
+		<link rel="shortcut icon" href="../../../assets/images/favicon.ico" />
+		<meta name="keyword" content="상상로스쿨" />
+		<meta name="title" content="상상로스쿨" />
+		<meta name="description" content="LEET에 대한 가장 앞선 생각, 상상로스쿨에서 시작합니다." />
+		<meta property="WT.ti" content="" />
+		<meta name="DCS.dcsuri" content="" />
+		<meta name="robots" content="index, follow" />
+
+		<link rel="stylesheet" href="../../../assets/libs/slick/slick.css" />
+		<link rel="stylesheet" href="../../../assets/css/mobile.css" />
+
+		<script src="../../../assets/libs/jquery/jquery-3.7.1.min.js"></script>
+		<script src="../../../assets/libs/slick/slick-1.6.0.min.js"></script>
+		<script src="../../../assets/libs/masonry/masonry.pkgd.min.js"></script>
+	</head>
+	<body>
+		<div id="wrap">
+			<div id="container" class="popup-list-container">
+				<h1>상담희망일자 선택하기</h1>
+				<div class="lecture-box">
+							
+					<dl>
+						<dt></dt>
+						<dd>
+							<div class="date-box">
+								<label for="datepicker1">
+									<a href="javascript:;" class="btn-calendar disabled"><img src="../../../assets/images/btn_calendar.svg" alt="" /></a>
+									<input type="text" class="date disabled" disabled id="datepicker1" value="2024-02-14" />
+								</label>
+								<span class="date-dash">&nbsp;</span>
+								<label for="datepicker2">
+									<a href="javascript:;" class="btn-calendar"><img src="../../../assets/images/btn_calendar.svg" alt="" /></a>
+									<input type="text" class="date" id="datepicker2" placeholder="YYYY-MM-DD" />
+								</label>
+							</div>
+						</dd>
+					</dl>
+				</div>
+
+				<div class="popup-layer-bottom" id="popupCalendar">
+					<a href="javascript:popupBottomClose('#popupCalendar');" class="popup-layer-close">팝업닫기</a>
+					<div class="popup-layer-title">상담희망일자 선택하기</div>
+					<div class="popup-layer-content">
+
+						<!-- s: Step1 상담희망일자 선택 -->
+						<section class="calendar-box-wrap calendar-box-wrap--1">
+							<h3 class="calendar-box-title">Step1 상담희망일자 선택</h3>
+							<div class="calender-box">
+								<div class="month-box">
+									<div class="btn-arrow">
+										<a href="javascript:;" class="btn-prev disabled"></a>
+										<strong class="month">2024. 09</strong>
+										<a href="javascript:'" class="btn-next"></a>
+									</div>
+								</div>
+								<div class="calender-table">
+									<table class="table-row">
+										<colgroup>
+											<col style="width: 14.28%" />
+											<col style="width: 14.28%" />
+											<col style="width: 14.28%" />
+											<col style="width: 14.28%" />
+											<col style="width: 14.28%" />
+											<col style="width: 14.28%" />
+											<col style="width: 14.28%" />
+										</colgroup>
+										<tbody>
+											<tr>
+												<th>일</th>
+												<th>월</th>
+												<th>화</th>
+												<th>수</th>
+												<th>목</th>
+												<th>금</th>
+												<th>토</th>
+											</tr>
+											<tr>
+												<td>
+													<span class="day">1</span>
+													<span class="badge badge-brown">가응</span>
+												</td>
+												<td>
+													<span class="day">2</span>
+													<span class="badge badge-brown">가응</span>
+												</td>
+												<td>
+													<span class="day">3</span>
+													<span class="badge badge-light-gray">불가</span>
+												</td>
+												<td>
+													<span class="day">4</span>
+													<span class="badge badge-light-gray">불가</span>
+												</td>
+												<td>
+													<span class="day">5</span>
+													<span class="badge badge-light-gray">불가</span>
+												</td>
+												<td>
+													<span class="day">6</span>
+													<span class="badge badge-light-gray">불가</span>
+												</td>
+												<td>
+													<span class="day">7</span>
+													<span class="badge badge-light-gray">불가</span>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<span class="day">8</span>
+												</td>
+												<td>
+													<span class="day">9</span>
+												</td>
+												<td>
+													<span class="day">10</span>
+												</td>
+												<td>
+													<span class="day">11</span>
+												</td>
+												<td>
+													<span class="day">12</span>
+												</td>
+												<td>
+													<span class="day">13</span>
+												</td>
+												<td>
+													<span class="day">14</span>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<span class="day">15</span>
+												</td>
+												<td>
+													<span class="day">16</span>
+												</td>
+												<td>
+													<span class="day">17</span>
+												</td>
+												<td>
+													<span class="day">18</span>
+												</td>
+												<td>
+													<span class="day">19</span>
+												</td>
+												<td>
+													<span class="day">20</span>
+												</td>
+												<td>
+													<span class="day">21</span>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<span class="day">22</span>
+												</td>
+												<td class="active">
+													<span class="day">23</span>
+												</td>
+												<td>
+													<span class="day">24</span>
+												</td>
+												<td class="disabled">
+													<span class="day">25</span>
+												</td>
+												<td class="disabled">
+													<span class="day">26</span>
+												</td>
+												<td class="disabled">
+													<span class="day">27</span>
+												</td>
+												<td class="disabled">
+													<span class="day">28</span>
+												</td>
+											</tr>
+											<tr>
+												<td class="disabled">
+													<span class="day">29</span>
+												</td>
+												<td class="disabled">
+													<span class="day">30</span>
+												</td>
+												<td class="disabled">
+													<span class="day">31</span>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+							<div class="popup-layer-btn">
+								<button type="button" onclick="nextStep();" class="btn large btn-brown"><strong>다음단계</strong></button>
+							</div>
+						</section>
+
+						<!-- e: Step1 상담희망일자 선택 -->
+						<!-- s: Step2 상담희망시간 선택 -->
+						<section class="calendar-box-wrap calendar-box-wrap--2">
+							<h3 class="calendar-box-title">Step2 상담희망시간 선택</h3>
+							<div class="calender-week">
+								<div class="calender-week-title">
+									<strong>2024. 9. 12(목)</strong>
+								</div>
+								<ul class="calender-week-list">
+									<li>
+										<span>09:00</span>
+										<span class="badge badge-light-gray">불가</span>
+									</li>
+									<li>
+										<span>09:30</span>
+										<span class="badge badge-light-gray">불가</span>
+									</li>
+									<li>
+										<span>10:00</span>
+										<span class="badge badge-brown">가응</span>
+									</li>
+								</ul>
+							</div>
+							<div class="popup-layer-btn flex gap-12">
+								<button type="button" onclick="prevStep();" class="btn large"><strong>이전</strong></button>
+								<a href="javacript:;" class="btn large btn-brown"><strong>선택 완료</strong></a>
+							</div>
+						</section>
+						<!-- e: Step2 상담희망시간 선택 -->
+					</div>
+				</div>
+
+			</div>
+
+
+		</div>
+		<link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css" />
+		<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+		
+		<script src="../../../assets/js/m.script.js"></script>
+		<script>
+			$(function () {
+				$('.calendar-box-wrap--1').show();
+				$('.calendar-box-wrap--2').hide();
+
+			});
+			function nextStep() {
+				$('.calendar-box-wrap--1').hide();
+				$('.calendar-box-wrap--2').show();
+			}
+			function prevStep() {
+				$('.calendar-box-wrap--1').show();
+				$('.calendar-box-wrap--2').hide();
+			}
+		</script>
+		<style>
+			#wrap .calendar-box-title{
+				margin-top:	20px;
+				font-size: 16px;
+				font-weight: 400;
+			}
+			#wrap #popupCalendar .calendar-box-wrap  .calender-box {
+				padding:20px 24px;
+				border:1px solid #E4DED3;
+			}
+			#wrap #popupCalendar .calender-box .calender-table .table-row tr {
+				border-top: 1px solid #E4DED3;
+			}
+			#wrap #popupCalendar .calender-box .calender-table .table-row tr td {
+				padding:14px 0;
+			}
+			#wrap #popupCalendar .calender-box .calender-table .table-row tr td:hover {
+				background-color: #F2EFE7;
+			}
+			#wrap #popupCalendar .calender-box .calender-table .table-row tr td span {
+				display: flex;
+				padding: 0 8px;
+			}
+			#wrap #popupCalendar .calender-box .calender-table .table-row tr td.active span {
+				background: transparent; 
+				color: #2C2923; 
+				font-weight: 400;
+			}
+			#wrap #popupCalendar .calender-box .calender-table .table-row tr td span.badge {
+				width: 28px;
+				height: 19px;
+				margin-top: 0;
+				padding:0;
+				color:#fff;
+				border-radius: 2px;
+				font-size: 11px;
+			}
+			#wrap #popupCalendar .popup-layer-btn {
+				display: flex;
+				gap:8px;
+			}
+			#wrap #popupCalendar .popup-layer-btn .btn {
+				flex:1 1;
+			}
+			.calender-week {
+				text-align: center;
+				border:1px solid #E4DED3;
+
+			}
+			.calender-week-title {
+				margin-top: 0;
+				margin-bottom: 0;
+				padding:12px 16px 12px;
+				background-color: #F2EFE7;
+				font-size: 14px;
+			}
+			.calender-week-list {
+				padding:8px;
+			}
+			.calender-week-list li {
+				display: flex;
+				padding:8px 16px;
+				margin-bottom: 8px;
+				font-size: 14px;
+				font-weight: 400;
+				justify-content: space-between;
+			}
+			.calender-week-list li:hover {
+				background-color: #F2EFE7;
+			}
+		</style>
+	</body>
+</html>

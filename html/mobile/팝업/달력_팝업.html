@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8" />
+		<title>상상로스쿨</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta property="og:title" content="상상로스쿨" />
+		<meta property="og:image" content="../../../assets/images/og.png" />
+		<meta property="og:description" content="LEET에 대한 가장 앞선 생각, 상상로스쿨에서 시작합니다." />
+		<meta name="google-site-verification" content="" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, height=device-height, maximum-scale=1.0" />
+		<link rel="shortcut icon" href="../../../assets/images/favicon.ico" />
+		<meta name="keyword" content="상상로스쿨" />
+		<meta name="title" content="상상로스쿨" />
+		<meta name="description" content="LEET에 대한 가장 앞선 생각, 상상로스쿨에서 시작합니다." />
+		<meta property="WT.ti" content="" />
+		<meta name="DCS.dcsuri" content="" />
+		<meta name="robots" content="index, follow" />
+
+		<link rel="stylesheet" href="../../../assets/libs/slick/slick.css" />
+		<link rel="stylesheet" href="../../../assets/css/mobile.css" />
+
+		<script src="../../../assets/libs/jquery/jquery-3.7.1.min.js"></script>
+		<script src="../../../assets/libs/slick/slick-1.6.0.min.js"></script>
+		<script src="../../../assets/libs/masonry/masonry.pkgd.min.js"></script>
+	</head>
+	<body>
+		<div id="wrap">
+			<div id="container" class="popup-list-container">
+				<h1>데이트피커 달력 샘플</h1>
+				<div class="lecture-box">
+							
+					<dl>
+						<dt></dt>
+						<dd>
+							<div class="date-box">
+								<label for="datepicker1">
+									<a href="javascript:;" class="btn-calendar disabled"><img src="../../../assets/images/btn_calendar.svg" alt="" /></a>
+									<input type="text" class="date disabled" disabled id="datepicker1" value="2024-02-14" />
+								</label>
+								<span class="date-dash">&nbsp;</span>
+								<label for="datepicker2">
+									<a href="javascript:;" class="btn-calendar"><img src="../../../assets/images/btn_calendar.svg" alt="" /></a>
+									<input type="text" class="date" id="datepicker2" placeholder="YYYY-MM-DD" />
+								</label>
+							</div>
+						</dd>
+					</dl>
+				</div>
+
+				<div class="popup-layer-bottom" id="popupCalendar">
+					<a href="javascript:popupBottomClose('#popupCalendar');" class="popup-layer-close">팝업닫기</a>
+					<div class="popup-layer-title">날짜 선택</div>
+					<div class="popup-layer-content">
+						<div class="calender-box">
+							<div id="datepicker"></div>
+						</div>
+						<div class="popup-layer-btn">
+							<button type="button" id="select-date" class="btn large btn-brown full" onclick="popupBottomClose('#popupCalendar');"><strong>선택완료</strong></button>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+		</div>
+		<link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css" />
+		<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+		
+		<script src="../../../assets/js/m.script.js"></script>
+		<script>
+			$(function () {
+				$('#datepicker').datepicker({ 
+					dateFormat: 'yy-mm-dd', 
+					showMonthAfterYear: true,
+					yearSuffix: "." ,
+					dayNames: ['일', '월', '화', '수', '목', '금', '토'],
+					dayNamesShort: ['일', '월', '화', '수', '목', '금', '토'],
+					dayNamesMin: ['일','월','화','수','목','금','토'],
+					monthNames: ['01', '02', '03', '04', '05', '06', '07', '08', '09', '10', '11', '12'],
+					beforeShow: function(input, inst) {
+						console.log('beforeShow');
+					},
+					inline: true,
+					onSelect: function(dateText) {
+						// 날짜 선택 시 input에 날짜 입력
+						$('#datepicker2').val(dateText);
+					} 
+				});
+			});
+		</script>
+		<style>
+			.calender-box {
+				width: 100%;
+				height: 100%;
+			}
+			.calender-box .ui-widget{ 
+				font-family: "Pretendard", "Noto Sans KR", "맑은 고딕", "Malgun Gothic", "Apple SD Gothic Neo", "Dotum", "돋움", "Gulim", "굴림", "굴림체", Sans-Serif;
+			}
+			.calender-box .ui-datepicker{
+				border:none;
+				width: 100%;
+				height: 100%;
+			}
+			.calender-box .ui-datepicker td{
+				padding: 0.4em 0.4em 0;
+				text-align: center;
+			}
+			.calender-box  .ui-datepicker-header {
+				position: relative;
+				display: flex;
+				width: 155px;
+				margin: auto;
+				border: none;
+				background-color: transparent;
+				justify-content: center;
+				align-items: center;
+			}
+			.calender-box  .ui-datepicker-calendar th {
+				padding: .7em .3em .3em;
+				font-size: 13px;
+				font-weight: 400;
+				border-bottom: 1px solid #E4DED3;
+			}
+			.calender-box  .ui-datepicker-title {
+				font-size: 20px;
+			}
+			.calender-box .ui-state-default {
+				display: flex !important;
+				width: 40px;
+				height: 40px;
+				margin: 0 auto;
+				border-radius: 50%;
+				border:none;
+				background-color: transparent;
+				font-size: 16px;
+				font-weight: 400;
+				align-items: center;
+				justify-content: center;
+				color: #2C2923
+			}
+			.calender-box .ui-state-active {
+				background-color: #A07D3B;
+				color:#fff;
+				font-weight: 600;
+			}
+			.calender-box .ui-datepicker-prev, .calender-box .ui-datepicker-next {
+				/* position: relative; */
+				display: flex;
+				width: 30px;
+				height: 40px;
+				margin: 0 auto;
+				border: none;
+				background-color: transparent;
+				align-items: center;
+				justify-content: center
+			}
+			.calender-box .ui-datepicker-prev .ui-icon, .calender-box .ui-datepicker-next .ui-icon {
+				overflow: initial;
+				text-indent: 0;
+				font-size: 0;
+				background: #fff;
+			}
+			.calender-box .ui-datepicker-prev .ui-icon::before, .calender-box .ui-datepicker-next .ui-icon::before {
+				content: "";
+				position: absolute;
+				top: 50%;
+				left: initial !important;
+				right: initial !important;
+				display: block;
+				width: 2.1333333333vw;
+				height: 2.1333333333vw;
+				margin-top: -11px;
+				border-width: 0;
+				border-style: solid;
+				border-color: #A07D3B;
+				-webkit-transform: rotate(45deg);
+				-ms-transform: rotate(45deg);
+				transform: rotate(45deg) scale(0.6);
+			}
+			.calender-box .ui-datepicker-prev .ui-icon::before {
+				left: 4.2666666667vw;
+				border-bottom-width: 1.5px;
+				border-left-width: 1.5px;
+			}
+			.calender-box .ui-datepicker-next .ui-icon::before {
+				right: 4.2666666667vw;
+				border-top-width: 1.5px;
+				border-right-width: 1.5px;
+			}
+		</style>
+	</body>
+</html>
