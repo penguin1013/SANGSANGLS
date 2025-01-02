@@ -1,1188 +1,1187 @@
 .popup-dim {
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 1004;
-  background-color: rgba(0, 0, 0, 0.7);
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1004;
+	background-color: rgba(0, 0, 0, 0.7);
 }
 
 #wrap {
-  .popup-page {
-    display: none;
-    background-color: $color-white;
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: 1003;
-    font-family: $font-pretendard;
-
-    .popup-wrap {
-      position: absolute;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0;
-      background-color: $color-white;
-      width: 100%;
-    }
-
-    .popup-close {
-      @include close(50px, 50px, 1px, $color-black);
-      font-size: 0;
-      @include vw(top, 5px);
-      @include vw(left, 10px);
-      z-index: 10002;
-
-      &.white {
-        &:before,
-        &:after {
-          background-color: #fff;
-        }
-      }
-    }
-
-    .popup-title {
-      @include vw(padding, 16px 14px);
-      color: $color-black;
-      @include vw(font-size, 18px);
-      @include vw(line-height, 27px);
-      font-weight: 600;
-      text-align: center;
-      background-color: $color-white;
-      //background-color:$color-light-brown2;
-      border-bottom: 1px solid $color-light-brown;
-      dl {
-        display: flex;
-        dt,
-        dd {
-          @include vw(font-size, 14px);
-          @include vw(line-height, 23.8px);
-          font-weight: 400;
-        }
-        dt {
-          @include vw(width, 48px);
-          font-weight: 600;
-        }
-        dd {
-          @include vw(margin-left, 20px);
-        }
-      }
-    }
-
-    .popup-cont {
-      @include vw(padding, 20px 20px);
-      p {
-        color: $color-black;
-        @include vw(font-size, 14px);
-        @include vw(line-height, 23.8px);
-        text-align: left;
-        font-weight: 400;
-        font-family: $font-pretendard;
-        strong {
-          font-weight: 600;
-        }
-      }
-      .box {
-        @include vw(margin-bottom, 60px);
-        &:last-child {
-          margin-bottom: 0;
-        }
-
-        .table-row {
-          @include vw(margin-top, 20px);
-          th,
-          td {
-            @include vw(padding, 8px 12px);
-            @include vw(font-size, 13px);
-            @include vw(line-height, 22.1px);
-          }
-          & + p {
-            @include vw(margin-top, 20px);
-          }
-        }
-
-        .upload-img {
-          @include vw(margin-top, 20px);
-          @include vw(margin-bottom, 20px);
-          img {
-            width: 100%;
-          }
-        }
-      }
-      .heading {
-        @include vw(margin-bottom, 20px);
-        @include vw(font-size, 16px);
-        font-weight: 600;
-        @include vw(line-height, 27.2px);
-        @include vw(padding-left, 20px);
-        @include vw(text-indent, -20px);
-      }
-      .border-line {
-        @include vw(padding-bottom, 20px);
-        @include vw(margin-bottom, 40px);
-        border-bottom: 1px solid $color-light-brown;
-      }
-
-      .notice {
-        color: $color-gray;
-        @include vw(font-size, 14px);
-        font-weight: 400;
-        @include vw(margin-top, 8px);
-      }
-    }
-
-    .popup-text {
-      p {
-        text-align: left;
-        color: $color-gray;
-        @include vw(font-size, 14px);
-        @include vw(line-height, 23.8px);
-        font-weight: 400;
-        font-family: $font-pretendard;
-        @include boxSizing(border-box);
-      }
-      strong {
-        font-weight: 600;
-      }
-    }
-
-    .popup-notice {
-      text-align: left;
-      color: $color-black;
-      @include vw(font-size, 14px);
-      @include vw(line-height, 23.8px);
-      font-weight: 400;
-    }
-
-    .popup-btn {
-      //@include vw(margin-top,32px);
-      width: 100%;
-      background-color: $color-white;
-      @include vw(padding, 20px 0px);
-      @include boxSizing(border-box);
-      .btn {
-        @include vw(height, 56px);
-        @include vw(font-size, 14px);
-      }
-    }
-
-    .popup-action {
-      position: absolute;
-      left: 0;
-      bottom: 0;
-      width: 100%;
-      background-color: $color-white;
-      @include vw(padding, 20px 20px);
-      @include boxSizing(border-box);
-      .btn {
-        @include vw(height, 56px);
-      }
-    }
-
-    .popup-scroll {
-      @include boxSizing(border-box);
-      //@include vw(max-height,600px);
-      //max-height:100vh;
-      height: 100vh;
-      height: -webkit-fill-available;
-      height: fill-available;
-      //height: calc(100vh - 152px); // 56+96
-      overflow-y: auto;
-
-      @extend %scrollBar;
-    }
-
-    .search-input-box {
-      @include vw(margin-bottom, 16px);
-    }
-
-    .title-box {
-      color: $color-black;
-      @include vw(margin-bottom, 20px);
-      text-align: left;
-      p {
-        @include vw(font-size, 14px);
-        @include vw(line-height, 23.8px);
-        font-weight: 400;
-        strong {
-          @include vw(font-size, 18px);
-          font-weight: 600;
-          @include vw(line-height, 27px);
-        }
-      }
-    }
-
-    .remain-count {
-      @include vw(margin-bottom, 16px);
-      line-height: 1;
-      font-weight: 400;
-      @include vw(font-size, 14px);
-      text-align: left;
-      @include vw(margin-top, 16px);
-      strong {
-        color: $color-brown;
-        display: inline-block;
-        @include vw(margin-left, 8px);
-        font-weight: 600;
-      }
-    }
-
-    .list-box {
-      @include vw(margin-top, 16px);
-      color: $color-black;
-      @include vw(font-size, 14px);
-      @include vw(line-height, 23.8px);
-      font-weight: 400;
-      font-family: $font-pretendard;
-      @include boxSizing(border-box);
-    }
-
-    .line-box {
-      @include vw(margin-bottom, 16px);
-      border: 1px solid $color-light-brown;
-      @include vw(padding, 16px);
-      @include boxSizing(border-box);
-
-      &.scroll {
-        @include vw(max-height, 360px);
-        overflow-y: auto;
-        @extend %scrollBar;
-
-        &.min {
-          @include vw(max-height, 136px);
-        }
-      }
-
-      dl {
-        & + dl {
-          margin-top: 20px;
-        }
-        dt,
-        dd {
-          color: $color-black;
-          @include vw(font-size, 14px);
-          @include vw(line-height, 23.8px);
-          text-align: left;
-          font-weight: 400;
-          font-family: $font-pretendard;
-          @include boxSizing(border-box);
-        }
-        dt {
-          font-weight: 600;
-          @include vw(margin-bottom, 8px);
-        }
-        dd {
-        }
-
-        &.bg-box {
-          background-color: $color-light-beige;
-          @include vw(padding, 14px);
-        }
-      }
-    }
-  }
-
-  #popupLayerVideo {
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 1002;
-    background-color: rgba(0, 0, 0, 0.6);
-    display: none;
-    &.show {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-    .popup {
-      &-wrap {
-        position: relative;
-        width: 100%;
-        max-width: 375px;
-        background-color: transparent;
-        @include breakpoint(maxMobile) {
-          width: 100%;
-          max-width: 750px;
-        }
-      }
-      &-close {
-        @include close(60px, 60px, 2px, #fff);
-        @include vw(top, -60px);
-        @include vw(right, 0px);
-        left: auto;
-        z-index: 10002;
-      }
-
-      &-content {
-        position: relative;
-        padding-bottom: 56.25%;
-        height: 0;
-        width: 100%;
-
-        iframe,
-        video {
-          position: absolute;
-          top: 0;
-          left: 0;
-          width: 100%;
-          height: 100%;
-          object-fit: inherit;
-        }
-        min-height: auto;
-        @include breakpoint(maxMobile) {
-          min-height: auto;
-        }
-      }
-    }
-
-    &.shorts {
-      .popup {
-        &-wrap {
-          @include vw(max-width, 480px);
-          @include breakpoint(maxMobile) {
-            max-width: 320px;
-          }
-        }
-
-        &-close {
-          @include breakpoint(maxMobile) {
-            right: -18px;
-          }
-        }
-
-        &-content {
-          padding-bottom: 177.777%;
-        }
-      }
-    }
-  }
-
-  #popupDevice {
-    .title-box {
-      margin-bottom: 0;
-    }
-    .device-table {
-      .table-row {
-        tr {
-          th {
-            @include vw(font-size, 13px);
-            @include vw(padding, 8px 8px);
-          }
-          td {
-            @include vw(padding, 16px 8px);
-            &.desc {
-              text-align: left;
-              > div {
-                @include vw(margin-top, 8px);
-                &:first-child {
-                  margin-top: 0;
-                }
-                strong {
-                  font-weight: 600;
-                }
-              }
-            }
-
-            .btn-delete {
-              @include vw(margin-top, 12px);
-            }
-          }
-        }
-      }
-
-      .nodata-box {
-        @include vw(min-height, 152px);
-      }
-    }
-  }
-
-  #popupMypageReviewUpdate,
-  #popupMypageReviewWrite {
-    .form-control {
-      .textarea {
-        @include vw(height, 433px);
-      }
-    }
-  }
-
-  .popup-coursePeriod,
-  .popup-coursePause {
-    .form-control .fake-checkbox label {
-      align-items: center;
-      padding-top: 0;
-    }
-    .lecture-box {
-      @include vw(padding-bottom, 32px);
-      //@include vw(margin-top,8px);
-      dl {
-        @include vw(margin-top, 32px);
-        &:first-child {
-          margin-top: 0;
-        }
-
-        dt,
-        dd {
-          font-weight: 400;
-          @include vw(font-size, 14px);
-          color: $color-black;
-          @include vw(line-height, 23.8px);
-        }
-        dt {
-          font-weight: 600;
-          @include vw(font-size, 13px);
-          @include vw(margin-bottom, 8px);
-        }
-        dd {
-          position: relative;
-          strong {
-            font-weight: 600;
-          }
-
-          .custom-select {
-            @include vw(width, 163px);
-            background-color: $color-white;
-          }
-          .form-control {
-            .select {
-              @include vw(width, 163px);
-              background-color: $color-white;
-            }
-            .text {
-              @include vw(width, 163px);
-              background-color: $color-white;
-            }
-          }
-        }
-      }
-    }
-  }
-
-  .popup-coursePeriod {
-    .popup-cont {
-      padding: 0;
-    }
-  }
-
-  .popup-layer-bottom {
-    position: fixed;
-    left: 0;
-    right: 0;
-    bottom: -100%;
-    z-index: 1005;
-    transition: 0.35s ease-in;
-    &.active {
-      bottom: 0;
-    }
-    background-color: $color-white;
-    @include vw(border-top-left-radius, 20px);
-    @include vw(border-top-right-radius, 20px);
-    .popup-layer-close {
-      @include close(30px, 30px, 1px, $color-black);
-      font-size: 0;
-      @include vw(top, 10px);
-      @include vw(right, 10px);
-      z-index: 10002;
-
-      &.white {
-        &:before,
-        &:after {
-          background-color: #fff;
-        }
-      }
-    }
-    .popup-layer-title {
-      background-color: $color-light-brown2;
-      color: $color-black;
-      font-weight: 600;
-      @include vw(font-size, 18px);
-      @include vw(padding, 16px 20px);
-      @include vw(border-top-left-radius, 20px);
-      @include vw(border-top-right-radius, 20px);
-    }
-
-    .popup-layer-content {
-      @include vw(padding, 0 20px);
-
-      .lecture-list {
-        @extend %scrollBar;
-        overflow-y: auto;
-        @include vw(max-height, 286px);
-        .check-list {
-          border-bottom: 1px solid $color-light-brown;
-          @include vw(padding, 16px 0);
-
-          .check-control {
-            display: flex;
-            justify-content: space-between;
-            @include vw(margin-top, 16px);
-          }
-        }
-      }
-
-      .total-box {
-        display: flex;
-        justify-content: space-between;
-        border-top: 1px solid $color-gray;
-        @include vw(padding-top, 20px);
-      }
-
-      .select-list {
-        @include vw(padding, 20px 0);
-        ul {
-          li {
-            @include vw(margin-bottom, 20px);
-
-            a {
-              color: $color-black;
-              font-weight: 400;
-              @include vw(font-size, 14px);
-            }
-
-            &.active {
-              background: url("../images/mobile/icon_check.svg") no-repeat 100%
-                center;
-              @include vw(background-size, 24px 24px);
-              a {
-                color: $color-brown;
-                font-weight: 600;
-              }
-            }
-          }
-        }
-      }
-
-      .popup-layer-btn {
-        //@include vw(margin-top,32px);
-        width: 100%;
-        background-color: $color-white;
-        @include vw(padding, 20px 0px);
-        @include boxSizing(border-box);
-        .btn {
-          @include vw(height, 56px);
-        }
-      }
-    }
-
-    .popup-layer-action {
-      display: flex;
-      justify-content: center;
-      @include vw(padding, 20px);
-      .btn {
-        @extend %variable;
-        @include vw(margin-left, 8px);
-        &:first-child {
-          margin-left: 0;
-        }
-      }
-    }
-  }
-
-  #popupCalendar {
-    .calender-box {
-      @include vw(padding, 20px 0 20px);
-      @include boxSizing(border-box);
-      background-color: $color-white;
-
-      .month-box {
-        position: relative;
-        text-align: center;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        .month {
-          vertical-align: middle;
-          display: inline-block;
-          font-weight: 600;
-          @include vw(font-size, 20px);
-        }
-
-        .btn-arrow {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          font-size: 0;
-          a {
-            display: inline-block;
-            vertical-align: middle;
-            @include vw(width, 40px);
-            @include vw(height, 40px);
-            &.btn-prev {
-              @include arrow(left, 8px, 8px, 1.5px, $color-brown);
-              &.disabled {
-                &:before {
-                  border-color: $color-light-gray;
-                }
-              }
-            }
-            &.btn-next {
-              @include arrow(right, 8px, 8px, 1.5px, $color-brown);
-              &.disabled {
-                &:before {
-                  border-color: $color-light-gray;
-                }
-              }
-            }
-          }
-        }
-      }
-
-      .calender-table {
-        @include vw(margin-top, 12px);
-        .table-row {
-          border-top: 0;
-          width: 100%;
-          tr {
-            border-bottom: none;
-            th,
-            td {
-              padding: 0;
-              line-height: 1;
-              @include boxSizing(border-box);
-              //@include vw(height,40px);
-            }
-            th {
-              background: transparent;
-              @include vw(font-size, 13px);
-              color: $color-gray;
-              border-bottom: 1px solid $color-light-brown;
-              //@include vw(height,28px);
-              @include vw(padding-bottom, 4px);
-            }
-            td {
-              text-align: center;
-              vertical-align: middle;
-              @include vw(font-size, 16px);
-              font-weight: 400;
-              cursor: pointer;
-              @include vw(padding, 6px 5px);
-              span {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                @include vw(width, 40px);
-                @include vw(height, 40px);
-                border-radius: 50%;
-                color: $color-black;
-                font-weight: 400;
-                margin: 0 auto;
-              }
-              &.active {
-                span {
-                  background: $color-brown;
-                  color: $color-white;
-                  font-weight: 600;
-                }
-              }
-
-              &.disabled {
-                span {
-                  color: $color-light-gray;
-                  cursor: default;
-                }
-              }
-            }
-
-            &:nth-child(2n) {
-              td {
-                @include vw(padding-top, 12px);
-              }
-            }
-            &:last-child {
-              td {
-                @include vw(padding-bottom, 0px);
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-
-  #popupMypageBookInfo {
-    .popup-cont {
-      @include vw(padding, 24px 20px 79px);
-    }
-
-    .book-list-box {
-      border-top: 1px solid $color-light-brown;
-      .book-list {
-        border-bottom: 1px solid $color-light-brown;
-        @include vw(padding, 20px 0);
-        display: flex;
-        align-items: flex-start;
-
-        .book-img {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          background-color: $color-light-brown2;
-          @include vw(width, 100px);
-          @include vw(height, 100px);
-          overflow: hidden;
-
-          img {
-            @include vw(width, 40px);
-            @include vw(height, 58px);
-          }
-
-          & + .book-desc {
-            @include vw(margin-left, 16px);
-          }
-        }
-
-        .book-desc {
-          text-align: left;
-          width: calc(100vw - 116px);
-          .desc-title {
-            @include vw(margin-bottom, 4px);
-            position: relative;
-            @include vw(font-size, 14px);
-            color: $color-black;
-            font-weight: 600;
-            @include vw(line-height, 23.8px);
-            span {
-              display: block;
-              @include vw(margin-bottom, 4px);
-              @include vw(font-size, 12px);
-              @include vw(line-height, 20.4px);
-              font-weight: 400;
-            }
-          }
-
-          .desc-info {
-            display: flex;
-
-            p {
-              position: relative;
-              @include vw(font-size, 12px);
-              color: $color-gray;
-              @include vw(line-height, 20.4px);
-              font-weight: 400;
-              & + p {
-                @include vw(margin-left, 8px);
-                @include vw(padding-left, 8px);
-                &:before {
-                  content: "";
-                  width: 1px;
-                  @include vw(height, 12px);
-                  background-color: $color-light-brown;
-                  position: absolute;
-                  left: 0;
-                  top: 50%;
-                  @include vw(margin-top, -6px);
-                }
-              }
-            }
-          }
-
-          .action {
-            @include vw(margin-top, 12px);
-          }
-        }
-      }
-    }
-  }
-
-  #popupMypageLectureInfo {
-    .popup-cont {
-      @include vw(padding, 24px 20px 79px);
-    }
-
-    .popup-notice {
-      @include vw(margin-bottom, 16px);
-    }
-  }
-
-  #popupOrderView {
-    .popup-cont {
-      padding: 0;
-    }
-
-    .popup-btn {
-      @include vw(padding, 20px);
-    }
-
-    .order-data-list .list {
-      &:last-child {
-        border-bottom: none;
-        padding-bottom: 0;
-      }
-    }
-
-    .order-data-box {
-      background-color: $color-light-brown2;
-      @include vw(padding, 24px 20px);
-      dl {
-        @include vw(margin-top, 4px);
-        &:first-child {
-          margin-top: 0;
-        }
-        display: flex;
-        dt {
-          color: $color-black;
-          font-weight: 400;
-          @include vw(font-size, 13px);
-          @include vw(line-height, 22.1px);
-          @include vw(min-width, 58px);
-          @include vw(margin-right, 8px);
-        }
-        dd {
-          position: relative;
-          width: 100%;
-          color: $color-black;
-          font-weight: 600;
-          @include vw(font-size, 14px);
-          @include vw(line-height, 23.8px);
-          strong {
-            font-weight: 600;
-            @include vw(margin-left, 8px);
-            @include vw(font-size, 13px);
-            @include vw(line-height, 22.1px);
-          }
-
-          .btn {
-            display: inline-block;
-            margin-left: auto;
-            position: absolute;
-            right: 0;
-            top: 0;
-          }
-        }
-      }
-    }
-  }
-
-  .popup-inquiry {
-    .lecture-data-input dl:first-child {
-      margin-top: 0px;
-    }
-
-    .input-check-box {
-      .text {
-        @include vw(width, 265px);
-      }
-    }
-
-    .form-control .textarea {
-      @include vw(height, 280px);
-    }
-  }
-
-  #popupMessage {
-    .popup-layer-content {
-      @include vw(padding, 20px);
-    }
-  }
-
-  .popup {
-    display: none;
-    justify-content: center;
-    align-items: center;
-    background-color: rgba(0, 0, 0, 0.6);
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: 1003;
-    font-family: $font-pretendard;
-    &.show {
-      display: flex;
-    }
-
-    .popup-wrap {
-      position: relative;
-      background-color: $color-white;
-      @include vw(width, 600px);
-    }
-
-    .popup-close {
-      @include close(40px, 40px, 1px, $color-black);
-      font-size: 0;
-      @include vw(top, 5px);
-      @include vw(right, 10px);
-      z-index: 10002;
-
-      &.white {
-        &:before,
-        &:after {
-          background-color: #fff;
-        }
-      }
-    }
-
-    &.wide {
-      display: none;
-      position: absolute;
-      right: auto;
-      left: 50%;
-      top: 0;
-      bottom: auto;
-      z-index: 300;
-      width: 90%;
-      max-width: 600px;
-      margin: 0 auto;
-      font-family: $font-noto;
-      @include translateX(-50%);
-      @include boxSizing(border-box);
-      z-index: 1003;
-      border-radius: 30px;
-
-      @include breakpoint(minDesktop) {
-        width: auto;
-        max-width: 100%;
-        border-radius: 38px;
-      }
-    }
-
-    .popup-btn {
-      position: absolute;
-      left: 0;
-      bottom: 0;
-      width: 100%;
-      border-top: 1px solid $color-light-brown;
-      background-color: $color-white;
-      display: flex;
-      justify-content: flex-end;
-      padding: 24px;
-      @include boxSizing(border-box);
-    }
-
-    .popup-title {
-      @include vw(padding, 12px 24px 12px 24px);
-      color: $color-black;
-      @include vw(font-size, 16px);
-      @include vw(line-height, 27.2px);
-      font-weight: 600;
-      text-align: left;
-      background-color: $color-light-brown2;
-      border-bottom: 1px solid $color-light-brown;
-      dl {
-        display: flex;
-        dt,
-        dd {
-          @include vw(font-size, 14px);
-          @include vw(line-height, 23.8px);
-          font-weight: 400;
-        }
-        dt {
-          width: 15%;
-          font-weight: 600;
-        }
-        dd {
-          width: 80%;
-        }
-      }
-    }
-
-    .popup-cont {
-      @include vw(padding, 24px);
-      p {
-        color: $color-black;
-        @include vw(font-size, 14px);
-        @include vw(line-height, 23.8px);
-        text-align: left;
-        font-weight: 400;
-        font-family: $font-pretendard;
-        strong {
-          font-weight: 600;
-        }
-      }
-      .box {
-        @include vw(margin-bottom, 60px);
-        &:last-child {
-          margin-bottom: 0;
-        }
-
-        .table-row {
-          margin-top: 20px;
-          th,
-          td {
-            padding: 8px 12px;
-            @include vw(font-size, 13px);
-            @include vw(line-height, 22.1px);
-          }
-          & + p {
-            @include vw(margin-top, 20px);
-          }
-        }
-
-        .upload-img {
-          margin-top: 20px;
-          margin-bottom: 20px;
-          img {
-            width: 100%;
-          }
-        }
-      }
-      .heading {
-        @include vw(margin-bottom, 20px);
-        @include vw(font-size, 16px);
-        font-weight: 600;
-        line-height: 1;
-      }
-      .border-line {
-        @include vw(padding-bottom, 20px);
-        @include vw(margin-bottom, 40px);
-        border-bottom: 1px solid $color-light-brown;
-      }
-
-      .notice {
-        color: $color-gray;
-        font-size: 14px;
-        font-weight: 400;
-        margin-top: 8px;
-      }
-    }
-
-    .popup-text {
-      p {
-        text-align: left;
-        color: $color-gray;
-        @include vw(font-size, 14px);
-        @include vw(line-height, 23.8px);
-        text-align: left;
-        font-weight: 400;
-        font-family: $font-pretendard;
-        @include boxSizing(border-box);
-      }
-      strong {
-        font-weight: 600;
-      }
-    }
-
-    .popup-scroll {
-      @include boxSizing(border-box);
-      @include vw(max-height, 600px);
-      overflow-y: auto;
-
-      @extend %scrollBar;
-    }
-
-    .popup-action {
-      @include vw(margin-top, 24px);
-      justify-content: center;
-      display: flex;
-      a {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        @include vw(font-size, 14px);
-        @include vw(border-radius, 2px);
-        @include vw(width, 73px);
-        @include vw(height, 40px);
-        color: $color-white;
-        background-color: $color-brown;
-        @include vw(margin, 0 4px);
-        &.popup-cancel {
-          background-color: $color-light-gray;
-        }
-      }
-    }
-  }
-
-  #popupReport {
-    .popup-wrap {
-      .popup-cont {
-        padding: 0;
-        .report-box {
-          @include vw(padding, 24px 20px 0px);
-          border-top: 1px solid $color-light-brown;
-          @include vw(margin-top, 32px);
-          &:first-child {
-            margin-top: 0;
-            border-top: none;
-          }
-          .report-title {
-            @include vw(font-size, 13px);
-            font-weight: 600;
-            color: #2c2923;
-            @include vw(line-height, 22.1px);
-            @include vw(margin-bottom, 8px);
-          }
-
-          .report-table {
-            @include vw(margin-top, 8px);
-            .table-row {
-              tr {
-                th,
-                td {
-                  font-weight: 400;
-                  @include vw(font-size, 13px);
-                  @include vw(padding, 8px 14px);
-                  border-right: 1px solid $color-light-brown;
-                  text-align: left;
-                  &:last-child {
-                    border-right: 0;
-                  }
-                }
-
-                td {
-                }
-              }
-
-              &.table-center {
-                tr {
-                  th,
-                  td {
-                    text-align: center;
-                  }
-                }
-              }
-            }
-          }
-
-          .report-graph {
-            background-color: #d9d9d9;
-            @include vw(height, 300px);
-          }
-        }
-
-        .action {
-          @include vw(padding, 32px 20px 24px);
-          @include boxSizing(border-box);
-        }
-      }
-    }
-  }
-
-  #popupAgreeCheck {
-    .popup-text {
-      p {
-        text-align: center;
-      }
-    }
-
-    .popup-action a {
-      width: auto;
-    }
-  }
-
-  .popup-alert {
-    .popup-wrap {
-      @include vw(border-radius, 8px);
-      @include vw(width, 335px);
-      @include vw(padding, 36px);
-      @include boxSizing(border-box);
-      max-width: calc(100vw - 40px);
-    }
-
-    .popup-text {
-      p {
-        font-size: 16px;
-        text-align: center;
-        color: $color-black;
-      }
-    }
-  }
+	.popup-page {
+		display: none;
+		background-color: $color-white;
+		position: fixed;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		z-index: 1003;
+		font-family: $font-pretendard;
+
+		.popup-wrap {
+			position: absolute;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			background-color: $color-white;
+			width: 100%;
+		}
+
+		.popup-close {
+			@include close(50px, 50px, 1px, $color-black);
+			font-size: 0;
+			@include vw(top, 5px);
+			@include vw(left, 10px);
+			z-index: 10002;
+
+			&.white {
+				&:before,
+				&:after {
+					background-color: #fff;
+				}
+			}
+		}
+
+		.popup-title {
+			@include vw(padding, 16px 14px);
+			color: $color-black;
+			@include vw(font-size, 18px);
+			@include vw(line-height, 27px);
+			font-weight: 600;
+			text-align: center;
+			background-color: $color-white;
+			//background-color:$color-light-brown2;
+			border-bottom: 1px solid $color-light-brown;
+			dl {
+				display: flex;
+				dt,
+				dd {
+					@include vw(font-size, 14px);
+					@include vw(line-height, 23.8px);
+					font-weight: 400;
+				}
+				dt {
+					@include vw(width, 48px);
+					font-weight: 600;
+				}
+				dd {
+					@include vw(margin-left, 20px);
+				}
+			}
+		}
+
+		.popup-cont {
+			@include vw(padding, 20px 20px);
+			p {
+				color: $color-black;
+				@include vw(font-size, 14px);
+				@include vw(line-height, 23.8px);
+				text-align: left;
+				font-weight: 400;
+				font-family: $font-pretendard;
+				strong {
+					font-weight: 600;
+				}
+			}
+			.box {
+				@include vw(margin-bottom, 60px);
+				&:last-child {
+					margin-bottom: 0;
+				}
+
+				.table-row {
+					@include vw(margin-top, 20px);
+					th,
+					td {
+						@include vw(padding, 8px 12px);
+						@include vw(font-size, 13px);
+						@include vw(line-height, 22.1px);
+					}
+					& + p {
+						@include vw(margin-top, 20px);
+					}
+				}
+
+				.upload-img {
+					@include vw(margin-top, 20px);
+					@include vw(margin-bottom, 20px);
+					img {
+						width: 100%;
+					}
+				}
+			}
+			.heading {
+				@include vw(margin-bottom, 20px);
+				@include vw(font-size, 16px);
+				font-weight: 600;
+				@include vw(line-height, 27.2px);
+				@include vw(padding-left, 20px);
+				@include vw(text-indent, -20px);
+			}
+			.border-line {
+				@include vw(padding-bottom, 20px);
+				@include vw(margin-bottom, 40px);
+				border-bottom: 1px solid $color-light-brown;
+			}
+
+			.notice {
+				color: $color-gray;
+				@include vw(font-size, 14px);
+				font-weight: 400;
+				@include vw(margin-top, 8px);
+			}
+		}
+
+		.popup-text {
+			p {
+				text-align: left;
+				color: $color-gray;
+				@include vw(font-size, 14px);
+				@include vw(line-height, 23.8px);
+				font-weight: 400;
+				font-family: $font-pretendard;
+				@include boxSizing(border-box);
+			}
+			strong {
+				font-weight: 600;
+			}
+		}
+
+		.popup-notice {
+			text-align: left;
+			color: $color-black;
+			@include vw(font-size, 14px);
+			@include vw(line-height, 23.8px);
+			font-weight: 400;
+		}
+
+		.popup-btn {
+			//@include vw(margin-top,32px);
+			width: 100%;
+			background-color: $color-white;
+			@include vw(padding, 20px 0px);
+			@include boxSizing(border-box);
+			.btn {
+				@include vw(height, 56px);
+				@include vw(font-size, 14px);
+			}
+		}
+
+		.popup-action {
+			position: absolute;
+			left: 0;
+			bottom: 0;
+			width: 100%;
+			background-color: $color-white;
+			@include vw(padding, 20px 20px);
+			@include boxSizing(border-box);
+			.btn {
+				@include vw(height, 56px);
+			}
+		}
+
+		.popup-scroll {
+			@include boxSizing(border-box);
+			//@include vw(max-height,600px);
+			//max-height:100vh;
+			height: 100vh;
+			height: -webkit-fill-available;
+			height: fill-available;
+			//height: calc(100vh - 152px); // 56+96
+			overflow-y: auto;
+
+			@extend %scrollBar;
+		}
+
+		.search-input-box {
+			@include vw(margin-bottom, 16px);
+		}
+
+		.title-box {
+			color: $color-black;
+			@include vw(margin-bottom, 20px);
+			text-align: left;
+			p {
+				@include vw(font-size, 14px);
+				@include vw(line-height, 23.8px);
+				font-weight: 400;
+				strong {
+					@include vw(font-size, 18px);
+					font-weight: 600;
+					@include vw(line-height, 27px);
+				}
+			}
+		}
+
+		.remain-count {
+			@include vw(margin-bottom, 16px);
+			line-height: 1;
+			font-weight: 400;
+			@include vw(font-size, 14px);
+			text-align: left;
+			@include vw(margin-top, 16px);
+			strong {
+				color: $color-brown;
+				display: inline-block;
+				@include vw(margin-left, 8px);
+				font-weight: 600;
+			}
+		}
+
+		.list-box {
+			@include vw(margin-top, 16px);
+			color: $color-black;
+			@include vw(font-size, 14px);
+			@include vw(line-height, 23.8px);
+			font-weight: 400;
+			font-family: $font-pretendard;
+			@include boxSizing(border-box);
+		}
+
+		.line-box {
+			@include vw(margin-bottom, 16px);
+			border: 1px solid $color-light-brown;
+			@include vw(padding, 16px);
+			@include boxSizing(border-box);
+
+			&.scroll {
+				@include vw(max-height, 360px);
+				overflow-y: auto;
+				@extend %scrollBar;
+
+				&.min {
+					@include vw(max-height, 136px);
+				}
+			}
+
+			dl {
+				& + dl {
+					margin-top: 20px;
+				}
+				dt,
+				dd {
+					color: $color-black;
+					@include vw(font-size, 14px);
+					@include vw(line-height, 23.8px);
+					text-align: left;
+					font-weight: 400;
+					font-family: $font-pretendard;
+					@include boxSizing(border-box);
+				}
+				dt {
+					font-weight: 600;
+					@include vw(margin-bottom, 8px);
+				}
+				dd {
+				}
+
+				&.bg-box {
+					background-color: $color-light-beige;
+					@include vw(padding, 14px);
+				}
+			}
+		}
+	}
+
+	#popupLayerVideo {
+		position: fixed;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		z-index: 1002;
+		background-color: rgba(0, 0, 0, 0.6);
+		display: none;
+		&.show {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		.popup {
+			&-wrap {
+				position: relative;
+				width: 100%;
+				max-width: 375px;
+				background-color: transparent;
+				@include breakpoint(maxMobile) {
+					width: 100%;
+					max-width: 750px;
+				}
+			}
+			&-close {
+				@include close(60px, 60px, 2px, #fff);
+				@include vw(top, -60px);
+				@include vw(right, 0px);
+				left: auto;
+				z-index: 10002;
+			}
+
+			&-content {
+				position: relative;
+				padding-bottom: 56.25%;
+				height: 0;
+				width: 100%;
+
+				iframe,
+				video {
+					position: absolute;
+					top: 0;
+					left: 0;
+					width: 100%;
+					height: 100%;
+					object-fit: inherit;
+				}
+				min-height: auto;
+				@include breakpoint(maxMobile) {
+					min-height: auto;
+				}
+			}
+		}
+
+		&.shorts {
+			.popup {
+				&-wrap {
+					@include vw(max-width, 480px);
+					@include breakpoint(maxMobile) {
+						max-width: 320px;
+					}
+				}
+
+				&-close {
+					@include breakpoint(maxMobile) {
+						right: -18px;
+					}
+				}
+
+				&-content {
+					padding-bottom: 177.777%;
+				}
+			}
+		}
+	}
+
+	#popupDevice {
+		.title-box {
+			margin-bottom: 0;
+		}
+		.device-table {
+			.table-row {
+				tr {
+					th {
+						@include vw(font-size, 13px);
+						@include vw(padding, 8px 8px);
+					}
+					td {
+						@include vw(padding, 16px 8px);
+						&.desc {
+							text-align: left;
+							> div {
+								@include vw(margin-top, 8px);
+								&:first-child {
+									margin-top: 0;
+								}
+								strong {
+									font-weight: 600;
+								}
+							}
+						}
+
+						.btn-delete {
+							@include vw(margin-top, 12px);
+						}
+					}
+				}
+			}
+
+			.nodata-box {
+				@include vw(min-height, 152px);
+			}
+		}
+	}
+
+	#popupMypageReviewUpdate,
+	#popupMypageReviewWrite {
+		.form-control {
+			.textarea {
+				@include vw(height, 433px);
+			}
+		}
+	}
+
+	.popup-coursePeriod,
+	.popup-coursePause {
+		.form-control .fake-checkbox label {
+			align-items: center;
+			padding-top: 0;
+		}
+		.lecture-box {
+			@include vw(padding-bottom, 32px);
+			//@include vw(margin-top,8px);
+			dl {
+				@include vw(margin-top, 32px);
+				&:first-child {
+					margin-top: 0;
+				}
+
+				dt,
+				dd {
+					font-weight: 400;
+					@include vw(font-size, 14px);
+					color: $color-black;
+					@include vw(line-height, 23.8px);
+				}
+				dt {
+					font-weight: 600;
+					@include vw(font-size, 13px);
+					@include vw(margin-bottom, 8px);
+				}
+				dd {
+					position: relative;
+					strong {
+						font-weight: 600;
+					}
+
+					.custom-select {
+						@include vw(width, 163px);
+						background-color: $color-white;
+					}
+					.form-control {
+						.select {
+							@include vw(width, 163px);
+							background-color: $color-white;
+						}
+						.text {
+							@include vw(width, 163px);
+							background-color: $color-white;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.popup-coursePeriod {
+		.popup-cont {
+			padding: 0;
+		}
+	}
+
+	.popup-layer-bottom {
+		position: fixed;
+		left: 0;
+		right: 0;
+		bottom: -100%;
+		z-index: 1005;
+		transition: 0.35s ease-in;
+		&.active {
+			bottom: 0;
+		}
+		background-color: $color-white;
+		@include vw(border-top-left-radius, 20px);
+		@include vw(border-top-right-radius, 20px);
+		.popup-layer-close {
+			@include close(30px, 30px, 1px, $color-black);
+			font-size: 0;
+			@include vw(top, 10px);
+			@include vw(right, 10px);
+			z-index: 10002;
+
+			&.white {
+				&:before,
+				&:after {
+					background-color: #fff;
+				}
+			}
+		}
+		.popup-layer-title {
+			background-color: $color-light-brown2;
+			color: $color-black;
+			font-weight: 600;
+			@include vw(font-size, 18px);
+			@include vw(padding, 16px 20px);
+			@include vw(border-top-left-radius, 20px);
+			@include vw(border-top-right-radius, 20px);
+		}
+
+		.popup-layer-content {
+			@include vw(padding, 0 20px);
+
+			.lecture-list {
+				@extend %scrollBar;
+				overflow-y: auto;
+				@include vw(max-height, 286px);
+				.check-list {
+					border-bottom: 1px solid $color-light-brown;
+					@include vw(padding, 16px 0);
+
+					.check-control {
+						display: flex;
+						justify-content: space-between;
+						@include vw(margin-top, 16px);
+					}
+				}
+			}
+
+			.total-box {
+				display: flex;
+				justify-content: space-between;
+				border-top: 1px solid $color-gray;
+				@include vw(padding-top, 20px);
+			}
+
+			.select-list {
+				@include vw(padding, 20px 0);
+				ul {
+					li {
+						@include vw(margin-bottom, 20px);
+
+						a {
+							color: $color-black;
+							font-weight: 400;
+							@include vw(font-size, 14px);
+						}
+
+						&.active {
+							background: url('../images/mobile/icon_check.svg') no-repeat 100% center;
+							@include vw(background-size, 24px 24px);
+							a {
+								color: $color-brown;
+								font-weight: 600;
+							}
+						}
+					}
+				}
+			}
+
+			.popup-layer-btn {
+				//@include vw(margin-top,32px);
+				width: 100%;
+				background-color: $color-white;
+				@include vw(padding, 20px 0px);
+				@include boxSizing(border-box);
+				.btn {
+					@include vw(height, 56px);
+				}
+			}
+		}
+
+		.popup-layer-action {
+			display: flex;
+			justify-content: center;
+			@include vw(padding, 20px);
+			.btn {
+				@extend %variable;
+				@include vw(margin-left, 8px);
+				&:first-child {
+					margin-left: 0;
+				}
+			}
+		}
+	}
+
+	#popupCalendar {
+		.calender-box {
+			@include vw(padding, 20px 0 20px);
+			@include boxSizing(border-box);
+			background-color: $color-white;
+
+			.month-box {
+				position: relative;
+				text-align: center;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				.month {
+					vertical-align: middle;
+					display: inline-block;
+					font-weight: 600;
+					@include vw(font-size, 20px);
+				}
+
+				.btn-arrow {
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					font-size: 0;
+					a {
+						display: inline-block;
+						vertical-align: middle;
+						@include vw(width, 40px);
+						@include vw(height, 40px);
+						&.btn-prev {
+							@include arrow(left, 8px, 8px, 1.5px, $color-brown);
+							&.disabled {
+								&:before {
+									border-color: $color-light-gray;
+								}
+							}
+						}
+						&.btn-next {
+							@include arrow(right, 8px, 8px, 1.5px, $color-brown);
+							&.disabled {
+								&:before {
+									border-color: $color-light-gray;
+								}
+							}
+						}
+					}
+				}
+			}
+
+			.calender-table {
+				@include vw(margin-top, 12px);
+				.table-row {
+					border-top: 0;
+					width: 100%;
+					tr {
+						border-bottom: none;
+						th,
+						td {
+							padding: 0;
+							line-height: 1;
+							@include boxSizing(border-box);
+							//@include vw(height,40px);
+						}
+						th {
+							background: transparent;
+							@include vw(font-size, 13px);
+							color: $color-gray;
+							border-bottom: 1px solid $color-light-brown;
+							//@include vw(height,28px);
+							@include vw(padding-bottom, 4px);
+						}
+						td {
+							text-align: center;
+							vertical-align: middle;
+							@include vw(font-size, 16px);
+							font-weight: 400;
+							cursor: pointer;
+							@include vw(padding, 6px 5px);
+							span {
+								display: flex;
+								justify-content: center;
+								align-items: center;
+								@include vw(width, 40px);
+								@include vw(height, 40px);
+								border-radius: 50%;
+								color: $color-black;
+								font-weight: 400;
+								margin: 0 auto;
+							}
+							&.active {
+								span {
+									background: $color-brown;
+									color: $color-white;
+									font-weight: 600;
+								}
+							}
+
+							&.disabled {
+								span {
+									color: $color-light-gray;
+									cursor: default;
+								}
+							}
+						}
+
+						&:nth-child(2n) {
+							td {
+								@include vw(padding-top, 12px);
+							}
+						}
+						&:last-child {
+							td {
+								@include vw(padding-bottom, 0px);
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	#popupMypageBookInfo {
+		.popup-cont {
+			@include vw(padding, 24px 20px 79px);
+		}
+
+		.book-list-box {
+			border-top: 1px solid $color-light-brown;
+			.book-list {
+				border-bottom: 1px solid $color-light-brown;
+				@include vw(padding, 20px 0);
+				display: flex;
+				align-items: flex-start;
+
+				.book-img {
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					background-color: $color-light-brown2;
+					@include vw(width, 100px);
+					@include vw(height, 100px);
+					overflow: hidden;
+
+					img {
+						@include vw(width, 40px);
+						@include vw(height, 58px);
+					}
+
+					& + .book-desc {
+						@include vw(margin-left, 16px);
+					}
+				}
+
+				.book-desc {
+					text-align: left;
+					width: calc(100vw - 116px);
+					.desc-title {
+						@include vw(margin-bottom, 4px);
+						position: relative;
+						@include vw(font-size, 14px);
+						color: $color-black;
+						font-weight: 600;
+						@include vw(line-height, 23.8px);
+						span {
+							display: block;
+							@include vw(margin-bottom, 4px);
+							@include vw(font-size, 12px);
+							@include vw(line-height, 20.4px);
+							font-weight: 400;
+						}
+					}
+
+					.desc-info {
+						display: flex;
+
+						p {
+							position: relative;
+							@include vw(font-size, 12px);
+							color: $color-gray;
+							@include vw(line-height, 20.4px);
+							font-weight: 400;
+							& + p {
+								@include vw(margin-left, 8px);
+								@include vw(padding-left, 8px);
+								&:before {
+									content: '';
+									width: 1px;
+									@include vw(height, 12px);
+									background-color: $color-light-brown;
+									position: absolute;
+									left: 0;
+									top: 50%;
+									@include vw(margin-top, -6px);
+								}
+							}
+						}
+					}
+
+					.action {
+						@include vw(margin-top, 12px);
+					}
+				}
+			}
+		}
+	}
+
+	#popupMypageLectureInfo {
+		.popup-cont {
+			@include vw(padding, 24px 20px 79px);
+		}
+
+		.popup-notice {
+			@include vw(margin-bottom, 16px);
+		}
+	}
+
+	#popupOrderView {
+		.popup-cont {
+			padding: 0;
+		}
+
+		.popup-btn {
+			@include vw(padding, 20px);
+		}
+
+		.order-data-list .list {
+			&:last-child {
+				border-bottom: none;
+				padding-bottom: 0;
+			}
+		}
+
+		.order-data-box {
+			background-color: $color-light-brown2;
+			@include vw(padding, 24px 20px);
+			dl {
+				@include vw(margin-top, 4px);
+				&:first-child {
+					margin-top: 0;
+				}
+				display: flex;
+				dt {
+					color: $color-black;
+					font-weight: 400;
+					@include vw(font-size, 13px);
+					@include vw(line-height, 22.1px);
+					@include vw(min-width, 58px);
+					@include vw(margin-right, 8px);
+				}
+				dd {
+					position: relative;
+					width: 100%;
+					color: $color-black;
+					font-weight: 600;
+					@include vw(font-size, 14px);
+					@include vw(line-height, 23.8px);
+					strong {
+						font-weight: 600;
+						@include vw(margin-left, 8px);
+						@include vw(font-size, 13px);
+						@include vw(line-height, 22.1px);
+					}
+
+					.btn {
+						display: inline-block;
+						margin-left: auto;
+						position: absolute;
+						right: 0;
+						top: 0;
+					}
+				}
+			}
+		}
+	}
+
+	.popup-inquiry {
+		.lecture-data-input dl:first-child {
+			margin-top: 0px;
+		}
+
+		.input-check-box {
+			.text {
+				@include vw(width, 265px);
+			}
+		}
+
+		.form-control .textarea {
+			@include vw(height, 280px);
+		}
+	}
+
+	#popupMessage {
+		.popup-layer-content {
+			@include vw(padding, 20px);
+		}
+	}
+
+	.popup {
+		display: none;
+		justify-content: center;
+		align-items: center;
+		background-color: rgba(0, 0, 0, 0.6);
+		position: fixed;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		z-index: 1003;
+		font-family: $font-pretendard;
+		&.show {
+			display: flex;
+		}
+
+		.popup-wrap {
+			position: relative;
+			background-color: $color-white;
+			@include vw(width, 600px);
+		}
+
+		.popup-close {
+			@include close(40px, 40px, 1px, $color-black);
+			font-size: 0;
+			@include vw(top, 5px);
+			@include vw(right, 10px);
+			z-index: 10002;
+
+			&.white {
+				&:before,
+				&:after {
+					background-color: #fff;
+				}
+			}
+		}
+
+		&.wide {
+			display: none;
+			position: absolute;
+			right: auto;
+			left: 50%;
+			top: 0;
+			bottom: auto;
+			z-index: 300;
+			width: 90%;
+			max-width: 600px;
+			margin: 0 auto;
+			font-family: $font-noto;
+			@include translateX(-50%);
+			@include boxSizing(border-box);
+			z-index: 1003;
+			border-radius: 30px;
+
+			@include breakpoint(minDesktop) {
+				width: auto;
+				max-width: 100%;
+				border-radius: 38px;
+			}
+		}
+
+		.popup-btn {
+			position: absolute;
+			left: 0;
+			bottom: 0;
+			width: 100%;
+			border-top: 1px solid $color-light-brown;
+			background-color: $color-white;
+			display: flex;
+			justify-content: flex-end;
+			padding: 24px;
+			@include boxSizing(border-box);
+		}
+
+		.popup-title {
+			@include vw(padding, 12px 24px 12px 24px);
+			color: $color-black;
+			@include vw(font-size, 16px);
+			@include vw(line-height, 27.2px);
+			font-weight: 600;
+			text-align: left;
+			background-color: $color-light-brown2;
+			border-bottom: 1px solid $color-light-brown;
+			dl {
+				display: flex;
+				dt,
+				dd {
+					@include vw(font-size, 14px);
+					@include vw(line-height, 23.8px);
+					font-weight: 400;
+				}
+				dt {
+					width: 15%;
+					font-weight: 600;
+				}
+				dd {
+					width: 80%;
+				}
+			}
+		}
+
+		.popup-cont {
+			@include vw(padding, 24px);
+			p {
+				color: $color-black;
+				@include vw(font-size, 14px);
+				@include vw(line-height, 23.8px);
+				text-align: left;
+				font-weight: 400;
+				font-family: $font-pretendard;
+				strong {
+					font-weight: 600;
+				}
+			}
+			.box {
+				@include vw(margin-bottom, 60px);
+				&:last-child {
+					margin-bottom: 0;
+				}
+
+				.table-row {
+					margin-top: 20px;
+					th,
+					td {
+						padding: 8px 12px;
+						@include vw(font-size, 13px);
+						@include vw(line-height, 22.1px);
+					}
+					& + p {
+						@include vw(margin-top, 20px);
+					}
+				}
+
+				.upload-img {
+					margin-top: 20px;
+					margin-bottom: 20px;
+					img {
+						width: 100%;
+					}
+				}
+			}
+			.heading {
+				@include vw(margin-bottom, 20px);
+				@include vw(font-size, 16px);
+				font-weight: 600;
+				line-height: 1;
+			}
+			.border-line {
+				@include vw(padding-bottom, 20px);
+				@include vw(margin-bottom, 40px);
+				border-bottom: 1px solid $color-light-brown;
+			}
+
+			.notice {
+				color: $color-gray;
+				font-size: 14px;
+				font-weight: 400;
+				margin-top: 8px;
+			}
+		}
+
+		.popup-text {
+			p {
+				text-align: left;
+				color: $color-gray;
+				@include vw(font-size, 14px);
+				@include vw(line-height, 23.8px);
+				text-align: left;
+				font-weight: 400;
+				font-family: $font-pretendard;
+				@include boxSizing(border-box);
+			}
+			strong {
+				font-weight: 600;
+			}
+		}
+
+		.popup-scroll {
+			@include boxSizing(border-box);
+			@include vw(max-height, 600px);
+			overflow-y: auto;
+
+			@extend %scrollBar;
+		}
+
+		.popup-action {
+			@include vw(margin-top, 24px);
+			justify-content: center;
+			display: flex;
+			a {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				@include vw(font-size, 14px);
+				@include vw(border-radius, 2px);
+				@include vw(width, 73px);
+				@include vw(height, 40px);
+				color: $color-white;
+				background-color: $color-brown;
+				@include vw(margin, 0 4px);
+				&.popup-cancel {
+					background-color: $color-light-gray;
+				}
+			}
+		}
+	}
+
+	#popupReport {
+		.popup-wrap {
+			.popup-cont {
+				padding: 0;
+				.report-box {
+					@include vw(padding, 24px 20px 0px);
+					border-top: 1px solid $color-light-brown;
+					@include vw(margin-top, 32px);
+					&:first-child {
+						margin-top: 0;
+						border-top: none;
+					}
+					.report-title {
+						@include vw(font-size, 13px);
+						font-weight: 600;
+						color: #2c2923;
+						@include vw(line-height, 22.1px);
+						@include vw(margin-bottom, 8px);
+					}
+
+					.report-table {
+						@include vw(margin-top, 8px);
+						.table-row {
+							tr {
+								th,
+								td {
+									font-weight: 400;
+									@include vw(font-size, 13px);
+									@include vw(padding, 8px 14px);
+									border-right: 1px solid $color-light-brown;
+									text-align: left;
+									&:last-child {
+										border-right: 0;
+									}
+								}
+
+								td {
+								}
+							}
+
+							&.table-center {
+								tr {
+									th,
+									td {
+										text-align: center;
+									}
+								}
+							}
+						}
+					}
+
+					.report-graph {
+						background-color: #d9d9d9;
+						@include vw(height, 300px);
+					}
+				}
+
+				.action {
+					@include vw(padding, 32px 20px 24px);
+					@include boxSizing(border-box);
+				}
+			}
+		}
+	}
+
+	#popupAgreeCheck {
+		.popup-text {
+			p {
+				text-align: center;
+			}
+		}
+
+		.popup-action a {
+			width: auto;
+		}
+	}
+
+	.popup-alert {
+		.popup-wrap {
+			@include vw(border-radius, 8px);
+			@include vw(width, 335px);
+			@include vw(padding, 36px);
+			@include boxSizing(border-box);
+			max-width: calc(100vw - 40px);
+		}
+
+		.popup-text {
+			p {
+				font-size: 16px;
+				text-align: center;
+				color: $color-black;
+			}
+		}
+	}
 }
