@@ -54,7 +54,7 @@
 						li {
 							display:flex;
 							align-items:center;
-							@include vw(margin-bottom, 16px);
+							@include vw(margin-bottom, 8px);
 							&:last-child {
 								margin-bottom: 0;
 							}

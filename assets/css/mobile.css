@@ -7925,11 +7925,11 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 #wrap .section-teacher-gate .teacher-gate-list .list .teacher-curriculum ul li {
   display: flex;
   align-items: center;
-  margin-bottom: 4.2666666667vw;
+  margin-bottom: 2.1333333333vw;
 }
 @media screen and (min-width: 375px) {
   #wrap .section-teacher-gate .teacher-gate-list .list .teacher-curriculum ul li {
-    margin-bottom: 16px;
+    margin-bottom: 8px;
   }
 }
 #wrap .section-teacher-gate .teacher-gate-list .list .teacher-curriculum ul li:last-child {
