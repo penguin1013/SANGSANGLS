@@ -16,8 +16,8 @@
 				}
 				.t {
 					&-thumb {
-						@include vw(min-width, 96px);
-						@include vw(max-width, 96px);
+						@include vw(width, 126px);
+						@include vw(height, 160px);
 						@include vw(margin-right, 24px);
 						img {
 							width: 100%;
@@ -25,14 +25,15 @@
 					}
 					&-text {
 						p {
+							color:$color-black;
 							@include vw(font-size, 24px);
-							line-height: 1.5;
+							@include vw(line-height, 33.6px);
 							font-weight: 200;
 						}
 						span {
 							display: block;
 							@include vw(font-size, 14px);
-							line-height: 1.2;
+							@include vw(line-height, 21px);
 							font-weight: 400;
 						}
 					}
@@ -65,6 +66,21 @@
 							span {
 								@include vw(font-size, 12px);
 								font-weight: 400;
+							}
+
+							.t-thumb {
+								@include vw(width, 36px);
+								@include vw(height, 24px);
+								@include vw(margin-right, 16px);
+								img {
+									width: 100%;
+								}
+							}
+							.t-text{
+								@include vw(font-size, 14px);
+								@include vw(line-height, 21px);
+								font-weight: 400;
+								color:$color-777;
 							}
 							
 						}

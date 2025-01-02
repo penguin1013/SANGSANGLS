@@ -7844,18 +7844,18 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   margin-bottom: 0;
 }
 #wrap .section-teacher-gate .teacher-gate-list .list .t-thumb {
-  min-width: 25.6vw;
-  max-width: 25.6vw;
+  width: 33.6vw;
+  height: 42.6666666667vw;
   margin-right: 6.4vw;
 }
 @media screen and (min-width: 375px) {
   #wrap .section-teacher-gate .teacher-gate-list .list .t-thumb {
-    min-width: 96px;
+    width: 126px;
   }
 }
 @media screen and (min-width: 375px) {
   #wrap .section-teacher-gate .teacher-gate-list .list .t-thumb {
-    max-width: 96px;
+    height: 160px;
   }
 }
 @media screen and (min-width: 375px) {
@@ -7867,8 +7867,9 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   width: 100%;
 }
 #wrap .section-teacher-gate .teacher-gate-list .list .t-text p {
+  color: #2C2923;
   font-size: 6.4vw;
-  line-height: 1.5;
+  line-height: 8.96vw;
   font-weight: 200;
 }
 @media screen and (min-width: 375px) {
@@ -7876,15 +7877,25 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
     font-size: 24px;
   }
 }
+@media screen and (min-width: 375px) {
+  #wrap .section-teacher-gate .teacher-gate-list .list .t-text p {
+    line-height: 33.6px;
+  }
+}
 #wrap .section-teacher-gate .teacher-gate-list .list .t-text span {
   display: block;
   font-size: 3.7333333333vw;
-  line-height: 1.2;
+  line-height: 5.6vw;
   font-weight: 400;
 }
 @media screen and (min-width: 375px) {
   #wrap .section-teacher-gate .teacher-gate-list .list .t-text span {
     font-size: 14px;
+  }
+}
+@media screen and (min-width: 375px) {
+  #wrap .section-teacher-gate .teacher-gate-list .list .t-text span {
+    line-height: 21px;
   }
 }
 #wrap .section-teacher-gate .teacher-gate-list .list .teacher-top {
@@ -7940,6 +7951,45 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 @media screen and (min-width: 375px) {
   #wrap .section-teacher-gate .teacher-gate-list .list .teacher-curriculum ul li span {
     font-size: 12px;
+  }
+}
+#wrap .section-teacher-gate .teacher-gate-list .list .teacher-curriculum ul li .t-thumb {
+  width: 9.6vw;
+  height: 6.4vw;
+  margin-right: 4.2666666667vw;
+}
+@media screen and (min-width: 375px) {
+  #wrap .section-teacher-gate .teacher-gate-list .list .teacher-curriculum ul li .t-thumb {
+    width: 36px;
+  }
+}
+@media screen and (min-width: 375px) {
+  #wrap .section-teacher-gate .teacher-gate-list .list .teacher-curriculum ul li .t-thumb {
+    height: 24px;
+  }
+}
+@media screen and (min-width: 375px) {
+  #wrap .section-teacher-gate .teacher-gate-list .list .teacher-curriculum ul li .t-thumb {
+    margin-right: 16px;
+  }
+}
+#wrap .section-teacher-gate .teacher-gate-list .list .teacher-curriculum ul li .t-thumb img {
+  width: 100%;
+}
+#wrap .section-teacher-gate .teacher-gate-list .list .teacher-curriculum ul li .t-text {
+  font-size: 3.7333333333vw;
+  line-height: 5.6vw;
+  font-weight: 400;
+  color: #777;
+}
+@media screen and (min-width: 375px) {
+  #wrap .section-teacher-gate .teacher-gate-list .list .teacher-curriculum ul li .t-text {
+    font-size: 14px;
+  }
+}
+@media screen and (min-width: 375px) {
+  #wrap .section-teacher-gate .teacher-gate-list .list .teacher-curriculum ul li .t-text {
+    line-height: 21px;
   }
 }
 #wrap .section-teacher-curriculum {
