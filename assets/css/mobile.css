@@ -14821,7 +14821,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   }
 }
 #wrap #contents.program .section-program-visual {
-  padding: 60px 0 100px;
+  padding-top: 60px;
 }
 #wrap #contents.program .section-program-visual .title {
   line-height: 1.5;
