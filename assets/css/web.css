@@ -13079,7 +13079,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   box-sizing: border-box;
 }
 #wrap #contents.program .section-program-visual {
-  padding: 120px 0 180px;
+  padding-bottom: 180px;
 }
 #wrap #contents.program .section-program-visual .title {
   line-height: 1.5;
