@@ -7135,6 +7135,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   height: 100%;
 }
 #wrap .section-examInfo-content .bar {
+  display: none;
   background: url("../images/bg_guide.jpg") no-repeat center center;
   width: 100%;
   height: 240px;
@@ -7143,6 +7144,9 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 #wrap .section-examInfo-content .notice-list-table .table-row + .notice-text {
   margin-top: 20px;
   color: #7A746A;
+}
+#wrap .section-examInfo-content .wrap + .wrap {
+  padding-top: 80px;
 }
 
 #wrap .section-online-slide + .section-campus-title {
@@ -13266,6 +13270,4 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 #wrap #contents.program .section-program-info .img-box > * {
   max-width: 100%;
-}
-
-/*# sourceMappingURL=web.css.map */
+}/*# sourceMappingURL=web.css.map */

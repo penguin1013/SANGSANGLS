@@ -546,6 +546,7 @@
 		}
 
 		.bar{
+			display:none;
 			background: url('../images/bg_guide.jpg') no-repeat center center;
 			width:100%;
 			height:240px;
@@ -554,6 +555,10 @@
 
 		.notice-list-table{
 			.table-row + .notice-text{margin-top:20px;color:$color-gray;}
+		}
+
+		.wrap + .wrap{
+			padding-top:80px;
 		}
 
 		
