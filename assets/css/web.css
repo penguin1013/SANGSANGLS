@@ -4268,6 +4268,9 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 #wrap .action.flex-between {
   justify-content: space-between;
 }
+#wrap .action.align-end {
+  align-items: flex-end;
+}
 #wrap .action.fly {
   display: inline-block;
   position: absolute;
@@ -4291,6 +4294,9 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 #wrap .flex.flex-between {
   justify-content: space-between;
+}
+#wrap .flex.align-end {
+  align-items: flex-end;
 }
 #wrap .table-bordered {
   width: 100%;
@@ -9232,6 +9238,16 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 #wrap .section-join-content .join-result-box .action {
   margin-top: 40px;
+}
+#wrap .section-join-content .action .form-text {
+  color: #2C2923;
+  vertical-align: middle;
+  line-height: 24px;
+}
+#wrap .section-join-content .action .form-text .icon {
+  vertical-align: middle;
+  display: inline-block;
+  margin-right: 8px;
 }
 
 #wrap .section-player .player-title {

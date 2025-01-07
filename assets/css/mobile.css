@@ -11314,6 +11314,17 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 #wrap .section-join-content .action.flex {
   gap: 8px;
 }
+#wrap .section-join-content .text-box {
+  margin-top: 6.4vw;
+}
+@media screen and (min-width: 375px) {
+  #wrap .section-join-content .text-box {
+    margin-top: 24px;
+  }
+}
+#wrap .section-join-content .text-box p {
+  color: #2C2923;
+}
 
 #wrap .section-main-slogan {
   padding-top: 12.8vw;

@@ -1472,6 +1472,7 @@
 		&.flex-center{justify-content: center;}
 		&.flex-end{justify-content: flex-end;}
         &.flex-between{justify-content: space-between;}
+        &.align-end{align-items: flex-end;}
 
 		&.fly{
 			display:inline-block;
@@ -1487,6 +1488,7 @@
 		&.flex-center{justify-content: center;}
 		&.flex-end{justify-content: flex-end;}
         &.flex-between{justify-content: space-between;}
+		&.align-end{align-items: flex-end;}
 	}
 
     .table-bordered {

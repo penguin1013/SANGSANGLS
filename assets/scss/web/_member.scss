@@ -390,5 +390,18 @@
 
 		}
 
+		.action{
+			.form-text{
+				color:$color-black;
+				vertical-align:middle;
+				line-height:24px;
+				.icon{
+					vertical-align:middle;
+					display:inline-block;
+					margin-right:8px;
+				}
+			}
+		}
+
 	}
 }

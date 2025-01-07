@@ -734,6 +734,13 @@
 				gap: 8px;
 			}
 		}
+
+		.text-box{
+			@include vw(margin-top,24px);
+			p{
+				color:$color-black;
+			}
+		}
 	}
 
 }
