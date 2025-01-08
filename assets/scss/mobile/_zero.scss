@@ -1,7 +1,7 @@
 #wrap{
     .section-zero-visual{
-		@include vw(padding,80px 20px 520px 20px);
-		@include vw(height,1156px);
+		@include vw(padding,80px 0px 138px 0px);
+		@include vw(height,1176px);
 		@include boxSizing(border-box);
 		position:relative;
 		background-size: auto 100%;background-repeat: no-repeat;

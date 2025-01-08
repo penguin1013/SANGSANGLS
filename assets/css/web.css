@@ -12781,6 +12781,9 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 #wrap .section-zero-visual .info-box dl dd {
   margin-left: 20px;
 }
+#wrap .section-zero-visual .img-box img {
+  width: 100%;
+}
 #wrap .section-zero-title {
   font-size: 34px;
   line-height: 51px;
