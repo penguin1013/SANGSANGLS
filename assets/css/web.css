@@ -12721,7 +12721,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   background-position: 50% 100%;
 }
 #wrap .section-zero-visual .wrap {
-  padding: 120px 241px 120px 100px;
+  padding: 116px 241px 95px 100px;
   height: 734px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
