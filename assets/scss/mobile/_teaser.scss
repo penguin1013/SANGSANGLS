@@ -65,4 +65,17 @@
       }
     }
   }
+
+  .section-teaser{
+	@include vw(padding-top, 80px);
+	@include vw(padding-bottom, 30px);
+	.wrap{
+		max-width:600px;
+		margin:0 auto;
+	}
+
+	.img-box{
+		img{width:100%;}
+	}
+  }
 }

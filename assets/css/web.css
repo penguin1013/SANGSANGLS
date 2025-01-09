@@ -12714,6 +12714,13 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 #wrap #contents.contents-teaser .content-layout .list-tit li:not(:first-child) {
   margin-top: 16px;
 }
+#wrap .section-teaser .img-box {
+  width: 876px;
+  margin: 0 auto;
+}
+#wrap .section-teaser .img-box img {
+  width: 100%;
+}
 
 #wrap .section-zero-visual {
   background-size: auto 100%;
