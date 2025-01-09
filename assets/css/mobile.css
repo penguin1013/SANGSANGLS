@@ -11612,12 +11612,12 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   display: flex;
 }
 #wrap .section-main-banner .main-banner-list .main-banner-more .banner-one {
-  width: 34.6666666667vw;
+  width: 69.3333333333vw;
   margin-left: 1.0666666667vw;
 }
 @media screen and (min-width: 375px) {
   #wrap .section-main-banner .main-banner-list .main-banner-more .banner-one {
-    width: 130px;
+    width: 260px;
   }
 }
 @media screen and (min-width: 375px) {
@@ -11628,6 +11628,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 #wrap .section-main-banner .main-banner-list .main-banner-more .banner-one a {
   width: 100%;
   height: 54.4vw;
+  background-color: #F0F0F0;
 }
 @media screen and (min-width: 375px) {
   #wrap .section-main-banner .main-banner-list .main-banner-more .banner-one a {
@@ -11635,11 +11636,11 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   }
 }
 #wrap .section-main-banner .main-banner-list .main-banner-more .banner-two {
-  width: 53.6vw;
+  width: 106.9333333333vw;
 }
 @media screen and (min-width: 375px) {
   #wrap .section-main-banner .main-banner-list .main-banner-more .banner-two {
-    width: 201px;
+    width: 401px;
   }
 }
 #wrap .section-main-banner .main-banner-list .main-banner-more .banner-two a {

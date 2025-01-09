@@ -124,16 +124,17 @@
 			.main-banner-more{
 				display:flex;
 				.banner-one{
-					@include vw(width,130px);
+					@include vw(width,260px);
 					@include vw(margin-left,4px);
 					a{
 						width:100%;
 						@include vw(height,204px);
+						background-color:#F0F0F0;
 						
 					}
 				}
 				.banner-two{
-					@include vw(width,201px);
+					@include vw(width,401px);
 					
 					a{
 						@include vw(height,100px);
