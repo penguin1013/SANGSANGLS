@@ -31,9 +31,9 @@
 			width:100%;
 
 			a{
-				display:block;color:$color-black;@include vw(font-size,20px);
+				display:block;color:$color-black;@include vw(font-size,17px);
 				font-weight:300;
-				@include vw(line-height,30px);
+				@include vw(line-height,25.5px);
 				@include vw(padding,16px);
 				background-color:$color-light-brown2;
 				@include boxSizing(border-box);
@@ -111,6 +111,42 @@
 					}
 				}
 			}
+
+			.main-banner-one{
+				@include vw(margin-top,4px);
+				a{
+					background-color:#D9DDE2;
+					color:$color-black;
+					@include vw(height,100px);
+				}
+			}
+
+			.main-banner-more{
+				display:flex;
+				.banner-one{
+					@include vw(width,130px);
+					@include vw(margin-left,4px);
+					a{
+						width:100%;
+						@include vw(height,204px);
+						
+					}
+				}
+				.banner-two{
+					@include vw(width,201px);
+					
+					a{
+						@include vw(height,100px);
+						background-color:#BDC7D4;
+						color:$color-black;
+						
+						&:first-child{
+							@include vw(margin-bottom,4px);
+						}
+					}
+				}
+			}
+			
 		}
 
 	}

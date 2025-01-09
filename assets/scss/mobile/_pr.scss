@@ -483,12 +483,10 @@
 	/* 241231 PR 전체수정 */
 	.section-pr-profile{
 		@include vw(padding-top,60px);
-		@include vw(padding-bottom, 80px);
-		border-bottom:1px solid #ddd;
 		.profile-title{@include vw(margin-bottom, 40px);}
 		.profile-text{@include vw(margin-top, 40px);}
 		.profile-menu-box{
-			@include vw(margin-top,40px);
+			@include vw(margin-top,60px);
 			display:flex;
 			justify-content: space-between;
 			.menu-title{
@@ -498,9 +496,9 @@
 			}
 			.menu-list{
 				@include vw(width,164px);
-				border-top:1px solid $color-light-brown;
+				border-top:1px solid #ddd;
 				li{
-					border-bottom:1px solid $color-light-brown;
+					border-bottom:1px solid #ddd;
 					@include vw(font-size,14px);
 					@include vw(line-height,23.8px);
 					color:$color-black;
@@ -524,9 +522,9 @@
 			.curriculum-title{
 				color:$color-black;
 				@include vw(font-size,20px);
-				font-weight:600;
-				@include vw(line-height,34px);
-				@include vw(margin-bottom,16px);
+				font-weight:300;
+				@include vw(line-height,30px);
+				@include vw(margin-bottom,8px);
 				span {
 					display: block;
 					@include vw(font-size, 11px);
@@ -541,10 +539,10 @@
 
 			.curriculum-content{
 				p{
-					color:$color-black;
-					@include vw(font-size,20px);
-					font-weight:400;
-					@include vw(line-height,34px);
+					color:#666;
+					@include vw(font-size,16px);
+					font-weight:300;
+					@include vw(line-height,27.2px);
 					@include vw(margin-bottom,24px);
 					
 					strong{
@@ -578,7 +576,7 @@
 						&:after{
 							content:'';
 							position:absolute;left:0;right:0;top:0;bottom:0;width:100%;height:100%;z-index:1;
-							background:rgba(0,0,0,0.4) url(../images/pr/btn_play.svg) no-repeat 50% 50%;
+							background: url(../images/pr/btn_play.svg) no-repeat 2% 97.5%;
 							@include vw(background-size,48px 48px);
 						}
 					}
@@ -597,15 +595,19 @@
 		
 	}
 
+	.section-pr-schedule2 {
+		@include vw(margin-top, 24px);
+	}
+
 	.section-pr-schedule {
 		@include vw(margin-top, 24px);
-		.wrap {
-			overflow: auto;
-			img {
-				max-width:none;
-				@include vw(width, 891px);
-			}
-		}
+		// .wrap {
+		// 	overflow: auto;
+		// 	img {
+		// 		max-width:none;
+		// 		@include vw(width, 891px);
+		// 	}
+		// }
 	}
 
 	.section-pr-lecture{

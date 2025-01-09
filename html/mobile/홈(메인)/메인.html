@@ -117,22 +117,22 @@
 
 					<div class="section-main-banner">
 						<div class="wrap">
-							<!-- 241229 수정 -->
+							<!-- 250109 수정 -->
 							<div class="main-banner-list">
-								<div class="banner-list banner-list1">
-									<a href="javascript:;" style="background-color: #001358; color: #fffffc">언어이해<br />MASTER-KEY PASS</a>
+								<div class="main-banner-more"> 
+									<div class="banner-two">
+										<a href="javascript:;">언어이해<br>MASTER-KEY PASS</a>
+										<a href="javascript:;">
+											추리논증<br>MASTER-KEY PASS
+										</a>
+									</div>
+									<div class="banner-one">
+										<a href="javascript:;" >2026<br>전국모의고사</a>
+									</div>
 								</div>
-								<div class="banner-list banner-list2">
-									<a href="javascript:;" style="background-color: #001358; color: #fffffc">추리논증<br />MASTER-KEY PASS</a>
-								</div>
-								<div class="banner-list banner-list4">
-									<a href="javascript:;" style="background-color: #43172e; color: #fffffc">시대인재 LEET<br />장학혜택</a>
-								</div>
-								<div class="banner-list banner-list3">
-									<a href="javascript:;" style="background-color: #dcdad8; color: #242321">2026 전국 모의고사</a>
-								</div>
+								<div class="main-banner-one"><a href="javascript:;" >시대인재 LEET <br />장학혜택</a></div>
 							</div>
-							<!--// 241229 수정 -->
+							<!--// 250109 수정 -->
 						</div>
 					</div>
 
@@ -856,15 +856,17 @@
 		<script>
 			$(function () {
 				slideEvent();
-				// 이미지가 모두 로드된 후에 Masonry 레이아웃 초기화
-				$('.grid-list').imagesLoaded(function () {
-					$('.grid-list').masonry({
-						itemSelector: '.grid-item',
-						gutter: 15,
-						horizontalOrder: true,
-					});
+			});
+
+			// 250109 수정
+			$(window).on("load", function(){
+				$('.grid-list').masonry({
+					itemSelector: '.grid-item',
+					gutter: 15,
+					horizontalOrder: true,
 				});
 			});
+
 		</script>
 	</body>
 </html>

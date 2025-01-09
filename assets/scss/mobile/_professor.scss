@@ -10,7 +10,7 @@
 		@include vw(margin-top, 24px);
 		.teacher-gate-list {
 			.list {
-				@include vw(margin-bottom, 80px);
+				@include vw(margin-bottom, 100px);
 				&:last-child {
 					margin-bottom: 0
 				}
@@ -43,18 +43,47 @@
 					a{
 						display: flex;
 					}
+
+					.t-text{
+						span{
+							font-weight:200;
+							color:$color-gray;
+
+						}
+					}
 				}
 				.teacher-curriculum {
-					@include vw(margin-top, 16px);
+					@include vw(margin-top, 20px);
+					.t-subject{
+						color:#aaa;
+						font-weight:400;
+						font-size:12px;
+						line-height:18px;
+						border-top: 1px solid #ddd;
+						@include vw(padding-top, 20px);
+						@include vw(margin-bottom, 16px);
+
+					}
+
+					.t-curriculum-desc{
+						.form-text{
+							margin-top:20px;
+							color:$color-light-gray;
+							font-weight:200;
+							font-size:12px;line-height:18px;
+						}
+					}
 
 					ul {
-						@include vw(padding, 16px 0);
-						border: 1px solid #E6E9EB;
-						border-width: 1px 0 1px;
+						//@include vw(padding, 16px 0);
+						//border: 1px solid #E6E9EB;
+						//border-width: 1px 0 1px;
+						@include vw(padding-bottom, 20px);
+						border-bottom: 1px solid #ddd;
 						li {
 							display:flex;
 							align-items:flex-start;
-							@include vw(margin-bottom, 8px);
+							@include vw(margin-bottom, 14px);
 							&:last-child {
 								margin-bottom: 0;
 							}
@@ -121,7 +150,7 @@
 			}
 
 			&-notice {
-				@include vw(margin, 48px 0 16px);
+				@include vw(margin, 48px 0 0);
 				border: 1px solid #F2EFE7;
 				border-width: 1px 0;
 				ul {
@@ -143,9 +172,10 @@
 								@include boxSizing(border-box);
 							}
 							span {
+								display:block;
 								@include vw(font-size, 12px);
 								font-weight: 400;
-								@include vw(margin-top, 4px);
+								@include vw(margin-top, 8px);
 							}
 						}
 						&.new {
@@ -155,6 +185,7 @@
 										content: "N";
 										position: absolute;
 										right: 0;
+										font-size:12px;
 									}
 								}
 							}
@@ -168,6 +199,7 @@
 				}
 			}
 
+			/*
 			&-list {
 				@include vw(padding, 16px 0);
 				border-bottom: 1px solid #F2EFE7;
@@ -203,6 +235,35 @@
 						line-height: 1.5;
 						font-weight: 400;
 					}
+				}
+			}*/
+
+		}
+
+		.curriculum-list {
+			@include vw(padding, 20px 0);
+			border-bottom: 1px solid #F2EFE7;
+			.t-subject{
+				color:#aaa;
+				font-weight:400;
+				font-size:12px;
+				line-height:18px;
+				@include vw(margin-bottom, 16px);
+
+			}
+
+
+			ul {
+				li {
+					@include vw(margin-bottom, 14px);
+					&:last-child {
+						margin-bottom: 0;
+					}
+					color:$color-black;
+					@include vw(font-size, 14px);
+					@include vw(line-height, 23.8px);
+					font-weight: 400;
+				
 				}
 			}
 		}

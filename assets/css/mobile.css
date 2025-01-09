@@ -7892,11 +7892,11 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   }
 }
 #wrap .section-teacher-gate .teacher-gate-list .list {
-  margin-bottom: 21.3333333333vw;
+  margin-bottom: 26.6666666667vw;
 }
 @media screen and (min-width: 375px) {
   #wrap .section-teacher-gate .teacher-gate-list .list {
-    margin-bottom: 80px;
+    margin-bottom: 100px;
   }
 }
 #wrap .section-teacher-gate .teacher-gate-list .list:last-child {
@@ -7963,32 +7963,61 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 #wrap .section-teacher-gate .teacher-gate-list .list .teacher-top a {
   display: flex;
 }
+#wrap .section-teacher-gate .teacher-gate-list .list .teacher-top .t-text span {
+  font-weight: 200;
+  color: #7A746A;
+}
 #wrap .section-teacher-gate .teacher-gate-list .list .teacher-curriculum {
-  margin-top: 4.2666666667vw;
+  margin-top: 5.3333333333vw;
 }
 @media screen and (min-width: 375px) {
   #wrap .section-teacher-gate .teacher-gate-list .list .teacher-curriculum {
-    margin-top: 16px;
+    margin-top: 20px;
   }
 }
+#wrap .section-teacher-gate .teacher-gate-list .list .teacher-curriculum .t-subject {
+  color: #aaa;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  border-top: 1px solid #ddd;
+  padding-top: 5.3333333333vw;
+  margin-bottom: 4.2666666667vw;
+}
+@media screen and (min-width: 375px) {
+  #wrap .section-teacher-gate .teacher-gate-list .list .teacher-curriculum .t-subject {
+    padding-top: 20px;
+  }
+}
+@media screen and (min-width: 375px) {
+  #wrap .section-teacher-gate .teacher-gate-list .list .teacher-curriculum .t-subject {
+    margin-bottom: 16px;
+  }
+}
+#wrap .section-teacher-gate .teacher-gate-list .list .teacher-curriculum .t-curriculum-desc .form-text {
+  margin-top: 20px;
+  color: #BEBEBC;
+  font-weight: 200;
+  font-size: 12px;
+  line-height: 18px;
+}
 #wrap .section-teacher-gate .teacher-gate-list .list .teacher-curriculum ul {
-  padding: 4.2666666667vw 0;
-  border: 1px solid #E6E9EB;
-  border-width: 1px 0 1px;
+  padding-bottom: 5.3333333333vw;
+  border-bottom: 1px solid #ddd;
 }
 @media screen and (min-width: 375px) {
   #wrap .section-teacher-gate .teacher-gate-list .list .teacher-curriculum ul {
-    padding: 16px 0;
+    padding-bottom: 20px;
   }
 }
 #wrap .section-teacher-gate .teacher-gate-list .list .teacher-curriculum ul li {
   display: flex;
   align-items: flex-start;
-  margin-bottom: 2.1333333333vw;
+  margin-bottom: 3.7333333333vw;
 }
 @media screen and (min-width: 375px) {
   #wrap .section-teacher-gate .teacher-gate-list .list .teacher-curriculum ul li {
-    margin-bottom: 8px;
+    margin-bottom: 14px;
   }
 }
 #wrap .section-teacher-gate .teacher-gate-list .list .teacher-curriculum ul li:last-child {
@@ -8069,6 +8098,46 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   max-width: 600px;
   margin: 0 auto;
 }
+#wrap .section-teacher-curriculum .curriculum {
+  /*
+  &-list {
+  	@include vw(padding, 16px 0);
+  	border-bottom: 1px solid #F2EFE7;
+  	ul {
+  		li {
+  			@include vw(margin-bottom, 16px);
+  			&:last-child {
+  				margin-bottom: 0;
+  			}
+  			a {
+  				display: flex;
+  				align-items: center;
+  			}
+  		}
+  	}
+  	&-thumb {
+  		@include vw(max-width, 96px);
+  		@include vw(min-width, 96px);
+  		@include vw(margin-right, 16px);
+  		img {
+  			width: 100%;
+  		}
+  	}
+  	&-text {
+  		p {
+  			@include vw(font-size, 14px);
+  			line-height: 1.5;
+  			font-weight: 600;
+  		}
+  		span {
+  			display: block;
+  			@include vw(font-size, 12px);
+  			line-height: 1.5;
+  			font-weight: 400;
+  		}
+  	}
+  }*/
+}
 #wrap .section-teacher-curriculum .curriculum-title {
   display: flex;
   align-items: center;
@@ -8115,13 +8184,13 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   }
 }
 #wrap .section-teacher-curriculum .curriculum-notice {
-  margin: 12.8vw 0 4.2666666667vw;
+  margin: 12.8vw 0 0;
   border: 1px solid #F2EFE7;
   border-width: 1px 0;
 }
 @media screen and (min-width: 375px) {
   #wrap .section-teacher-curriculum .curriculum-notice {
-    margin: 48px 0 16px;
+    margin: 48px 0 0;
   }
 }
 #wrap .section-teacher-curriculum .curriculum-notice ul li a {
@@ -8158,9 +8227,10 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   }
 }
 #wrap .section-teacher-curriculum .curriculum-notice ul li a span {
+  display: block;
   font-size: 3.2vw;
   font-weight: 400;
-  margin-top: 1.0666666667vw;
+  margin-top: 2.1333333333vw;
 }
 @media screen and (min-width: 375px) {
   #wrap .section-teacher-curriculum .curriculum-notice ul li a span {
@@ -8169,83 +8239,62 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 @media screen and (min-width: 375px) {
   #wrap .section-teacher-curriculum .curriculum-notice ul li a span {
-    margin-top: 4px;
+    margin-top: 8px;
   }
 }
 #wrap .section-teacher-curriculum .curriculum-notice ul li.new a p:after {
   content: "N";
   position: absolute;
   right: 0;
+  font-size: 12px;
 }
 #wrap .section-teacher-curriculum .curriculum-notice ul li:last-child a {
   border-bottom: none;
 }
 #wrap .section-teacher-curriculum .curriculum-list {
-  padding: 4.2666666667vw 0;
+  padding: 5.3333333333vw 0;
   border-bottom: 1px solid #F2EFE7;
 }
 @media screen and (min-width: 375px) {
   #wrap .section-teacher-curriculum .curriculum-list {
-    padding: 16px 0;
+    padding: 20px 0;
   }
 }
-#wrap .section-teacher-curriculum .curriculum-list ul li {
+#wrap .section-teacher-curriculum .curriculum-list .t-subject {
+  color: #aaa;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
   margin-bottom: 4.2666666667vw;
 }
 @media screen and (min-width: 375px) {
-  #wrap .section-teacher-curriculum .curriculum-list ul li {
+  #wrap .section-teacher-curriculum .curriculum-list .t-subject {
     margin-bottom: 16px;
+  }
+}
+#wrap .section-teacher-curriculum .curriculum-list ul li {
+  margin-bottom: 3.7333333333vw;
+  color: #2C2923;
+  font-size: 3.7333333333vw;
+  line-height: 6.3466666667vw;
+  font-weight: 400;
+}
+@media screen and (min-width: 375px) {
+  #wrap .section-teacher-curriculum .curriculum-list ul li {
+    margin-bottom: 14px;
   }
 }
 #wrap .section-teacher-curriculum .curriculum-list ul li:last-child {
   margin-bottom: 0;
 }
-#wrap .section-teacher-curriculum .curriculum-list ul li a {
-  display: flex;
-  align-items: center;
-}
-#wrap .section-teacher-curriculum .curriculum-list-thumb {
-  max-width: 25.6vw;
-  min-width: 25.6vw;
-  margin-right: 4.2666666667vw;
-}
 @media screen and (min-width: 375px) {
-  #wrap .section-teacher-curriculum .curriculum-list-thumb {
-    max-width: 96px;
-  }
-}
-@media screen and (min-width: 375px) {
-  #wrap .section-teacher-curriculum .curriculum-list-thumb {
-    min-width: 96px;
-  }
-}
-@media screen and (min-width: 375px) {
-  #wrap .section-teacher-curriculum .curriculum-list-thumb {
-    margin-right: 16px;
-  }
-}
-#wrap .section-teacher-curriculum .curriculum-list-thumb img {
-  width: 100%;
-}
-#wrap .section-teacher-curriculum .curriculum-list-text p {
-  font-size: 3.7333333333vw;
-  line-height: 1.5;
-  font-weight: 600;
-}
-@media screen and (min-width: 375px) {
-  #wrap .section-teacher-curriculum .curriculum-list-text p {
+  #wrap .section-teacher-curriculum .curriculum-list ul li {
     font-size: 14px;
   }
 }
-#wrap .section-teacher-curriculum .curriculum-list-text span {
-  display: block;
-  font-size: 3.2vw;
-  line-height: 1.5;
-  font-weight: 400;
-}
 @media screen and (min-width: 375px) {
-  #wrap .section-teacher-curriculum .curriculum-list-text span {
-    font-size: 12px;
+  #wrap .section-teacher-curriculum .curriculum-list ul li {
+    line-height: 23.8px;
   }
 }
 #wrap .section-curriculum {
@@ -11413,9 +11462,9 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 #wrap .section-main-banner .main-banner-list a {
   display: block;
   color: #2C2923;
-  font-size: 5.3333333333vw;
+  font-size: 4.5333333333vw;
   font-weight: 300;
-  line-height: 8vw;
+  line-height: 6.8vw;
   padding: 4.2666666667vw;
   background-color: #F2EFE7;
   -webkit-box-sizing: border-box;
@@ -11423,12 +11472,12 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 @media screen and (min-width: 375px) {
   #wrap .section-main-banner .main-banner-list a {
-    font-size: 20px;
+    font-size: 17px;
   }
 }
 @media screen and (min-width: 375px) {
   #wrap .section-main-banner .main-banner-list a {
-    line-height: 30px;
+    line-height: 25.5px;
   }
 }
 @media screen and (min-width: 375px) {
@@ -11539,6 +11588,76 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 @media screen and (min-width: 375px) {
   #wrap .section-main-banner .main-banner-list .main-banner-bottom .banner-two a:first-child {
     margin-bottom: 8px;
+  }
+}
+#wrap .section-main-banner .main-banner-list .main-banner-one {
+  margin-top: 1.0666666667vw;
+}
+@media screen and (min-width: 375px) {
+  #wrap .section-main-banner .main-banner-list .main-banner-one {
+    margin-top: 4px;
+  }
+}
+#wrap .section-main-banner .main-banner-list .main-banner-one a {
+  background-color: #D9DDE2;
+  color: #2C2923;
+  height: 26.6666666667vw;
+}
+@media screen and (min-width: 375px) {
+  #wrap .section-main-banner .main-banner-list .main-banner-one a {
+    height: 100px;
+  }
+}
+#wrap .section-main-banner .main-banner-list .main-banner-more {
+  display: flex;
+}
+#wrap .section-main-banner .main-banner-list .main-banner-more .banner-one {
+  width: 34.6666666667vw;
+  margin-left: 1.0666666667vw;
+}
+@media screen and (min-width: 375px) {
+  #wrap .section-main-banner .main-banner-list .main-banner-more .banner-one {
+    width: 130px;
+  }
+}
+@media screen and (min-width: 375px) {
+  #wrap .section-main-banner .main-banner-list .main-banner-more .banner-one {
+    margin-left: 4px;
+  }
+}
+#wrap .section-main-banner .main-banner-list .main-banner-more .banner-one a {
+  width: 100%;
+  height: 54.4vw;
+}
+@media screen and (min-width: 375px) {
+  #wrap .section-main-banner .main-banner-list .main-banner-more .banner-one a {
+    height: 204px;
+  }
+}
+#wrap .section-main-banner .main-banner-list .main-banner-more .banner-two {
+  width: 53.6vw;
+}
+@media screen and (min-width: 375px) {
+  #wrap .section-main-banner .main-banner-list .main-banner-more .banner-two {
+    width: 201px;
+  }
+}
+#wrap .section-main-banner .main-banner-list .main-banner-more .banner-two a {
+  height: 26.6666666667vw;
+  background-color: #BDC7D4;
+  color: #2C2923;
+}
+@media screen and (min-width: 375px) {
+  #wrap .section-main-banner .main-banner-list .main-banner-more .banner-two a {
+    height: 100px;
+  }
+}
+#wrap .section-main-banner .main-banner-list .main-banner-more .banner-two a:first-child {
+  margin-bottom: 1.0666666667vw;
+}
+@media screen and (min-width: 375px) {
+  #wrap .section-main-banner .main-banner-list .main-banner-more .banner-two a:first-child {
+    margin-bottom: 4px;
   }
 }
 #wrap .main-title {
@@ -13082,17 +13201,10 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 #wrap .section-pr-profile {
   padding-top: 16vw;
-  padding-bottom: 21.3333333333vw;
-  border-bottom: 1px solid #ddd;
 }
 @media screen and (min-width: 375px) {
   #wrap .section-pr-profile {
     padding-top: 60px;
-  }
-}
-@media screen and (min-width: 375px) {
-  #wrap .section-pr-profile {
-    padding-bottom: 80px;
   }
 }
 #wrap .section-pr-profile .profile-title {
@@ -13112,13 +13224,13 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   }
 }
 #wrap .section-pr-profile .profile-menu-box {
-  margin-top: 10.6666666667vw;
+  margin-top: 16vw;
   display: flex;
   justify-content: space-between;
 }
 @media screen and (min-width: 375px) {
   #wrap .section-pr-profile .profile-menu-box {
-    margin-top: 40px;
+    margin-top: 60px;
   }
 }
 #wrap .section-pr-profile .profile-menu-box .menu-title {
@@ -13138,7 +13250,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 #wrap .section-pr-profile .profile-menu-box .menu-list {
   width: 43.7333333333vw;
-  border-top: 1px solid #E4DED3;
+  border-top: 1px solid #ddd;
 }
 @media screen and (min-width: 375px) {
   #wrap .section-pr-profile .profile-menu-box .menu-list {
@@ -13146,7 +13258,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   }
 }
 #wrap .section-pr-profile .profile-menu-box .menu-list li {
-  border-bottom: 1px solid #E4DED3;
+  border-bottom: 1px solid #ddd;
   font-size: 3.7333333333vw;
   line-height: 6.3466666667vw;
   color: #2C2923;
@@ -13190,9 +13302,9 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 #wrap .section-pr-curriculum .curriculum-list .curriculum-title {
   color: #2C2923;
   font-size: 5.3333333333vw;
-  font-weight: 600;
-  line-height: 9.0666666667vw;
-  margin-bottom: 4.2666666667vw;
+  font-weight: 300;
+  line-height: 8vw;
+  margin-bottom: 2.1333333333vw;
 }
 @media screen and (min-width: 375px) {
   #wrap .section-pr-curriculum .curriculum-list .curriculum-title {
@@ -13201,12 +13313,12 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 @media screen and (min-width: 375px) {
   #wrap .section-pr-curriculum .curriculum-list .curriculum-title {
-    line-height: 34px;
+    line-height: 30px;
   }
 }
 @media screen and (min-width: 375px) {
   #wrap .section-pr-curriculum .curriculum-list .curriculum-title {
-    margin-bottom: 16px;
+    margin-bottom: 8px;
   }
 }
 #wrap .section-pr-curriculum .curriculum-list .curriculum-title span {
@@ -13229,20 +13341,20 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   color: #0084FF;
 }
 #wrap .section-pr-curriculum .curriculum-list .curriculum-content p {
-  color: #2C2923;
-  font-size: 5.3333333333vw;
-  font-weight: 400;
-  line-height: 9.0666666667vw;
+  color: #666;
+  font-size: 4.2666666667vw;
+  font-weight: 300;
+  line-height: 7.2533333333vw;
   margin-bottom: 6.4vw;
 }
 @media screen and (min-width: 375px) {
   #wrap .section-pr-curriculum .curriculum-list .curriculum-content p {
-    font-size: 20px;
+    font-size: 16px;
   }
 }
 @media screen and (min-width: 375px) {
   #wrap .section-pr-curriculum .curriculum-list .curriculum-content p {
-    line-height: 34px;
+    line-height: 27.2px;
   }
 }
 @media screen and (min-width: 375px) {
@@ -13287,7 +13399,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   width: 100%;
   height: 100%;
   z-index: 1;
-  background: rgba(0, 0, 0, 0.4) url(../images/pr/btn_play.svg) no-repeat 50% 50%;
+  background: url(../images/pr/btn_play.svg) no-repeat 2% 97.5%;
   background-size: 12.8vw 12.8vw;
 }
 @media screen and (min-width: 375px) {
@@ -13312,24 +13424,20 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
     margin-top: -32px;
   }
 }
+#wrap .section-pr-schedule2 {
+  margin-top: 6.4vw;
+}
+@media screen and (min-width: 375px) {
+  #wrap .section-pr-schedule2 {
+    margin-top: 24px;
+  }
+}
 #wrap .section-pr-schedule {
   margin-top: 6.4vw;
 }
 @media screen and (min-width: 375px) {
   #wrap .section-pr-schedule {
     margin-top: 24px;
-  }
-}
-#wrap .section-pr-schedule .wrap {
-  overflow: auto;
-}
-#wrap .section-pr-schedule .wrap img {
-  max-width: none;
-  width: 237.6vw;
-}
-@media screen and (min-width: 375px) {
-  #wrap .section-pr-schedule .wrap img {
-    width: 891px;
   }
 }
 #wrap .section-pr-lecture {
@@ -13615,7 +13723,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 #wrap #contents.pass .section-pass-schedule {
   padding: 80px 0;
-  background-color: #f2efe7;
+  background-color: #F3F3F3;
 }
 #wrap #contents.pass .section-pass-teacher {
   padding-top: 120px;
@@ -13625,8 +13733,12 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   border-top: 1px solid #d9d9d9;
 }
 #wrap #contents.pass .section-pass-teacher .list-teacher li {
-  padding: 60px 0 80px;
-  border-bottom: 1px solid #d9d9d9;
+  padding: 0 0 32vw;
+}
+@media screen and (min-width: 375px) {
+  #wrap #contents.pass .section-pass-teacher .list-teacher li {
+    padding: 0 0 120px;
+  }
 }
 #wrap #contents.pass .section-pass-teacher .list-teacher li .cont-area {
   margin-top: 40px;
@@ -13642,11 +13754,11 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   margin-top: 40px;
 }
 #wrap #contents.pass .section-pass-apply {
-  padding-top: 32vw;
+  padding-top: 21.3333333333vw;
 }
 @media screen and (min-width: 375px) {
   #wrap #contents.pass .section-pass-apply {
-    padding-top: 120px;
+    padding-top: 80px;
   }
 }
 #wrap #contents.pass .section-pass-apply .list {
