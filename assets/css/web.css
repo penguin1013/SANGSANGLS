@@ -6023,7 +6023,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 #wrap .section-online-slide {
   margin-top: 0px;
-  margin-bottom: 120px;
+  margin-bottom: 80px;
 }
 #wrap .section-online-slide .wrap {
   display: flex;
