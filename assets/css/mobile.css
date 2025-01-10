@@ -9241,6 +9241,10 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
     margin: 40px 0 8px;
   }
 }
+#wrap .section-half-banner .wrap {
+  max-width: 600px;
+  margin: 0 auto;
+}
 #wrap .section-half-banner .banner-list {
   display: flex;
   justify-content: center;

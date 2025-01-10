@@ -1,6 +1,10 @@
 #wrap{
 	.section-half-banner{
 		@include vw(margin,40px 0 8px);
+		.wrap{
+			max-width:600px;
+			margin:0 auto;
+		}
 		.banner-list{
 			display:flex;
 			justify-content: center;
