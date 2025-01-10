@@ -1,0 +1,16 @@
+#wrap{
+	.section-half-banner{
+		@include vw(margin,40px 0 8px);
+		.banner-list{
+			display:flex;
+			justify-content: center;
+			.list{
+				width:50%;
+				@include vw(margin-left, 9px);
+				&:first-child{margin-left:0;}
+				a{width:100%;}
+				img{width:100%;}
+			}
+		}
+	}
+}

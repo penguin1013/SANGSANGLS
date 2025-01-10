@@ -9233,6 +9233,37 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   color: #7A746A;
 }
 
+#wrap .section-half-banner {
+  margin: 10.6666666667vw 0 2.1333333333vw;
+}
+@media screen and (min-width: 375px) {
+  #wrap .section-half-banner {
+    margin: 40px 0 8px;
+  }
+}
+#wrap .section-half-banner .banner-list {
+  display: flex;
+  justify-content: center;
+}
+#wrap .section-half-banner .banner-list .list {
+  width: 50%;
+  margin-left: 2.4vw;
+}
+@media screen and (min-width: 375px) {
+  #wrap .section-half-banner .banner-list .list {
+    margin-left: 9px;
+  }
+}
+#wrap .section-half-banner .banner-list .list:first-child {
+  margin-left: 0;
+}
+#wrap .section-half-banner .banner-list .list a {
+  width: 100%;
+}
+#wrap .section-half-banner .banner-list .list img {
+  width: 100%;
+}
+
 #wrap .btn-write {
   position: fixed;
   z-index: 10;
