@@ -1030,7 +1030,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 
 #wrap .popup-page .popup-agree dl dt {
-  font-weight: 400;
+  font-weight: 300;
   color: #2C2923;
   font-size: 4.26667vw;
   line-height: 7.25333vw;
@@ -3436,6 +3436,16 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   font-size: 16px;
   text-align: center;
   color: #2C2923;
+}
+
+#wrap #popupVictoryStory .input-box .select {
+  width: 78.66667vw;
+}
+
+@media screen and (min-width: 375px) {
+  #wrap #popupVictoryStory .input-box .select {
+    width: 295px;
+  }
 }
 
 #wrap {

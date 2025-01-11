@@ -207,7 +207,7 @@
 			@include vw(margin-bottom,32px);
 			dl{
 				dt{
-					font-weight: 400;
+					font-weight: 300;
 					color: $color-black;
 					@include vw(font-size, 16px);
 					@include vw(line-height, 27.2px);
@@ -1234,6 +1234,12 @@
 				text-align: center;
 				color: $color-black;
 			}
+		}
+	}
+
+	#popupVictoryStory{
+		.input-box{
+			.select{@include vw(width, 295px);}
 		}
 	}
 }

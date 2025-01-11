@@ -97,115 +97,75 @@
 
 					</dl>
 
-
 					<dl>
-						<dt>교수</dt>
-						<dd>
-							<div class="input-box">
-								<div class="form-control">
-									<div class="select">
-										<select name="" id="">
-											<option value="">과목선택</option>
-										</select>
-									</div>
-								</div>
-								<div class="form-control">
-									<div class="select">
-										<select name="" id="">
-											<option value="">교수선택</option>
-										</select>
-									</div>
-								</div>
-							</div>
-						</dd>
-					</dl>
-
-					<dl>
-						<dt>구분</dt>
+						<dt>LEET 표준점수</dt>
 						<dd>
 							<div class="form-control">
-								<span class="fake-radio">
-									<input type="radio" id="radioType1" class="radio" name="radioSelect" checked="">
-									<label for="radioType1">인강</label>
-								</span>
-								<span class="fake-radio">
-									<input type="radio" id="radioType2" class="radio" name="radioSelect">
-									<label for="radioType2">교재</label>
-								</span>
-								<span class="fake-radio">
-									<input type="radio" id="radioType3" class="radio" name="radioSelect">
-									<label for="radioType3">학원강좌</label>
-								</span>
-								<span class="fake-radio">
-									<input type="radio" id="radioType4" class="radio" name="radioSelect">
-									<label for="radioType4">기타</label>
-								</span>
+								<input type="text" class="text" placeholder="점수를 입력해주세요 (소수점 포함)" value="" />
 							</div>
-
-							<div class="form-text">* 강좌, 교재 문의는 수강중인 강좌에 대해서만 가능합니다.</div>
 						</dd>
 					</dl>
 
 					<dl>
-						<dt>강의</dt>
+						<dt>공인영어성적 (TOEIC, TOEFL, TEPS 등)</dt>
+						<dd>
+							<div class="form-control">
+								<input type="text" class="text" placeholder="점수를 입력해주세요" value="" />
+							</div>
+						</dd>
+					</dl>
+
+					<dl>
+						<dt>GPA</dt>
+						<dd>
+							<div class="form-control">
+								<input type="text" class="text" placeholder="점수를 입력해주세요 (소수점 포함)" value="" />
+							</div>
+						</dd>
+					</dl>
+
+					<dl>
+						<dt>전공</dt>
 						<dd>
 							<div class="form-control">
 								<div class="select">
 									<select name="" id="">
-										<option value="">문의하실 수강중인 강의를 선택하세요</option>
+										<option value="">전체</option>
 									</select>
 								</div>
 							</div>
 						</dd>
 					</dl>
+
 					<dl>
-						<dt>제목</dt>
+						<dt>수험생활</dt>
 						<dd>
 							<div class="form-control">
-								<input type="text" class="text" placeholder="문의 제목을 입력하세요" value="" />
-							</div>
-						</dd>
-					</dl>
-
-					<dl>
-						<dt>답변 알림</dt>
-						<dd>
-							<div class="input-check-box">
-								<div class="form-control">
-									<input type="text" class="text " placeholder="이메일을 입력하세요" />
-								</div>
-								<div class="form-control">
-									<div class="fake-checkbox">
-										<input type="checkbox" id="checkAnswer1" class="checkbox" checked="">
-										<label for="checkAnswer1">받기</label>
-									</div>
-								</div>
-							</div>
-							<div class="input-check-box">
-								<div class="form-control">
-									<input type="text" class="text " placeholder="휴대폰 번호를 ‘-’ 없이 입력하세요" />
-								</div>
-								<div class="form-control">
-									<div class="fake-checkbox">
-										<input type="checkbox" id="checkAnswer2" class="checkbox" checked="">
-										<label for="checkAnswer2">받기</label>
-									</div>
+								<div class="select">
+									<select name="" id="">
+										<option value="">전체</option>
+									</select>
 								</div>
 							</div>
 						</dd>
 					</dl>
 
 					<dl>
-						<dt>문의내용</dt>
+						<dt>수강형태</dt>
 						<dd>
 							<div class="form-control">
-								<textarea class="textarea" cols="100" rows="100" placeholder="내용을 입력해 주세요."></textarea>
+								<div class="select">
+									<select name="" id="">
+										<option value="">전체</option>
+									</select>
+								</div>
 							</div>
 						</dd>
 					</dl>
 
+
 					<dl>
-						<dt>파일첨부</dt>
+						<dt>LEET 성적표 첨부</dt>
 						<dd>
 							<div class="file-box">
 								<div class="form-control">
@@ -217,10 +177,47 @@
 										</div>
 									</div>
 								</div>
-								<div class="form-text"> * 10MB 이하 이미지 파일만 등록 가능합니다. (jpg, png, gif)</div>
+								<div class="form-text"> * 파일크기는 10M를 초과하여서는 안됩니다.</div>
 							</div>
 						</dd>
 					</dl>
+
+					<dl>
+						<dt>합격인증 파일첨부</dt>
+						<dd>
+							<div class="file-box">
+								<div class="form-control">
+									<div class="fake-file-box">
+										<input type="text" class="text fake-file-name"placeholder="첨부파일" readonly="">
+										<div class="fake-file">
+											<input type="file" id="fileUpload" name="file" >
+											<label for="fileUpload">찾아보기</label>
+										</div>
+									</div>
+								</div>
+								<div class="form-text"> * 파일크기는 10M를 초과하여서는 안됩니다.</div>
+							</div>
+						</dd>
+					</dl>
+
+					<dl>
+						<dt>제목</dt>
+						<dd>
+							<div class="form-control">
+								<input type="text" class="text" placeholder="제목을 입력해주세요." value="" />
+							</div>
+						</dd>
+					</dl>
+
+					<dl>
+						<dt>내용</dt>
+						<dd>
+							<div class="form-control">
+								<textarea class="textarea" cols="100" rows="100" placeholder="내용을 입력해주세요."></textarea>
+							</div>
+						</dd>
+					</dl>
+
 				</div>
 
 				<div class="popup-agree">
