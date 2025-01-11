@@ -1,0 +1,65 @@
+#wrap{
+	.section-victorystory{
+		@include vw(margin-top, 80px);
+		.wrap{
+			max-width:600px;
+			margin:0 auto;
+		}
+
+		.action{
+			@include vw(margin-top, 60px);
+			a{
+				@include vw(height, 67px);
+				@include vw(font-size, 16px);
+			}
+		}
+
+
+
+
+		.notice-box{
+			@include vw(margin-top, 60px);
+			background-color:#F6F6F2;
+			@include vw(padding,32px 20px);
+			dl{
+				dt,dd{}
+				dt{
+					@include vw(margin-bottom,16px);
+					@include vw(font-size,18px);
+					@include vw(line-height,32.4px);
+					font-weight:300;
+					&:before{
+						content:'';
+						@include vw(width,12px);@include vw(height,12px);
+						border-radius:50%;
+						background-color:$color-black;
+						display:inline-block;
+						@include vw(margin-right,12px);
+
+					}
+				}
+				dd{
+					@include vw(font-size,15px);
+					@include vw(line-height,22.5px);
+					font-weight:300;
+					@include vw(margin-top,20px);
+					&:first-child{margin-top:0;}
+
+					a{
+						
+						@include vw(font-size,15px);
+						line-height:1;
+						display:inline-block;
+						border-bottom:1px solid $color-black;
+		
+					}
+				}
+			}
+
+		}
+
+		&+.section-examInfo-content{
+			margin-top:160px;
+		}
+	}
+}
