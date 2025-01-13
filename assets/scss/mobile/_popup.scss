@@ -21,7 +21,7 @@
 		left: 0;
 		z-index: 1003;
 		font-family: $font-pretendard;
-
+		
 		.popup-wrap {
 			position: absolute;
 			top: 0;
@@ -76,7 +76,9 @@
 		}
 
 		.popup-cont {
-			@include vw(padding, 20px 20px);
+
+			@include vw(padding, 20px 20px 80px);
+
 			p {
 				color: $color-black;
 				@include vw(font-size, 14px);
@@ -197,6 +199,56 @@
 
 			@extend %scrollBar;
 		}
+
+		.popup-agree{
+			border-top:1px solid #DDDDDD;
+			@include vw(padding-top,40px);
+			@include vw(margin-top,32px);
+			@include vw(margin-bottom,32px);
+			dl{
+				dt{
+					font-weight: 300;
+					color: $color-black;
+					@include vw(font-size, 16px);
+					@include vw(line-height, 27.2px);
+					@include vw(margin-bottom, 20px);
+				}
+				dd{
+					
+					>div{
+						position:relative;
+						width:100%;
+						@include vw(margin-bottom, 20px);
+						&:last-child{margin-bottom:0;}
+						.btn-agree{
+							position:absolute;right:0;top:0;
+						
+							span{
+								@include vw(padding-right,28px);
+								@include vw(font-size, 14px);
+								@include vw(line-height, 23.8px);
+								font-weight:500;
+								color:$color-black;
+								@include arrow(right, 6px, 6px, 1.5px, $color-black);
+								&:before{
+									@include vw(right,6.28px);
+								}
+							}
+						}
+					}
+				}
+			}
+	
+			.action{
+				@include vw(margin-top,130px);
+				.btn{
+					@include vw(height,67px);
+					@include vw(font-size, 16px);
+					font-weight:600;
+				}
+			}
+		}
+
 
 		.search-input-box {
 			@include vw(margin-bottom, 16px);
@@ -1182,6 +1234,12 @@
 				text-align: center;
 				color: $color-black;
 			}
+		}
+	}
+
+	#popupVictoryStory{
+		.input-box{
+			.select{@include vw(width, 295px);}
 		}
 	}
 }

@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>상상로스쿨</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta property="og:title" content="상상로스쿨">
+    <meta property="og:image" content="../../../assets/images/og.png">
+    <meta property="og:description" content="LEET에 대한 가장 앞선 생각, 상상로스쿨에서 시작합니다.">
+    <meta name="google-site-verification" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, height=device-height, maximum-scale=1.0" />
+    <link rel="shortcut icon" href="../../../assets/images/favicon.ico">
+    <meta name="keyword" content="상상로스쿨">
+    <meta name="title" content="상상로스쿨">
+    <meta name="description" content="LEET에 대한 가장 앞선 생각, 상상로스쿨에서 시작합니다.">
+    <meta property="WT.ti" content="">
+    <meta name="DCS.dcsuri" content="">
+    <meta name="robots" content="index, follow">
+
+	<link rel="stylesheet" href="../../../assets/libs/slick/slick.css" />
+	<link rel="stylesheet" href="../../../assets/css/mobile.css" />
+
+	<script src="../../../assets/libs/jquery/jquery-3.7.1.min.js"></script>
+	<script src="../../../assets/libs/slick/slick-1.6.0.min.js"></script>
+	<script src="../../../assets/libs/masonry/masonry.pkgd.min.js"></script>
+</head>
+<body>
+
+<div id="wrap">
+	<div id="container">
+		<div id="contents" class="">
+			
+		</div>
+	</div>
+
+	<!-- 팝업 -->
+	<div class="popup-page popup-inquiry" id="popupVictoryStory">
+		<div class="popup-wrap">
+			<a href="javascript:popupPageClose('#popupVictoryStory');"  class="popup-close">팝업닫기</a>
+			<div class="popup-title">
+				합격수기 작성
+			</div>
+			<div class="popup-cont popup-scroll">
+				<div class="lecture-data-input">
+					<dl>
+						<dt>이름</dt>
+						<dd>
+							<div class="form-control">
+								<input type="text" class="text disabled" disabled value="홍길동" />
+							</div>
+						</dd>
+					</dl>
+
+					
+					<dl>
+						<dt>응시학년도</dt>
+						<dd>
+							<div class="form-control">
+								<div class="select">
+									<select name="" id="">
+										<option value="">학년도 전체</option>
+									</select>
+								</div>
+							</div>
+						</dd>
+					</dl>
+
+
+					<dl>
+						<dt>합격한 학교명</dt>
+						<dd>
+							<div class="input-box">
+								<div class="input-text-start">가군</div>
+								<div class="form-control">
+									<div class="select">
+										<select name="" id="">
+											<option value="">대학교 전체</option>
+										</select>
+									</div>
+								</div>
+		
+							</div>
+						</dd>
+						<dd>
+							<div class="input-box">
+								<div class="input-text-start">나군</div>
+								<div class="form-control">
+									<div class="select">
+										<select name="" id="">
+											<option value="">대학교 전체</option>
+										</select>
+									</div>
+								</div>
+
+							</div>
+						</dd>
+
+					</dl>
+
+					<dl>
+						<dt>LEET 표준점수</dt>
+						<dd>
+							<div class="form-control">
+								<input type="text" class="text" placeholder="점수를 입력해주세요 (소수점 포함)" value="" />
+							</div>
+						</dd>
+					</dl>
+
+					<dl>
+						<dt>공인영어성적 (TOEIC, TOEFL, TEPS 등)</dt>
+						<dd>
+							<div class="form-control">
+								<input type="text" class="text" placeholder="점수를 입력해주세요" value="" />
+							</div>
+						</dd>
+					</dl>
+
+					<dl>
+						<dt>GPA</dt>
+						<dd>
+							<div class="form-control">
+								<input type="text" class="text" placeholder="점수를 입력해주세요 (소수점 포함)" value="" />
+							</div>
+						</dd>
+					</dl>
+
+					<dl>
+						<dt>전공</dt>
+						<dd>
+							<div class="form-control">
+								<div class="select">
+									<select name="" id="">
+										<option value="">전체</option>
+									</select>
+								</div>
+							</div>
+						</dd>
+					</dl>
+
+					<dl>
+						<dt>수험생활</dt>
+						<dd>
+							<div class="form-control">
+								<div class="select">
+									<select name="" id="">
+										<option value="">전체</option>
+									</select>
+								</div>
+							</div>
+						</dd>
+					</dl>
+
+					<dl>
+						<dt>수강형태</dt>
+						<dd>
+							<div class="form-control">
+								<div class="select">
+									<select name="" id="">
+										<option value="">전체</option>
+									</select>
+								</div>
+							</div>
+						</dd>
+					</dl>
+
+
+					<dl>
+						<dt>LEET 성적표 첨부</dt>
+						<dd>
+							<div class="file-box">
+								<div class="form-control">
+									<div class="fake-file-box">
+										<input type="text" class="text fake-file-name"placeholder="첨부파일" readonly="">
+										<div class="fake-file">
+											<input type="file" id="fileUpload" name="file" >
+											<label for="fileUpload">찾아보기</label>
+										</div>
+									</div>
+								</div>
+								<div class="form-text"> * 파일크기는 10M를 초과하여서는 안됩니다.</div>
+							</div>
+						</dd>
+					</dl>
+
+					<dl>
+						<dt>합격인증 파일첨부</dt>
+						<dd>
+							<div class="file-box">
+								<div class="form-control">
+									<div class="fake-file-box">
+										<input type="text" class="text fake-file-name"placeholder="첨부파일" readonly="">
+										<div class="fake-file">
+											<input type="file" id="fileUpload" name="file" >
+											<label for="fileUpload">찾아보기</label>
+										</div>
+									</div>
+								</div>
+								<div class="form-text"> * 파일크기는 10M를 초과하여서는 안됩니다.</div>
+							</div>
+						</dd>
+					</dl>
+
+					<dl>
+						<dt>제목</dt>
+						<dd>
+							<div class="form-control">
+								<input type="text" class="text" placeholder="제목을 입력해주세요." value="" />
+							</div>
+						</dd>
+					</dl>
+
+					<dl>
+						<dt>내용</dt>
+						<dd>
+							<div class="form-control">
+								<textarea class="textarea" cols="100" rows="100" placeholder="내용을 입력해주세요."></textarea>
+							</div>
+						</dd>
+					</dl>
+
+				</div>
+
+				<div class="popup-agree">
+
+					<dl>
+						<dt>이용약관</dt>
+						<dd>
+							<div>
+								<div class="form-control">
+									<div class="fake-checkbox">
+										<input type="checkbox" id="privacyAgree1" class="checkbox" >
+										<label for="privacyAgree1">개인정보 수집 및 이용 동의 (필수)</label>
+									</div>
+								</div>
+								<a href="javascript:popupOpen('#popupAlert1');" class="btn-agree"><span>약관보기</span></a>
+							</div>
+							<div>
+								<div class="form-control">
+									<div class="fake-checkbox">
+										<input type="checkbox" id="privacyAgree2" class="checkbox" >
+										<label for="privacyAgree2">합격수기 저작재산권 이용 동의(필수)</label>
+									</div>
+								</div>
+								<a href="javascript:popupOpen('#popupAlert2');" class="btn-agree"><span>약관보기</span></a>
+							</div>
+
+						</dd>
+					</dl>
+	
+				</div>
+
+				<div class="popup-btn">
+					<a href="javascript:popupPageClose('#popupProfessorInquiry');" class="btn btn-black full">등록</a>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+
+	<div class="popup" id="popupAlert1">
+		<div class="popup-wrap">
+			<a href="javascript:popupClose('#popupAlert1');"  class="popup-close">팝업닫기</a>
+			<div class="popup-title">
+				■ 개인정보 수집 및 이용 동의 (필수)
+			</div>
+			<div class="popup-cont popup-scroll">
+				
+				<div class="box">
+					<p>
+						(주)이매진피앤엠은 본 이벤트를 위해 다음과 같이 회원님의 개인정보를 수집 및 이용합니다.<br/>
+						· 수집 및 이용 목적 : 참여자 정보 확인, 홍보 및 마케팅을 위한 합격수기 활용<br/>
+						· 수집항목 : 이름, 합격 학교명, 응시년도, LEET 표준점수, TOEIC, GPA, 전공, 수험생활, 수강 형태<br/>
+						· 보유 및 이용 기간 : 합격수기 폐기 시까지<br/>
+						귀하는 개인정보 수집 및 이용에 동의하지 않으실 수 있으나, 동의하지 않으실 경우 이벤트 참여가 제한됩니다.
+					</p>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<div class="popup" id="popupAlert2">
+		<div class="popup-wrap">
+			<a href="javascript:popupClose('#popupAlert2');"  class="popup-close">팝업닫기</a>
+			<div class="popup-title">
+				■ 합격수기 저작재산권 이용 동의(필수)
+			</div>
+			<div class="popup-cont popup-scroll">
+				
+				<div class="box">
+					<p>
+						(주)이매진피앤엠(이하 '회사')에 제공한 합격수기 저작재산권과 관련한 일체의 권리를 회사의 상품 홍보 및 마케팅을 위한 온/오프라인 홍보물 제작에 합격수기 폐기 시 까지 이용하는 것에 동의합니다.<br/>
+						합격수기 작성 및 게시와 관련하여 '회사'로부터 지급받은 대가 중 제세공과금이 발생하는 경우 본인이 부담하는 것에 동의합니다. 동의날짜로부터 12개월 이내 동의를 철회할 경우 '회사'로부터 지급받은 대가 전액반환(제세공과금 제외)에 동의합니다.<br/>
+						위 내용을 충분히 이해하였으며 합격수기 저작재산권 이용에 동의합니다.	
+					</p>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+</div>
+
+<script src="../../../assets/js/m.script.js"></script>
+<script>
+	$(function(){
+		popupPageOpen('#popupVictoryStory');
+	});
+</script>
+</body>
+</html>
