@@ -85,21 +85,68 @@
 			<div class="section-zero-input">
 				<div class="wrap">
 					<div class="section-zero-title">시대인재 LEET SURVIVAL ZERO 신청하기</div>
-					<div class="section-zero-notice">
-						<div class="notice-text">
-							회원가입 및 배송지 (주소) 입력 후 신청 가능 합니다. <br/>
-							기존 회원이신 경우 로그인 후 신청해 주세요.
-						</div>
-						<a href="javascript:;" class="btn large">로그인하기</a>
+					<div class="section-zero-action">
+						<a href="javascript:;" class="btn large">배송정보 직접 입력하기</a>
+						<a href="javascript:;" class="btn large">로그인해서 배송정보 불러오기</a>
 					</div>
 
-					<h3>회원가입 및 배송지 입력</h3>
+					<h3>LEET SURVIVAL ZERO 배송정보</h3>
 					<div class="notice-input-table">
 						<table class="table-row ">
 							<colgroup>
 								<col style="width:140px" />
 								<col style="width:auto" />
 							</colgroup>
+							<tr>
+								<th>이름</th>
+								<td>
+									<div class="form-control">
+										<input type="text" class="text full" placeholder="" />
+									</div>
+								</td> 
+							</tr>
+
+							<tr>
+								<th>휴대전화</th>
+								<td>
+									<div class="input-box">
+										<div class="form-control">
+											<input type="text" class="text " placeholder="‘-’ 없이 입력하세요" value="" />
+										</div>
+										<a href="javascript:;" class="btn large">인증번호 발송</a>
+									</div>
+								</td> 
+							</tr>
+
+							<tr>
+								<th>인증번호</th>
+								<td>
+									<div class="timer-box">
+										<div class="form-control">
+											<input type="text" class="text " placeholder="인증번호를 입력하세요" value="" />
+										</div>
+										<a href="javascript:;" class="btn large">확인</a>
+									</div>
+								</td> 
+							</tr>
+							
+
+							<tr class="address">
+								<th>주소</th>
+								<td>
+									<div class="form-control flex">
+										<input type="text" class="text " placeholder="우편번호" value="" />
+										<a href="javascript:;" class="btn large">주소검색</a>
+									</div>
+									<div class="form-control">
+										<input type="text" class="text full" placeholder="" value="" />
+									</div>
+									<div class="form-control">
+										<input type="text" class="text full" placeholder="상세주소를 입력하세요" value="" />
+									</div>
+								</td> 
+							</tr>
+
 							<tr>
 								<th>이메일 ID</th>
 								<td>
@@ -128,92 +175,6 @@
 									<div class="form-control">
 										<input type="text" class="text full" placeholder="" />
 									</div>
-								</td> 
-							</tr>
-							<tr>
-								<th>이름</th>
-								<td>
-									<div class="input-box">
-										<div class="form-control">
-											<input type="text" class="text " placeholder="이름을 입력하세요." value="">
-										</div>
-										<div class="form-control">
-											<span class="fake-radio">
-												<input type="radio" id="radioType1" class="radio" name="radioSelect" checked>
-												<label for="radioType1">남</label>
-											</span>
-											<span class="fake-radio">
-												<input type="radio" id="radioType2" class="radio" name="radioSelect">
-												<label for="radioType2">여</label>
-											</span>
-										</div>
-									</div>
-								</td> 
-							</tr>
-
-							<tr>
-								<th>휴대전화</th>
-								<td>
-									<div class="input-box">
-										<div class="form-control">
-											<input type="text" class="text " placeholder="‘-’ 없이 입력하세요" value="" />
-										</div>
-										<a href="javascript:;" class="btn large">인증번호 발송</a>
-									</div>
-								</td> 
-							</tr>
-
-							<tr>
-								<th>인증번호</th>
-								<td>
-									<div class="timer-box">
-										<div class="form-control">
-											<input type="text" class="text " placeholder="인증번호를 입력하세요" value="" />
-										</div>
-										<a href="javascript:;" class="btn large">확인</a>
-									</div>
-								</td> 
-							</tr>
-
-							<tr class="address">
-								<th>주소</th>
-								<td>
-									<div class="form-control flex">
-										<input type="text" class="text " placeholder="우편번호" value="" />
-										<a href="javascript:;" class="btn large">주소검색</a>
-									</div>
-									<div class="form-control">
-										<input type="text" class="text full" placeholder="" value="" />
-									</div>
-									<div class="form-control">
-										<input type="text" class="text full" placeholder="상세주소를 입력하세요" value="" />
-									</div>
-								</td> 
-							</tr>
-							<tr>
-								<th>정보 수신 이메일</th>
-								<td>
-									<div class="form-control">
-										<input type="text" class="text full" placeholder="이메일을 입력하세요" value="" />
-									</div>
-								</td> 
-							</tr>
-							<tr>
-								<th>생년월일</th>
-								<td>
-									<!-- 250101 수정 -->
-									<div class="form-control">
-										<input type="hidden" id="BIRTH_DAY" name="BIRTH_DAY">
-										<input type="date" class="text" name="FAKE_BIRTH_DAY" id="FAKE_BIRTH_DAY" oninput="formatInputDate(this)">
-										<script>
-											function formatInputDate(input) {
-												const selectedDate = new Date(input.value);
-												const formattedDate = selectedDate.toISOString().slice(0, 10).replace(/-/g, '');
-												$("#BIRTH_DAY").val(formattedDate);
-											}
-										</script>	
-									</div>
-									<!--// 250101 수정 -->
 								</td> 
 							</tr>
 
@@ -322,8 +283,16 @@
 			<div class="section-zero-agree">
 				<div class="wrap">
 					<dl>
-						<dt>이용약관</dt>
+						<dt>정보 제공 동의</dt>
 						<dd>
+							<div>
+								<div class="form-control">
+									<div class="fake-checkbox">
+										<input type="checkbox" id="privacyAgree" class="checkbox" >
+										<label for="privacyAgree">위 정보로 시대인재LEET 회원 가입하기 (필수)</label>
+									</div>
+								</div>
+							</div>
 							<div>
 								<div class="form-control">
 									<div class="fake-checkbox">

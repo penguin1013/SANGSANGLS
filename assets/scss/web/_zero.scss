@@ -117,7 +117,24 @@
 		border-top:1px solid $color-black;
 		border-bottom:1px solid $color-black;
 		margin-bottom:60px;
-	  }
+	}
+
+	.section-zero-action{
+		display:flex;
+		justify-content: space-between;
+		padding:40px 0;
+		border-top:1px solid $color-black;
+		border-bottom:1px solid $color-black;
+		margin-bottom:60px;
+		.btn.large{
+			width:50%;
+			margin-left:20px;
+			&:first-child{
+				margin-left:0;
+				border-color:#ddd;;background-color: #EFEEEC;
+			}
+		}
+	}
 
 	.section-zero-input{
 		.wrap{

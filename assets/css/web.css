@@ -12878,6 +12878,23 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   border-bottom: 1px solid #2C2923;
   margin-bottom: 60px;
 }
+#wrap .section-zero-action {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 0;
+  border-top: 1px solid #2C2923;
+  border-bottom: 1px solid #2C2923;
+  margin-bottom: 60px;
+}
+#wrap .section-zero-action .btn.large {
+  width: 50%;
+  margin-left: 20px;
+}
+#wrap .section-zero-action .btn.large:first-child {
+  margin-left: 0;
+  border-color: #ddd;
+  background-color: #EFEEEC;
+}
 #wrap .section-zero-input .wrap {
   width: 640px;
   margin: 0 auto;
