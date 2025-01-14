@@ -11497,8 +11497,9 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   border-bottom: 1px solid #E4DED3;
   font-weight: 600;
   padding-bottom: 24px;
-  line-height: 40.8px;
-  font-size: 24px;
+  line-height: 36px;
+  font-size: 20px;
+  letter-spacing: -1px;
 }
 #wrap .section-pr-profile .profile-menu-box .profile-menu .menu-list li {
   border-bottom: 1px solid #E4DED3;
@@ -11517,6 +11518,47 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 #wrap .section-pr-content .curriculum-img img {
   width: 100%;
+}
+#wrap .section-pr-content .curriculum-video {
+  margin-top: 60px;
+  display: flex;
+  justify-content: flex-end;
+}
+#wrap .section-pr-content .curriculum-video .video-box {
+  position: relative;
+  width: 891px;
+}
+#wrap .section-pr-content .curriculum-video .video-box a {
+  display: block;
+  position: relative;
+  height: 501px;
+}
+#wrap .section-pr-content .curriculum-video .video-box a img {
+  width: 100%;
+}
+#wrap .section-pr-content .curriculum-video .video-box a:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background: url(../images/pr/btn_play.svg) no-repeat 20px 401px;
+  background-size: 80px 80px;
+}
+#wrap .section-pr-content .curriculum-video .video-box a .video-text {
+  position: absolute;
+  left: 0;
+  bottom: 40px;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  font-size: 30px;
+  line-height: 1.7;
+  font-weight: 500;
 }
 #wrap .section-pr-content .curriculum-list {
   margin-top: 160px;

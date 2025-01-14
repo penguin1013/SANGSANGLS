@@ -13624,6 +13624,60 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
     margin-top: -32px;
   }
 }
+#wrap .section-pr-video .curriculum-img {
+  margin-top: 37.3333333333vw;
+}
+@media screen and (min-width: 375px) {
+  #wrap .section-pr-video .curriculum-img {
+    margin-top: 140px;
+  }
+}
+#wrap .section-pr-video .curriculum-img img {
+  width: 100%;
+}
+#wrap .section-pr-video .video-box {
+  margin-top: 6.4vw;
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+}
+@media screen and (min-width: 375px) {
+  #wrap .section-pr-video .video-box {
+    margin-top: 24px;
+  }
+}
+#wrap .section-pr-video .video-box a {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: inherit;
+}
+#wrap .section-pr-video .video-box a img {
+  width: 100%;
+}
+#wrap .section-pr-video .video-box a:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background: url(../images/pr/btn_play.svg) no-repeat 2% 97.5%;
+  background-size: 12.8vw 12.8vw;
+}
+@media screen and (min-width: 375px) {
+  #wrap .section-pr-video .video-box a:after {
+    background-size: 48px 48px;
+  }
+}
 #wrap .section-pr-schedule2 {
   margin-top: 6.4vw;
 }
