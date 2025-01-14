@@ -226,72 +226,21 @@
 						LEET SURVIVAL ZERO <br/>
 						신청하기
 					</div>
-					<div class="section-zero-notice">
-						<div class="notice-text">
-							회원가입 및 배송지 (주소) 입력 후 신청 가능 합니다. <br/>
-							기존 회원 이신 경우 로그인 후 신청해 주세요. 
-						</div>
-						<a href="javascript:;" class="btn large btn-login">로그인하기</a>
+					<div class="section-zero-action">
+						<a href="javascript:;" class="btn large">배송정보<br/>직접 입력하기</a>
+						<a href="javascript:;" class="btn large">로그인해서<br/>배송정보 불러오기</a>
 					</div>
 
-					<h3>회원가입 및 배송지 입력</h3>
+					<h3>LEET SURVIVAL ZERO 배송정보</h3>
 					<div class="lecture-data-input">
-						<dl>
-							<dt>이메일 ID</dt>
-							<dd>
-								<div class="input-box">
-									<div class="form-control">
-										<input type="text" class="text" placeholder="" value="sangsang@naver.com" />
-										
-									</div>
-									<a href="javascript:;" class="btn large">중복확인</a>
-								</div>
-
-								<p class="form-text color-point">이메일 아이디를 입력해주세요</p>
-							</dd>
-						</dl>
-
-						<dl>
-							<dt>비밀번호</dt>
-							<dd>
-								<div class="form-control">
-									<input type="text" class="text" placeholder="비밀번호를 입력하세요" value="" />
-								</div>
-								<p class="form-text color-point">비밀번호는 최소 8자리 최대 16자리, 문자/숫자/특수문자를 혼용해야 합니다.</p>
-							</dd>
-
-						</dl>
-
-						<dl>
-							<dt>비밀번호 확인</dt>
-							<dd>
-								<div class="form-control">
-									<input type="text" class="text" placeholder="비밀번호를 한 번 더 입력하세요" value="" />
-								</div>
-							</dd>
-						</dl>
-
 						<dl>
 							<dt>이름</dt>
 							<dd>
 								<div class="form-control">
-									<input type="text" class="text"  placeholder="" value="홍길동" />
+									<input type="text" class="text" placeholder="" value="" />
 								</div>
 							</dd>
-		
-							<dd>
-								<div class="form-control">
-									<span class="fake-radio">
-										<input type="radio" id="radioType1" class="radio" name="radioSelectA" checked="">
-										<label for="radioType1">남</label>
-									</span>
-									<span class="fake-radio">
-										<input type="radio" id="radioType2" class="radio" name="radioSelectA">
-										<label for="radioType2">여</label>
-									</span>
-									
-								</div>
-							</dd>
+
 						</dl>
 
 						<dl>
@@ -345,34 +294,39 @@
 
 
 						<dl>
-							<dt>정보 수신 이메일</dt>
+							<dt>이메일 ID</dt>
 							<dd>
-								<div class="form-control">
-									<input type="text" class="text" placeholder="" value="sangsang@naver.com" />
+								<div class="input-box">
+									<div class="form-control">
+										<input type="text" class="text" placeholder="" value="sangsang@naver.com" />
+										
+									</div>
+									<a href="javascript:;" class="btn large">중복확인</a>
 								</div>
-							</dd>
-						</dl>
-					
-						
-						<dl>
-							<dt>생년월일</dt>
-							<dd>
-								<!-- 250101 수정 -->
-								<div class="form-control">
-									<input type="hidden" id="BIRTH_DAY" name="BIRTH_DAY">
-									<input type="date" class="text" name="FAKE_BIRTH_DAY" id="FAKE_BIRTH_DAY" oninput="formatInputDate(this)">
-									<script>
-										function formatInputDate(input) {
-											const selectedDate = new Date(input.value);
-											const formattedDate = selectedDate.toISOString().slice(0, 10).replace(/-/g, '');
-											$("#BIRTH_DAY").val(formattedDate);
-										}
-									</script>	
-								</div>
-								<!--// 250101 수정 -->
+
+								<p class="form-text color-point">이메일 아이디를 입력해주세요</p>
 							</dd>
 						</dl>
 
+						<dl>
+							<dt>비밀번호</dt>
+							<dd>
+								<div class="form-control">
+									<input type="text" class="text" placeholder="비밀번호를 입력하세요" value="" />
+								</div>
+								<p class="form-text color-point">비밀번호는 최소 8자리 최대 16자리, 문자/숫자/특수문자를 혼용해야 합니다.</p>
+							</dd>
+
+						</dl>
+
+						<dl>
+							<dt>비밀번호 확인</dt>
+							<dd>
+								<div class="form-control">
+									<input type="text" class="text" placeholder="비밀번호를 한 번 더 입력하세요" value="" />
+								</div>
+							</dd>
+						</dl>
 
 						<dl>
 							<dt>학사정보</dt>
@@ -449,8 +403,16 @@
 			<div class="section-zero-agree">
 				<div class="wrap">
 					<dl>
-						<dt>이용약관</dt>
+						<dt>정보 제공 동의</dt>
 						<dd>
+							<div>
+								<div class="form-control">
+									<div class="fake-checkbox">
+										<input type="checkbox" id="privacyAgree" class="checkbox" >
+										<label for="privacyAgree">위 정보로 시대인재LEET 회원 가입하기 (필수)</label>
+									</div>
+								</div>
+							</div>
 							<div>
 								<div class="form-control">
 									<div class="fake-checkbox">

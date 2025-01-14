@@ -14769,6 +14769,46 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
     margin: 24px auto 0;
   }
 }
+#wrap .section-zero-action {
+  padding: 10.6666666667vw 0;
+  border-top: 1px solid #2C2923;
+  border-bottom: 1px solid #2C2923;
+  margin-bottom: 16vw;
+  display: flex;
+  justify-content: space-between;
+}
+@media screen and (min-width: 375px) {
+  #wrap .section-zero-action {
+    padding: 40px 0;
+  }
+}
+@media screen and (min-width: 375px) {
+  #wrap .section-zero-action {
+    margin-bottom: 60px;
+  }
+}
+#wrap .section-zero-action .btn.large {
+  width: 50%;
+  margin-left: 2.6666666667vw;
+  text-align: center;
+  line-height: 23.8px;
+  height: 21.3333333333vw;
+}
+@media screen and (min-width: 375px) {
+  #wrap .section-zero-action .btn.large {
+    margin-left: 10px;
+  }
+}
+@media screen and (min-width: 375px) {
+  #wrap .section-zero-action .btn.large {
+    height: 80px;
+  }
+}
+#wrap .section-zero-action .btn.large:first-child {
+  margin-left: 0;
+  border-color: #ddd;
+  background-color: #EFEEEC;
+}
 #wrap .section-zero-input h3 {
   font-size: 4.8vw;
   line-height: 8.16vw;

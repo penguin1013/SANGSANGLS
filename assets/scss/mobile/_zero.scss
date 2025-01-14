@@ -91,6 +91,26 @@
 		}
 	}
 
+	.section-zero-action{
+		@include vw(padding,40px 0);
+		border-top:1px solid $color-black;
+		border-bottom:1px solid $color-black;
+		@include vw(margin-bottom,60px);
+		display:flex;
+		justify-content: space-between;
+		.btn.large{
+			width:50%;
+			@include vw(margin-left,10px);
+			text-align:center;
+			line-height:23.8px;
+			@include vw(height,80px);
+			&:first-child{
+				margin-left:0;
+				border-color:#ddd;;background-color: #EFEEEC;
+			}
+		}
+	}
+
 
 	.section-zero-input{
 		
