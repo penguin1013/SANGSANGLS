@@ -178,6 +178,44 @@
 								</td> 
 							</tr>
 
+							<tr>
+								<th>생년월일</th>
+								<td>
+									<div class="input-box">
+										<div class="form-control">
+											<input type="hidden" id="BIRTH_DAY" name="BIRTH_DAY">
+											<input type="date" class="text" name="FAKE_BIRTH_DAY" id="FAKE_BIRTH_DAY" oninput="formatInputDate(this)">
+											<script>
+												function formatInputDate(input) {
+													const selectedDate = new Date(input.value);
+													const formattedDate = selectedDate.toISOString().slice(0, 10).replace(/-/g, '');
+													$("#BIRTH_DAY").val(formattedDate);
+												}
+											</script>	
+										</div>
+										<div class="form-control">
+											<span class="fake-radio">
+												<input type="radio" id="radioType1" class="radio" name="radioSelect" checked>
+												<label for="radioType1">남</label>
+											</span>
+											<span class="fake-radio">
+												<input type="radio" id="radioType2" class="radio" name="radioSelect">
+												<label for="radioType2">여</label>
+											</span>
+										</div>
+									</div>
+								</td> 
+							</tr>
+
+							<tr>
+								<th>정보 수신 이메일</th>
+								<td>
+									<div class="form-control">
+										<input type="text" class="text full" placeholder="이메일을 입력하세요" value="" />
+									</div>
+								</td> 
+							</tr>
+
 							<tr class="university">
 								<th>학사정보</th>
 								<td>

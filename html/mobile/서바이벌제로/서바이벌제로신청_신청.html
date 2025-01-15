@@ -329,6 +329,46 @@
 						</dl>
 
 						<dl>
+							<dt>생년월일</dt>
+							<dd>
+								<div class="form-control">
+									<input type="hidden" id="BIRTH_DAY" name="BIRTH_DAY">
+									<input type="date" class="text" name="FAKE_BIRTH_DAY" id="FAKE_BIRTH_DAY" oninput="formatInputDate(this)">
+									<script>
+										function formatInputDate(input) {
+											const selectedDate = new Date(input.value);
+											const formattedDate = selectedDate.toISOString().slice(0, 10).replace(/-/g, '');
+											$("#BIRTH_DAY").val(formattedDate);
+										}
+									</script>	
+								</div>
+							</dd>
+
+							<dd>
+								<div class="form-control">
+									<span class="fake-radio">
+										<input type="radio" id="radioType1" class="radio" name="radioSelectA" checked="">
+										<label for="radioType1">남</label>
+									</span>
+									<span class="fake-radio">
+										<input type="radio" id="radioType2" class="radio" name="radioSelectA">
+										<label for="radioType2">여</label>
+									</span>
+									
+								</div>
+							</dd>
+						</dl>
+
+						<dl>
+							<dt>정보 수신 이메일</dt>
+							<dd>
+								<div class="form-control">
+									<input type="text" class="text" placeholder="" value="sangsang@naver.com" />
+								</div>
+							</dd>
+						</dl>
+
+						<dl>
 							<dt>학사정보</dt>
 							<dd>
 								<div class="form-control">
