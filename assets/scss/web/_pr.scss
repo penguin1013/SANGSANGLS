@@ -441,6 +441,7 @@
 
 
 	/* 241231 PR 전체수정 */
+
 	.section-pr-profile{
 		img{width:100%;}
 		padding-top:20px;
@@ -479,6 +480,8 @@
 		}
 	}
 
+	.section-pr-title +	.section-pr-profile{margin-top:120px;}
+
 	.section-pr-content{
 		.curriculum-img{
 			margin-top:160px;
@@ -515,6 +518,19 @@
 						font-weight:500;
 					}
 				}
+			}
+		}
+
+		
+		.curriculum-schedule{
+			margin-top:60px;
+			display:flex;
+			justify-content: flex-end;
+
+			.schedule-box{
+				position:relative;
+				width:891px;
+				img{width:100%;}
 			}
 		}
 
