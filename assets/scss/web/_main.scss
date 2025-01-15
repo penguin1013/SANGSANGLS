@@ -94,20 +94,19 @@
 			padding-bottom:120px;
 
 			a{
-				display:block;font-size:20px;
-				font-weight:300;
-				line-height:30px;
-				padding:24px;height:124px;
-				background-color:rgba(221, 219, 216, 1);
-				color:rgba(36, 35, 33, 1);
+				display:block;font-size:22px;
+				font-weight:400;
+				line-height:33px;
+				padding:24px 28px;height:124px;
+				background-color:#F0F0F0;
+				color:$color-black;
 				@include boxSizing(border-box);
 			}
 
 			.main-banner-one{
 				margin-top:12px;
 				a{
-					background-color:#504b42;
-					color:$color-light-beige;
+					background-color:#D9DDE2;
 					height:120px;
 				}
 			}
@@ -128,8 +127,9 @@
 					
 					a{
 						height:144px;
-						background-color:rgba(242, 239, 231, 1);
-						color:rgba(80, 75, 66, 1);
+						background-color:#BDC7D4;
+
+						
 						
 						&:first-child{
 							margin-bottom:12px;
@@ -283,7 +283,8 @@
 			.video-title{
 				//@extend %textEllipsis;
 				color:$color-white;margin-top:12px;
-				font-size:16px;line-height:27.2px;font-weight:500;
+				font-size:16px;line-height:27.2px;font-weight:400;
+				
 			}
 		}
 
@@ -322,7 +323,7 @@
 						display:block;
 						font-size:28px;
 						line-height:42px;
-						font-weight:600;
+						font-weight:400;
 						color:$color-white;
 						margin-bottom:4px;
 					}
@@ -406,8 +407,8 @@
 			.text-box{
 				margin-top:15px;
 				color:$color-black;
-				.subject{font-weight:500;font-size:26px;line-height:31.2px;}
-				.desc{margin-top:7.5px;font-weight:500;font-size:14px;line-height:23.8px;}
+				.subject{font-weight:400;font-size:26px;line-height:31.2px;}
+				.desc{margin-top:7.5px;font-weight:400;font-size:14px;line-height:23.8px;}
 			}
 
 			.platform-list-left{
@@ -522,9 +523,9 @@
 			.text-box{
 				margin-left:32px;
 				.subject{
-					font-weight:500;
-					font-size:26px;
-					line-height:31.2px;
+					font-weight:400;
+					font-size:28px;
+					line-height:44.8px;
 					color:$color-white;
 				}
 				.desc{
