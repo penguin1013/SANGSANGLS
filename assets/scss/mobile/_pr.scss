@@ -481,6 +481,16 @@
 
 
 	/* 241231 PR 전체수정 */
+	.section-pr-title{
+		@include vw(padding-top,40px);
+		h3{
+			@include vw(margin-bottom,24px);
+		}
+		.tab-menu{
+			padding:0;
+		
+		}
+	}
 	.section-pr-profile{
 		@include vw(padding-top,60px);
 		.profile-title{@include vw(margin-bottom, 40px);}
@@ -629,6 +639,13 @@
 			
 		}
 
+	}
+
+	.section-pr-schedule{
+		.curriculum-img{
+			@include vw(margin-top, 64px);
+			img{width:100%;}
+		}
 	}
 
 	.section-pr-schedule2 {
