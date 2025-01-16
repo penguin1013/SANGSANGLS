@@ -11511,8 +11511,8 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   padding: 10px 0;
 }
 #wrap .section-pr-profile .profile-menu-box .profile-text {
-  width: 889px;
-  margin-left: 131px;
+  width: 891px;
+  margin-left: auto;
 }
 #wrap .section-pr-title + .section-pr-profile {
   margin-top: 120px;
