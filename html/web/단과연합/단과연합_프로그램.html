@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>상상로스쿨</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta property="og:title" content="상상로스쿨">
+    <meta property="og:image" content="../../../assets/images/og.png">
+    <meta property="og:description" content="LEET에 대한 가장 앞선 생각, 상상로스쿨에서 시작합니다.">
+    <meta name="google-site-verification" content="">
+    <meta id="viewport" content="width=1300, user-scalable=yes" name="viewport">
+    <link rel="shortcut icon" href="../../../assets/images/favicon.ico">
+    <meta name="keyword" content="상상로스쿨">
+    <meta name="title" content="상상로스쿨">
+    <meta name="description" content="LEET에 대한 가장 앞선 생각, 상상로스쿨에서 시작합니다.">
+    <meta property="WT.ti" content="">
+    <meta name="DCS.dcsuri" content="">
+    <meta name="robots" content="index, follow">
+
+	<link rel="stylesheet" href="../../../assets/libs/slick/slick.css" />
+	<link rel="stylesheet" href="../../../assets/css/web.css" />
+
+	<script src="../../../assets/libs/jquery/jquery-3.7.1.min.js"></script>
+	<script src="../../../assets/libs/slick/slick-1.6.0.min.js"></script>
+	<script src="../../../assets/libs/masonry/masonry.pkgd.min.js"></script>
+</head>
+<body>
+
+<div id="wrap">
+	<div id="container">
+		<header id="header" class="header">
+			<div class="header-gnb">
+				<h1 class="header-logo">
+					<a href="javascript:;"><img src="../../../assets/images/logo_sdij.svg" alt="시대인재로스쿨" /></a>
+				</h1>
+	
+				<div class="header-util">
+					<div class="logout">
+						<a href="javascript:;">로그인</a>
+						<a href="javascript:;">회원가입</a>
+					</div>
+					<div class="login">
+						<a href="javascript:;" data-header-layer="toggle">홍길동님<span class="icon-arrow"><img src="../../../assets/images/btn_arrow_down_white.svg" alt="로그인 레이어 오픈" /></span></a>
+						<div class="header-layer">
+							<ul class="util-list">
+								<li><a href="javascript:;">받은쪽지<span>14</span>개</a></li>
+								<li><a href="javascript:;">장바구니<span>0</span>개</a></li>
+								<li><a href="javascript:;">개인정보수정</a></li>
+								<li><a href="javascript:;">로그아웃</a></li>
+							</ul>
+						</div>
+					</div>
+					<a href="javascript:;">마이페이지</a>
+				</div>
+			</div>
+
+			<div class="header-menu">
+				<ul class="gnb-list">
+					<li>
+						<a href="javascript:;"><span>콘텐츠 플랫폼</span></a>
+					</li>
+					<li>
+						<a href="javascript:;"><span>서바이벌 프로</span></a>
+					</li>
+					<li>
+						<a href="javascript:;"><span>하이퍼패스</span></a>
+					</li>
+					<li>
+						<a href="javascript:;"><span>교수소개</span></a>
+					</li>
+					<li>
+						<a href="javascript:;"><span>수험정보</span></a>
+					</li>
+					<li>
+						<a href="javascript:;"><span>강남캠퍼스</span></a>
+					</li>
+				</ul>
+			</div>
+
+		</header>
+
+
+		<div id="contents" class="program">
+			<div class="section-program-title">
+				<div class="wrap">
+					<img src="../../../assets/images/program/program_title.png" alt="" />
+				</div>
+			</div>
+
+			<div class="section-program-content">
+				<div class="wrap">
+					<div class="program-section">
+						<img src="../../../assets/images/program/program_content1.png" alt="" />
+						<a href="https://sdijleet.com/campus/lecture/all" target="_blank" class="btn btn-link btn-schedule">	시즌1 시간표 확인하기</a>
+						<a href="https://sdijleet.com/event/sdij_contents" target="_blank" class="btn btn-link btn-view">보러가기</a>
+					</div>
+
+					<div class="program-section">
+						<img src="../../../assets/images/program/program_content2.png" alt="" />
+					</div>
+
+					<div class="program-section">
+						<img src="../../../assets/images/program/program_content3.png" alt="" />
+					</div>
+				</div>
+			</div>
+
+
+			<div class="section-program-apply">
+				<div class="wrap">
+					<div class="flex-layout">
+						<div class="left">
+							<h3 class="subject">2026 대비<br/>단과 연합 프로그램</h3>
+							<div class="action">
+								<a href="https://docs.google.com/forms/d/e/1FAIpQLSeMx8SoiBO-YTrBqNoT0GTLb2o8RA03Xz7qcxwAC7ZgceqZWA/viewform?usp=header" target="_blank">방문상담 예약하기</a>
+								<a href="javascript:popupOpen('#popupGuideInfo');">상품 안내 및 환불 안내</a>
+							</div>
+						</div>
+
+						<div class="right">
+							<!-- S : 단과 연합 프로그램 리스트 -->
+							<ul class="list-product">
+								<li>
+									<p class="title-product">26단과연합 3과목반<br/>완납</p>
+
+									<div class="price-area">
+										<p class="benefit">121만원 지원</p>
+
+										<div class="price">
+											<del>7,990,500원</del>
+											<p class="strong">6,780,000원</p>
+										</div>
+									</div>
+
+									<div class="btn-area">
+										<button type="button" class="btn">신청</button>
+									</div>
+
+									<div class="checkbox-box">
+										<div class="form-control">
+											<span class="fake-checkbox">
+												<input type="checkbox" id="productCheck1" class="checkbox" />
+												<label for="productCheck1">
+													상품안내 및 유의사항을 모두 확인하였고 이에
+													동의합니다.
+												</label>
+											</span>
+										</div>
+									</div>
+								</li>
+
+								<li>
+									<p class="title-product">26단과연합 3과목반<br/>분납</p>
+
+									<div class="price-area">
+										<p class="benefit">60만원 지원</p>
+
+										<div class="price">
+											<del>3,995,250원</del>
+											<p class="strong">3,390,000원</p>
+										</div>
+									</div>
+
+									<div class="btn-area">
+										<button type="button" class="btn">신청</button>
+									</div>
+
+									<div class="checkbox-box">
+										<div class="form-control">
+											<span class="fake-checkbox">
+												<input type="checkbox" id="productCheck2" class="checkbox" />
+												<label for="productCheck2">
+													상품안내 및 유의사항을 모두 확인하였고 이에
+													동의합니다.
+												</label>
+											</span>
+										</div>
+									</div>
+								</li>
+
+								<li>
+									<p class="title-product">26단과연합 2과목반<br/>완납</p>
+
+									<div class="price-area">
+										<p class="benefit">117만원 지원</p>
+
+										<div class="price">
+											<del>6,144,000원</del>
+											<p class="strong">4,970,000원</p>
+										</div>
+									</div>
+
+									<div class="btn-area">
+										<button type="button" class="btn">신청</button>
+									</div>
+
+									<div class="checkbox-box">
+										<div class="form-control">
+											<span class="fake-checkbox">
+												<input type="checkbox" id="productCheck3" class="checkbox" />
+												<label for="productCheck3">
+													상품안내 및 유의사항을 모두 확인하였고 이에
+													동의합니다.
+												</label>
+											</span>
+										</div>
+									</div>
+								</li>
+
+								<li>
+									<p class="title-product">26단과연합 2과목반<br/>분납</p>
+
+									<div class="price-area">
+										<p class="benefit">58만원 지원</p>
+
+										<div class="price">
+											<del>3,072,000원</del>
+											<p class="strong">2,485,000원</p>
+										</div>
+									</div>
+
+									<div class="btn-area">
+										<button type="button" class="btn">신청</button>
+									</div>
+
+									<div class="checkbox-box">
+										<div class="form-control">
+											<span class="fake-checkbox">
+												<input type="checkbox" id="productCheck4" class="checkbox" />
+												<label for="productCheck4">
+													상품안내 및 유의사항을 모두 확인하였고 이에
+													동의합니다.
+												</label>
+											</span>
+										</div>
+									</div>
+								</li>
+
+								<li>
+									<p class="title-product">26단과연합 언어이해반</p>
+
+									<div class="price-area">
+										<p class="benefit">31만원 지원</p>
+
+										<div class="price">
+											<del>3,177,000원</del>
+											<p class="strong">2,860,000원</p>
+										</div>
+									</div>
+
+									<div class="btn-area">
+										<button type="button" class="btn">신청</button>
+									</div>
+
+									<div class="checkbox-box">
+										<div class="form-control">
+											<span class="fake-checkbox">
+												<input type="checkbox" id="productCheck5" class="checkbox" />
+												<label for="productCheck5">
+													상품안내 및 유의사항을 모두 확인하였고 이에
+													동의합니다.
+												</label>
+											</span>
+										</div>
+									</div>
+								</li>
+
+								<li>
+									<p class="title-product">26단과연합 추리논증반</p>
+
+									<div class="price-area">
+										<p class="benefit">33만원 지원</p>
+
+										<div class="price">
+											<del>3,317,000원</del>
+											<p class="strong">2,986,000원</p>
+										</div>
+									</div>
+
+									<div class="btn-area">
+										<button type="button" class="btn">신청</button>
+									</div>
+
+									<div class="checkbox-box">
+										<div class="form-control">
+											<span class="fake-checkbox">
+												<input type="checkbox" id="productCheck1" class="checkbox" />
+												<label for="productCheck1">
+													상품안내 및 유의사항을 모두 확인하였고 이에
+													동의합니다.
+												</label>
+											</span>
+										</div>
+									</div>
+								</li>
+							</ul>
+							<!--// E : 단과 연합 프로그램 리스트 -->
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+
+		<footer id="footer" class="footer">
+			<div class="footer-top">
+				<div class="wrap">
+					<div class="footer-menu">
+						<div>
+							<p class="footer-menu-title"><a href="javascript:;"><img src="../../../assets/images/f_logo_sdij.svg" alt="시대인재로스쿨" /></a></p>
+							<ul class="footer-menu-list">
+								<li><a href="javascript:;">콘텐츠 플랫폼</a></li>
+								<li><a href="javascript:;">서바이벌 프로</a></li>
+								<li><a href="javascript:;">하이퍼패스</a></li>
+								<li><a href="javascript:;">교수소개</a></li>
+								<li><a href="javascript:;">수험정보</a></li>
+								<li><a href="javascript:;">강남캠퍼스</a></li>
+							</ul>
+						</div>
+						<div>
+							<p class="footer-menu-title">Service Policies</p>
+							<ul class="footer-menu-list">
+								<li><a href="javascript:;">고객센터</a></li>
+								<li><a href="javascript:popupOpen('#popupTerms');">이용약관</a></li>
+								<li><a href="javascript:popupOpen('#popupPrivacy');"><strong>개인정보 처리방침</strong></a></li>
+							</ul>
+						</div>
+						<div>
+							<p class="footer-menu-title">Contact</p>
+							<ul class="footer-menu-list">
+								<li><a href="javascript:;">1:1 문의</a></li>
+								<li><a href="javascript:;">FAQ</a></li>
+							</ul>
+						</div>
+					</div>
+					
+
+					<div class="footer-info">
+						<p class="footer-customer">고객센터  02-582-3359</p>
+						<dl class="footer-info-list">
+							<dt>동영상 강의/교재 및 제휴 문의</dt>
+							<dd>
+								<div>
+									<strong>평일</strong>
+									<p>
+										09:30 ~ 18:30<br/>(점심시간 12:30 ~ 13:30
+									</p>
+								</div>
+								<div>
+									<strong>주말/공휴일</strong>
+									<p>
+										나의 문의 게시판 이용
+									</p>
+								</div>
+							</dd>
+						</dl>
+						<dl class="footer-info-list">
+							<dt>학원 수강/상담 문의</dt>
+							<dd>
+								<div>
+									<strong>평일</strong>
+									<p>
+										08:00 ~ 22:00
+									</p>
+								</div>
+								<div>
+									<strong>주말/공휴일</strong>
+									<p>
+										09:00 ~ 22:00
+									</p>
+								</div>
+							</dd>
+						</dl>
+					</div>
+				</div>
+			</div>
+			<div class="footer-bottom">
+				<div class="wrap">
+					<div class="company-info">
+						<p><strong>㈜이매진PNM </strong>대표 강 상 희</p>
+						<p>
+							<span>사업자등록번호 371-87-01877</span>
+							<span>통신판매신고번호 제 2023-서울강남-05461호</span>
+							<span>신고기관명 서울특별시 강남구청</span>
+							<span>주 소 서울시 강남구 논현로 524 청파빌딩 2층</span>
+						</p>
+						<p>
+							<span>상상로스쿨 원격평생교육시설(제 원-777호)</span>
+							<span>전화번호 02-582-3359</span>
+							<span>FAX 02-6243-3881</span>
+							<span>E-mail imagine@imaginepnm.com</span>
+							<span>개인정보관리책임자 우민균</span>
+						</p>
+						<p class="copyright">
+							COPYRIGHT &copy; IMAGINE PNM CORP. ALL RIGHT RESERVED.
+						</p>
+					</div>
+					<div class="sns-list">
+						<a href="javascript:;" ><img src="../../../assets/images/btn_youtube_white.svg" alt="유튜브" /></a>
+						<a href="javascript:;" ><img src="../../../assets/images/btn_blog_white.svg" alt="네이버블로그" /></a>
+						<a href="javascript:;" ><img src="../../../assets/images/btn_instagram_white.svg" alt="인스타그램" /></a>
+						<a href="javascript:;" ><img src="../../../assets/images/btn_kakao_white.svg" alt="카카오" /></a>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		<a href="javascript:pageTopMove();" class="btn-top"><img src="../../../assets/images/btn_top.svg" alt="top" /></a>
+	</div>
+
+	<!-- S : (popup) 상품 안내 및 유의사항 -->
+	<div class="popup" id="popupGuideInfo">
+	<div class="popup-wrap">
+	<a
+	href="javascript:popupClose('#popupGuideInfo');"
+	class="popup-close"
+	>팝업닫기</a
+	>
+	<div class="popup-title">상품 안내 및 유의사항</div>
+	<div class="popup-cont popup-scroll">
+	<div class="heading">상품안내</div>
+	<div class="box">
+	<p>
+	<strong>수강기간</strong><br />
+	결제일로부터 2025년 7월 31일까지 수강 가능<br />
+	<br />
+
+	<strong>대상강좌</strong><br />
+	2026년 대비로 신규 오픈하는 시대인재 LEET 전 강사 현장강의
+	정규강좌 제공 & 복습동영상 무한 제공<br /><br />
+	※ 과정 시작 전 과목별로 강사 선택 필수(중도 변경은 사전 고지
+	후 가능)<br />
+	※ 강사 선택은 캠퍼스 방문 또는 전화(☎02-582-3359)로 과정 시작
+	전 미리 수강 여부 확인 필수<br />
+	&nbsp;&nbsp;&nbsp; (수강 여부 미 확인 시 수강이 불가능할 수
+	있습니다.)<br />
+	※ 강남캠퍼스에서 진행하는 과목별 유료 특강 지원<br />
+	※ POST-LEET(자기소개서, 면접, 온라인 첨삭 강좌, 패키지, 이벤트
+	유료 강좌) 제외<br />
+	※ 동일 커리큘럼의 최신 강좌 업데이트 시, 이전 강좌는 판매
+	종료되어 수강신청 불가<br />
+	※ 대상 강좌는 운영상의 이유로 사전 공지없이 판매 종료될 수
+	있으며, 이미 판매 종료된 강좌는 선택 불가<br /><br />
+
+	<strong>수강 배수</strong><br />
+	배수 제한 없음<br />
+	<br />
+
+	<strong>강좌 신청 및 수강 방법</strong><br />
+	원내 모집요강 확인 또는 학원 홈페이지 &lt; 학원 시간표 에
+	올라와 있는 강좌 중 선택하여 수강신청 가능(학원에 문의 必)
+	<br />
+	※ 결제 시점 – 25/07/31 총 7개월이며, 기간 연장 및 기간 선택
+	불가능(자세한 안내는 학원으로 문의 必) <br />
+	[복습동영상 수강] <br />
+	상품 구매 후, 마이페이지 &lt; 수강중인 강좌 &lt; 보강동영상
+	에서 강좌 선택하여 수강신청 가능<br />
+	※ PC/모바일 구분없이 스트리밍 3대 + 다운로드기기 1대에서 수강
+	가능<br />
+	※ PC/모바일 수강 가능하며 강좌선택은 PC에서만 가능<br />
+	※ 한 번 모바일 다운로드한 강의는 모바일로만 수강이 가능<br /><br />
+
+	<strong>교재구매</strong><br />
+	교재 별도 구매<br /><br />
+
+	<strong>구매 혜택</strong><br />
+	1. 시대인재 LEET 전국모의고사 * 신청 페이지를 통해 별도
+	신청<br />
+	&nbsp;&nbsp;&nbsp;- 2026 대비 시대인재 LEET 전국모의고사 전
+	회차 응시 가능합니다_성적분석표 포함<br />
+	&nbsp;&nbsp;&nbsp;- 신청 관련 개별 안내는 진행되지 않으며,
+	홈페이지 내 신청페이지를 통해 확인하실 수 있습니다.<br /><br />
+	※ 1회 시험 접수 시작 전 환불하는 경우, 모의고사 부분 전액
+	환불<br />
+	※ 1회 시험 접수 시작 후 환불 시 응시여부와 상관없이 위약금
+	10%와 시험 1회 당 정가 차감 후 환불<br />
+	※ 시대인재 LEET 전국모의고사 현장 고사실 마감 시 원내 또는
+	온라인 모의고사로 대체 될 수 있음<br />
+	※ 시대인재 LEET 전국모의고사 성적 분석표 제공 일정은 추후 별도
+	신청페이지에서 확인 가능<br /><br />
+
+	2. 시대인재 LEET 전용 콘텐츠<br />
+	※ 시즌 1,2,3 시기별 언어이해/추리논증 Mini Test 및 각종 수험서
+	지원 <br /><br />
+	3. 시즌별 언어/추리 그룹 스터디<br />
+	※ 로스쿨 합격생이 시즌별로 직접 코칭해 주는 과목별 그룹
+	스터디(시즌 1,2,3 각 1회, 총 3회) 지원
+	<br /><br />
+
+	<strong>유의사항</strong><br />
+	- PC, 모바일 동시 수강은 불가합니다.<br />
+	- 아이디 공유, 중복 사용, 양도, 재판매, 단체수강 등 불법행위
+	적발 시 회원 자격이 박탈되며 민, 형사상 불이익을 받을 수
+	있습니다.
+	</p>
+	</div>
+
+	<div class="heading">환불규정</div>
+	<div class="box">
+	<p>
+	<strong>전체환불</strong><br />
+	[강의] 현장강의는 개강 전 환불에 한해 이미 납부한 수강료 전액
+	환불 됩니다.<br /><br />
+	[환불액]<br />
+	결제 금액 전액 환불<br /><br />
+
+	<strong>부분환불</strong><br />
+	[학습 수수료]<br />
+	단과 강좌 수강료를 기준으로 신청한 강좌 각각의 학습 수수료
+	차감 <br />
+	(중도 수강취소 강좌도 동일하게 학습 수수료 적용)<br />
+	※ 교습 기간이 1개월 이내인 경우 : <br />
+	- 총 교습 시간의 1/3 경과 전 : 이미 납부한 교습비 등의 2/3에
+	해당하는 금액<br />
+	- 총 교습 시간의 1/2 경과 전 : 이미 납부한 교습비 등의 1/2에
+	해당하는 금액<br />
+	- 총 교습 시간의 1/2 경과 후 : 반환하지 않음<br />
+	※ 교습 기간이 1개월 초과인 경우 :<br />
+	- 교습 시작 전 : 이미 납부한 교습비 등의 전액<br />
+	교습 시작 후 : 반환 사유가 발생한 해당 월의 반환 대상 교습비
+	등과 (교습 기간이 1개월 이내인 경우의 기준에 따라 산출한
+	금액을 말한다) 나머지 월의 교습비 등의 전액을 합산한 금액<br />
+	[환불액]<br />
+	환불금액 = 총 결제액 - 위약금 - 학습수수료 - 제공 혜택<br /><br />
+
+	[제공 혜택]<br />
+	사용한 혜택에 대한 금액 차감<br />
+	1. 2026대비 전국 모의고사<br />
+	- 전국 모의고사 신청 후 시험일 이전 환불 신청 시 환불 금액에서
+	공제하지 않습니다.<br />
+	- 전국 모의고사 신청 후 실제 응시 여부와 상관 없이 시험일이
+	지나 환불 신청을 한 경우 환불 금액에서 공제합니다.<br />
+	2. 시대인재 LEET 전용 콘텐츠<br />
+	※ 시즌별로 제공받은 언어이해/추리논증 Mini Test 및 각종
+	수험서들을 환불 금액에서 공제합니다. <br />
+	3. 시즌별 언어이해/추리논증 그룹 스터디<br />
+	※ 로스쿨 합격생이 시즌별로 직접 코칭해 준 회차만큼
+	환불금액에서 공제합니다.<br />
+	[환불액]<br />
+	환불금액 = 총 결제액 - 위약금 - 학습수수료 - 제공 혜택<br /><br />
+
+	<strong>환불불가</strong><br />
+	[MASTER-KEY PASS & 현장강의] <br />
+	- 신청한 강좌 각각의 학습 수수료, 제공 혜택가, 위약금의 총합이
+	구매한 상품 결제 금액을 초과할 시<br />
+	- 구매한 상품의 수강 기간 및 수강 종료일이 지난 경우<br />
+	[환불액]<br />
+	없음 (환불 불가)<br /><br />
+
+	ㆍ부분 환불의 경우, 옵션 포함 전체가격에서 환불이
+	책정됩니다.<br />
+	ㆍ전체 환불의 경우, 수강 시작 전에만 가능합니다.<br />
+	ㆍ환불 시 수강기간은 시대인재LEET 단과연합 Program 구매일 -
+	LEET 본고사일을 기준으로 합니다.<br />
+	ㆍ4F 사물함 기물파손이 생길 경우, 일부 기물 파손에 대한 값을
+	지불해야 할 수 있습니다.
+	</p>
+	</div>
+	</div>
+	</div>
+	</div>
+	<!--// E : (popup) 상품 안내 및 유의사항 -->
+
+</div>
+
+<script src="../../../assets/js/script.js"></script>
+<script>
+	$(function () {
+	});
+</script>
+</body>
+</html>

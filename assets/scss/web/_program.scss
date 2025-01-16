@@ -31,6 +31,14 @@
 
       .left {
         width: 348px;
+
+		.action {
+			margin-top: 40px;
+			display:block;
+			a{
+				margin-bottom:20px;
+			}
+		}
       }
 
       .right {
@@ -46,9 +54,10 @@
         width: 100%;
         font-size: 16px;
         font-weight: 400;
+		line-height:24px;
         text-align: center;
-        padding: 14px 0;
-        border: 1px solid #2c2923;
+        padding: 15.3px 0;
+        border: 1px solid $color-black;
         cursor: pointer;
         @include boxSizing(border-box);
       }
@@ -76,7 +85,17 @@
 
       &-content {
         padding-bottom: 240px;
-
+		.program-section{
+			position:relative;
+			.btn-schedule{
+				position:absolute;left:232px;top:407px;
+				margin-left:0;
+			}
+			.btn-view{
+				position:absolute;left:24px;top:737px;
+				margin-left:0;
+			}
+		}
         .program-section:not(:first-child) {
           padding-top: 240px;
         }
@@ -127,6 +146,11 @@
       &-apply {
         padding: 160px 0;
         background-color: #eeeeee;
+
+		.subject{
+			padding-bottom:0;
+			min-height:auto;
+		}
 
         .list-benefit {
           line-height: 2;
@@ -188,7 +212,7 @@
                 width: 100%;
                 height: 56px;
                 display: flex;
-                background-color: #fbfaf6;
+                background-color: #F0F0F0;
                 border: none;
                 font-size: 16px;
                 font-weight: 400;
@@ -197,13 +221,14 @@
                 cursor: pointer;
 
                 &:hover {
-                  background-color: #eeedea;
+                  background-color: #E4E4E4;
                 }
               }
             }
 
             .fake-checkbox label {
               line-height: 1.5;
+			  font-size:12px;
               cursor: pointer;
             }
           }
@@ -238,4 +263,8 @@
       }
     }
   }
+
+	.section-program-title{
+		margin-bottom: 240px;
+	}
 }

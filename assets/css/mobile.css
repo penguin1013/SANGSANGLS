@@ -15241,7 +15241,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 
 #wrap #contents.program {
-  padding-bottom: 100px;
+  padding-bottom: 0px;
 }
 #wrap #contents.program [class^=section-program] .wrap {
   max-width: 600px;
@@ -15265,7 +15265,19 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   font-weight: 200;
 }
 #wrap #contents.program .action {
+  display: block;
   margin-top: 32px;
+}
+#wrap #contents.program .action a {
+  margin-bottom: 6.4vw;
+}
+@media screen and (min-width: 375px) {
+  #wrap #contents.program .action a {
+    margin-bottom: 24px;
+  }
+}
+#wrap #contents.program .action a:last-child {
+  margin-bottom: 0;
 }
 #wrap #contents.program .action * {
   display: block;
@@ -15303,10 +15315,28 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   color: #0e4b9e;
 }
 #wrap #contents.program .section-program-content {
-  padding-bottom: 100px;
+  padding-bottom: 37.3333333333vw;
+}
+@media screen and (min-width: 375px) {
+  #wrap #contents.program .section-program-content {
+    padding-bottom: 140px;
+  }
 }
 #wrap #contents.program .section-program-content .program-section {
-  padding-top: 100px;
+  padding-top: 37.3333333333vw;
+}
+@media screen and (min-width: 375px) {
+  #wrap #contents.program .section-program-content .program-section {
+    padding-top: 140px;
+  }
+}
+#wrap #contents.program .section-program-content .program-section .btn-schedule {
+  margin-bottom: 16vw;
+}
+@media screen and (min-width: 375px) {
+  #wrap #contents.program .section-program-content .program-section .btn-schedule {
+    margin-bottom: 60px;
+  }
 }
 #wrap #contents.program .section-program-content .title-border {
   padding-top: 24px;
@@ -15339,6 +15369,28 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 #wrap #contents.program .section-program-apply {
   padding: 100px 0;
   background-color: #eeeeee;
+}
+#wrap #contents.program .section-program-apply .subject {
+  font-size: 7.4666666667vw;
+  line-height: 10.4533333333vw;
+  font-weight: 300;
+  color: #2C2923;
+  padding-bottom: 2.1333333333vw;
+}
+@media screen and (min-width: 375px) {
+  #wrap #contents.program .section-program-apply .subject {
+    font-size: 28px;
+  }
+}
+@media screen and (min-width: 375px) {
+  #wrap #contents.program .section-program-apply .subject {
+    line-height: 39.2px;
+  }
+}
+@media screen and (min-width: 375px) {
+  #wrap #contents.program .section-program-apply .subject {
+    padding-bottom: 8px;
+  }
 }
 #wrap #contents.program .section-program-apply .list-benefit {
   line-height: 2;
@@ -15394,7 +15446,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   width: 100%;
   height: 56px;
   display: flex;
-  background-color: #fbfaf6;
+  background-color: #F0F0F0;
   border: none;
   font-size: 16px;
   font-weight: 400;
@@ -15409,6 +15461,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 #wrap #contents.program .section-program-info {
   padding-top: 100px;
+  padding-bottom: 100px;
 }
 #wrap #contents.program .section-program-info .text-area {
   line-height: 2;
@@ -15427,6 +15480,14 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 #wrap #contents.program .section-program-info .img-box > * {
   max-width: 100%;
+}
+#wrap .section-program-title {
+  padding-top: 16vw;
+}
+@media screen and (min-width: 375px) {
+  #wrap .section-program-title {
+    padding-top: 60px;
+  }
 }
 
 #wrap .section-victorystory {

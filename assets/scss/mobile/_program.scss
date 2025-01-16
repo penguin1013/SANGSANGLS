@@ -1,6 +1,6 @@
 #wrap {
   #contents.program {
-    padding-bottom: 100px;
+    padding-bottom: 0px;
 
     [class^="section-program"] {
       .wrap {
@@ -31,7 +31,14 @@
     }
 
     .action {
-      margin-top: 32px;
+		display:block;
+		margin-top: 32px;
+		a{
+			@include vw(margin-bottom,24px);
+			&:last-child{
+				margin-bottom:0;
+			}
+		}
 
       * {
         display: block;
@@ -65,11 +72,14 @@
       }
 
       &-content {
-        padding-bottom: 100px;
-
-        .program-section {
-          padding-top: 100px;
-        }
+        @include vw(padding-bottom, 140px);
+		.program-section{
+			@include vw(padding-top, 140px);
+			.btn-schedule{
+				@include vw(margin-bottom, 60px);
+			}
+		}
+      
 
         .title-border {
           padding-top: 24px;
@@ -111,6 +121,14 @@
       &-apply {
         padding: 100px 0;
         background-color: #eeeeee;
+
+		.subject{
+			@include vw(font-size, 28px);
+			@include vw(line-height, 39.2px);
+			font-weight:300;
+			color:$color-black;
+			@include vw(padding-bottom,8px);
+		}
 
         .list-benefit {
           line-height: 2;
@@ -173,7 +191,7 @@
                 width: 100%;
                 height: 56px;
                 display: flex;
-                background-color: #fbfaf6;
+                background-color: #F0F0F0;
                 border: none;
                 font-size: 16px;
                 font-weight: 400;
@@ -194,7 +212,7 @@
 
       &-info {
         padding-top: 100px;
-
+        padding-bottom: 100px;
         .text-area {
           line-height: 2;
           font-size: 20px;
@@ -218,5 +236,9 @@
         }
       }
     }
+  }
+
+  .section-program-title{
+	@include vw(padding-top, 60px);
   }
 }
