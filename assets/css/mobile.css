@@ -15333,11 +15333,11 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 #wrap #contents.program .section-program-content .program-section .btn {
   border-radius: 0;
   border-color: #ddd;
-  margin-top: 12.8vw;
+  margin-top: 6.4vw;
 }
 @media screen and (min-width: 375px) {
   #wrap #contents.program .section-program-content .program-section .btn {
-    margin-top: 48px;
+    margin-top: 24px;
   }
 }
 #wrap #contents.program .section-program-content .program-section .btn-schedule {
