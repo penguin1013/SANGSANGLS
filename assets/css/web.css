@@ -13260,17 +13260,20 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 #wrap #contents.program .section-program-content .program-section {
   position: relative;
 }
+#wrap #contents.program .section-program-content .program-section .btn {
+  border-radius: 0;
+  margin-left: 0;
+  border-color: #ddd;
+}
 #wrap #contents.program .section-program-content .program-section .btn-schedule {
   position: absolute;
   left: 232px;
   top: 407px;
-  margin-left: 0;
 }
 #wrap #contents.program .section-program-content .program-section .btn-view {
   position: absolute;
   left: 24px;
   top: 737px;
-  margin-left: 0;
 }
 #wrap #contents.program .section-program-content .program-section:not(:first-child) {
   padding-top: 240px;

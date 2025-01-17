@@ -87,13 +87,18 @@
         padding-bottom: 240px;
 		.program-section{
 			position:relative;
+			.btn{
+				border-radius:0;
+				margin-left:0;
+				border-color: #ddd;
+			}
+
 			.btn-schedule{
 				position:absolute;left:232px;top:407px;
-				margin-left:0;
+				
 			}
 			.btn-view{
 				position:absolute;left:24px;top:737px;
-				margin-left:0;
 			}
 		}
         .program-section:not(:first-child) {

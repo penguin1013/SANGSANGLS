@@ -75,6 +75,12 @@
         @include vw(padding-bottom, 140px);
 		.program-section{
 			@include vw(padding-top, 140px);
+			.btn{
+				border-radius:0;
+				border-color: #ddd;
+				@include vw(margin-top, 48px);
+			}
+
 			.btn-schedule{
 				@include vw(margin-bottom, 60px);
 			}

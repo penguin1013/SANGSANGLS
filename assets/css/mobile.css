@@ -15330,6 +15330,16 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
     padding-top: 140px;
   }
 }
+#wrap #contents.program .section-program-content .program-section .btn {
+  border-radius: 0;
+  border-color: #ddd;
+  margin-top: 12.8vw;
+}
+@media screen and (min-width: 375px) {
+  #wrap #contents.program .section-program-content .program-section .btn {
+    margin-top: 48px;
+  }
+}
 #wrap #contents.program .section-program-content .program-section .btn-schedule {
   margin-bottom: 16vw;
 }
