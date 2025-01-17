@@ -2123,6 +2123,9 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 #wrap .pt-0 {
   padding-top: 0 !important;
 }
+#wrap .pd-0 {
+  padding-bottom: 0 !important;
+}
 #wrap h3 {
   position: relative;
   min-height: 48px;
