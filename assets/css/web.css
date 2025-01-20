@@ -11890,10 +11890,10 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 #wrap .section-teacher-gate .teacher-gate-list .list .t-curriculum-list {
   width: 100%;
-  margin-left: 62px;
+  margin-left: 80px;
 }
 #wrap .section-teacher-gate .teacher-gate-list .list .t-curriculum-list ul {
-  padding: 39px 18px;
+  padding: 39px 0px;
   border: 1px solid #E4DED3;
   border-left: 0;
   border-right: 0;
@@ -11901,7 +11901,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 #wrap .section-teacher-gate .teacher-gate-list .list .t-curriculum-list ul li {
   display: flex;
   align-items: center;
-  margin-bottom: 16px;
+  margin-bottom: 24px;
 }
 #wrap .section-teacher-gate .teacher-gate-list .list .t-curriculum-list ul li:last-child {
   margin-bottom: 0;
@@ -11922,7 +11922,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 #wrap .section-teacher-gate .teacher-gate-list .list .t-curriculum-text a {
   display: block;
-  margin-bottom: 12px;
+  margin-bottom: 4px;
 }
 #wrap .section-teacher-gate .teacher-gate-list .list .t-curriculum-text a:hover {
   text-decoration: underline;

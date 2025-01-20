@@ -48,16 +48,16 @@
                     &-curriculum {
                         &-list {
                             width: 100%;
-                            margin-left: 62px;
+                            margin-left: 80px;
                             ul {
-                                padding: 39px 18px;
+                                padding: 39px 0px;
                                 border: 1px solid #E4DED3;
                                 border-left: 0;
                                 border-right: 0;
                                 li {
                                     display: flex;
                                     align-items: center;
-                                    margin-bottom: 16px;
+                                    margin-bottom: 24px;
                                     &:last-child {
                                         margin-bottom: 0;
                                     }
@@ -79,7 +79,7 @@
 							line-height:27px;
                             a {
                                 display: block;
-								margin-bottom:12px;
+								margin-bottom:4px;
                                 &:hover {
                                     text-decoration: underline;
                                 }
