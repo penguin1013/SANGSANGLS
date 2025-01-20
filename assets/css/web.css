@@ -11857,12 +11857,16 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 #wrap .section-teacher-gate .teacher-gate-list .list {
   display: flex;
+  margin-top: 160px;
+}
+#wrap .section-teacher-gate .teacher-gate-list .list:first-child {
   margin-top: 120px;
 }
 #wrap .section-teacher-gate .teacher-gate-list .list .t-thumb-img {
-  max-width: 245px;
-  min-width: 245px;
-  height: 310px;
+  max-width: 300px;
+  min-width: 300px;
+  height: 300px;
+  overflow: hidden;
 }
 #wrap .section-teacher-gate .teacher-gate-list .list .t-thumb-img img {
   width: 100%;
@@ -11872,20 +11876,24 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   margin-top: 16px;
 }
 #wrap .section-teacher-gate .teacher-gate-list .list .t-thumb-text p {
-  font-size: 24px;
-  font-weight: 200;
-  line-height: 1.5;
+  font-size: 26px;
+  font-weight: 300;
+  line-height: 39px;
+  color: #2C2923;
+  margin-bottom: 8px;
 }
 #wrap .section-teacher-gate .teacher-gate-list .list .t-thumb-text span {
+  color: #7A746A;
   font-size: 15px;
-  font-weight: 400;
+  line-height: 22.5px;
+  font-weight: 300;
 }
 #wrap .section-teacher-gate .teacher-gate-list .list .t-curriculum-list {
   width: 100%;
-  margin-left: 80px;
+  margin-left: 62px;
 }
 #wrap .section-teacher-gate .teacher-gate-list .list .t-curriculum-list ul {
-  padding: 24px 0;
+  padding: 39px 18px;
   border: 1px solid #E4DED3;
   border-left: 0;
   border-right: 0;
@@ -11899,35 +11907,41 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   margin-bottom: 0;
 }
 #wrap .section-teacher-gate .teacher-gate-list .list .t-curriculum-thumb {
-  max-width: 120px;
-  min-width: 120px;
+  max-width: 96px;
+  min-width: 96px;
   margin-right: 24px;
 }
 #wrap .section-teacher-gate .teacher-gate-list .list .t-curriculum-thumb img {
   width: 100%;
 }
 #wrap .section-teacher-gate .teacher-gate-list .list .t-curriculum-text {
+  padding-top: 5px;
   font-size: 18px;
-  font-weight: 600;
+  font-weight: 400;
+  line-height: 27px;
 }
 #wrap .section-teacher-gate .teacher-gate-list .list .t-curriculum-text a {
   display: block;
+  margin-bottom: 12px;
 }
 #wrap .section-teacher-gate .teacher-gate-list .list .t-curriculum-text a:hover {
   text-decoration: underline;
 }
 #wrap .section-teacher-gate .teacher-gate-list .list .t-curriculum-text span {
+  color: #959595;
   font-size: 15px;
+  line-height: 15px;
   font-weight: 400;
 }
 #wrap .section-teacher-gate .teacher-gate-list .list .t-curriculum-desc {
-  margin-top: 64px;
+  margin-top: 40px;
+  text-align: right;
 }
 #wrap .section-teacher-gate .teacher-gate-list .list .t-curriculum-desc p {
-  font-size: 15px;
-  font-weight: 400;
-  line-height: 1.5;
-  color: #BEBEBC;
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 23.4px;
+  color: #777;
 }
 #wrap .section-teacher-home .wrap {
   width: 1060px;
