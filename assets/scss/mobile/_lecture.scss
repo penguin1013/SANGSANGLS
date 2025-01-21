@@ -213,6 +213,7 @@
 				@include vw(padding, 20px 0);
 				border: 1px solid #e4ded3;
 				border-width: 1px 0;
+				font-weight: normal;
 				dl {
 					@include vw(font-size, 14px);
 					line-height: 1.7;

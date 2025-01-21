@@ -6843,6 +6843,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   padding: 5.3333333333vw 0;
   border: 1px solid #e4ded3;
   border-width: 1px 0;
+  font-weight: normal;
 }
 @media screen and (min-width: 375px) {
   #wrap .section-lecture-content .lecture-intro {
