@@ -7947,11 +7947,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 
 #footer .footer-bottom .company-info p {
   color: #777;
-<<<<<<< HEAD
-  font-size: 2.13333vw;
-=======
-  font-size: 2.6666666667vw;
->>>>>>> eca25a8d07f5ad4db78631a67c9b9539bc77c677
+  font-size: 2.66667vw;
   font-weight: 400;
   line-height: 3.62667vw;
   margin-top: 2.13333vw;
@@ -8072,12 +8068,8 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 #wrap .section-lecture .lecture-box.lecture-wide .lecture-profile .img-box {
   width: 100%;
 }
-<<<<<<< HEAD
 
-#wrap .section-lecture .lecture-box.lecture-wide .lecture-name p {
-=======
 #wrap .section-lecture .lecture-box .lecture-name p {
->>>>>>> eca25a8d07f5ad4db78631a67c9b9539bc77c677
   position: relative;
   display: inline-block;
   margin-right: 2.13333vw;
@@ -8095,14 +8087,9 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
     padding-right: 8px;
   }
 }
-<<<<<<< HEAD
 
-#wrap .section-lecture .lecture-box.lecture-wide .lecture-name p:after {
-  content: '';
-=======
 #wrap .section-lecture .lecture-box .lecture-name p:after {
-  content: "";
->>>>>>> eca25a8d07f5ad4db78631a67c9b9539bc77c677
+  content: '';
   position: absolute;
   top: 50%;
   right: 0;
@@ -8118,21 +8105,13 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
     height: 12px;
   }
 }
-<<<<<<< HEAD
 
-#wrap .section-lecture .lecture-box.lecture-wide .lecture-name p:last-child {
-  margin-right: 0;
-  padding-right: 0;
-}
-
-#wrap .section-lecture .lecture-box.lecture-wide .lecture-name p:last-child:after {
-=======
 #wrap .section-lecture .lecture-box .lecture-name p:last-child {
   margin-right: 0;
   padding-right: 0;
 }
+
 #wrap .section-lecture .lecture-box .lecture-name p:last-child:after {
->>>>>>> eca25a8d07f5ad4db78631a67c9b9539bc77c677
   display: none;
 }
 
