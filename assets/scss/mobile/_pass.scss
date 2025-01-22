@@ -71,7 +71,10 @@
       &-apply {
         @include vw(padding-top, 80px);
         .list {
-          @include vw(margin-bottom, 20px);
+          @include vw(margin-top, 10px);
+          &:first-child{
+            margin-top:0;
+          }
         }
 
         .action {
