@@ -3448,6 +3448,126 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   }
 }
 
+#wrap #popupPresentation .section-zero-agree {
+  padding-top: 8.53333vw;
+}
+
+@media screen and (min-width: 375px) {
+  #wrap #popupPresentation .section-zero-agree {
+    padding-top: 32px;
+  }
+}
+
+#wrap #popupPresentation .section-zero-agree dl dt {
+  font-weight: 600;
+  font-size: 3.46667vw;
+  line-height: 5.89333vw;
+}
+
+@media screen and (min-width: 375px) {
+  #wrap #popupPresentation .section-zero-agree dl dt {
+    font-size: 13px;
+  }
+}
+
+@media screen and (min-width: 375px) {
+  #wrap #popupPresentation .section-zero-agree dl dt {
+    line-height: 22.1px;
+  }
+}
+
+#wrap #popupPresentation .section-zero-agree dl dd .all {
+  padding-bottom: 3.2vw;
+  margin-bottom: 3.2vw;
+  border-bottom: 1px solid #E4DED3;
+}
+
+@media screen and (min-width: 375px) {
+  #wrap #popupPresentation .section-zero-agree dl dd .all {
+    padding-bottom: 12px;
+  }
+}
+
+@media screen and (min-width: 375px) {
+  #wrap #popupPresentation .section-zero-agree dl dd .all {
+    margin-bottom: 12px;
+  }
+}
+
+#wrap #popupPresentation .section-zero-agree dl dd .all .form-control .fake-checkbox label {
+  font-weight: 700;
+}
+
+#wrap #popupPresentation .section-zero-agree dl dd > div {
+  margin-bottom: 4.26667vw;
+}
+
+@media screen and (min-width: 375px) {
+  #wrap #popupPresentation .section-zero-agree dl dd > div {
+    margin-bottom: 16px;
+  }
+}
+
+#wrap #popupPresentation .section-zero-agree dl dd > div .btn-toggle {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+#wrap #popupPresentation .section-zero-agree dl dd > div .data-layer {
+  display: none !important;
+  font-weight: 400;
+  font-size: 3.46667vw;
+  line-height: 5.89333vw;
+  color: #2C2923;
+  padding: 2.66667vw;
+  background-color: #FBFAF6;
+  margin-top: 2.13333vw;
+}
+
+@media screen and (min-width: 375px) {
+  #wrap #popupPresentation .section-zero-agree dl dd > div .data-layer {
+    font-size: 13px;
+  }
+}
+
+@media screen and (min-width: 375px) {
+  #wrap #popupPresentation .section-zero-agree dl dd > div .data-layer {
+    line-height: 22.1px;
+  }
+}
+
+@media screen and (min-width: 375px) {
+  #wrap #popupPresentation .section-zero-agree dl dd > div .data-layer {
+    padding: 10px;
+  }
+}
+
+@media screen and (min-width: 375px) {
+  #wrap #popupPresentation .section-zero-agree dl dd > div .data-layer {
+    margin-top: 8px;
+  }
+}
+
+#wrap #popupPresentation .section-zero-agree dl dd > div.open .data-layer {
+  display: block !important;
+}
+
+#wrap #popupPresentation .section-zero-agree dl dd > div.open .btn-toggle {
+  -webkit-transform: rotateZ(-180deg);
+  transform: rotateZ(-180deg);
+}
+
+#wrap #popupPresentation .action {
+  margin-top: 16vw;
+}
+
+@media screen and (min-width: 375px) {
+  #wrap #popupPresentation .action {
+    margin-top: 60px;
+  }
+}
+
 #wrap {
   font-family: "Pretendard", "Noto Sans KR", "맑은 고딕", "Malgun Gothic", "Apple SD Gothic Neo", "Dotum", "돋움", "Gulim", "굴림", "굴림체", Sans-Serif;
   color: #2C2923;
@@ -18053,6 +18173,44 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 
 #wrap .section-presentation-schedule .img-box img {
   width: 100%;
+}
+
+#wrap .section-presentation-schedule .action {
+  display: block;
+  margin-bottom: 32vw;
+}
+
+@media screen and (min-width: 375px) {
+  #wrap .section-presentation-schedule .action {
+    margin-bottom: 120px;
+  }
+}
+
+#wrap .section-presentation-schedule .action a {
+  height: 24.26667vw;
+  background-color: #0E4B9E;
+  color: #fff;
+  font-size: 4.26667vw;
+  margin-left: 0;
+  margin-top: 10.66667vw;
+}
+
+@media screen and (min-width: 375px) {
+  #wrap .section-presentation-schedule .action a {
+    height: 91px;
+  }
+}
+
+@media screen and (min-width: 375px) {
+  #wrap .section-presentation-schedule .action a {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 375px) {
+  #wrap .section-presentation-schedule .action a {
+    margin-top: 40px;
+  }
 }
 
 #wrap .section-presentation-schedule .btn-apply {

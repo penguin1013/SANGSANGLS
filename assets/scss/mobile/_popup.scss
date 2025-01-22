@@ -1242,4 +1242,61 @@
 			.select{@include vw(width, 295px);}
 		}
 	}
+
+	#popupPresentation{
+		.section-zero-agree{
+			@include vw(padding-top, 32px);
+			
+
+			dl{
+				dt{
+					font-weight:600;
+					@include vw(font-size, 13px);
+					@include vw(line-height, 22.1px);
+				}
+				dd{
+					
+					.all{
+						@include vw(padding-bottom,12px);
+						@include vw(margin-bottom,12px);
+						border-bottom:1px solid $color-light-brown;
+						.form-control .fake-checkbox label{
+							font-weight:700;
+						}
+					}
+
+					& > div{
+						@include vw(margin-bottom,16px);
+
+						.btn-toggle{
+							position:absolute;right:0;top:0;
+						}
+
+						.data-layer{
+							display:none !important;
+							font-weight:400;@include vw(font-size,13px);@include vw(line-height,22.1px);
+							color:$color-black;@include vw(padding,10px);background-color:#FBFAF6;
+							@include vw(margin-top,8px);
+						}
+				
+						&.open{
+							.data-layer{
+								display:block !important;
+							}
+				
+							.btn-toggle {
+								-webkit-transform: rotateZ(-180deg);
+								transform: rotateZ(-180deg);
+							}
+						}
+					}
+				}
+			}
+		}
+
+		.action{
+			@include vw(margin-top, 60px);
+		}
+
+	}
 }

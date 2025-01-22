@@ -2534,6 +2534,173 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   width: auto;
 }
 
+#wrap #popupPresentation .section-zero-input .notice-input-table .table-row tr th, #wrap #popupPresentation .section-zero-input .notice-input-table .table-row tr td {
+  padding-bottom: 5.33333vw;
+}
+
+@media screen and (min-width: 375px) {
+  #wrap #popupPresentation .section-zero-input .notice-input-table .table-row tr th, #wrap #popupPresentation .section-zero-input .notice-input-table .table-row tr td {
+    padding-bottom: 20px;
+  }
+}
+
+#wrap #popupPresentation .section-zero-input .notice-input-table .table-row tr th {
+  font-size: 3.73333vw;
+}
+
+@media screen and (min-width: 375px) {
+  #wrap #popupPresentation .section-zero-input .notice-input-table .table-row tr th {
+    font-size: 14px;
+  }
+}
+
+#wrap #popupPresentation .section-zero-input .notice-input-table .table-row tr td .form-control .text {
+  width: 72.53333vw;
+}
+
+@media screen and (min-width: 375px) {
+  #wrap #popupPresentation .section-zero-input .notice-input-table .table-row tr td .form-control .text {
+    width: 272px;
+  }
+}
+
+#wrap #popupPresentation .section-zero-input .notice-input-table .table-row tr td .form-control .text.full {
+  width: 100%;
+}
+
+#wrap #popupPresentation .section-zero-input .notice-input-table .table-row tr td .form-select-box .select {
+  width: 34.13333vw;
+}
+
+@media screen and (min-width: 375px) {
+  #wrap #popupPresentation .section-zero-input .notice-input-table .table-row tr td .form-select-box .select {
+    width: 128px;
+  }
+}
+
+#wrap #popupPresentation .section-zero-input .notice-input-table .table-row tr td .form-input-box .select {
+  width: 34.13333vw;
+}
+
+@media screen and (min-width: 375px) {
+  #wrap #popupPresentation .section-zero-input .notice-input-table .table-row tr td .form-input-box .select {
+    width: 128px;
+  }
+}
+
+#wrap #popupPresentation .section-zero-input .notice-input-table .table-row tr td .form-input-box .form-control .text {
+  width: 70.93333vw;
+}
+
+@media screen and (min-width: 375px) {
+  #wrap #popupPresentation .section-zero-input .notice-input-table .table-row tr td .form-input-box .form-control .text {
+    width: 266px;
+  }
+}
+
+#wrap #popupPresentation .section-zero-agree dl dt {
+  font-weight: 400;
+  font-size: 3.73333vw;
+}
+
+@media screen and (min-width: 375px) {
+  #wrap #popupPresentation .section-zero-agree dl dt {
+    font-size: 14px;
+  }
+}
+
+#wrap #popupPresentation .section-zero-agree dl dd {
+  width: 107.2vw;
+}
+
+@media screen and (min-width: 375px) {
+  #wrap #popupPresentation .section-zero-agree dl dd {
+    width: 402px;
+  }
+}
+
+#wrap #popupPresentation .section-zero-agree dl dd .all {
+  padding-bottom: 3.2vw;
+  margin-bottom: 3.2vw;
+  border-bottom: 1px solid #E4DED3;
+}
+
+@media screen and (min-width: 375px) {
+  #wrap #popupPresentation .section-zero-agree dl dd .all {
+    padding-bottom: 12px;
+  }
+}
+
+@media screen and (min-width: 375px) {
+  #wrap #popupPresentation .section-zero-agree dl dd .all {
+    margin-bottom: 12px;
+  }
+}
+
+#wrap #popupPresentation .section-zero-agree dl dd .all .form-control .fake-checkbox label {
+  font-weight: 700;
+}
+
+#wrap #popupPresentation .section-zero-agree dl dd > div {
+  margin-bottom: 4.26667vw;
+}
+
+@media screen and (min-width: 375px) {
+  #wrap #popupPresentation .section-zero-agree dl dd > div {
+    margin-bottom: 16px;
+  }
+}
+
+#wrap #popupPresentation .section-zero-agree dl dd > div .btn-toggle {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+#wrap #popupPresentation .section-zero-agree dl dd > div .data-layer {
+  display: none !important;
+  font-weight: 400;
+  font-size: 3.46667vw;
+  line-height: 5.89333vw;
+  color: #2C2923;
+  padding: 2.66667vw;
+  background-color: #FBFAF6;
+  margin-top: 2.13333vw;
+}
+
+@media screen and (min-width: 375px) {
+  #wrap #popupPresentation .section-zero-agree dl dd > div .data-layer {
+    font-size: 13px;
+  }
+}
+
+@media screen and (min-width: 375px) {
+  #wrap #popupPresentation .section-zero-agree dl dd > div .data-layer {
+    line-height: 22.1px;
+  }
+}
+
+@media screen and (min-width: 375px) {
+  #wrap #popupPresentation .section-zero-agree dl dd > div .data-layer {
+    padding: 10px;
+  }
+}
+
+@media screen and (min-width: 375px) {
+  #wrap #popupPresentation .section-zero-agree dl dd > div .data-layer {
+    margin-top: 8px;
+  }
+}
+
+#wrap #popupPresentation .section-zero-agree dl dd > div.open .data-layer {
+  display: block !important;
+}
+
+#wrap #popupPresentation .section-zero-agree dl dd > div.open .btn-toggle {
+  -webkit-transform: rotateZ(-180deg);
+  transform: rotateZ(-180deg);
+}
+
 .dim {
   position: fixed;
   top: 0;
@@ -16247,6 +16414,25 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 
 #wrap .section-presentation-schedule .img-box img {
   width: 100%;
+}
+
+#wrap .section-presentation-schedule .action {
+  margin-bottom: 120px;
+  margin-top: 0;
+  font-size: 0;
+}
+
+#wrap .section-presentation-schedule .action a {
+  width: 398px;
+  margin-left: 80px;
+  height: 91px;
+  background-color: #0E4B9E;
+  color: #fff;
+  font-size: 16px;
+}
+
+#wrap .section-presentation-schedule .action a:first-child {
+  margin-left: 0;
 }
 
 #wrap .section-presentation-schedule .btn-apply {
