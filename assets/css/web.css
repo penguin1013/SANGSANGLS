@@ -4878,9 +4878,13 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   margin-top: 0;
 }
 #wrap #footer.footer .footer-bottom .company-info p {
-  color: #555;
-  font-size: 10px;
-  line-height: 17px;
+  margin-top: 2px;
+  color: #888;
+  font-size: 13px;
+  line-height: 22.1px;
+}
+#wrap #footer.footer .footer-bottom .company-info p:first-child {
+  margin-top: 0;
 }
 #wrap #footer.footer .footer-bottom .company-info p strong {
   font-weight: 400;
@@ -4891,7 +4895,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   margin-right: 4px;
 }
 #wrap #footer.footer .footer-bottom .company-info p span:after {
-  background-color: #555;
+  background-color: #888;
   height: 8px;
   margin-top: -4px;
 }
