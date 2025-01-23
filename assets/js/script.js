@@ -37,6 +37,8 @@ function addEvent(){
 
 	calenderEvent();
 	//starEvent();
+
+	toggleDataEvent();
 }
 
 function starEvent(){
@@ -565,6 +567,13 @@ function toggleEvent(){
 
         $this.parents('dl').toggleClass('unfold').siblings().removeClass('unfold');
     });
+}
+
+function toggleDataEvent() {
+	$('.btn-toggle').on('click', function () {
+		var $parent = $(this).parent();
+		$parent.toggleClass('open');
+	});
 }
 
 

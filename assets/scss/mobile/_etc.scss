@@ -219,6 +219,20 @@
 		}
 	}
 
+  .action{
+    display:block;
+    @include vw(margin-bottom,120px);
+    a{
+      @include vw(height,91px);
+      background-color:#0E4B9E;
+      color:#fff;
+      @include vw(font-size,16px);
+      margin-left:0;
+      @include vw(margin-top,40px);
+
+    }
+  }
+
 	.btn-apply{
 		
 		@include vw(height,91px);
