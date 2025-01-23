@@ -14745,10 +14745,16 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 #wrap .section-teaser-exam .teaser-exam-action {
   margin-top: 32vw;
+  margin-bottom: 13.3333333333vw;
 }
 @media screen and (min-width: 375px) {
   #wrap .section-teaser-exam .teaser-exam-action {
     margin-top: 120px;
+  }
+}
+@media screen and (min-width: 375px) {
+  #wrap .section-teaser-exam .teaser-exam-action {
+    margin-bottom: 50px;
   }
 }
 #wrap .section-teaser-exam .teaser-exam-action a {

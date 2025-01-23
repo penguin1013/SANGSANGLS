@@ -115,6 +115,7 @@
 
 		.teaser-exam-action{
 			@include vw(margin-top, 120px);
+			@include vw(margin-bottom, 50px);
 			a{
 				font-weight:600;
 				@include vw(height,67px);
