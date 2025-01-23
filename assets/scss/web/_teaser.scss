@@ -85,4 +85,42 @@
 		img{width:100%;}
 	}
   }
+
+
+	.section-teaser-visual{
+		background-color:#000;
+		background-size:auto 100%;
+		background-position:50% 0;
+		background-repeat : no-repeat;
+		height:600px;
+		width:100%;
+	}
+
+	.section-teaser-exam{
+		.img-box{
+			img{width:100%;}
+		}
+
+		.teaser-exam-title{
+			margin-top:160px;
+			&+.teaser-exam-content{
+				margin-top:154px;
+			}
+		}
+
+		.teaser-exam-content{
+			margin-top:240px;
+		}
+
+		.teaser-exam-action{
+			margin-top:80px;
+			a{
+				width:600px;
+				height:95px;
+				font-weight:600;
+				font-size:18px;
+				margin:0 auto;
+			}
+		}
+	}
 }

@@ -78,4 +78,48 @@
 		img{width:100%;}
 	}
   }
+
+
+	.section-teaser-visual{
+		.wrap{
+			max-width:600px;
+			margin:0 auto;
+		}
+		
+		.img-box{
+			img{width:100%;}
+		}
+
+	}
+
+	.section-teaser-exam{
+		.wrap{
+			max-width:600px;
+			margin:0 auto;
+		}
+
+		.img-box{
+			img{width:100%;}
+		}
+
+		.teaser-exam-title{
+			@include vw(margin-top, 80px);
+			&+.teaser-exam-content{
+				@include vw(margin-top, 120px);
+			}
+		}
+
+		.teaser-exam-content{
+			@include vw(margin-top, 160px);
+		}
+
+		.teaser-exam-action{
+			@include vw(margin-top, 120px);
+			a{
+				font-weight:600;
+				@include vw(height,67px);
+				@include vw(font-size,16px);
+			}
+		}
+	}
 }
