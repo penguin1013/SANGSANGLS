@@ -1,0 +1,202 @@
+#wrap {
+	.section-exam-visual{
+		background-color:#000;
+		background-size:auto 100%;
+		background-position:50% 0;
+		background-repeat : no-repeat;
+		@include vw(height,408px);
+		.wrap{
+			max-width:600px;
+			margin:0 auto;
+		}
+	}
+
+	.section-exam-content{
+		.wrap{
+			max-width:600px;
+			margin:0 auto;
+		}
+		.img-box{
+			img{width:100%;}
+		}
+  }
+
+  .section-exam-title{
+	@include vw(margin-top,80px);
+
+	.wrap{
+		max-width:600px;
+		margin:0 auto;
+	}
+    .img-box{
+		img{width:100%;}
+	}
+  }
+
+  .section-exam-action{
+    .wrap{
+      max-width:600px;
+      margin:0 auto;
+    }
+  }
+
+  .section-exam-content1{
+    @include vw(padding,120px 0);
+  }
+  .section-exam-content2{
+    @include vw(padding,80px 0 100px);
+    background-color:rgba(239, 239, 239, 1);
+  }
+  .section-exam-content3{
+	@include vw(padding-top,80px);
+  }
+
+
+  .action-box{
+    @include vw(margin-top,80px);
+
+    a{
+      width:100%;
+	    @include vw(height,67px);
+      font-weight:600;
+      @include vw(font-size,16px);
+      @include vw(margin-top,20px);
+      &:first-child{margin-top:0;}
+
+      &.full{
+		    @include vw(height,75px);
+      }
+    }
+  }
+
+  .section-exam-apply{
+    @include vw(padding-top,40px);
+    .img-box{
+			img{width:100%;}
+		}
+
+    .exam-apply-box{
+      &+ .exam-apply-box{
+        @include vw(margin-top,80px);
+      }
+      .apply-title{
+        @include vw(margin-bottom,32px);
+        p{
+          font-weight:600;
+          @include vw(font-size,18px);
+          @include vw(line-height,27px);
+          color:$color-black;
+        }
+      }
+
+      .apply-table{
+        .table-row{
+          tr{
+            th,td{
+              padding:0;
+              text-align:center;
+              &:first-child{
+                @include vw(padding-left,16px);
+              }
+              &:last-child{
+                @include vw(padding-right,16px);
+              }
+            }
+
+            th{
+             
+              @include vw(padding,12px);
+              font-weight:400;
+              background-color:rgba(243, 243, 243, 1);
+
+            }
+
+            td{
+              @include vw(padding,16px 12px);
+             
+
+              &:nth-child(2){
+                text-align:left;
+              }
+            }
+
+           
+          }
+        }
+      }
+
+      .apply-radio-box{
+        .apply-radio-list{
+          display:flex;
+          justify-content: space-between;
+          align-items:center;
+          @include vw(margin-top,32px);
+          &:first-child{margin-top:0;}
+
+          .form-text{
+            @include vw(padding-left,32px);
+            color:rgba(169, 169, 169, 1);
+            margin-top:0;
+          }
+
+          .price{
+            font-weight:400;
+            @include vw(font-size,16px);
+            @include vw(line-height,27.2px);
+
+          }
+        }
+      }
+    }
+
+    .exam-apply-title{
+      font-weight:200;
+      @include vw(font-size,30px);
+      @include vw(line-height,42px);
+      color:$color-black;
+
+      &+.exam-apply-box{
+        @include vw(margin-top,40px);
+        @include vw(padding-top,40px);
+        border-top:1px solid $color-black;
+      }
+    }
+
+    .exam-success-box{
+      background-color:rgba(243, 243, 243, 1);
+      @include vw(padding,32px);
+      @include vw(margin-top,40px);
+      dl{
+        dt{
+          color:rgba(14, 75, 158, 1);
+          font-weight:400;
+          @include vw(font-size,13px);
+          @include vw(line-height,22.1px);
+          @include vw(margin-bottom,6px);
+        }
+
+        dd{
+          font-weight:400;
+          @include vw(font-size,16px);
+          @include vw(line-height,28.8px);
+          color:$color-black;
+        }
+      }
+      p{
+        @include vw(margin-top,24px);
+        font-weight:300;
+        @include vw(font-size,15px);
+        @include vw(line-height,27px);
+        color:$color-black;
+      }
+
+    }
+
+    .exam-success-action{
+      @include vw(margin-top,80px);
+    }
+
+   
+  }
+}
+
