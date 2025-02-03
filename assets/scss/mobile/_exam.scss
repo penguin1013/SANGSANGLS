@@ -113,6 +113,14 @@
 
             td{
               @include vw(padding,16px 12px);
+			  &.check{
+				line-height:1;
+				.form-control .fake-radio label{
+					@include vw(min-height,24px);
+					padding-top:0;
+					@include vw(padding-left,24px);
+				}
+			  }
              
 
               &:nth-child(2){
