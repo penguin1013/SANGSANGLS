@@ -13789,6 +13789,18 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   font-size: 16px;
   line-height: 27.2px;
 }
+#wrap .section-exam-apply .exam-apply-box .apply-notice-box {
+  margin-top: 32px;
+  background-color: rgb(243, 243, 243);
+  padding: 12px 20px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 23.8px;
+  color: #2C2923;
+}
+#wrap .section-exam-apply .exam-apply-box .apply-notice-box .color-blue {
+  color: rgb(14, 75, 158);
+}
 #wrap .section-exam-apply .exam-apply-title {
   font-weight: 200;
   font-size: 34px;

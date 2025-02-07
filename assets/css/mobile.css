@@ -16084,6 +16084,38 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
     line-height: 27.2px;
   }
 }
+#wrap .section-exam-apply .exam-apply-box .apply-notice-box {
+  margin-top: 8.5333333333vw;
+  background-color: rgb(243, 243, 243);
+  padding: 5.3333333333vw 5.3333333333vw;
+  font-size: 3.7333333333vw;
+  font-weight: 400;
+  line-height: 6.3466666667vw;
+  color: #2C2923;
+}
+@media screen and (min-width: 375px) {
+  #wrap .section-exam-apply .exam-apply-box .apply-notice-box {
+    margin-top: 32px;
+  }
+}
+@media screen and (min-width: 375px) {
+  #wrap .section-exam-apply .exam-apply-box .apply-notice-box {
+    padding: 20px 20px;
+  }
+}
+@media screen and (min-width: 375px) {
+  #wrap .section-exam-apply .exam-apply-box .apply-notice-box {
+    font-size: 14px;
+  }
+}
+@media screen and (min-width: 375px) {
+  #wrap .section-exam-apply .exam-apply-box .apply-notice-box {
+    line-height: 23.8px;
+  }
+}
+#wrap .section-exam-apply .exam-apply-box .apply-notice-box .color-blue {
+  color: rgb(14, 75, 158);
+}
 #wrap .section-exam-apply .exam-apply-title {
   font-weight: 200;
   font-size: 8vw;
