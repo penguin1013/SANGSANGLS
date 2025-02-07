@@ -16115,6 +16115,12 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 #wrap .section-exam-apply .exam-apply-box .apply-notice-box .color-blue {
   color: rgb(14, 75, 158);
+  margin-right: 1.0666666667vw;
+}
+@media screen and (min-width: 375px) {
+  #wrap .section-exam-apply .exam-apply-box .apply-notice-box .color-blue {
+    margin-right: 4px;
+  }
 }
 #wrap .section-exam-apply .exam-apply-title {
   font-weight: 200;
